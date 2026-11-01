@@ -113,19 +113,30 @@ def upload(c: dict, start: int = 0, pause: float = 10.0, full: bool = False,
                 break
             except Exception as e:  # noqa: BLE001 - reconnect on any transfer error
                 print(f"retry {dest}: {type(e).__name__}", flush=True)
-                time.sleep(3)
+                MANIFEST.write_text(json.dumps(done, indent=0, sort_keys=True))
+                time.sleep(30)  # let the host's connection limit cool down
                 try:
                     f.quit()
                 except Exception:  # noqa: BLE001
                     pass
-                f = connect()
+                try:
+                    f = connect()
+                except Exception as e2:  # noqa: BLE001
+                    print(f"reconnect failed: {type(e2).__name__}", flush=True)
         else:
             failed.append(dest)
+            if len(failed) >= 10:
+                print("too many failures; stopping (rerun to resume)", flush=True)
+                break
             continue
         done[p.relative_to(DIST).as_posix()] = digest(p)
         if i % 250 == 0 or i == len(files):
+            MANIFEST.write_text(json.dumps(done, indent=0, sort_keys=True))  # resumable
             print(f"{i}/{len(files)} files, {time.time() - t0:.0f} s", flush=True)
-    f.quit()
+    try:
+        f.quit()
+    except Exception:  # noqa: BLE001
+        pass
     MANIFEST.write_text(json.dumps(done, indent=0, sort_keys=True))
     print(f"uploaded to {c['origin']}{c['base']}/" + (f"; {len(failed)} failed" if failed else ""))
 
