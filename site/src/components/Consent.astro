@@ -1,0 +1,72 @@
+---
+import { url } from "../lib/url";
+// Google Analytics only with consent (EU ePrivacy / GDPR): nothing from Google loads until
+// the visitor clicks "Sprejmi". The choice is kept in localStorage (no cookie of our own);
+// "Zavrni" loads nothing. Any element with [data-consent-open] reopens the banner.
+// Never runs on localhost, so development visits are not counted.
+const GA_ID = "G-NVJ5LQ6EMC";
+---
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Piškotki" hidden>
+  <p>Obisk merimo z Google Analytics, a le če se strinjate. Oglasov ni.
+    <a href={url("/zasebnost/")}>Več</a></p>
+  <div class="consent-btns">
+    <button class="btn" type="button" data-choice="denied">Zavrni</button>
+    <button class="btn solid" type="button" data-choice="granted">Sprejmi</button>
+  </div>
+</div>
+<script is:inline define:vars={{ GA_ID }}>
+  (() => {
+    const KEY = "kn-consent";
+    const local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+    const get = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+    const set = (v) => { try { localStorage.setItem(KEY, v); } catch {} };
+    let loaded = false;
+    function loadGA() {
+      if (loaded || local) return;
+      loaded = true;
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", GA_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s);
+    }
+    function clearGA() {
+      // remove Google Analytics cookies if consent is withdrawn
+      for (const c of document.cookie.split(";")) {
+        const name = c.split("=")[0].trim();
+        if (/^_ga/.test(name)) {
+          const host = location.hostname.replace(/^www\./, "");
+          for (const d of ["", "; domain=" + host, "; domain=." + host])
+            document.cookie = name + "=; Max-Age=0; path=/" + d;
+        }
+      }
+    }
+    const box = document.getElementById("consent");
+    const show = (on) => { box.hidden = !on; };
+    box.addEventListener("click", (e) => {
+      const v = e.target.closest("[data-choice]")?.dataset.choice;
+      if (!v) return;
+      set(v); show(false);
+      if (v === "granted") loadGA(); else { clearGA(); if (loaded) location.reload(); }
+    });
+    document.addEventListener("click", (e) => {
+      if (e.target.closest("[data-consent-open]")) { e.preventDefault(); show(true); }
+    });
+    const choice = get();
+    if (choice === "granted") loadGA();
+    else if (choice !== "denied") show(true);
+  })();
+</script>
+<style>
+  .consent { position: fixed; right: 16px; bottom: 16px; z-index: 50; max-width: 340px;
+             background: var(--surface); border: 1px solid var(--line-2); border-radius: 12px;
+             box-shadow: var(--shadow); padding: 12px 14px; font-size: 14px; color: var(--ink-2); }
+  .consent p { margin: 0 0 10px; line-height: 1.45; }
+  .consent a { color: var(--ink); }
+  .consent-btns { display: flex; gap: 8px; justify-content: flex-end; }
+  .consent .btn { font-size: 13.5px; padding: 5px 14px; }
+  @media (max-width: 640px) { .consent { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
+</style>

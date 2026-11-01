@@ -1,0 +1,32 @@
+---
+// A ranked list of linked people with a count. The first `limit` rows show; the rest
+// sit behind a "pokaži vse" toggle (native <details>, so it works without JavaScript).
+import { people, personUrl, fmt } from "../lib/data";
+interface Props { rows: [string, number][]; limit?: number; unit?: string; }
+const { rows, limit = 15, unit = "×" } = Astro.props;
+const head = rows.slice(0, limit), rest = rows.slice(limit);
+---
+<ul class="list">
+  {head.map(([id, n]) => (
+    <li><a href={personUrl(id)}>{people[id]?.name ?? id}</a><span class="n">{fmt(n)}{unit}</span></li>
+  ))}
+</ul>
+{rest.length > 0 && (
+  <details class="more-list">
+    <summary class="btn"><span class="show">pokaži vse ({fmt(rows.length)})</span><span class="hide">skrij</span></summary>
+    <ul class="list">
+      {rest.map(([id, n]) => (
+        <li><a href={personUrl(id)}>{people[id]?.name ?? id}</a><span class="n">{fmt(n)}{unit}</span></li>
+      ))}
+    </ul>
+  </details>
+)}
+<style>
+  .more-list { margin-top: 0; }
+  .more-list summary { list-style: none; margin-top: 8px; font-size: 13px; padding: 4px 12px; }
+  .more-list summary::-webkit-details-marker { display: none; }
+  .more-list .hide, .more-list[open] .show { display: none; }
+  .more-list[open] .hide { display: inline; }
+  /* when open, the button moves below the full list */
+  .more-list[open] { display: flex; flex-direction: column-reverse; }
+</style>

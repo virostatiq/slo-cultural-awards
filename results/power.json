@@ -1,0 +1,1133 @@
+{
+  "jurors": 1751,
+  "seats": 6080,
+  "sittings": 1123,
+  "renewal": [
+    {
+      "period": 1955,
+      "seats": 45,
+      "jurors": 9,
+      "people_per_100_seats": 20.0,
+      "top10_share": 0.1111111111111111
+    },
+    {
+      "period": 1960,
+      "seats": 45,
+      "jurors": 9,
+      "people_per_100_seats": 20.0,
+      "top10_share": 0.1111111111111111
+    },
+    {
+      "period": 1965,
+      "seats": 75,
+      "jurors": 40,
+      "people_per_100_seats": 53.333333333333336,
+      "top10_share": 0.21333333333333335
+    },
+    {
+      "period": 1970,
+      "seats": 74,
+      "jurors": 40,
+      "people_per_100_seats": 54.054054054054056,
+      "top10_share": 0.20270270270270271
+    },
+    {
+      "period": 1975,
+      "seats": 74,
+      "jurors": 34,
+      "people_per_100_seats": 45.945945945945944,
+      "top10_share": 0.16216216216216217
+    },
+    {
+      "period": 1980,
+      "seats": 79,
+      "jurors": 45,
+      "people_per_100_seats": 56.962025316455694,
+      "top10_share": 0.189873417721519
+    },
+    {
+      "period": 1985,
+      "seats": 116,
+      "jurors": 51,
+      "people_per_100_seats": 43.96551724137931,
+      "top10_share": 0.21551724137931033
+    },
+    {
+      "period": 1990,
+      "seats": 115,
+      "jurors": 41,
+      "people_per_100_seats": 35.65217391304348,
+      "top10_share": 0.21739130434782608
+    },
+    {
+      "period": 1995,
+      "seats": 184,
+      "jurors": 79,
+      "people_per_100_seats": 42.93478260869565,
+      "top10_share": 0.25
+    },
+    {
+      "period": 2000,
+      "seats": 433,
+      "jurors": 197,
+      "people_per_100_seats": 45.49653579676674,
+      "top10_share": 0.2702078521939954
+    },
+    {
+      "period": 2005,
+      "seats": 821,
+      "jurors": 369,
+      "people_per_100_seats": 44.945188794153474,
+      "top10_share": 0.2935444579780755
+    },
+    {
+      "period": 2010,
+      "seats": 1033,
+      "jurors": 487,
+      "people_per_100_seats": 47.14424007744434,
+      "top10_share": 0.28751210067763794
+    },
+    {
+      "period": 2015,
+      "seats": 1190,
+      "jurors": 576,
+      "people_per_100_seats": 48.403361344537814,
+      "top10_share": 0.28907563025210087
+    },
+    {
+      "period": 2020,
+      "seats": 1358,
+      "jurors": 663,
+      "people_per_100_seats": 48.82179675994109,
+      "top10_share": 0.2974963181148748
+    },
+    {
+      "period": 2025,
+      "seats": 426,
+      "jurors": 345,
+      "people_per_100_seats": 80.98591549295774,
+      "top10_share": 0.19718309859154928
+    }
+  ],
+  "repeat_seats": {
+    "overall": 0.582298687477829,
+    "seats": 5638,
+    "by_decade": [
+      {
+        "period": 1950,
+        "size": 45,
+        "mean": 0.8222222222222222
+      },
+      {
+        "period": 1960,
+        "size": 111,
+        "mean": 0.6396396396396397
+      },
+      {
+        "period": 1970,
+        "size": 148,
+        "mean": 0.6283783783783784
+      },
+      {
+        "period": 1980,
+        "size": 179,
+        "mean": 0.6983240223463687
+      },
+      {
+        "period": 1990,
+        "size": 270,
+        "mean": 0.7444444444444445
+      },
+      {
+        "period": 2000,
+        "size": 1103,
+        "mean": 0.6228467815049864
+      },
+      {
+        "period": 2010,
+        "size": 2101,
+        "mean": 0.5787720133269871
+      },
+      {
+        "period": 2020,
+        "size": 1681,
+        "mean": 0.5074360499702558
+      }
+    ]
+  },
+  "repeat_by_award": [
+    {
+      "award_id": "fdf",
+      "seats": 18,
+      "repeat": 0,
+      "share": 0.0,
+      "lo": 0.0,
+      "hi": 0.1758845505823749,
+      "award": "FDF"
+    },
+    {
+      "award_id": "nagrada-igorja-zabela",
+      "seats": 21,
+      "repeat": 0,
+      "share": 0.0,
+      "lo": 0.0,
+      "hi": 0.15464382326420195,
+      "award": "Nagrada Igorja Zabela"
+    },
+    {
+      "award_id": "plecnikova-nagrada",
+      "seats": 118,
+      "repeat": 0,
+      "share": 0.0,
+      "lo": 0.0,
+      "hi": 0.03152946120208532,
+      "award": "Plečnikova nagrada"
+    },
+    {
+      "award_id": "dnevi-komedije-celje",
+      "seats": 45,
+      "repeat": 1,
+      "share": 0.022222222222222223,
+      "lo": 0.003933497522757505,
+      "hi": 0.11566946388718813,
+      "award": "Dnevi komedije Celje"
+    },
+    {
+      "award_id": "vesna",
+      "seats": 130,
+      "repeat": 4,
+      "share": 0.03076923076923077,
+      "lo": 0.01202908970364043,
+      "hi": 0.07644564460915917,
+      "award": "Vesna"
+    },
+    {
+      "award_id": "nagrada-filmskih-kritikov-in-publicistov",
+      "seats": 29,
+      "repeat": 1,
+      "share": 0.034482758620689655,
+      "lo": 0.006113056614032261,
+      "hi": 0.1717589106470025,
+      "award": "Nagrada filmskih kritikov in publicistov"
+    },
+    {
+      "award_id": "melies-dargent",
+      "seats": 39,
+      "repeat": 2,
+      "share": 0.05128205128205128,
+      "lo": 0.014177657646399527,
+      "hi": 0.1688593904563791,
+      "award": "Melies d’Argent"
+    },
+    {
+      "award_id": "lastovka",
+      "seats": 21,
+      "repeat": 2,
+      "share": 0.09523809523809523,
+      "lo": 0.026518208796947246,
+      "hi": 0.2891458386074067,
+      "award": "Lastovka"
+    },
+    {
+      "award_id": "nagrada-hinka-smrekarja",
+      "seats": 63,
+      "repeat": 8,
+      "share": 0.12698412698412698,
+      "lo": 0.06577246340780174,
+      "hi": 0.2310726151061776,
+      "award": "Nagrada Hinka Smrekarja"
+    },
+    {
+      "award_id": "nagrada-ksenije-hribar",
+      "seats": 21,
+      "repeat": 3,
+      "share": 0.14285714285714285,
+      "lo": 0.04980921798213492,
+      "hi": 0.346364941492295,
+      "award": "Nagrada Ksenije Hribar"
+    },
+    {
+      "award_id": "nagrada-franceta-stiglica",
+      "seats": 26,
+      "repeat": 4,
+      "share": 0.15384615384615385,
+      "lo": 0.06149933998929477,
+      "hi": 0.33531584418313565,
+      "award": "Nagrada Franceta Štiglica"
+    },
+    {
+      "award_id": "nagrada-riharda-jakopica",
+      "seats": 59,
+      "repeat": 10,
+      "share": 0.1694915254237288,
+      "lo": 0.0947573785633763,
+      "hi": 0.28463461654814215,
+      "award": "Nagrada Riharda Jakopiča"
+    },
+    {
+      "award_id": "nagrada-skupine-oho",
+      "seats": 72,
+      "repeat": 14,
+      "share": 0.19444444444444445,
+      "lo": 0.11951371043417634,
+      "hi": 0.3003297527838992,
+      "award": "Nagrada skupine OHO"
+    },
+    {
+      "award_id": "hudi-macek",
+      "seats": 56,
+      "repeat": 11,
+      "share": 0.19642857142857142,
+      "lo": 0.11338480016444107,
+      "hi": 0.3184485732747718,
+      "award": "Hudi maček"
+    },
+    {
+      "award_id": "veronikina-nagrada",
+      "seats": 84,
+      "repeat": 21,
+      "share": 0.25,
+      "lo": 0.16972188801500593,
+      "hi": 0.35214474465106566,
+      "award": "Veronikina nagrada"
+    },
+    {
+      "award_id": "levstikova-nagrada",
+      "seats": 71,
+      "repeat": 22,
+      "share": 0.30985915492957744,
+      "lo": 0.2143957547902181,
+      "hi": 0.4248423160153232,
+      "award": "Levstikova nagrada"
+    },
+    {
+      "award_id": "badjurova-nagrada",
+      "seats": 74,
+      "repeat": 25,
+      "share": 0.33783783783783783,
+      "lo": 0.24046456345536177,
+      "hi": 0.4512170052688164,
+      "award": "Badjurova nagrada"
+    },
+    {
+      "award_id": "jazzon",
+      "seats": 26,
+      "repeat": 9,
+      "share": 0.34615384615384615,
+      "lo": 0.19412014972852126,
+      "hi": 0.5377977099036699,
+      "award": "Jazzon"
+    },
+    {
+      "award_id": "borstnikovo-srecanje",
+      "seats": 125,
+      "repeat": 45,
+      "share": 0.36,
+      "lo": 0.2811855308589631,
+      "hi": 0.4471630770440744,
+      "award": "Borštnikovo srečanje"
+    },
+    {
+      "award_id": "hrupni-macek",
+      "seats": 59,
+      "repeat": 23,
+      "share": 0.3898305084745763,
+      "lo": 0.2757917606558441,
+      "hi": 0.5173389043813288,
+      "award": "Hrupni maček"
+    },
+    {
+      "award_id": "stritarjeva-nagrada",
+      "seats": 66,
+      "repeat": 26,
+      "share": 0.3939393939393939,
+      "lo": 0.2850282099029192,
+      "hi": 0.5145181922413615,
+      "award": "Stritarjeva nagrada"
+    },
+    {
+      "award_id": "jenkova-nagrada",
+      "seats": 106,
+      "repeat": 42,
+      "share": 0.39622641509433965,
+      "lo": 0.30831324145963807,
+      "hi": 0.49139834322230397,
+      "award": "Jenkova nagrada"
+    },
+    {
+      "award_id": "nagrada-za-najboljsi-literarni-prvenec",
+      "seats": 39,
+      "repeat": 16,
+      "share": 0.41025641025641024,
+      "lo": 0.27079089435400483,
+      "hi": 0.5658165152665509,
+      "award": "Nagrada za najboljši literarni prvenec"
+    },
+    {
+      "award_id": "modra-ptica",
+      "seats": 43,
+      "repeat": 18,
+      "share": 0.4186046511627907,
+      "lo": 0.2838433433748524,
+      "hi": 0.5667168424428823,
+      "award": "Modra ptica"
+    },
+    {
+      "award_id": "nagrada-duse-pockaj",
+      "seats": 30,
+      "repeat": 13,
+      "share": 0.43333333333333335,
+      "lo": 0.2737723743061511,
+      "hi": 0.6080299045459127,
+      "award": "Nagrada Duše Počkaj"
+    },
+    {
+      "award_id": "seligova-nagrada",
+      "seats": 63,
+      "repeat": 29,
+      "share": 0.4603174603174603,
+      "lo": 0.34308665416425693,
+      "hi": 0.5821096307840387,
+      "award": "Šeligova nagrada"
+    },
+    {
+      "award_id": "mms",
+      "seats": 75,
+      "repeat": 35,
+      "share": 0.4666666666666667,
+      "lo": 0.35815509458811656,
+      "hi": 0.5784266084721967,
+      "award": "MMS"
+    },
+    {
+      "award_id": "fabula",
+      "seats": 30,
+      "repeat": 14,
+      "share": 0.4666666666666667,
+      "lo": 0.30232127224128236,
+      "hi": 0.6385798671847496,
+      "award": "Fabula"
+    },
+    {
+      "award_id": "mira",
+      "seats": 54,
+      "repeat": 26,
+      "share": 0.48148148148148145,
+      "lo": 0.3539375603654322,
+      "hi": 0.6114852495153457,
+      "award": "Mira"
+    },
+    {
+      "award_id": "nagrada-maruse-krese",
+      "seats": 33,
+      "repeat": 16,
+      "share": 0.48484848484848486,
+      "lo": 0.32503781646924224,
+      "hi": 0.6478189541378976,
+      "award": "Nagrada Maruše Krese"
+    },
+    {
+      "award_id": "zlata-hruska",
+      "seats": 26,
+      "repeat": 13,
+      "share": 0.5,
+      "lo": 0.32060306315002074,
+      "hi": 0.6793969368499793,
+      "award": "Zlata Hruška"
+    },
+    {
+      "award_id": "borstnikov-prstan",
+      "seats": 96,
+      "repeat": 49,
+      "share": 0.5104166666666666,
+      "lo": 0.41195862420919654,
+      "hi": 0.6080731060515364,
+      "award": "Borštnikov prstan"
+    },
+    {
+      "award_id": "grumova-nagrada",
+      "seats": 124,
+      "repeat": 66,
+      "share": 0.532258064516129,
+      "lo": 0.4447896327073294,
+      "hi": 0.6177878068741526,
+      "award": "Grumova nagrada"
+    },
+    {
+      "award_id": "desetnica",
+      "seats": 114,
+      "repeat": 62,
+      "share": 0.543859649122807,
+      "lo": 0.45248954319403045,
+      "hi": 0.6323701328456705,
+      "award": "Desetnica"
+    },
+    {
+      "award_id": "zlata-ptica",
+      "seats": 83,
+      "repeat": 48,
+      "share": 0.5783132530120482,
+      "lo": 0.4709262842089882,
+      "hi": 0.6787715564572362,
+      "award": "Zlata ptica"
+    },
+    {
+      "award_id": "knjiga-leta",
+      "seats": 45,
+      "repeat": 29,
+      "share": 0.6444444444444445,
+      "lo": 0.49835546011952203,
+      "hi": 0.7678110864309596,
+      "award": "Knjiga leta"
+    },
+    {
+      "award_id": "jezkova-nagrada",
+      "seats": 174,
+      "repeat": 113,
+      "share": 0.6494252873563219,
+      "lo": 0.5759948156857735,
+      "hi": 0.7164002144983905,
+      "award": "Ježkova nagrada"
+    },
+    {
+      "award_id": "nagrada-kristine-brenkove",
+      "seats": 68,
+      "repeat": 45,
+      "share": 0.6617647058823529,
+      "lo": 0.5433701723652863,
+      "hi": 0.7628590875621094,
+      "award": "Nagrada Kristine Brenkove"
+    },
+    {
+      "award_id": "tantadruj",
+      "seats": 18,
+      "repeat": 12,
+      "share": 0.6666666666666666,
+      "lo": 0.4374906934425036,
+      "hi": 0.8372144563633714,
+      "award": "Tantadruj"
+    },
+    {
+      "award_id": "glazerjeva-nagrada",
+      "seats": 36,
+      "repeat": 24,
+      "share": 0.6666666666666666,
+      "lo": 0.5033369709296683,
+      "hi": 0.7978557522541395,
+      "award": "Glazerjeva nagrada"
+    },
+    {
+      "award_id": "kratka-zgodba-airbeletrina",
+      "seats": 39,
+      "repeat": 26,
+      "share": 0.6666666666666666,
+      "lo": 0.5097710432024052,
+      "hi": 0.7936723389308484,
+      "award": "Kratka zgodba AirBeletrina"
+    },
+    {
+      "award_id": "sovretova-nagrada",
+      "seats": 100,
+      "repeat": 68,
+      "share": 0.68,
+      "lo": 0.5833719774632081,
+      "hi": 0.7633098918454312,
+      "award": "Sovretova nagrada"
+    },
+    {
+      "award_id": "kritisko-sito",
+      "seats": 166,
+      "repeat": 113,
+      "share": 0.6807228915662651,
+      "lo": 0.6064023769208952,
+      "hi": 0.7468679643853572,
+      "award": "Kritiško sito"
+    },
+    {
+      "award_id": "presernov-sklad",
+      "seats": 931,
+      "repeat": 640,
+      "share": 0.6874328678839957,
+      "lo": 0.656937786623527,
+      "hi": 0.7163874911561524,
+      "award": "Prešernov sklad"
+    },
+    {
+      "award_id": "kresnik",
+      "seats": 85,
+      "repeat": 60,
+      "share": 0.7058823529411765,
+      "lo": 0.601813482581798,
+      "hi": 0.79214610391822,
+      "award": "Kresnik"
+    },
+    {
+      "award_id": "bratstvo-resnice",
+      "seats": 73,
+      "repeat": 54,
+      "share": 0.7397260273972602,
+      "lo": 0.6289029493194099,
+      "hi": 0.8265794976884607,
+      "award": "Bratstvo resnice"
+    },
+    {
+      "award_id": "butnskala",
+      "seats": 16,
+      "repeat": 12,
+      "share": 0.75,
+      "lo": 0.5050123107060135,
+      "hi": 0.8981809801576265,
+      "award": "butnskala"
+    },
+    {
+      "award_id": "askerceva-nagrada-za-zivljenjsko-delo",
+      "seats": 36,
+      "repeat": 27,
+      "share": 0.75,
+      "lo": 0.5892923231679656,
+      "hi": 0.8624967616077461,
+      "award": "Aškerčeva nagrada za življenjsko delo"
+    },
+    {
+      "award_id": "zupanciceva-nagrada",
+      "seats": 101,
+      "repeat": 76,
+      "share": 0.7524752475247525,
+      "lo": 0.6600953960085425,
+      "hi": 0.8263527314523127,
+      "award": "Župančičeva nagrada"
+    },
+    {
+      "award_id": "pesniski-turnir",
+      "seats": 57,
+      "repeat": 43,
+      "share": 0.7543859649122807,
+      "lo": 0.6289745615892073,
+      "hi": 0.8476729953455215,
+      "award": "Pesniški turnir"
+    },
+    {
+      "award_id": "cuvaj-watchdog",
+      "seats": 154,
+      "repeat": 117,
+      "share": 0.7597402597402597,
+      "lo": 0.6864667010177107,
+      "hi": 0.8203705332728691,
+      "award": "Čuvaj/watchdog"
+    },
+    {
+      "award_id": "rozanceva-nagrada",
+      "seats": 110,
+      "repeat": 84,
+      "share": 0.7636363636363637,
+      "lo": 0.6761905470088633,
+      "hi": 0.8332892916441424,
+      "award": "Rožančeva nagrada"
+    },
+    {
+      "award_id": "cankarjeva-nagrada",
+      "seats": 30,
+      "repeat": 23,
+      "share": 0.7666666666666667,
+      "lo": 0.5907132766967574,
+      "hi": 0.8820776078949878,
+      "award": "Cankarjeva nagrada"
+    },
+    {
+      "award_id": "vecernica",
+      "seats": 146,
+      "repeat": 115,
+      "share": 0.7876712328767124,
+      "lo": 0.7144007368410374,
+      "hi": 0.8461912482952667,
+      "award": "Večernica"
+    },
+    {
+      "award_id": "severjeva-nagrada",
+      "seats": 105,
+      "repeat": 85,
+      "share": 0.8095238095238095,
+      "lo": 0.7240221679553136,
+      "hi": 0.8731759621714026,
+      "award": "Severjeva nagrada"
+    },
+    {
+      "award_id": "trubarjevo-priznanje",
+      "seats": 32,
+      "repeat": 26,
+      "share": 0.8125,
+      "lo": 0.6469050424507756,
+      "hi": 0.9111057606383721,
+      "award": "Trubarjevo priznanje"
+    },
+    {
+      "award_id": "nagrada-radojke-vrancic",
+      "seats": 23,
+      "repeat": 19,
+      "share": 0.8260869565217391,
+      "lo": 0.6286194521470433,
+      "hi": 0.9302145964938723,
+      "award": "Nagrada Radojke Vrančič"
+    },
+    {
+      "award_id": "najboljsi-esej",
+      "seats": 54,
+      "repeat": 45,
+      "share": 0.8333333333333334,
+      "lo": 0.7126323220121027,
+      "hi": 0.9097571001338962,
+      "award": "Najboljši esej"
+    },
+    {
+      "award_id": "presernova-nagrada",
+      "seats": 63,
+      "repeat": 55,
+      "share": 0.873015873015873,
+      "lo": 0.7689273848938224,
+      "hi": 0.9342275365921983,
+      "award": "Prešernova nagrada"
+    },
+    {
+      "award_id": "vilenica",
+      "seats": 393,
+      "repeat": 358,
+      "share": 0.910941475826972,
+      "lo": 0.8786584183697614,
+      "hi": 0.9352683473725398,
+      "award": "Vilenica"
+    },
+    {
+      "award_id": "meskova-nagrada",
+      "seats": 54,
+      "repeat": 51,
+      "share": 0.9444444444444444,
+      "lo": 0.8489254853651705,
+      "hi": 0.980927077496161,
+      "award": "Meškova nagrada"
+    },
+    {
+      "award_id": "jurciceva-nagrada",
+      "seats": 132,
+      "repeat": 126,
+      "share": 0.9545454545454546,
+      "lo": 0.9043778572359823,
+      "hi": 0.9790039639439801,
+      "award": "Jurčičeva nagrada"
+    },
+    {
+      "award_id": "bert",
+      "seats": 110,
+      "repeat": 110,
+      "share": 1.0,
+      "lo": 0.9662548664108728,
+      "hi": 1.0000000000000002,
+      "award": "Bert"
+    },
+    {
+      "award_id": "valvasorjeva-nagrada",
+      "seats": 15,
+      "repeat": 15,
+      "share": 1.0,
+      "lo": 0.7961107336956521,
+      "hi": 1.0,
+      "award": "Valvasorjeva nagrada"
+    }
+  ],
+  "top_jurors": [
+    {
+      "entity_id": "andrej-blatnik",
+      "name": "Andrej Blatnik",
+      "seats": 51,
+      "awards": 7,
+      "first": 1984,
+      "last": 2026,
+      "gender": "m",
+      "wins": 2
+    },
+    {
+      "entity_id": "veno-taufer",
+      "name": "Veno Taufer",
+      "seats": 47,
+      "awards": 5,
+      "first": 1986,
+      "last": 2019,
+      "gender": "m",
+      "wins": 7
+    },
+    {
+      "entity_id": "tone-persak",
+      "name": "Tone Peršak",
+      "seats": 45,
+      "awards": 4,
+      "first": 1986,
+      "last": 2026,
+      "gender": "m",
+      "wins": 0
+    },
+    {
+      "entity_id": "matej-bogataj",
+      "name": "Matej Bogataj",
+      "seats": 42,
+      "awards": 12,
+      "first": 2000,
+      "last": 2026,
+      "gender": "m",
+      "wins": 1
+    },
+    {
+      "entity_id": "ignacija-j-fridl",
+      "name": "Ignacija J. Fridl",
+      "seats": 34,
+      "awards": 9,
+      "first": 1997,
+      "last": 2019,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "vesna-kondric-horvat",
+      "name": "Vesna Kondrič Horvat",
+      "seats": 34,
+      "awards": 1,
+      "first": 1986,
+      "last": 2019,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "aljosa-harlamov",
+      "name": "Aljoša Harlamov",
+      "seats": 31,
+      "awards": 8,
+      "first": 2010,
+      "last": 2024,
+      "gender": "m",
+      "wins": 1
+    },
+    {
+      "entity_id": "petra-vidali",
+      "name": "Petra Vidali",
+      "seats": 28,
+      "awards": 9,
+      "first": 2002,
+      "last": 2022,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "niko-grafenauer",
+      "name": "Niko Grafenauer",
+      "seats": 27,
+      "awards": 4,
+      "first": 1990,
+      "last": 2016,
+      "gender": "m",
+      "wins": 11
+    },
+    {
+      "entity_id": "tone-partljic",
+      "name": "Tone Partljič",
+      "seats": 26,
+      "awards": 5,
+      "first": 2000,
+      "last": 2013,
+      "gender": "m",
+      "wins": 6
+    },
+    {
+      "entity_id": "niko-jez",
+      "name": "Niko Jež",
+      "seats": 26,
+      "awards": 3,
+      "first": 1986,
+      "last": 2025,
+      "gender": "m",
+      "wins": 1
+    },
+    {
+      "entity_id": "evald-flisar",
+      "name": "Evald Flisar",
+      "seats": 25,
+      "awards": 3,
+      "first": 2006,
+      "last": 2026,
+      "gender": "m",
+      "wins": 5
+    },
+    {
+      "entity_id": "jani-virk",
+      "name": "Jani Virk",
+      "seats": 25,
+      "awards": 3,
+      "first": 2005,
+      "last": 2016,
+      "gender": "m",
+      "wins": 2
+    },
+    {
+      "entity_id": "alja-predan",
+      "name": "Alja Predan",
+      "seats": 23,
+      "awards": 8,
+      "first": 2004,
+      "last": 2026,
+      "gender": "f",
+      "wins": 3
+    },
+    {
+      "entity_id": "milcek-komelj",
+      "name": "Milček Komelj",
+      "seats": 23,
+      "awards": 4,
+      "first": 1992,
+      "last": 2017,
+      "gender": "m",
+      "wins": 2
+    },
+    {
+      "entity_id": "alenka-urh",
+      "name": "Alenka Urh",
+      "seats": 23,
+      "awards": 3,
+      "first": 2009,
+      "last": 2026,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "igor-saksida",
+      "name": "Igor Saksida",
+      "seats": 22,
+      "awards": 4,
+      "first": 1996,
+      "last": 2023,
+      "gender": "m",
+      "wins": 0
+    },
+    {
+      "entity_id": "matevz-luzar",
+      "name": "Matevž Luzar",
+      "seats": 21,
+      "awards": 5,
+      "first": 2014,
+      "last": 2026,
+      "gender": "m",
+      "wins": 6
+    },
+    {
+      "entity_id": "irena-novak-popov",
+      "name": "Irena Novak Popov",
+      "seats": 21,
+      "awards": 4,
+      "first": 2001,
+      "last": 2025,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "jana-unuk",
+      "name": "Jana Unuk",
+      "seats": 21,
+      "awards": 3,
+      "first": 2005,
+      "last": 2019,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "tomaz-toporisic",
+      "name": "Tomaž Toporišič",
+      "seats": 20,
+      "awards": 5,
+      "first": 2004,
+      "last": 2026,
+      "gender": "m",
+      "wins": 1
+    },
+    {
+      "entity_id": "darka-tancer-kajnih",
+      "name": "Darka Tancer Kajnih",
+      "seats": 20,
+      "awards": 3,
+      "first": 1996,
+      "last": 2024,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "miran-kosuta",
+      "name": "Miran Košuta",
+      "seats": 20,
+      "awards": 2,
+      "first": 1986,
+      "last": 2004,
+      "gender": "m",
+      "wins": 1
+    },
+    {
+      "entity_id": "darja-lavrencic-vrabec",
+      "name": "Darja Lavrenčič Vrabec",
+      "seats": 19,
+      "awards": 4,
+      "first": 1999,
+      "last": 2025,
+      "gender": "f",
+      "wins": 0
+    },
+    {
+      "entity_id": "melita-forstneric-hajnsek",
+      "name": "Melita Forstnerič Hajnšek",
+      "seats": 19,
+      "awards": 4,
+      "first": 1996,
+      "last": 2026,
+      "gender": "f",
+      "wins": 0
+    }
+  ],
+  "top_jurors_never_won": [
+    "Tone Peršak",
+    "Ignacija J. Fridl",
+    "Vesna Kondrič Horvat",
+    "Petra Vidali",
+    "Alenka Urh",
+    "Igor Saksida",
+    "Irena Novak Popov",
+    "Jana Unuk",
+    "Darka Tancer Kajnih",
+    "Darja Lavrenčič Vrabec",
+    "Melita Forstnerič Hajnšek"
+  ],
+  "multi_jury_load": {
+    "series": [
+      {
+        "period": 1955,
+        "seats": 45,
+        "multi": 0.0
+      },
+      {
+        "period": 1960,
+        "seats": 45,
+        "multi": 0.0
+      },
+      {
+        "period": 1965,
+        "seats": 75,
+        "multi": 0.0
+      },
+      {
+        "period": 1970,
+        "seats": 74,
+        "multi": 0.0
+      },
+      {
+        "period": 1975,
+        "seats": 74,
+        "multi": 0.0
+      },
+      {
+        "period": 1980,
+        "seats": 79,
+        "multi": 0.0
+      },
+      {
+        "period": 1985,
+        "seats": 116,
+        "multi": 0.0
+      },
+      {
+        "period": 1990,
+        "seats": 115,
+        "multi": 0.017391304347826087
+      },
+      {
+        "period": 1995,
+        "seats": 184,
+        "multi": 0.08695652173913043
+      },
+      {
+        "period": 2000,
+        "seats": 433,
+        "multi": 0.13856812933025403
+      },
+      {
+        "period": 2005,
+        "seats": 821,
+        "multi": 0.17904993909866018
+      },
+      {
+        "period": 2010,
+        "seats": 1033,
+        "multi": 0.16844143272023232
+      },
+      {
+        "period": 2015,
+        "seats": 1190,
+        "multi": 0.1226890756302521
+      },
+      {
+        "period": 2020,
+        "seats": 1358,
+        "multi": 0.16863033873343153
+      },
+      {
+        "period": 2025,
+        "seats": 426,
+        "multi": 0.13849765258215962
+      }
+    ],
+    "max_in_one_year": [
+      {
+        "name": "Matej Bogataj",
+        "year": 2021,
+        "n": 5
+      },
+      {
+        "name": "Mojca Pišek",
+        "year": 2017,
+        "n": 5
+      },
+      {
+        "name": "Andrej Blatnik",
+        "year": 2012,
+        "n": 4
+      },
+      {
+        "name": "Matej Bogataj",
+        "year": 2020,
+        "n": 4
+      },
+      {
+        "name": "Aljoša Harlamov",
+        "year": 2015,
+        "n": 4
+      },
+      {
+        "name": "Petra Vidali",
+        "year": 2014,
+        "n": 4
+      },
+      {
+        "name": "Andrej Blatnik",
+        "year": 2014,
+        "n": 3
+      },
+      {
+        "name": "Andrej Blatnik",
+        "year": 2016,
+        "n": 3
+      },
+      {
+        "name": "Niko Grafenauer",
+        "year": 2010,
+        "n": 3
+      },
+      {
+        "name": "Niko Grafenauer",
+        "year": 2009,
+        "n": 3
+      }
+    ],
+    "share_multi_since_2010": 0.1517344646867981
+  }
+}

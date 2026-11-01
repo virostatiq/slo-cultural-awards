@@ -1,0 +1,96 @@
+---
+import { url } from "../lib/url";
+import Base from "../layouts/Base.astro";
+import { people, awards, meta, personUrl, awardUrl, fmt } from "../lib/data";
+import { years } from "../lib/years";
+const c = meta.counts;
+const top = Object.values(awards).filter((a) => a.prestige === 5).sort((a, b) => a.name.localeCompare(b.name, "sl"));
+const ppl = Object.values(people).filter((p) => p.kind === "person");
+const mostWins = [...ppl].sort((a, b) => b.wins.length - a.wins.length).slice(0, 8);
+const mostJury = [...ppl].sort((a, b) => b.juries.length - a.juries.length).slice(0, 8);
+const last = years[years.length - 1];
+const dot = (f: string) => `background:${meta.fields[f] ?? "var(--muted)"}`;
+---
+<Base title="Kulturne nagrade" description={`Zbirka slovenskih kulturnih nagrad ${c.years[0]}–${c.years[1]}: ${fmt(c.awards)} nagrad, ${fmt(c.people)} nagrajencev in žirantov, z žirijami in zemljevidom povezav.`}>
+  <section class="sky" slot="hero">
+    <canvas id="sky" aria-hidden="true" data-colors={JSON.stringify(meta.fields)}></canvas>
+    <div class="wrap sky-text">
+      <h1>Kdo podeljuje slovenske kulturne nagrade in kdo jih prejema?</h1>
+      <p class="lede">Zbirka {fmt(c.awards)} nagrad od leta {c.years[0]} do {c.years[1]}: {fmt(c.wins)} nagrad
+        za {fmt(c.people)} ljudi in skupin, z žirijami, ki so jih podelile.</p>
+      <form action={url("/seznam/")} method="get" class="hero-search" role="search">
+        <label class="sr" for="hq">Iskanje</label>
+        <input id="hq" name="q" type="search" placeholder="Ime osebe ali nagrade" />
+        <button class="btn solid" type="submit">Išči</button>
+      </form>
+      <p class="hint">Vsaka točka je oseba ali nagrada. Bližje so si tisti, ki so pogosto sedeli v istih
+        žirijah ali so drug drugega izbrali. <a href={url("/zemljevid/")}>Odprite zemljevid</a></p>
+    </div>
+  </section>
+
+  <div class="stats home-stats">
+    <div class="stat"><b>{fmt(c.awards)}</b><span>nagrad</span></div>
+    <div class="stat"><b>{fmt(c.editions)}</b><span>podelitev</span></div>
+    <div class="stat"><b>{fmt(c.people)}</b><span>nagrajencev in žirantov</span></div>
+    <div class="stat"><b>{fmt(c.sittings)}</b><span>sedežev v žirijah</span></div>
+  </div>
+
+  <nav class="entries" aria-label="Vstopne točke">
+    <a href={url("/zemljevid/")}><b>Zemljevid</b><span>Kdo sedi v žirijah skupaj in kdo je koga izbral, po področjih.</span></a>
+    <a href={url("/leta/")}><b>Po letih</b><span>Vse podelitve od {c.years[0]}. Zadnje leto: <span class="num">{last}</span>.</span></a>
+    <a href={url("/seznam/")}><b>Seznam</b><span>Vsi nagrajenci, žiranti in nagrade s filtri.</span></a>
+  </nav>
+
+  <div class="cols">
+    <section>
+      <h2>Najvišje nagrade</h2>
+      <ul class="list">{top.map((a) => <li><a href={awardUrl(a.id)}><span class="dot" style={dot(a.field)}></span>{a.name}</a><span class="n">{fmt(a.editions.length)} podelitev</span></li>)}</ul>
+    </section>
+    <section>
+      <h2>Največ nagrad</h2>
+      <ul class="list">{mostWins.map((p) => <li><a href={personUrl(p.id)}><span class="dot" style={dot(p.field)}></span>{p.name}</a><span class="n">{fmt(p.wins.length)}</span></li>)}</ul>
+      <h2>Največ sedežev v žirijah</h2>
+      <ul class="list">{mostJury.map((p) => <li><a href={personUrl(p.id)}><span class="dot" style={dot(p.field)}></span>{p.name}</a><span class="n">{fmt(p.juries.length)}</span></li>)}</ul>
+    </section>
+  </div>
+  <p class="small muted" style="margin-top:28px">Zbirka ni popolna, zlasti pred letom 2000. <a href={url("/o-podatkih/")}>Kako je nastala in kaj manjka</a>.</p>
+
+  <script>
+    import { mountSky } from "../lib/sky";
+    const cv = document.getElementById("sky") as HTMLCanvasElement;
+    const colors = JSON.parse(cv.dataset.colors ?? "{}");
+    mountSky(cv, () => {
+      const wide = window.innerWidth > 760;
+      return { colors, fit: wide ? .6 : 1, centerX: wide ? .69 : .5 };
+    });
+  </script>
+</Base>
+<style>
+  .sky { position: relative; height: min(80vh, 700px); min-height: 520px; margin-top: -72px; overflow: hidden; }
+  .sky canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .sky::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(90deg, var(--bg) 0, rgba(23, 16, 34, .85) 32%, rgba(23, 16, 34, 0) 60%),
+                linear-gradient(0deg, var(--bg) 0, transparent 28%); }
+  .sky-text { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column;
+              justify-content: flex-end; padding-bottom: 36px; }
+  .sky h1 { font-size: clamp(38px, 6.2vw, 74px); max-width: 11.5em; margin-bottom: 20px; }
+  .sky .lede { margin-bottom: 22px; }
+  .hero-search { display: flex; gap: 8px; max-width: 500px; }
+  .hero-search input { flex: 1; min-width: 0; font-size: 17px; padding: 11px 18px; background: rgba(31, 23, 48, .9); }
+  .hero-search .btn { padding: 0 22px; font-size: 15px; }
+  .hint { font-size: 14px; color: var(--ink-2); margin: 16px 0 0; max-width: 42em; }
+  .hint a { color: var(--ink-2); }
+  .home-stats { grid-template-columns: repeat(4, 1fr); margin: 20px 0 56px; }
+  .entries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0 0 24px; }
+  .entries a { text-decoration: none; border-top: 1px solid var(--line); padding-top: 14px; }
+  .entries b { display: block; font: 400 26px var(--serif); margin-bottom: 4px; }
+  .entries > a > span { color: var(--ink-2); font-size: 15px; }
+  .entries a:hover b { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+  @media (max-width: 760px) {
+    .sky { height: auto; min-height: 0; padding-top: 250px; }
+    .sky canvas { height: 330px; bottom: auto; }
+    .sky::after { height: 330px; bottom: auto; background: linear-gradient(0deg, var(--bg) 0, rgba(23, 16, 34, 0) 45%); }
+    .home-stats { grid-template-columns: 1fr 1fr; }
+    .entries { grid-template-columns: 1fr; gap: 16px; }
+  }
+</style>

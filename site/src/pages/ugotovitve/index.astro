@@ -1,0 +1,32 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { findingData, fill, findingUrl } from "../../lib/findings";
+const items = (await getCollection("ugotovitve"))
+  .filter((e) => findingData[e.id])
+  .sort((a, b) => a.data.order - b.data.order);
+---
+<Base title="Ugotovitve" description="Kaj kažejo podatki o slovenskih kulturnih nagradah: ženske v žirijah, nekdanji žiranti med nagrajenci, nagrade pozno v življenju in drugo.">
+  <h1>Ugotovitve</h1>
+  <p class="lede">Kaj kažejo podatki o tem, kdo sodi in kdo prejema. Vsaka ugotovitev ima graf in kratko
+    pojasnilo, kako smo jo izmerili.</p>
+  <ol class="findings">
+    {items.map((e) => {
+      const n = findingData[e.id].n;
+      return (
+        <li><a href={findingUrl(e.id)}>
+          <b>{fill(e.data.title, n)}</b>
+          <span>{fill(e.data.lede, n)}</span>
+        </a></li>
+      );
+    })}
+  </ol>
+</Base>
+<style>
+  .findings { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 0; }
+  .findings li { border-top: 1px solid var(--line); }
+  .findings a { display: grid; gap: 4px; padding: 18px 0; text-decoration: none; }
+  .findings b { font: 400 24px/1.25 var(--serif); }
+  .findings span { color: var(--ink-2); max-width: 44em; }
+  .findings a:hover b { text-decoration: underline; text-decoration-color: var(--muted); text-underline-offset: 4px; }
+</style>

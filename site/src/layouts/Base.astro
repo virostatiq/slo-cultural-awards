@@ -1,0 +1,115 @@
+---
+import { url } from "../lib/url";
+import "@fontsource-variable/newsreader/opsz.css";
+import "@fontsource-variable/hanken-grotesk";
+import "../styles/global.css";
+import metaJson from "../data/meta.json";
+import Consent from "../components/Consent.astro";
+
+interface Props {
+  title: string;               // page title (without the site name)
+  description: string;         // meta + Open Graph description
+  image?: string;              // OG image path under public/, e.g. /og/oseba/x.png
+  type?: "website" | "article" | "profile";
+  noindex?: boolean;           // keep out of search engines (e.g. one-off people)
+  wide?: boolean;              // full-width main (the map)
+}
+const { title, description, image = "/og/privzeto.png", type = "website",
+        noindex = false, wide = false } = Astro.props;
+const SITE_NAME = "Kulturne nagrade";
+const fullTitle = title === SITE_NAME ? title : `${title} · ${SITE_NAME}`;
+// Shared links show the title, description and image; the home page title alone ("Kulturne
+// nagrade") says too little, so its card carries the site's question.
+const ogTitle = title === SITE_NAME
+  ? "Kulturne nagrade: kdo podeljuje slovenske kulturne nagrade in kdo jih prejema?" : title;
+const ogAlt = image === "/og/privzeto.png"
+  ? "Zemljevid povezav med nagrajenci in žiranti slovenskih kulturnih nagrad" : title;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(url(image), Astro.site).href;
+const path = Astro.url.pathname;
+const nav = [
+  ["/seznam/", "Seznam"], ["/zemljevid/", "Zemljevid"], ["/leta/", "Po letih"], ["/ugotovitve/", "Ugotovitve"],
+];
+const siteLinks = [
+  ...nav, ["/o-podatkih/", "O podatkih"], ["/o-podatkih/#metode", "Kako merimo"], ["/popravki/", "Popravki"],
+];
+const [y0, y1] = metaJson.counts.years;
+---
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex" />}
+  <meta property="og:site_name" content={SITE_NAME} />
+  <meta property="og:locale" content="sl_SI" />
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={ogTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={ogAlt} />
+  <meta name="twitter:image:alt" content={ogAlt} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={ogTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="theme-color" content="#171022" />
+  <link rel="icon" href={url("/favicon.svg")} type="image/svg+xml" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href={url("/")}>Kulturne nagrade</a>
+      <nav class="nav" aria-label="Glavni meni">
+        {nav.map(([href, label]) => (
+          <a href={url(href)} aria-current={path.startsWith(url(href)) ? "page" : undefined}>{label}</a>
+        ))}
+      </nav>
+      <slot name="header-tools" />
+    </div>
+  </header>
+  <slot name="hero" />
+  <main class={wide ? "wide" : "wrap"}>
+    <slot />
+  </main>
+  {!wide && (
+    <footer class="site-footer">
+      <div class="wrap foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href={url("/")}>Kulturne nagrade</a>
+          <p class="tagline">Kdo podeljuje slovenske kulturne nagrade in kdo jih prejema?</p>
+          <h2 class="foot-h">Upravljavec</h2>
+          <p><a href="https://x.com/Virostatiq" rel="me noopener">Virostatiq</a></p>
+        </div>
+        <nav aria-label="Spletišče">
+          <h2 class="foot-h">Spletišče</h2>
+          <ul>{siteLinks.map(([href, label]) => <li><a href={url(href)}>{label}</a></li>)}</ul>
+        </nav>
+        <div>
+          <h2 class="foot-h">Podatki</h2>
+          <ul>
+            <li>Nagrajenci in žirije, {y0}–{y1}</li>
+            <li>Zbirka ni popolna, zlasti pred letom 2000.</li>
+            <li>Podatki: CC BY 4.0, koda: MIT</li>
+            <li><a href="https://github.com/virostatiq/slo-cultural-awards">Koda in podatki na GitHubu</a></li>
+            <li><a href={url("/zasebnost/")}>Zasebnost in piškotki</a></li>
+            <li><a href={url("/zasebnost/")} data-consent-open>Nastavitve piškotkov</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap foot-bottom">
+        Zbrano iz javnih virov: spletnih strani nagrad, sporočil za javnost in časopisnih člankov.
+        Koordinate krajev © sodelavci OpenStreetMap, licenca ODbL.
+      </div>
+    </footer>
+  )}
+  <Consent />
+</body>
+</html>

@@ -1,0 +1,54 @@
+---
+import { url } from "../../lib/url";
+import Base from "../../layouts/Base.astro";
+import FieldChip from "../../components/FieldChip.astro";
+import { byYear, years } from "../../lib/years";
+import { people, personUrl, awardUrl, yearUrl, fmt } from "../../lib/data";
+
+export function getStaticPaths() {
+  return years.map((y) => ({ params: { year: String(y) } }));
+}
+const y = Number(Astro.params.year);
+const list = byYear.get(y)!;
+const i = years.indexOf(y);
+const prev = years[i - 1], next = years[i + 1];
+const nEd = list.reduce((n, e) => n + e.editions.length, 0);
+const nWin = list.reduce((n, e) => n + e.editions.reduce((m, x) => m + x.winners.length, 0), 0);
+const desc = `Slovenske kulturne nagrade leta ${y}: ${fmt(list.length)} nagrad, ${fmt(nWin)} nagrajencev, z žirijami.`;
+const link = (id: string) => people[id]?.name ?? id;
+---
+<Base title={`Nagrade leta ${y}`} description={desc}>
+  <p class="crumb"><a href={url("/leta/")}>Po letih</a></p>
+  <h1 class="year-title">{y}</h1>
+  <p class="lede">{fmt(list.length)} nagrad, {fmt(nEd)} podelitev, {fmt(nWin)} nagrajencev v zbirki.
+    Leto je leto podelitve.</p>
+  <p>
+    {prev && <a class="btn" href={yearUrl(prev)}>← {prev}</a>}
+    {next && <a class="btn" href={yearUrl(next)}>{next} →</a>}
+  </p>
+  {list.map(({ award, editions }) => (
+    <section class="award-year">
+      <h2><a href={awardUrl(award.id)}>{award.name}</a></h2>
+      <div class="chips"><FieldChip field={award.field} /></div>
+      {editions.map((e) => (
+        <div class="ed">
+          {e.category && <div class="small muted">{e.category}</div>}
+          <p><b>Nagrajenci:</b> {e.winners.length
+            ? e.winners.map((w, k) => <>{k > 0 && ", "}<a href={personUrl(w)}>{link(w)}</a></>)
+            : <span class="muted">ni podatka</span>}</p>
+          <p class="small"><b>Žirija:</b> {e.jury.length
+            ? e.jury.map((j, k) => <>{k > 0 && ", "}<a href={personUrl(j)}>{link(j)}</a></>)
+            : <span class="muted">ni podatka</span>}</p>
+        </div>
+      ))}
+    </section>
+  ))}
+</Base>
+<style>
+  .award-year { border-top: 1px solid var(--line); margin-top: 20px; }
+  .award-year h2 { margin: 18px 0 4px; }
+  .award-year h2 a { color: var(--ink); text-decoration: none; }
+  .award-year h2 a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+  .ed { margin: 6px 0 10px; }
+  .year-title { font-size: clamp(64px, 12vw, 128px); font-variant-numeric: lining-nums; }
+</style>

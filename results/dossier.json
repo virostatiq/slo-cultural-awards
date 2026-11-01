@@ -1,0 +1,1212 @@
+{
+  "subject": "ignacija-j-fridl",
+  "name": "Ignacija J. Fridl",
+  "record": {
+    "sittings": 34,
+    "awards": 9,
+    "fields": [
+      "gledališče",
+      "literatura",
+      "umetnost in kultura"
+    ],
+    "first_year": 1997,
+    "last_year": 2019,
+    "voting_power": 6.544047619047619,
+    "wins": 0,
+    "by_award": [
+      {
+        "award": "Borštnikovo srečanje",
+        "sittings": 4,
+        "first": 1997,
+        "last": 2005,
+        "jury_size": 5.0,
+        "power": 0.9333333333333333
+      },
+      {
+        "award": "Grumova nagrada",
+        "sittings": 4,
+        "first": 1997,
+        "last": 2001,
+        "jury_size": 3.0,
+        "power": 1.3333333333333333
+      },
+      {
+        "award": "Zlata ptica",
+        "sittings": 3,
+        "first": 2001,
+        "last": 2003,
+        "jury_size": 8.0,
+        "power": 0.375
+      },
+      {
+        "award": "Rožančeva nagrada",
+        "sittings": 10,
+        "first": 2002,
+        "last": 2015,
+        "jury_size": 5.0,
+        "power": 2.1
+      },
+      {
+        "award": "Stritarjeva nagrada",
+        "sittings": 2,
+        "first": 2004,
+        "last": 2005,
+        "jury_size": 5.0,
+        "power": 0.41666666666666663
+      },
+      {
+        "award": "Fabula",
+        "sittings": 3,
+        "first": 2007,
+        "last": 2009,
+        "jury_size": 5.0,
+        "power": 0.6000000000000001
+      },
+      {
+        "award": "Prešernov sklad",
+        "sittings": 4,
+        "first": 2008,
+        "last": 2011,
+        "jury_size": 15.0,
+        "power": 0.26666666666666666
+      },
+      {
+        "award": "Župančičeva nagrada",
+        "sittings": 3,
+        "first": 2017,
+        "last": 2019,
+        "jury_size": 7.0,
+        "power": 0.45238095238095233
+      },
+      {
+        "award": "Kritiško sito",
+        "sittings": 1,
+        "first": 2018,
+        "last": 2018,
+        "jury_size": 15.0,
+        "power": 0.06666666666666667
+      }
+    ]
+  },
+  "position_among_peers": {
+    "peers": 129,
+    "sittings": {
+      "value": 34.0,
+      "rank": 5,
+      "share_of_peers_below": 0.9534883720930233,
+      "peer_median": 14.0
+    },
+    "voting_power": {
+      "value": 6.544047619047619,
+      "rank": 5,
+      "share_of_peers_below": 0.9612403100775194,
+      "peer_median": 2.5333333333333337
+    },
+    "awards": {
+      "value": 9.0,
+      "rank": 2,
+      "share_of_peers_below": 0.9767441860465116,
+      "peer_median": 3.0
+    },
+    "fields": {
+      "value": 3.0,
+      "rank": 6,
+      "share_of_peers_below": 0.8294573643410853,
+      "peer_median": 2.0
+    },
+    "span": {
+      "value": 23.0,
+      "rank": 30,
+      "share_of_peers_below": 0.7441860465116279,
+      "peer_median": 17.0
+    },
+    "betweenness": {
+      "value": 0.06791993573227999,
+      "rank": 1,
+      "share_of_peers_below": 0.9922480620155039,
+      "peer_median": 0.0051097770378614885
+    },
+    "wins": {
+      "value": 0.0,
+      "rank": 79,
+      "share_of_peers_below": 0.0,
+      "peer_median": 1.0
+    }
+  },
+  "award_capture": [
+    {
+      "award_id": "rozanceva-nagrada",
+      "award": "Rožančeva nagrada",
+      "share_of_power": 0.08750000000000001,
+      "rank_at_award": 2,
+      "jurors_at_award": 27,
+      "years_recorded": 24
+    },
+    {
+      "award_id": "fabula",
+      "award": "Fabula",
+      "share_of_power": 0.0857142857142857,
+      "rank_at_award": 1,
+      "jurors_at_award": 21,
+      "years_recorded": 7
+    },
+    {
+      "award_id": "grumova-nagrada",
+      "award": "Grumova nagrada",
+      "share_of_power": 0.04301075268817204,
+      "rank_at_award": 4,
+      "jurors_at_award": 49,
+      "years_recorded": 31
+    },
+    {
+      "award_id": "borstnikovo-srecanje",
+      "award": "Borštnikovo srečanje",
+      "share_of_power": 0.0345679012345679,
+      "rank_at_award": 3,
+      "jurors_at_award": 81,
+      "years_recorded": 27
+    },
+    {
+      "award_id": "zlata-ptica",
+      "award": "Zlata ptica",
+      "share_of_power": 0.028846153846153848,
+      "rank_at_award": 6,
+      "jurors_at_award": 42,
+      "years_recorded": 13
+    },
+    {
+      "award_id": "zupanciceva-nagrada",
+      "award": "Župančičeva nagrada",
+      "share_of_power": 0.028273809523809534,
+      "rank_at_award": 15,
+      "jurors_at_award": 31,
+      "years_recorded": 16
+    },
+    {
+      "award_id": "stritarjeva-nagrada",
+      "award": "Stritarjeva nagrada",
+      "share_of_power": 0.018939393939393933,
+      "rank_at_award": 17,
+      "jurors_at_award": 44,
+      "years_recorded": 22
+    },
+    {
+      "award_id": "kritisko-sito",
+      "award": "Kritiško sito",
+      "share_of_power": 0.0044444444444444444,
+      "rank_at_award": 39,
+      "jurors_at_award": 50,
+      "years_recorded": 15
+    },
+    {
+      "award_id": "presernov-sklad",
+      "award": "Prešernova nagrada in Prešernov sklad",
+      "share_of_power": 0.0041666666666666675,
+      "rank_at_award": 57,
+      "jurors_at_award": 263,
+      "years_recorded": 64
+    }
+  ],
+  "picks": {
+    "editions": 38,
+    "winner_slots": 103,
+    "distinct_winners": 94,
+    "repeat_picks": [
+      {
+        "entity_id": "igor-samobor",
+        "name": "Igor Samobor",
+        "times": 3
+      },
+      {
+        "entity_id": "aldo-kumar",
+        "name": "Aldo Kumar",
+        "times": 2
+      },
+      {
+        "entity_id": "goran-vojnovic",
+        "name": "Goran Vojnović",
+        "times": 2
+      },
+      {
+        "entity_id": "primoz-cucnik",
+        "name": "Primož Čučnik",
+        "times": 2
+      },
+      {
+        "entity_id": "vito-taufer",
+        "name": "Vito Taufer",
+        "times": 2
+      },
+      {
+        "entity_id": "matjaz-zupancic",
+        "name": "Matjaž Zupančič",
+        "times": 2
+      },
+      {
+        "entity_id": "peter-musevski",
+        "name": "Peter Musevski",
+        "times": 2
+      },
+      {
+        "entity_id": "uros-smolej",
+        "name": "Uroš Smolej",
+        "times": 2
+      }
+    ],
+    "later_jury_panel_winners": {
+      "winners": 71,
+      "later_jury": 17,
+      "rate": 0.23943661971830985,
+      "ci": [
+        0.15520813325016364,
+        0.3504144082240967
+      ]
+    },
+    "later_jury_same_awards_other_editions": {
+      "winners": 215,
+      "later_jury": 38,
+      "rate": 0.17674418604651163,
+      "ci": [
+        0.13156161456507529,
+        0.23327578380890843
+      ]
+    },
+    "female_share_picks": 0.2815533980582524,
+    "female_share_same_awards_years_other_editions": 0.34615384615384615,
+    "female_share_fisher_p": 0.23754454493084448
+  },
+  "panel_winners": [
+    {
+      "edition_id": "borstnikovo-srecanje-1997",
+      "year": 1997,
+      "award": "Borštnikovo srečanje",
+      "name": "Janusz Kica"
+    },
+    {
+      "edition_id": "grumova-nagrada-1998",
+      "year": 1998,
+      "award": "Grumova nagrada",
+      "name": "Matjaž Zupančič"
+    },
+    {
+      "edition_id": "grumova-nagrada-2000",
+      "year": 2000,
+      "award": "Grumova nagrada",
+      "name": "Ivo Svetina"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Janez Pipan"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Aleš Valič"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Igor Samobor"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Lučka Počkaj"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Nataša Barbara Gračner"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Ivo Ban"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Vito Taufer"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2001",
+      "year": 2001,
+      "award": "Borštnikovo srečanje",
+      "name": "Petra Veber Rojnik"
+    },
+    {
+      "edition_id": "grumova-nagrada-2001",
+      "year": 2001,
+      "award": "Grumova nagrada",
+      "name": "Matjaž Zupančič"
+    },
+    {
+      "edition_id": "zlata-ptica-2001",
+      "year": 2001,
+      "award": "Zlata ptica",
+      "name": "Marko Marinčič"
+    },
+    {
+      "edition_id": "zlata-ptica-2001",
+      "year": 2001,
+      "award": "Zlata ptica",
+      "name": "Tomaž Janežič"
+    },
+    {
+      "edition_id": "zlata-ptica-2001",
+      "year": 2001,
+      "award": "Zlata ptica",
+      "name": "Martin Srebotnjak"
+    },
+    {
+      "edition_id": "zlata-ptica-2001",
+      "year": 2001,
+      "award": "Zlata ptica",
+      "name": "Vuk Ćosić"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2002",
+      "year": 2002,
+      "award": "Rožančeva nagrada",
+      "name": "Vinko Möderndorfer"
+    },
+    {
+      "edition_id": "zlata-ptica-2002",
+      "year": 2002,
+      "award": "Zlata ptica",
+      "name": "Lucija Stupica"
+    },
+    {
+      "edition_id": "zlata-ptica-2002",
+      "year": 2002,
+      "award": "Zlata ptica",
+      "name": "Tao G. Vrhovec Sambolec"
+    },
+    {
+      "edition_id": "zlata-ptica-2002",
+      "year": 2002,
+      "award": "Zlata ptica",
+      "name": "Jure Engelsberger"
+    },
+    {
+      "edition_id": "zlata-ptica-2002",
+      "year": 2002,
+      "award": "Zlata ptica",
+      "name": "Peter Musevski"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2003",
+      "year": 2003,
+      "award": "Rožančeva nagrada",
+      "name": "Vinko Ošlak"
+    },
+    {
+      "edition_id": "zlata-ptica-2003",
+      "year": 2003,
+      "award": "Zlata ptica",
+      "name": "Diego de Brea"
+    },
+    {
+      "edition_id": "zlata-ptica-2003",
+      "year": 2003,
+      "award": "Zlata ptica",
+      "name": "Maša Kozjek"
+    },
+    {
+      "edition_id": "zlata-ptica-2003",
+      "year": 2003,
+      "award": "Zlata ptica",
+      "name": "Žiga Kariž"
+    },
+    {
+      "edition_id": "zlata-ptica-2003",
+      "year": 2003,
+      "award": "Zlata ptica",
+      "name": "Brina Vogelnik Saje"
+    },
+    {
+      "edition_id": "zlata-ptica-2003",
+      "year": 2003,
+      "award": "Zlata ptica",
+      "name": "Primož Čučnik"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Vito Taufer"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Veronika Drolc"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Vlado Novak"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Vesna Pernarčič Žunič"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Igor Samobor"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Uroš Smolej"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Jurij Zrnec"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Jože Logar"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Mateja Koležnik"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Aldo Kumar"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2004",
+      "year": 2004,
+      "award": "Borštnikovo srečanje",
+      "name": "Andrej Hajdinjak"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2004",
+      "year": 2004,
+      "award": "Rožančeva nagrada",
+      "name": "Gorazd Kocijančič"
+    },
+    {
+      "edition_id": "stritarjeva-nagrada-2004",
+      "year": 2004,
+      "award": "Stritarjeva nagrada",
+      "name": "Alenka Jovanovski"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Mile Korun"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Radoš Bolčina"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Silva Čušin"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Igor Samobor"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Romana Šalehar"
+    },
+    {
+      "edition_id": "borstnikovo-srecanje-2005",
+      "year": 2005,
+      "award": "Borštnikovo srečanje",
+      "name": "Janez Škof"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2005",
+      "year": 2005,
+      "award": "Rožančeva nagrada",
+      "name": "Aleksander Zorn"
+    },
+    {
+      "edition_id": "stritarjeva-nagrada-2005",
+      "year": 2005,
+      "award": "Stritarjeva nagrada",
+      "name": "Petra Pogorevc"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2006",
+      "year": 2006,
+      "award": "Rožančeva nagrada",
+      "name": "Drago Jančar"
+    },
+    {
+      "edition_id": "fabula-2007",
+      "year": 2007,
+      "award": "Fabula",
+      "name": "Maruša Krese"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2007",
+      "year": 2007,
+      "award": "Rožančeva nagrada",
+      "name": "Aleš Šteger"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2007",
+      "year": 2007,
+      "award": "Rožančeva nagrada",
+      "name": "Igor Zabel"
+    },
+    {
+      "edition_id": "fabula-2008",
+      "year": 2008,
+      "award": "Fabula",
+      "name": "Peter Rezman"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Primož Čučnik"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Sebastijan Horvat"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Ema Kugler"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Boštjan Lipovšek"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Uroš Smolej"
+    },
+    {
+      "edition_id": "presernov-sklad-2008",
+      "year": 2008,
+      "award": "Prešernov sklad",
+      "name": "Bor Turel"
+    },
+    {
+      "edition_id": "presernova-nagrada-2008",
+      "year": 2008,
+      "award": "Prešernova nagrada",
+      "name": "Janez Gradišnik"
+    },
+    {
+      "edition_id": "presernova-nagrada-2008",
+      "year": 2008,
+      "award": "Prešernova nagrada",
+      "name": "Miljenko Licul"
+    },
+    {
+      "edition_id": "fabula-2009",
+      "year": 2009,
+      "award": "Fabula",
+      "name": "Katarina Marinčič"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Marko Mandić"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Miran Zupanič"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Nenad Firšt"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Sabina Cvilak Damjanovič"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Goran Vojnović"
+    },
+    {
+      "edition_id": "presernov-sklad-2009",
+      "year": 2009,
+      "award": "Prešernov sklad",
+      "name": "Tobias Putrih"
+    },
+    {
+      "edition_id": "presernova-nagrada-2009",
+      "year": 2009,
+      "award": "Prešernova nagrada",
+      "name": "Štefka Drolc"
+    },
+    {
+      "edition_id": "presernova-nagrada-2009",
+      "year": 2009,
+      "award": "Prešernova nagrada",
+      "name": "Zmago Jeraj"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Barbara Cerar"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Maja Delak"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Miklavž Komelj"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Aldo Kumar"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Peter Musevski"
+    },
+    {
+      "edition_id": "presernov-sklad-2010",
+      "year": 2010,
+      "award": "Prešernov sklad",
+      "name": "Andrej Rozman Roza"
+    },
+    {
+      "edition_id": "presernova-nagrada-2010",
+      "year": 2010,
+      "award": "Prešernova nagrada",
+      "name": "Kostja Gatnik"
+    },
+    {
+      "edition_id": "presernova-nagrada-2010",
+      "year": 2010,
+      "award": "Prešernova nagrada",
+      "name": "Mateja Rebolj"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Emil Filipčič"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Zlatko Kaučič"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Janja Majzelj"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Jure Miklavc"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Branko Robinšak"
+    },
+    {
+      "edition_id": "presernov-sklad-2011",
+      "year": 2011,
+      "award": "Prešernov sklad",
+      "name": "Lilijana Praprotnik Zupančič"
+    },
+    {
+      "edition_id": "presernova-nagrada-2011",
+      "year": 2011,
+      "award": "Prešernova nagrada",
+      "name": "Miroslav Košuta"
+    },
+    {
+      "edition_id": "presernova-nagrada-2011",
+      "year": 2011,
+      "award": "Prešernova nagrada",
+      "name": "Anton Nanut"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2012",
+      "year": 2012,
+      "award": "Rožančeva nagrada",
+      "name": "Meta Kušar"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2013",
+      "year": 2013,
+      "award": "Rožančeva nagrada",
+      "name": "Alojz Ihan"
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2014",
+      "year": 2014,
+      "award": "Rožančeva nagrada",
+      "name": "Marcel Štefančič Jr."
+    },
+    {
+      "edition_id": "rozanceva-nagrada-2015",
+      "year": 2015,
+      "award": "Rožančeva nagrada",
+      "name": "Andrej Capuder"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2017",
+      "year": 2017,
+      "award": "Župančičeva nagrada",
+      "name": "Jakob Jež"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2017",
+      "year": 2017,
+      "award": "Župančičeva nagrada",
+      "name": "Špela Čadež"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2017",
+      "year": 2017,
+      "award": "Župančičeva nagrada",
+      "name": "Željko Hrs"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2017",
+      "year": 2017,
+      "award": "Župančičeva nagrada",
+      "name": "Goran Vojnović"
+    },
+    {
+      "edition_id": "kritisko-sito-2018",
+      "year": 2018,
+      "award": "Kritiško sito",
+      "name": "Milan Jesih"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2018",
+      "year": 2018,
+      "award": "Župančičeva nagrada",
+      "name": "Karpo Godina"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2018",
+      "year": 2018,
+      "award": "Župančičeva nagrada",
+      "name": "Nataša Sultanov"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2018",
+      "year": 2018,
+      "award": "Župančičeva nagrada",
+      "name": "Ravil Sultanov"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2018",
+      "year": 2018,
+      "award": "Župančičeva nagrada",
+      "name": "Jani Virk"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2019",
+      "year": 2019,
+      "award": "Župančičeva nagrada",
+      "name": "Marlenka Stupica"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2019",
+      "year": 2019,
+      "award": "Župančičeva nagrada",
+      "name": "Sanja Nešković Peršin"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2019",
+      "year": 2019,
+      "award": "Župančičeva nagrada",
+      "name": "Bojan Gorišek"
+    },
+    {
+      "edition_id": "zupanciceva-nagrada-2019",
+      "year": 2019,
+      "award": "Župančičeva nagrada",
+      "name": "Urša Menart"
+    }
+  ],
+  "ties": {
+    "co_jurors": 72,
+    "frequent_co_jurors": [
+      {
+        "name": "Edvard Kovač",
+        "joint_sittings": 10,
+        "last_joint": 2015,
+        "awards": "Rožančeva nagrada"
+      },
+      {
+        "name": "Jaroslav Skrušný",
+        "joint_sittings": 7,
+        "last_joint": 2011,
+        "awards": "Borštnikovo srečanje, Prešernov sklad"
+      },
+      {
+        "name": "Vasja Predan",
+        "joint_sittings": 6,
+        "last_joint": 2005,
+        "awards": "Grumova nagrada, Stritarjeva nagrada"
+      },
+      {
+        "name": "Nadja Zgonik",
+        "joint_sittings": 5,
+        "last_joint": 2019,
+        "awards": "Prešernov sklad, Župančičeva nagrada"
+      },
+      {
+        "name": "Milček Komelj",
+        "joint_sittings": 5,
+        "last_joint": 2017,
+        "awards": "Rožančeva nagrada, Župančičeva nagrada"
+      },
+      {
+        "name": "Matevž Kos",
+        "joint_sittings": 5,
+        "last_joint": 2006,
+        "awards": "Rožančeva nagrada"
+      },
+      {
+        "name": "Barbara Pogačnik",
+        "joint_sittings": 4,
+        "last_joint": 2015,
+        "awards": "Rožančeva nagrada"
+      },
+      {
+        "name": "Manca Košir",
+        "joint_sittings": 4,
+        "last_joint": 2015,
+        "awards": "Rožančeva nagrada"
+      },
+      {
+        "name": "Aleš Jan",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Andrej Misson",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Bine Matoh",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Iztok Kovač",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Janez Suhadolc",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Jaš Otrin",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Lenka Bajželj",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Marko Mihevc",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Marko Peljhan",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Matjaž Zupančič",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Milan Ljubić",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Veronika Brecelj",
+        "joint_sittings": 4,
+        "last_joint": 2011,
+        "awards": "Prešernov sklad"
+      },
+      {
+        "name": "Petra Vidali",
+        "joint_sittings": 4,
+        "last_joint": 2007,
+        "awards": "Rožančeva nagrada"
+      },
+      {
+        "name": "Lado Kralj",
+        "joint_sittings": 4,
+        "last_joint": 2001,
+        "awards": "Grumova nagrada"
+      },
+      {
+        "name": "Alojzija Zupan Sosič",
+        "joint_sittings": 3,
+        "last_joint": 2009,
+        "awards": "Fabula"
+      },
+      {
+        "name": "Gregor Butala",
+        "joint_sittings": 3,
+        "last_joint": 2009,
+        "awards": "Fabula"
+      },
+      {
+        "name": "Marko Stabej",
+        "joint_sittings": 3,
+        "last_joint": 2009,
+        "awards": "Fabula"
+      },
+      {
+        "name": "Tina Kozin",
+        "joint_sittings": 3,
+        "last_joint": 2009,
+        "awards": "Fabula"
+      },
+      {
+        "name": "Blaž Lukan",
+        "joint_sittings": 3,
+        "last_joint": 2005,
+        "awards": "Borštnikovo srečanje, Stritarjeva nagrada"
+      },
+      {
+        "name": "Aleš Doktorič",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Andrej Jaklič",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Drago Ivanuša",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Jaka Železnikar",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Maja Jančič",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Zdravko Duša",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      },
+      {
+        "name": "Zora Stančič",
+        "joint_sittings": 3,
+        "last_joint": 2003,
+        "awards": "Zlata ptica"
+      }
+    ],
+    "recent_co_jurors": 30,
+    "recent_panel_winners": [
+      {
+        "edition_id": "rozanceva-nagrada-2012",
+        "year": 2012,
+        "award": "Rožančeva nagrada",
+        "name": "Meta Kušar"
+      },
+      {
+        "edition_id": "rozanceva-nagrada-2013",
+        "year": 2013,
+        "award": "Rožančeva nagrada",
+        "name": "Alojz Ihan"
+      },
+      {
+        "edition_id": "rozanceva-nagrada-2014",
+        "year": 2014,
+        "award": "Rožančeva nagrada",
+        "name": "Marcel Štefančič Jr."
+      },
+      {
+        "edition_id": "rozanceva-nagrada-2015",
+        "year": 2015,
+        "award": "Rožančeva nagrada",
+        "name": "Andrej Capuder"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2017",
+        "year": 2017,
+        "award": "Župančičeva nagrada",
+        "name": "Jakob Jež"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2017",
+        "year": 2017,
+        "award": "Župančičeva nagrada",
+        "name": "Špela Čadež"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2017",
+        "year": 2017,
+        "award": "Župančičeva nagrada",
+        "name": "Željko Hrs"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2017",
+        "year": 2017,
+        "award": "Župančičeva nagrada",
+        "name": "Goran Vojnović"
+      },
+      {
+        "edition_id": "kritisko-sito-2018",
+        "year": 2018,
+        "award": "Kritiško sito",
+        "name": "Milan Jesih"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2018",
+        "year": 2018,
+        "award": "Župančičeva nagrada",
+        "name": "Karpo Godina"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2018",
+        "year": 2018,
+        "award": "Župančičeva nagrada",
+        "name": "Nataša Sultanov"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2018",
+        "year": 2018,
+        "award": "Župančičeva nagrada",
+        "name": "Ravil Sultanov"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2018",
+        "year": 2018,
+        "award": "Župančičeva nagrada",
+        "name": "Jani Virk"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2019",
+        "year": 2019,
+        "award": "Župančičeva nagrada",
+        "name": "Marlenka Stupica"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2019",
+        "year": 2019,
+        "award": "Župančičeva nagrada",
+        "name": "Sanja Nešković Peršin"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2019",
+        "year": 2019,
+        "award": "Župančičeva nagrada",
+        "name": "Bojan Gorišek"
+      },
+      {
+        "edition_id": "zupanciceva-nagrada-2019",
+        "year": 2019,
+        "award": "Župančičeva nagrada",
+        "name": "Urša Menart"
+      }
+    ]
+  }
+}

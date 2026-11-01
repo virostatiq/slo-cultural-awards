@@ -1,0 +1,129 @@
+---
+import { url } from "../../lib/url";
+import Base from "../../layouts/Base.astro";
+import FieldChip from "../../components/FieldChip.astro";
+import RoleChip from "../../components/RoleChip.astro";
+import PeopleList from "../../components/PeopleList.astro";
+import EgoSvg from "../../components/EgoSvg.astro";
+import { people, awards, meta, awardUrl, yearUrl, fmt, plural, nAwards, nJuries, span } from "../../lib/data";
+
+export function getStaticPaths() {
+  return Object.keys(people).map((id) => ({ params: { id } }));
+}
+const p = people[Astro.params.id!];
+const years = span(p.first, p.last);
+const desc = `${p.name}: ${nAwards(p.wins.length)}, ${nJuries(p.juries.length)} (${years}). ` +
+  "Nagrade, žirije in povezave v zbirki slovenskih kulturnih nagrad.";
+const winsDesc = [...p.wins].reverse();
+const juriesDesc = [...p.juries].reverse();
+const life = [p.birth && ["leto rojstva", p.birth], p.death && ["leto smrti", p.death]].filter(Boolean) as [string, NonNullable<typeof p.birth>][];
+const anyAutomated = life.some(([, l]) => l.automated);
+// the person's spot on the network map, with everyone they are tied to
+const ties = [...new Set([...p.co, ...p.judged_by, ...p.judged].map(([o]) => o))]
+  .map((o) => people[o]?.pos).filter(Boolean);
+---
+<Base title={p.name} description={desc} type="profile" noindex={p.single}>
+  <div class="phead">
+    <div>
+      <p class="crumb"><a href={url("/seznam/")}>Seznam</a> / {meta.kind_labels[p.kind] ?? p.kind}</p>
+      <h1>{p.name}</h1>
+      <div class="chips">
+        <FieldChip field={p.field} />
+        <RoleChip role={p.role} />
+        <span class="chip">v zbirki {years}</span>
+      </div>
+      {life.length > 0 && (
+        <p class="small muted">
+          {life.map(([label, l], i) => <>{i > 0 && ", "}{label}: <span class="num">{l.year}</span></>)}
+          {anyAutomated
+            ? <> <span class="flag" title="Podatek je bil pridobljen samodejno in ga nismo preverili.">samodejno pridobljeno, morda netočno</span></>
+            : life[0][1].source && <> (vir: {life[0][1].source})</>}
+        </p>
+      )}
+    </div>
+    {p.pos && (
+      <a class="where" href={url(`/zemljevid/?oseba=${p.id}`)} title="Pokaži na zemljevidu">
+        <canvas id="where" aria-hidden="true" data-colors={JSON.stringify(meta.fields)}
+                data-me={JSON.stringify(p.pos)} data-ties={JSON.stringify(ties)}></canvas>
+        <span>Na zemljevidu</span>
+      </a>
+    )}
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>{fmt(p.wins.length)}</b><span>{plural(p.wins.length, ["nagrada", "nagradi", "nagrade", "nagrad"])}</span></div>
+    <div class="stat"><b>{fmt(p.juries.length)}</b><span>{plural(p.juries.length, ["sedež v žiriji", "sedeža v žirijah", "sedeži v žirijah", "sedežev v žirijah"])}</span></div>
+    <div class="stat"><b>{fmt(p.co.length)}</b><span>{plural(p.co.length, ["sožirant", "sožiranta", "sožiranti", "sožirantov"])}</span></div>
+    <div class="stat"><b>{fmt(p.judged.length)}</b><span>{plural(p.judged.length, ["nagrajenec tega žiranta", "nagrajenca tega žiranta", "nagrajenci tega žiranta", "nagrajencev tega žiranta"])}</span></div>
+  </div>
+
+  <EgoSvg id={p.id} />
+  <p class="small"><a href={url(`/zemljevid/?oseba=${p.id}`)}>Pokaži na zemljevidu</a></p>
+
+  {p.wins.length > 0 && (
+    <section>
+      <h2>Nagrade</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th class="y">Leto</th><th>Nagrada</th></tr></thead>
+        <tbody>
+          {winsDesc.map((w) => (
+            <tr>
+              <td class="y"><a href={yearUrl(w.year)}>{w.year}</a></td>
+              <td><a href={awardUrl(w.award)}>{awards[w.award]?.name ?? w.award}</a>{w.category && <span class="muted"> · {w.category}</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  )}
+
+  {p.juries.length > 0 && (
+    <section>
+      <h2>V žirijah</h2>
+      <p class="small muted">Žirija, ki podeli več nagrad hkrati, je navedena enkrat.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th class="y">Leto</th><th>Nagrada</th><th class="n">Članov</th></tr></thead>
+        <tbody>
+          {juriesDesc.map((j) => (
+            <tr>
+              <td class="y"><a href={yearUrl(j.year)}>{j.year}</a></td>
+              <td>{j.awards.map((a, i) => <>{i > 0 && ", "}<a href={awardUrl(a)}>{awards[a]?.name ?? a}</a></>)}</td>
+              <td class="n">{j.size}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  )}
+
+  <div class="cols">
+    {p.co.length > 0 && <section><h2>Najpogostejši sožiranti</h2><PeopleList rows={p.co} /></section>}
+    {p.judged_by.length > 0 && <section><h2>Žiranti, ki so to osebo nagradili</h2><PeopleList rows={p.judged_by} /></section>}
+    {p.judged.length > 0 && <section><h2>Nagrajenci tega žiranta</h2><PeopleList rows={p.judged} /></section>}
+  </div>
+
+  {p.sources.length > 0 && (
+    <p class="small muted" style="margin-top:32px">Viri dopolnitev: {p.sources.join(", ")}.</p>
+  )}
+  <script>
+    import { mountSky } from "../../lib/sky";
+    const cv = document.getElementById("where") as HTMLCanvasElement | null;
+    if (cv) {
+      const d = cv.dataset;
+      mountSky(cv, () => ({ colors: JSON.parse(d.colors!), dim: true, me: JSON.parse(d.me!), ties: JSON.parse(d.ties!) }));
+    }
+  </script>
+  <p class="report">Ste opazili napako? <a href={url(`/popravki/?zapis=oseba/${p.id}`)}>Sporočite popravek</a>.</p>
+</Base>
+<style>
+  .phead { display: grid; grid-template-columns: 1fr 380px; gap: 32px; align-items: end; padding-top: 12px; }
+  .phead h1 { font-size: clamp(40px, 6.5vw, 80px); line-height: 1; margin: 6px 0 16px; }
+  .where { display: block; position: relative; text-decoration: none; border-radius: 12px; }
+  .where canvas { display: block; width: 100%; height: 280px; }
+  .where span { position: absolute; right: 4px; bottom: 0; font-size: 13px; color: var(--ink-2); }
+  .where:hover span { color: var(--ink); text-decoration: underline; }
+  @media (max-width: 760px) {
+    .phead { grid-template-columns: 1fr; gap: 8px; }
+    .where canvas { height: 200px; }
+  }
+</style>

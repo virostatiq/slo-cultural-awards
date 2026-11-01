@@ -1,0 +1,84 @@
+---
+// Static ego network in two columns, so labels never collide. Left: the jurors who
+// awarded this person ("To osebo so nagradili") and the winners of their juries
+// ("Nagrajenci tega žiranta"), each group with its own heading (green ties). Right:
+// closest co-jurors ("Skupaj v žiriji", violet ties). Width and dot size follow how often.
+import { people, personUrl, meta } from "../lib/data";
+interface Props { id: string; }
+const { id } = Astro.props;
+const p = people[id];
+const N = 10;
+type Row = [string, number];
+const right: Row[] = p.co.slice(0, N);
+const taken = new Set(right.map(([o]) => o));
+const fresh = (rows: Row[]) => rows.filter(([o]) => {
+  if (taken.has(o)) return false;
+  taken.add(o);
+  return true;
+});
+// share the left column between the two directions: up to half each, and the rest to
+// whichever has more
+const byIn = fresh([...p.judged_by]), byOut = fresh([...p.judged]);
+const nOut = Math.min(byOut.length, byIn.length >= N / 2 ? N / 2 : N - byIn.length);
+const nIn = Math.min(byIn.length, N - nOut);
+const groupsL = [
+  { title: "to osebo so nagradili", rows: byIn.slice(0, nIn) },
+  { title: "nagrajenci tega žiranta", rows: byOut.slice(0, nOut) },
+].filter((g) => g.rows.length);
+const groupsR = right.length ? [{ title: "skupaj v žiriji", rows: right }] : [];
+
+const ROW = 25, HEAD = 22, W = 660, colX = 135, PAD = 8;
+const height = (gs: typeof groupsL) => gs.reduce((h, g) => h + HEAD + g.rows.length * ROW, 0);
+const H = Math.max(110, height(groupsL), height(groupsR)) + PAD * 2;
+const cx = W / 2, cy = H / 2;
+const max = Math.max(1, ...right.map((r) => r[1]), ...groupsL.flatMap((g) => g.rows.map((r) => r[1])));
+type Node = { id: string; n: number; side: 1 | -1; x: number; y: number; r: number; name: string };
+const heads: { title: string; x: number; y: number; side: 1 | -1 }[] = [];
+const nodes: Node[] = [];
+function lay(gs: typeof groupsL, side: 1 | -1) {
+  let y = cy - height(gs) / 2;
+  for (const g of gs) {
+    heads.push({ title: g.title, x: cx + side * colX, y: y + 14, side });
+    y += HEAD;
+    for (const [o, n] of g.rows) {
+      nodes.push({ id: o, n, side, x: cx + side * colX, y: y + ROW / 2, r: 3.5 + 5 * Math.sqrt(n / max),
+                   name: people[o]?.name ?? o });
+      y += ROW;
+    }
+  }
+}
+lay(groupsL, -1);
+lay(groupsR, 1);
+const color = (side: number) => side > 0 ? meta.roles.jury : meta.roles.winner;
+---
+{nodes.length > 0 && (
+  <figure class="ego">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img"
+         aria-label={`Najtesnejše vezi: ${nodes.map((n) => n.name).join(", ")}`}>
+      {nodes.map((n) => (
+        <path d={`M${cx},${cy} C${cx + n.side * colX * 0.55},${cy} ${n.x - n.side * colX * 0.45},${n.y} ${n.x},${n.y}`}
+              fill="none" stroke={color(n.side)} stroke-opacity="0.6" stroke-width={0.8 + 2.4 * (n.n / max)} />
+      ))}
+      {heads.map((h) => (
+        <text class="head" x={h.x + h.side * 2} y={h.y} text-anchor={h.side > 0 ? "start" : "end"}>{h.title}</text>
+      ))}
+      {nodes.map((n) => (
+        <a href={personUrl(n.id)}>
+          <circle cx={n.x} cy={n.y} r={n.r} fill={color(n.side)} />
+          <text x={n.x + n.side * (n.r + 6)} y={n.y + 4} text-anchor={n.side > 0 ? "start" : "end"}>
+            {n.name}<tspan class="cnt"> {n.n}×</tspan>
+          </text>
+        </a>
+      ))}
+      <circle cx={cx} cy={cy} r="8" fill="var(--ink)" />
+    </svg>
+  </figure>
+)}
+<style>
+  .ego { margin: 8px 0 0; }
+  svg { width: 100%; height: auto; max-width: 780px; display: block; }
+  text { font: 13px var(--sans); fill: var(--ink); }
+  text.head { font-size: 12px; fill: var(--ink-2); font-weight: 600; }
+  .cnt { fill: var(--ink-2); }
+  a:hover text { fill: var(--accent); text-decoration: underline; }
+</style>

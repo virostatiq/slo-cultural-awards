@@ -1,0 +1,1233 @@
+{
+  "outside_jurors": {
+    "seats_with_home_field": 1505,
+    "share_no_prior_field_win": 0.655448717948718,
+    "share_outside": 0.17275747508305647,
+    "by_field": [
+      {
+        "field": "arhitektura",
+        "size": 55,
+        "mean": 0.0
+      },
+      {
+        "field": "film",
+        "size": 266,
+        "mean": 0.17293233082706766
+      },
+      {
+        "field": "glasba",
+        "size": 10,
+        "mean": 0.3
+      },
+      {
+        "field": "gledališče",
+        "size": 263,
+        "mean": 0.20532319391634982
+      },
+      {
+        "field": "likovno-vizualna umetnost",
+        "size": 54,
+        "mean": 0.12962962962962962
+      },
+      {
+        "field": "literatura",
+        "size": 682,
+        "mean": 0.07917888563049853
+      },
+      {
+        "field": "novinarstvo",
+        "size": 159,
+        "mean": 0.5849056603773585
+      },
+      {
+        "field": "ples",
+        "size": 16,
+        "mean": 0.1875
+      }
+    ],
+    "by_period": [
+      {
+        "period": 2000,
+        "size": 82,
+        "mean": 0.18292682926829268
+      },
+      {
+        "period": 2005,
+        "size": 222,
+        "mean": 0.36036036036036034
+      },
+      {
+        "period": 2010,
+        "size": 278,
+        "mean": 0.25539568345323743
+      },
+      {
+        "period": 2015,
+        "size": 342,
+        "mean": 0.06725146198830409
+      },
+      {
+        "period": 2020,
+        "size": 444,
+        "mean": 0.11486486486486487
+      },
+      {
+        "period": 2025,
+        "size": 137,
+        "mean": 0.145985401459854
+      }
+    ],
+    "within_award_trend_per_decade": -0.05955461630664318,
+    "trend_ci": [
+      -0.11272311730402207,
+      -0.006386115309264294
+    ],
+    "trend_p": 0.02813656710976651
+  },
+  "outside_jurors_matrix": [
+    {
+      "jury_field": "arhitektura",
+      "arhitektura": 55,
+      "film": 0,
+      "glasba": 0,
+      "gledališče": 0,
+      "likovno-vizualna umetnost": 0,
+      "literatura": 0,
+      "novinarstvo": 0,
+      "ples": 0
+    },
+    {
+      "jury_field": "film",
+      "arhitektura": 3,
+      "film": 220,
+      "glasba": 0,
+      "gledališče": 12,
+      "likovno-vizualna umetnost": 6,
+      "literatura": 7,
+      "novinarstvo": 18,
+      "ples": 0
+    },
+    {
+      "jury_field": "glasba",
+      "arhitektura": 0,
+      "film": 1,
+      "glasba": 7,
+      "gledališče": 1,
+      "likovno-vizualna umetnost": 0,
+      "literatura": 0,
+      "novinarstvo": 0,
+      "ples": 1
+    },
+    {
+      "jury_field": "gledališče",
+      "arhitektura": 0,
+      "film": 8,
+      "glasba": 0,
+      "gledališče": 209,
+      "likovno-vizualna umetnost": 0,
+      "literatura": 37,
+      "novinarstvo": 3,
+      "ples": 6
+    },
+    {
+      "jury_field": "likovno-vizualna umetnost",
+      "arhitektura": 0,
+      "film": 1,
+      "glasba": 0,
+      "gledališče": 0,
+      "likovno-vizualna umetnost": 47,
+      "literatura": 6,
+      "novinarstvo": 0,
+      "ples": 0
+    },
+    {
+      "jury_field": "literatura",
+      "arhitektura": 0,
+      "film": 4,
+      "glasba": 0,
+      "gledališče": 35,
+      "likovno-vizualna umetnost": 3,
+      "literatura": 628,
+      "novinarstvo": 12,
+      "ples": 0
+    },
+    {
+      "jury_field": "novinarstvo",
+      "arhitektura": 0,
+      "film": 0,
+      "glasba": 7,
+      "gledališče": 8,
+      "likovno-vizualna umetnost": 7,
+      "literatura": 71,
+      "novinarstvo": 66,
+      "ples": 0
+    },
+    {
+      "jury_field": "ples",
+      "arhitektura": 0,
+      "film": 0,
+      "glasba": 0,
+      "gledališče": 1,
+      "likovno-vizualna umetnost": 0,
+      "literatura": 2,
+      "novinarstvo": 0,
+      "ples": 13
+    }
+  ],
+  "crossing": {
+    "winners": 2199,
+    "multi_field": 285,
+    "multi_field_share": 0.1296043656207367,
+    "multi_field_expected": 569.268,
+    "multi_field_p_less": 0.000999000999000999,
+    "genres": [
+      "arhitektura",
+      "film",
+      "glasba",
+      "gledališče",
+      "likovno-vizualna umetnost",
+      "literatura",
+      "novinarstvo",
+      "ples",
+      "poezija",
+      "umetnost in kultura"
+    ],
+    "pairs": [
+      {
+        "a": "literatura",
+        "b": "poezija",
+        "observed": 31,
+        "expected": 14.118,
+        "lift": 2.1957784388723613,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "poezija",
+        "b": "umetnost in kultura",
+        "observed": 22,
+        "expected": 13.412,
+        "lift": 1.6403220996122874,
+        "p": 0.01998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "umetnost in kultura",
+        "observed": 17,
+        "expected": 23.867,
+        "lift": 0.7122805547408555,
+        "p": 0.11388611388611389
+      },
+      {
+        "a": "gledališče",
+        "b": "umetnost in kultura",
+        "observed": 58,
+        "expected": 84.62,
+        "lift": 0.685417159064051,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "ples",
+        "b": "umetnost in kultura",
+        "observed": 12,
+        "expected": 18.468,
+        "lift": 0.649772579597141,
+        "p": 0.0919080919080919
+      },
+      {
+        "a": "likovno-vizualna umetnost",
+        "b": "literatura",
+        "observed": 21,
+        "expected": 39.1,
+        "lift": 0.5370843989769821,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "literatura",
+        "b": "umetnost in kultura",
+        "observed": 45,
+        "expected": 84.705,
+        "lift": 0.5312555339118116,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "likovno-vizualna umetnost",
+        "b": "umetnost in kultura",
+        "observed": 19,
+        "expected": 36.177,
+        "lift": 0.5251955662437461,
+        "p": 0.003996003996003996
+      },
+      {
+        "a": "film",
+        "b": "gledališče",
+        "observed": 53,
+        "expected": 101.75,
+        "lift": 0.5208845208845209,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "umetnost in kultura",
+        "observed": 46,
+        "expected": 93.2,
+        "lift": 0.49356223175965663,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "umetnost in kultura",
+        "observed": 22,
+        "expected": 57.584,
+        "lift": 0.38205056960266737,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "gledališče",
+        "b": "ples",
+        "observed": 5,
+        "expected": 19.975,
+        "lift": 0.2503128911138923,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "likovno-vizualna umetnost",
+        "b": "poezija",
+        "observed": 1,
+        "expected": 6.134,
+        "lift": 0.163025758069775,
+        "p": 0.023976023976023976
+      },
+      {
+        "a": "novinarstvo",
+        "b": "poezija",
+        "observed": 1,
+        "expected": 7.359,
+        "lift": 0.1358880282647099,
+        "p": 0.00999000999000999
+      },
+      {
+        "a": "gledališče",
+        "b": "literatura",
+        "observed": 12,
+        "expected": 91.798,
+        "lift": 0.13072180221791324,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "literatura",
+        "b": "novinarstvo",
+        "observed": 5,
+        "expected": 46.161,
+        "lift": 0.10831654426897164,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "ples",
+        "observed": 2,
+        "expected": 21.977,
+        "lift": 0.0910042316967739,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "gledališče",
+        "b": "poezija",
+        "observed": 1,
+        "expected": 14.221,
+        "lift": 0.07031854299978904,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "novinarstvo",
+        "b": "umetnost in kultura",
+        "observed": 3,
+        "expected": 42.825,
+        "lift": 0.07005253940455342,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "literatura",
+        "observed": 5,
+        "expected": 102.101,
+        "lift": 0.04897111683529055,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "novinarstvo",
+        "observed": 2,
+        "expected": 50.976,
+        "lift": 0.03923414940364093,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "literatura",
+        "observed": 1,
+        "expected": 25.634,
+        "lift": 0.03901068892876648,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "gledališče",
+        "observed": 1,
+        "expected": 25.692,
+        "lift": 0.03892262182780632,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "likovno-vizualna umetnost",
+        "observed": 1,
+        "expected": 26.541,
+        "lift": 0.03767755548020044,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "glasba",
+        "observed": 1,
+        "expected": 28.653,
+        "lift": 0.03490035947370258,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "gledališče",
+        "b": "novinarstvo",
+        "observed": 1,
+        "expected": 46.014,
+        "lift": 0.02173251619072456,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "literatura",
+        "observed": 1,
+        "expected": 62.416,
+        "lift": 0.016021532940271727,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "glasba",
+        "observed": 0,
+        "expected": 17.597,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "film",
+        "observed": 0,
+        "expected": 69.207,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "likovno-vizualna umetnost",
+        "observed": 0,
+        "expected": 43.059,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "novinarstvo",
+        "observed": 0,
+        "expected": 31.58,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "ples",
+        "observed": 0,
+        "expected": 13.839,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "poezija",
+        "observed": 0,
+        "expected": 9.635,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "arhitektura",
+        "b": "gledališče",
+        "observed": 0,
+        "expected": 62.332,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "film",
+        "b": "poezija",
+        "observed": 0,
+        "expected": 15.685,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "likovno-vizualna umetnost",
+        "observed": 0,
+        "expected": 11.109,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "novinarstvo",
+        "observed": 0,
+        "expected": 13.245,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "glasba",
+        "b": "poezija",
+        "observed": 0,
+        "expected": 4.103,
+        "lift": 0.0,
+        "p": 0.03196803196803197
+      },
+      {
+        "a": "glasba",
+        "b": "ples",
+        "observed": 0,
+        "expected": 5.712,
+        "lift": 0.0,
+        "p": 0.005994005994005994
+      },
+      {
+        "a": "gledališče",
+        "b": "likovno-vizualna umetnost",
+        "observed": 0,
+        "expected": 39.088,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "likovno-vizualna umetnost",
+        "b": "novinarstvo",
+        "observed": 0,
+        "expected": 19.903,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "literatura",
+        "b": "ples",
+        "observed": 0,
+        "expected": 19.867,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "likovno-vizualna umetnost",
+        "b": "ples",
+        "observed": 0,
+        "expected": 8.669,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "novinarstvo",
+        "b": "ples",
+        "observed": 0,
+        "expected": 10.161,
+        "lift": 0.0,
+        "p": 0.001998001998001998
+      },
+      {
+        "a": "ples",
+        "b": "poezija",
+        "observed": 0,
+        "expected": 3.087,
+        "lift": 0.0,
+        "p": 0.07392607392607392
+      }
+    ]
+  },
+  "crossing_pairs": [
+    {
+      "a": "literatura",
+      "b": "poezija",
+      "observed": 31,
+      "expected": 14.118,
+      "lift": 2.1957784388723613,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "poezija",
+      "b": "umetnost in kultura",
+      "observed": 22,
+      "expected": 13.412,
+      "lift": 1.6403220996122874,
+      "p": 0.01998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "umetnost in kultura",
+      "observed": 17,
+      "expected": 23.867,
+      "lift": 0.7122805547408555,
+      "p": 0.11388611388611389
+    },
+    {
+      "a": "gledališče",
+      "b": "umetnost in kultura",
+      "observed": 58,
+      "expected": 84.62,
+      "lift": 0.685417159064051,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "ples",
+      "b": "umetnost in kultura",
+      "observed": 12,
+      "expected": 18.468,
+      "lift": 0.649772579597141,
+      "p": 0.0919080919080919
+    },
+    {
+      "a": "likovno-vizualna umetnost",
+      "b": "literatura",
+      "observed": 21,
+      "expected": 39.1,
+      "lift": 0.5370843989769821,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "literatura",
+      "b": "umetnost in kultura",
+      "observed": 45,
+      "expected": 84.705,
+      "lift": 0.5312555339118116,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "likovno-vizualna umetnost",
+      "b": "umetnost in kultura",
+      "observed": 19,
+      "expected": 36.177,
+      "lift": 0.5251955662437461,
+      "p": 0.003996003996003996
+    },
+    {
+      "a": "film",
+      "b": "gledališče",
+      "observed": 53,
+      "expected": 101.75,
+      "lift": 0.5208845208845209,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "umetnost in kultura",
+      "observed": 46,
+      "expected": 93.2,
+      "lift": 0.49356223175965663,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "umetnost in kultura",
+      "observed": 22,
+      "expected": 57.584,
+      "lift": 0.38205056960266737,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "gledališče",
+      "b": "ples",
+      "observed": 5,
+      "expected": 19.975,
+      "lift": 0.2503128911138923,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "likovno-vizualna umetnost",
+      "b": "poezija",
+      "observed": 1,
+      "expected": 6.134,
+      "lift": 0.163025758069775,
+      "p": 0.023976023976023976
+    },
+    {
+      "a": "novinarstvo",
+      "b": "poezija",
+      "observed": 1,
+      "expected": 7.359,
+      "lift": 0.1358880282647099,
+      "p": 0.00999000999000999
+    },
+    {
+      "a": "gledališče",
+      "b": "literatura",
+      "observed": 12,
+      "expected": 91.798,
+      "lift": 0.13072180221791324,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "literatura",
+      "b": "novinarstvo",
+      "observed": 5,
+      "expected": 46.161,
+      "lift": 0.10831654426897164,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "ples",
+      "observed": 2,
+      "expected": 21.977,
+      "lift": 0.0910042316967739,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "gledališče",
+      "b": "poezija",
+      "observed": 1,
+      "expected": 14.221,
+      "lift": 0.07031854299978904,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "novinarstvo",
+      "b": "umetnost in kultura",
+      "observed": 3,
+      "expected": 42.825,
+      "lift": 0.07005253940455342,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "literatura",
+      "observed": 5,
+      "expected": 102.101,
+      "lift": 0.04897111683529055,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "novinarstvo",
+      "observed": 2,
+      "expected": 50.976,
+      "lift": 0.03923414940364093,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "literatura",
+      "observed": 1,
+      "expected": 25.634,
+      "lift": 0.03901068892876648,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "gledališče",
+      "observed": 1,
+      "expected": 25.692,
+      "lift": 0.03892262182780632,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "likovno-vizualna umetnost",
+      "observed": 1,
+      "expected": 26.541,
+      "lift": 0.03767755548020044,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "glasba",
+      "observed": 1,
+      "expected": 28.653,
+      "lift": 0.03490035947370258,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "gledališče",
+      "b": "novinarstvo",
+      "observed": 1,
+      "expected": 46.014,
+      "lift": 0.02173251619072456,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "literatura",
+      "observed": 1,
+      "expected": 62.416,
+      "lift": 0.016021532940271727,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "glasba",
+      "observed": 0,
+      "expected": 17.597,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "film",
+      "observed": 0,
+      "expected": 69.207,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "likovno-vizualna umetnost",
+      "observed": 0,
+      "expected": 43.059,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "novinarstvo",
+      "observed": 0,
+      "expected": 31.58,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "ples",
+      "observed": 0,
+      "expected": 13.839,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "poezija",
+      "observed": 0,
+      "expected": 9.635,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "arhitektura",
+      "b": "gledališče",
+      "observed": 0,
+      "expected": 62.332,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "film",
+      "b": "poezija",
+      "observed": 0,
+      "expected": 15.685,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "likovno-vizualna umetnost",
+      "observed": 0,
+      "expected": 11.109,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "novinarstvo",
+      "observed": 0,
+      "expected": 13.245,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "glasba",
+      "b": "poezija",
+      "observed": 0,
+      "expected": 4.103,
+      "lift": 0.0,
+      "p": 0.03196803196803197
+    },
+    {
+      "a": "glasba",
+      "b": "ples",
+      "observed": 0,
+      "expected": 5.712,
+      "lift": 0.0,
+      "p": 0.005994005994005994
+    },
+    {
+      "a": "gledališče",
+      "b": "likovno-vizualna umetnost",
+      "observed": 0,
+      "expected": 39.088,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "likovno-vizualna umetnost",
+      "b": "novinarstvo",
+      "observed": 0,
+      "expected": 19.903,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "literatura",
+      "b": "ples",
+      "observed": 0,
+      "expected": 19.867,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "likovno-vizualna umetnost",
+      "b": "ples",
+      "observed": 0,
+      "expected": 8.669,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "novinarstvo",
+      "b": "ples",
+      "observed": 0,
+      "expected": 10.161,
+      "lift": 0.0,
+      "p": 0.001998001998001998
+    },
+    {
+      "a": "ples",
+      "b": "poezija",
+      "observed": 0,
+      "expected": 3.087,
+      "lift": 0.0,
+      "p": 0.07392607392607392
+    }
+  ],
+  "streaks": {
+    "jury_max": 41,
+    "winner_max": 7,
+    "jury_share_5plus": 0.10908052541404911,
+    "winner_share_3plus": 0.011506276150627616,
+    "top_jury": [
+      {
+        "streak": 41,
+        "start": 1986,
+        "end": 2026,
+        "active_years": 41,
+        "name": "Tone Peršak",
+        "awards": "Vilenica, Desetnica"
+      },
+      {
+        "streak": 36,
+        "start": 1984,
+        "end": 2019,
+        "active_years": 39,
+        "name": "Andrej Blatnik",
+        "awards": "Vilenica, Prešernov sklad"
+      },
+      {
+        "streak": 34,
+        "start": 1986,
+        "end": 2019,
+        "active_years": 34,
+        "name": "Vesna Kondrič Horvat",
+        "awards": "Vilenica"
+      },
+      {
+        "streak": 22,
+        "start": 1986,
+        "end": 2007,
+        "active_years": 23,
+        "name": "Niko Jež",
+        "awards": "Vilenica, Nagrada Radojke Vrančič"
+      },
+      {
+        "streak": 19,
+        "start": 1986,
+        "end": 2004,
+        "active_years": 19,
+        "name": "Miran Košuta",
+        "awards": "Vilenica, Rožančeva nagrada"
+      },
+      {
+        "streak": 18,
+        "start": 2009,
+        "end": 2026,
+        "active_years": 18,
+        "name": "Alenka Urh",
+        "awards": "Najboljši esej, Večernica"
+      },
+      {
+        "streak": 18,
+        "start": 2008,
+        "end": 2025,
+        "active_years": 18,
+        "name": "Igor Vidmar",
+        "awards": "Hrupni maček"
+      },
+      {
+        "streak": 17,
+        "start": 1986,
+        "end": 2002,
+        "active_years": 32,
+        "name": "Veno Taufer",
+        "awards": "Vilenica, Veronikina nagrada"
+      },
+      {
+        "streak": 17,
+        "start": 1986,
+        "end": 2002,
+        "active_years": 19,
+        "name": "Iztok Osojnik",
+        "awards": "Vilenica"
+      },
+      {
+        "streak": 17,
+        "start": 2000,
+        "end": 2016,
+        "active_years": 17,
+        "name": "Tomaž Šalamun",
+        "awards": "Vilenica, Prešernov sklad"
+      },
+      {
+        "streak": 16,
+        "start": 2000,
+        "end": 2015,
+        "active_years": 21,
+        "name": "Ignacija J. Fridl",
+        "awards": "Rožančeva nagrada, Prešernov sklad"
+      },
+      {
+        "streak": 15,
+        "start": 1999,
+        "end": 2013,
+        "active_years": 17,
+        "name": "Darja Lavrenčič Vrabec",
+        "awards": "Nagrada Kristine Brenkove, Večernica"
+      },
+      {
+        "streak": 15,
+        "start": 2011,
+        "end": 2025,
+        "active_years": 17,
+        "name": "Irena Novak Popov",
+        "awards": "Pesniški turnir, Jenkova nagrada"
+      },
+      {
+        "streak": 15,
+        "start": 2010,
+        "end": 2024,
+        "active_years": 15,
+        "name": "Aljoša Harlamov",
+        "awards": "Vilenica, Kratka zgodba AirBeletrina"
+      },
+      {
+        "streak": 15,
+        "start": 2011,
+        "end": 2025,
+        "active_years": 15,
+        "name": "Gašper Blažič",
+        "awards": "Meškova nagrada"
+      }
+    ],
+    "top_winner": [
+      {
+        "streak": 7,
+        "start": 2001,
+        "end": 2007,
+        "active_years": 8,
+        "name": "Peter Musevski"
+      },
+      {
+        "streak": 6,
+        "start": 1989,
+        "end": 1994,
+        "active_years": 14,
+        "name": "Dušan Jovanović"
+      },
+      {
+        "streak": 5,
+        "start": 2021,
+        "end": 2025,
+        "active_years": 11,
+        "name": "Damijan Stepančič"
+      },
+      {
+        "streak": 5,
+        "start": 1965,
+        "end": 1969,
+        "active_years": 9,
+        "name": "Jože Ciuha"
+      },
+      {
+        "streak": 5,
+        "start": 2006,
+        "end": 2010,
+        "active_years": 7,
+        "name": "Uroš Smolej"
+      },
+      {
+        "streak": 5,
+        "start": 2015,
+        "end": 2019,
+        "active_years": 5,
+        "name": "Marko Brdar"
+      },
+      {
+        "streak": 4,
+        "start": 2012,
+        "end": 2015,
+        "active_years": 11,
+        "name": "Vinko Möderndorfer"
+      },
+      {
+        "streak": 4,
+        "start": 2008,
+        "end": 2011,
+        "active_years": 9,
+        "name": "Andrej Rozman Roza"
+      },
+      {
+        "streak": 4,
+        "start": 2013,
+        "end": 2016,
+        "active_years": 8,
+        "name": "Metod Pevec"
+      },
+      {
+        "streak": 4,
+        "start": 2021,
+        "end": 2024,
+        "active_years": 5,
+        "name": "Sara Kern"
+      }
+    ]
+  },
+  "multi_award_years": {
+    "person_years": 3332,
+    "multi_person_years": 143,
+    "share": 0.0429171668667467,
+    "max": 4,
+    "top": [
+      {
+        "entity_id": "leo-cernic",
+        "name": "Leo Černic",
+        "year": 2023,
+        "award": "Nagrada Franceta Štiglica, nagrada Žarka Lužnika, Štigličev pogled, Vesna",
+        "n": 4
+      },
+      {
+        "entity_id": "ana-svetel",
+        "name": "Ana Svetel",
+        "year": 2025,
+        "award": "Kritiško sito, Nagrada Maruše Krese, Vilenica",
+        "n": 3
+      },
+      {
+        "entity_id": "ana-zavadlav",
+        "name": "Ana Zavadlav",
+        "year": 2025,
+        "award": "Nagrada Hinka Smrekarja, Nagrada Kristine Brenkove, Zlata Hruška",
+        "n": 3
+      },
+      {
+        "entity_id": "andrina-mracnikar",
+        "name": "Andrina Mračnikar",
+        "year": 2023,
+        "award": "butnskala, Nagrada Franceta Štiglica, Štigličev pogled",
+        "n": 3
+      },
+      {
+        "entity_id": "matevz-luzar",
+        "name": "Matevž Luzar",
+        "year": 2023,
+        "award": "Nagrada Franceta Štiglica, Prešernov sklad, Štigličev pogled",
+        "n": 3
+      },
+      {
+        "entity_id": "veronika-dintinjana",
+        "name": "Veronika Dintinjana",
+        "year": 2008,
+        "award": "Nagrada za najboljši literarni prvenec, Pesniški turnir, Trdinova nagrada",
+        "n": 3
+      },
+      {
+        "entity_id": "dusan-jovanovic",
+        "name": "Dušan Jovanović",
+        "year": 1990,
+        "award": "Borštnikovo srečanje, Grumova nagrada, Prešernova nagrada",
+        "n": 3
+      },
+      {
+        "entity_id": "ajda-bracic",
+        "name": "Ajda Bračič",
+        "year": 2026,
+        "award": "Kresnik, Kritiško sito",
+        "n": 2
+      },
+      {
+        "entity_id": "andrej-e-skubic",
+        "name": "Andrej E. Skubic",
+        "year": 2025,
+        "award": "Desetnica, Večernica",
+        "n": 2
+      },
+      {
+        "entity_id": "damijan-stepancic",
+        "name": "Damijan Stepančič",
+        "year": 2025,
+        "award": "Levstikova nagrada, Nagrada Hinka Smrekarja",
+        "n": 2
+      },
+      {
+        "entity_id": "julij-zornik",
+        "name": "Julij Zornik",
+        "year": 2025,
+        "award": "Prešernov sklad, Vesna",
+        "n": 2
+      },
+      {
+        "entity_id": "katarina-morano",
+        "name": "Katarina Morano",
+        "year": 2025,
+        "award": "Grumova nagrada, Tantadruj",
+        "n": 2
+      },
+      {
+        "entity_id": "klemen-kovacic",
+        "name": "Klemen Kovačič",
+        "year": 2025,
+        "award": "Gibanica, Zlata strela",
+        "n": 2
+      },
+      {
+        "entity_id": "maja-doroteja-prelog",
+        "name": "Maja Doroteja Prelog",
+        "year": 2025,
+        "award": "Štigličev pogled, Župančičeva nagrada",
+        "n": 2
+      },
+      {
+        "entity_id": "maja-p-kastelic",
+        "name": "Maja P. Kastelic",
+        "year": 2025,
+        "award": "Levstikova nagrada, Nagrada Kristine Brenkove",
+        "n": 2
+      }
+    ]
+  }
+}

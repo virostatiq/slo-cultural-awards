@@ -1,0 +1,26 @@
+---
+import { url } from "../lib/url";
+import Base from "../layouts/Base.astro";
+---
+<Base title="Zasebnost in piškotki" description="Kako stran Kulturne nagrade ravna z obiskovalci: merjenje obiska z Google Analytics le s privolitvijo, brez oglasov.">
+  <div class="prose-page">
+    <h1>Zasebnost in piškotki</h1>
+    <p class="lede">Stran nima oglasov. Obisk merimo le, če se s tem strinjate.</p>
+
+    <h2>Merjenje obiska</h2>
+    <p>Če se strinjate, obisk merimo z orodjem Google Analytics. Tako vidimo, katere strani ljudje
+      berejo in od kod pridejo. Google pri tem nastavi piškotke, ki se začnejo z <code>_ga</code>, in
+      podatke obdeluje na svojih strežnikih. Signalov za oglaševanje ne vklapljamo.</p>
+    <p>Če kliknete »Zavrni«, se Google Analytics ne naloži in piškotkov ni. Vašo izbiro si zapomnimo v
+      brskalniku (lokalna shramba), da vas ne sprašujemo znova.</p>
+    <p><button class="btn" type="button" data-consent-open>Spremeni izbiro</button></p>
+
+    <h2>Podatki o osebah v zbirki</h2>
+    <p>Zbirka vsebuje imena nagrajencev in žirantov iz javnih virov. Če ste v zbirki in želite popravek,
+      nam pišite prek strani <a href={url("/popravki/")}>Popravki</a>.</p>
+  </div>
+</Base>
+<style>
+  .prose-page { max-width: 720px; }
+  .prose-page p { max-width: 40em; }
+</style>

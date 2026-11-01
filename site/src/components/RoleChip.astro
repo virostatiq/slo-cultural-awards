@@ -1,0 +1,6 @@
+---
+import { meta } from "../lib/data";
+interface Props { role: string; }
+const { role } = Astro.props;
+---
+<span class="chip"><span class="dot" style={`background:${meta.roles[role]}`}></span>{meta.role_labels[role]}</span>

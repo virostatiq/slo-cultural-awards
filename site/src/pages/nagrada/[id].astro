@@ -1,0 +1,83 @@
+---
+import { url } from "../../lib/url";
+import Base from "../../layouts/Base.astro";
+import FieldChip from "../../components/FieldChip.astro";
+import PeopleList from "../../components/PeopleList.astro";
+import { awards, people, personUrl, yearUrl, fmt, dec, pct, span } from "../../lib/data";
+
+export function getStaticPaths() {
+  return Object.keys(awards).map((id) => ({ params: { id } }));
+}
+const a = awards[Astro.params.id!];
+const s = a.stats;
+const eds = [...a.editions].reverse();
+const range = span(s.data_from, s.data_to);
+const desc = `${a.name}: ${fmt(eds.length)} podelitev v zbirki (${range}), ${fmt(s.winners)} nagrajencev, ` +
+  `${fmt(s.jurors)} žirantov. Vsi nagrajenci in žirije.`;
+const history = a.founded ? `${a.founded}${a.ended ? `–${a.ended}` : ""}` : null;
+const sig = (t: { q: number | null } | null) => t != null && t.q != null && t.q < 0.05;
+const insider = s.insider, repeat = s.repeat_winners;
+---
+<Base title={a.name} description={desc}>
+  <p class="crumb"><a href={url("/seznam/")}>Seznam</a> / nagrada</p>
+  <h1>{a.name}</h1>
+  <div class="chips">
+    <FieldChip field={a.field} />
+    <span class="chip">ugled {a.prestige} / 5</span>
+    {history && <span class="chip">podeljuje se od {history}</span>}
+  </div>
+  {a.institution && <p class="muted">{a.institution}</p>}
+  {a.description && <p class="lede">{a.description}</p>}
+
+  <div class="stats">
+    <div class="stat"><b>{fmt(eds.length)}</b><span>podelitev v zbirki ({range})</span></div>
+    <div class="stat"><b>{fmt(s.winners)}</b><span>nagrajencev</span></div>
+    <div class="stat"><b>{fmt(s.jurors)}</b><span>žirantov</span></div>
+    {s.history_share != null && <div class="stat"><b>{pct(s.history_share)}</b><span>let zgodovine nagrade v zbirki</span></div>}
+    {s.median_age != null && <div class="stat"><b>{dec(s.median_age, s.median_age % 1 ? 1 : 0)}</b><span>let: srednja starost ob nagradi</span></div>}
+    {s.female_share_winners != null && <div class="stat"><b>{pct(s.female_share_winners)}</b><span>žensk med nagrajenci</span></div>}
+    {s.female_share_jury != null && <div class="stat"><b>{pct(s.female_share_jury)}</b><span>žensk med sedeži v žiriji</span></div>}
+    {s.repeat_seats && <div class="stat"><b>{pct(s.repeat_seats.share)}</b><span>sedežev zasede nekdo iz žirije zadnjih 3 let</span></div>}
+  </div>
+
+  {sig(insider) && insider && (
+    <p class="note">Nekdanji žiranti to nagrado dobijo pogosteje kot primerljivi nagrajenci istega
+    področja in leta:{" "}<b>{fmt(insider.insider_wins as number)}</b>{" "}takih nagrad, pričakovali bi
+    jih {dec(insider.expected)}.{" "}<a href={url("/o-podatkih/#metode")}>Kako smo to izračunali</a></p>
+  )}
+  {sig(repeat) && repeat && (
+    <p class="note">Nagrada je ponovno podeljena prejšnjim nagrajencem pogosteje kot primerljive nagrade:{" "}
+    <b>{fmt(repeat.repeat_wins as number)}</b>{" "}ponovnih nagrad, pričakovali bi jih {dec(repeat.expected)}.{" "}
+    <a href={url("/o-podatkih/#metode")}>Kako smo to izračunali</a></p>
+  )}
+
+  <h2>Podelitve</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th class="y">Leto</th><th>Nagrajenci</th><th>Žirija</th></tr></thead>
+    <tbody>
+      {eds.map((e) => (
+        <tr id={e.id}>
+          <td class="y"><a href={yearUrl(e.year)}>{e.year}</a></td>
+          <td class="people-inline">
+            {e.category && <div class="small muted">{e.category}</div>}
+            {e.winners.map((w, i) => <>{i > 0 && ", "}<a href={personUrl(w)}>{people[w]?.name ?? w}</a></>)}
+          </td>
+          <td class="people-inline small">
+            {e.jury.length
+              ? e.jury.map((j, i) => <>{i > 0 && ", "}<a href={personUrl(j)}>{people[j]?.name ?? j}</a></>)
+              : <span class="muted">ni podatka</span>}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  {a.top_jurors.length > 0 && (
+    <section>
+      <h2>Najpogostejši žiranti</h2>
+      <p class="small muted">Število sedežev v žirijah, ki so odločale o tej nagradi.</p>
+      <PeopleList rows={a.top_jurors} />
+    </section>
+  )}
+  <p class="report">Manjka podelitev ali je napaka? <a href={url(`/popravki/?zapis=nagrada/${a.id}`)}>Sporočite popravek</a>.</p>
+</Base>

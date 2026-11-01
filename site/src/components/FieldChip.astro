@@ -1,0 +1,6 @@
+---
+import { meta } from "../lib/data";
+interface Props { field: string; }
+const { field } = Astro.props;
+---
+<span class="chip"><span class="dot" style={`background:${meta.fields[field] ?? "var(--muted)"}`}></span>{field}</span>

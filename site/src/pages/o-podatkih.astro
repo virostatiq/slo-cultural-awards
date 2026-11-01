@@ -1,0 +1,43 @@
+---
+import { url } from "../lib/url";
+import Base from "../layouts/Base.astro";
+import { meta, fmt } from "../lib/data";
+const c = meta.counts;
+---
+<Base title="O podatkih" description="Kako je nastala zbirka slovenskih kulturnih nagrad, kaj vsebuje, česa ne in kako štejemo žirije in nagrade.">
+  <h1>O podatkih</h1>
+  <p class="lede">Zbirka zajema {fmt(c.awards)} slovenskih kulturnih nagrad od leta {c.years[0]} do {c.years[1]}:
+    {fmt(c.editions)} podelitev, {fmt(c.wins)} nagrad in {fmt(c.sittings)} sedežev v žirijah.</p>
+
+  <h2>Od kod so podatki</h2>
+  <p>Seznami nagrajencev in žirij so zbrani iz javnih virov: spletnih strani nagrad in organizatorjev,
+    novinarskih poročil in arhivov. Leta rojstva in smrti so dopolnjena iz Wikidata in VIAF, deloma pa
+    samodejno; take podatke na straneh posebej označimo, ker jih nismo preverili.</p>
+
+  <h2>Česa zbirka nima</h2>
+  <p>Zbirka ni popolna. Za mnoge nagrade manjkajo zgodnja leta, za več kot tretjino podelitev ni podatka o
+    žiriji, pred letom 2000 pa je nagrad v zbirki precej manj. Zato primerjave med obdobji in nagradami
+    vedno izvajamo znotraj iste nagrade ali med primerljivimi nagradami istega leta.</p>
+  <p>Na straneh oseb ne objavljamo spola, krajev in strankarske pripadnosti. Spol uporabljamo le v
+    skupnih statistikah.</p>
+
+  <h2 id="metode">Kako štejemo</h2>
+  <ul>
+    <li><b>Leto</b> je leto podelitve (ne leto, za katero se nagrada podeli).</li>
+    <li><b>Žirija</b>, ki hkrati podeli več nagrad (npr. Prešernova nagrada in nagrade Prešernovega
+      sklada), šteje kot en sedež, ne kot več.</li>
+    <li><b>Nagrada</b> šteje vsaka posebej, tudi več nagrad na isti podelitvi.</li>
+    <li>Trditve, kot je »nekdanji žiranti to nagrado dobijo pogosteje«, primerjajo nagrajence z
+      nagrajenci drugih nagrad istega področja in leta in so preverjene s permutacijskim testom ter
+      popravkom za večkratno testiranje.</li>
+  </ul>
+
+  <h2 id="zemljevid">Zemljevid</h2>
+  <p>Zemljevid je slika, ne meritev. Postavitev izračunamo iz naključnih sprehodov po omrežju sedežev v
+    žirijah in vlog žirant–nagrajenec (node2vec) in jo stisnemo v dve dimenziji (UMAP). Bližina pomeni, da
+    se ljudje v teh sprehodih pogosto znajdejo skupaj; razdalje niso preverjene in jih ne beremo kot
+    meritev.</p>
+
+  <h2>Popravki</h2>
+  <p>Ste našli napako ali manjkajočo podelitev? <a href={url("/popravki/")}>Sporočite nam</a>.</p>
+</Base>

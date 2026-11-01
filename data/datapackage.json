@@ -1,0 +1,764 @@
+{
+  "name": "kulturne-nagrade",
+  "title": "Slovenske kulturne nagrade",
+  "description": "Slovenian cultural awards: editions, winners and jurors.",
+  "homepage": "https://virostatiq.com/kulturne-nagrade/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "awards",
+      "path": "awards.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "One row per award.",
+      "schema": {
+        "fields": [
+          {
+            "name": "award_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "genre",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "literatura",
+                "poezija",
+                "film",
+                "gledališče",
+                "ples",
+                "glasba",
+                "likovno-vizualna umetnost",
+                "arhitektura",
+                "novinarstvo",
+                "umetnost in kultura"
+              ]
+            }
+          },
+          {
+            "name": "prestige",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1,
+              "maximum": 5,
+              "required": true
+            }
+          },
+          {
+            "name": "institution",
+            "type": "string"
+          },
+          {
+            "name": "funding_source",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "state-majority",
+                "state-agency",
+                "mixed",
+                "private-independent"
+              ]
+            }
+          },
+          {
+            "name": "funding_confidence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            }
+          },
+          {
+            "name": "founded",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "ended",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "description",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "award_id"
+        ]
+      }
+    },
+    {
+      "name": "editions",
+      "path": "editions.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "One row per award edition (award + year; occasionally several per year).",
+      "schema": {
+        "fields": [
+          {
+            "name": "edition_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "award_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1900,
+              "maximum": 2100,
+              "required": true
+            }
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "jury_known",
+            "type": "boolean",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "edition_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "award_id"
+            ],
+            "reference": {
+              "resource": "awards",
+              "fields": [
+                "award_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "entities",
+      "path": "entities.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Award winners and jurors: people, groups, institutions and works.",
+      "schema": {
+        "fields": [
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "entity_type",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "person",
+                "group",
+                "institution",
+                "work"
+              ]
+            }
+          },
+          {
+            "name": "gender",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "m",
+                "f"
+              ]
+            }
+          },
+          {
+            "name": "year_birth",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1800,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "year_birth_source",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "wikidata",
+                "viaf",
+                "llm",
+                "enrichment"
+              ]
+            }
+          },
+          {
+            "name": "year_birth_estimate",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "year_death",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1800,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "enrichment_confidence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            }
+          },
+          {
+            "name": "note",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "entity_id"
+        ]
+      }
+    },
+    {
+      "name": "roles",
+      "path": "roles.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Who won or judged which edition.",
+      "schema": {
+        "fields": [
+          {
+            "name": "edition_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "role",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "winner",
+                "jury"
+              ]
+            }
+          },
+          {
+            "name": "ord",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1,
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "edition_id",
+          "entity_id",
+          "role"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "edition_id"
+            ],
+            "reference": {
+              "resource": "editions",
+              "fields": [
+                "edition_id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "entity_id"
+            ],
+            "reference": {
+              "resource": "entities",
+              "fields": [
+                "entity_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "aliases",
+      "path": "aliases.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Alternate spellings of entity names found in sources.",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "alias"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "entity_id"
+            ],
+            "reference": {
+              "resource": "entities",
+              "fields": [
+                "entity_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "entity_locations",
+      "path": "entity_locations.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Places associated with an entity (from enrichment).",
+      "schema": {
+        "fields": [
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "ord",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "place",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "entity_id",
+          "ord"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "entity_id"
+            ],
+            "reference": {
+              "resource": "entities",
+              "fields": [
+                "entity_id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "place"
+            ],
+            "reference": {
+              "resource": "places",
+              "fields": [
+                "place"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "places",
+      "path": "places.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Geocoded place strings of entity_locations (OpenStreetMap Nominatim; statistical regions by point-in-polygon against GADM 4.1).",
+      "licenses": [
+        {
+          "name": "ODbL-1.0",
+          "title": "Open Data Commons Open Database License 1.0",
+          "path": "https://opendatacommons.org/licenses/odbl/1-0/"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "place",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "canonical",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "kind",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "settlement",
+                "region",
+                "country",
+                "natural",
+                "other",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "scope",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "si",
+                "foreign"
+              ]
+            }
+          },
+          {
+            "name": "country_code",
+            "type": "string",
+            "constraints": {
+              "pattern": "^[a-z]{2}$"
+            }
+          },
+          {
+            "name": "si_region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Osrednjeslovenska",
+                "Gorenjska",
+                "Goriška",
+                "Obalno-kraška",
+                "Primorsko-notranjska",
+                "Jugovzhodna Slovenija",
+                "Posavska",
+                "Zasavska",
+                "Savinjska",
+                "Podravska",
+                "Koroška",
+                "Pomurska"
+              ]
+            }
+          },
+          {
+            "name": "si_municipality",
+            "type": "string"
+          },
+          {
+            "name": "is_ljubljana",
+            "type": "boolean",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "lat",
+            "type": "number",
+            "constraints": {
+              "minimum": -90,
+              "maximum": 90
+            }
+          },
+          {
+            "name": "lon",
+            "type": "number",
+            "constraints": {
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          {
+            "name": "resolution",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            }
+          },
+          {
+            "name": "note",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "place"
+        ]
+      }
+    },
+    {
+      "name": "regions",
+      "path": "regions.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Population of the Slovenian statistical regions, with the City Municipality of Ljubljana carved out of Osrednjeslovenska.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "Ljubljana",
+                "Osrednjeslovenska",
+                "Gorenjska",
+                "Goriška",
+                "Obalno-kraška",
+                "Primorsko-notranjska",
+                "Jugovzhodna Slovenija",
+                "Posavska",
+                "Zasavska",
+                "Savinjska",
+                "Podravska",
+                "Koroška",
+                "Pomurska"
+              ]
+            }
+          },
+          {
+            "name": "population",
+            "type": "integer",
+            "constraints": {
+              "minimum": 1,
+              "required": true
+            }
+          },
+          {
+            "name": "population_date",
+            "type": "date",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "note",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "region"
+        ]
+      }
+    },
+    {
+      "name": "entity_offices",
+      "path": "entity_offices.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Public offices and memberships held (from enrichment).",
+      "schema": {
+        "fields": [
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "kind",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "office",
+                "membership"
+              ]
+            }
+          },
+          {
+            "name": "ord",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "entity_id",
+          "kind",
+          "ord"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "entity_id"
+            ],
+            "reference": {
+              "resource": "entities",
+              "fields": [
+                "entity_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "entity_sources",
+      "path": "entity_sources.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Source domains consulted during enrichment.",
+      "schema": {
+        "fields": [
+          {
+            "name": "entity_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "entity_id",
+          "source"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "entity_id"
+            ],
+            "reference": {
+              "resource": "entities",
+              "fields": [
+                "entity_id"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

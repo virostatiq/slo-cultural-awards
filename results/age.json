@@ -1,0 +1,1295 @@
+{
+  "n_winner_ages": 4531,
+  "winner_age_coverage": 0.907470458642099,
+  "median_age_winner": 45.0,
+  "median_age_jury": 50.0,
+  "by_award": [
+    {
+      "award_id": "nagrada-za-najboljsi-literarni-prvenec",
+      "award": "Nagrada za najboljši literarni prvenec",
+      "genre": "literatura",
+      "n": 39,
+      "median": 29.0,
+      "q1": 27.0,
+      "q3": 36.5
+    },
+    {
+      "award_id": "nagrada-skupine-oho",
+      "award": "Nagrada skupine OHO",
+      "genre": "likovno-vizualna umetnost",
+      "n": 22,
+      "median": 31.0,
+      "q1": 28.0,
+      "q3": 33.75
+    },
+    {
+      "award_id": "zlata-ptica",
+      "award": "Zlata ptica",
+      "genre": "umetnost in kultura",
+      "n": 88,
+      "median": 31.0,
+      "q1": 28.0,
+      "q3": 36.25
+    },
+    {
+      "award_id": "nagrada-radojke-vrancic",
+      "award": "Nagrada Radojke Vrančič",
+      "genre": "literatura",
+      "n": 24,
+      "median": 32.0,
+      "q1": 28.0,
+      "q3": 34.0
+    },
+    {
+      "award_id": "stritarjeva-nagrada",
+      "award": "Stritarjeva nagrada",
+      "genre": "literatura",
+      "n": 21,
+      "median": 32.0,
+      "q1": 28.0,
+      "q3": 34.0
+    },
+    {
+      "award_id": "severjeva-nagrada",
+      "award": "Severjeva nagrada",
+      "genre": "gledališče",
+      "n": 175,
+      "median": 34.0,
+      "q1": 27.0,
+      "q3": 43.0
+    },
+    {
+      "award_id": "bratstvo-resnice",
+      "award": "Bratstvo resnice",
+      "genre": "novinarstvo",
+      "n": 42,
+      "median": 36.0,
+      "q1": 28.0,
+      "q3": 56.0
+    },
+    {
+      "award_id": "pesniski-turnir",
+      "award": "Pesniški turnir",
+      "genre": "poezija",
+      "n": 20,
+      "median": 36.0,
+      "q1": 30.25,
+      "q3": 45.75
+    },
+    {
+      "award_id": "melies-dargent",
+      "award": "Melies d’Argent",
+      "genre": "film",
+      "n": 16,
+      "median": 37.0,
+      "q1": 33.75,
+      "q3": 45.75
+    },
+    {
+      "award_id": "mms",
+      "award": "MMS",
+      "genre": "glasba",
+      "n": 58,
+      "median": 37.0,
+      "q1": 26.0,
+      "q3": 45.75
+    },
+    {
+      "award_id": "slakov-hudi-macek",
+      "award": "Slakov hudi maček",
+      "genre": "film",
+      "n": 21,
+      "median": 38.0,
+      "q1": 32.0,
+      "q3": 45.0
+    },
+    {
+      "award_id": "dnevnikova-nagrada",
+      "award": "Dnevnikova nagrada",
+      "genre": "gledališče",
+      "n": 38,
+      "median": 39.0,
+      "q1": 36.25,
+      "q3": 46.75
+    },
+    {
+      "award_id": "hudi-macek",
+      "award": "Hudi maček",
+      "genre": "film",
+      "n": 29,
+      "median": 39.0,
+      "q1": 36.0,
+      "q3": 45.0
+    },
+    {
+      "award_id": "kritisko-sito",
+      "award": "Kritiško sito",
+      "genre": "literatura",
+      "n": 15,
+      "median": 39.0,
+      "q1": 34.0,
+      "q3": 46.0
+    },
+    {
+      "award_id": "vesna",
+      "award": "Vesna",
+      "genre": "film",
+      "n": 301,
+      "median": 39.0,
+      "q1": 32.0,
+      "q3": 47.0
+    },
+    {
+      "award_id": "cuvaj-watchdog",
+      "award": "Čuvaj/watchdog",
+      "genre": "novinarstvo",
+      "n": 65,
+      "median": 40.0,
+      "q1": 30.0,
+      "q3": 49.0
+    },
+    {
+      "award_id": "seligova-nagrada",
+      "award": "Šeligova nagrada",
+      "genre": "gledališče",
+      "n": 21,
+      "median": 40.0,
+      "q1": 37.0,
+      "q3": 47.0
+    },
+    {
+      "award_id": "borstnikovo-srecanje",
+      "award": "Borštnikovo srečanje",
+      "genre": "gledališče",
+      "n": 138,
+      "median": 40.5,
+      "q1": 34.0,
+      "q3": 48.0
+    },
+    {
+      "award_id": "nagrada-duse-pockaj",
+      "award": "Nagrada Duše Počkaj",
+      "genre": "gledališče",
+      "n": 110,
+      "median": 41.0,
+      "q1": 34.0,
+      "q3": 50.75
+    },
+    {
+      "award_id": "butnskala",
+      "award": "butnskala",
+      "genre": "film",
+      "n": 20,
+      "median": 41.0,
+      "q1": 35.25,
+      "q3": 46.0
+    },
+    {
+      "award_id": "presernov-sklad",
+      "award": "Prešernov sklad",
+      "genre": "umetnost in kultura",
+      "n": 603,
+      "median": 41.0,
+      "q1": 36.0,
+      "q3": 48.0
+    },
+    {
+      "award_id": "nagrada-ksenije-hribar",
+      "award": "Nagrada Ksenije Hribar",
+      "genre": "ples",
+      "n": 81,
+      "median": 41.0,
+      "q1": 35.0,
+      "q3": 50.0
+    },
+    {
+      "award_id": "jurciceva-nagrada",
+      "award": "Jurčičeva nagrada",
+      "genre": "novinarstvo",
+      "n": 38,
+      "median": 41.5,
+      "q1": 35.25,
+      "q3": 51.5
+    },
+    {
+      "award_id": "stiglicev-pogled",
+      "award": "Štigličev pogled",
+      "genre": "film",
+      "n": 20,
+      "median": 42.0,
+      "q1": 37.0,
+      "q3": 48.5
+    },
+    {
+      "award_id": "dnevi-komedije-celje",
+      "award": "Dnevi komedije Celje",
+      "genre": "gledališče",
+      "n": 44,
+      "median": 42.0,
+      "q1": 35.0,
+      "q3": 50.0
+    },
+    {
+      "award_id": "nagrada-franceta-stiglica",
+      "award": "Nagrada Franceta Štiglica",
+      "genre": "film",
+      "n": 55,
+      "median": 42.0,
+      "q1": 34.5,
+      "q3": 60.5
+    },
+    {
+      "award_id": "najsvetlejsa-zvezda-oriona",
+      "award": "najsvetlejša zvezda Oriona",
+      "genre": "film",
+      "n": 17,
+      "median": 45.0,
+      "q1": 35.0,
+      "q3": 50.0
+    },
+    {
+      "award_id": "plecnikova-nagrada",
+      "award": "Plečnikova nagrada",
+      "genre": "arhitektura",
+      "n": 241,
+      "median": 45.0,
+      "q1": 37.0,
+      "q3": 52.0
+    },
+    {
+      "award_id": "nagrada-hinka-smrekarja",
+      "award": "Nagrada Hinka Smrekarja",
+      "genre": "likovno-vizualna umetnost",
+      "n": 69,
+      "median": 45.0,
+      "q1": 37.0,
+      "q3": 62.0
+    },
+    {
+      "award_id": "levstikova-nagrada",
+      "award": "Levstikova nagrada",
+      "genre": "literatura",
+      "n": 248,
+      "median": 45.0,
+      "q1": 37.0,
+      "q3": 55.25
+    },
+    {
+      "award_id": "jenkova-nagrada",
+      "award": "Jenkova nagrada",
+      "genre": "poezija",
+      "n": 44,
+      "median": 46.0,
+      "q1": 40.0,
+      "q3": 58.75
+    },
+    {
+      "award_id": "grumova-nagrada",
+      "award": "Grumova nagrada",
+      "genre": "gledališče",
+      "n": 51,
+      "median": 46.0,
+      "q1": 38.5,
+      "q3": 51.0
+    },
+    {
+      "award_id": "sovretova-nagrada",
+      "award": "Sovretova nagrada",
+      "genre": "literatura",
+      "n": 87,
+      "median": 47.0,
+      "q1": 41.0,
+      "q3": 55.5
+    },
+    {
+      "award_id": "tantadruj",
+      "award": "Tantadruj",
+      "genre": "gledališče",
+      "n": 26,
+      "median": 47.5,
+      "q1": 33.0,
+      "q3": 70.0
+    },
+    {
+      "award_id": "kresnik",
+      "award": "Kresnik",
+      "genre": "literatura",
+      "n": 35,
+      "median": 48.0,
+      "q1": 38.5,
+      "q3": 60.5
+    },
+    {
+      "award_id": "vecernica",
+      "award": "Večernica",
+      "genre": "literatura",
+      "n": 31,
+      "median": 48.0,
+      "q1": 42.5,
+      "q3": 57.0
+    },
+    {
+      "award_id": "grun-filipiceva-nagrada",
+      "award": "Grün-Filipičeva nagrada",
+      "genre": "gledališče",
+      "n": 16,
+      "median": 49.5,
+      "q1": 44.5,
+      "q3": 56.25
+    },
+    {
+      "award_id": "hrupni-macek",
+      "award": "Hrupni maček",
+      "genre": "film",
+      "n": 21,
+      "median": 50.0,
+      "q1": 42.0,
+      "q3": 53.0
+    },
+    {
+      "award_id": "nagrada-kristine-brenkove",
+      "award": "Nagrada Kristine Brenkove",
+      "genre": "literatura",
+      "n": 39,
+      "median": 50.0,
+      "q1": 42.5,
+      "q3": 56.5
+    },
+    {
+      "award_id": "veronikina-nagrada",
+      "award": "Veronikina nagrada",
+      "genre": "literatura",
+      "n": 32,
+      "median": 50.5,
+      "q1": 40.75,
+      "q3": 63.0
+    },
+    {
+      "award_id": "zlata-hruska",
+      "award": "Zlata Hruška",
+      "genre": "literatura",
+      "n": 36,
+      "median": 51.0,
+      "q1": 41.75,
+      "q3": 54.25
+    },
+    {
+      "award_id": "majski-salon",
+      "award": "Majski salon",
+      "genre": "likovno-vizualna umetnost",
+      "n": 37,
+      "median": 51.0,
+      "q1": 41.0,
+      "q3": 59.0
+    },
+    {
+      "award_id": "nagrada-riharda-jakopica",
+      "award": "Nagrada Riharda Jakopiča",
+      "genre": "likovno-vizualna umetnost",
+      "n": 83,
+      "median": 52.0,
+      "q1": 44.0,
+      "q3": 62.5
+    },
+    {
+      "award_id": "zupanciceva-nagrada",
+      "award": "Župančičeva nagrada",
+      "genre": "umetnost in kultura",
+      "n": 205,
+      "median": 52.0,
+      "q1": 41.0,
+      "q3": 61.0
+    },
+    {
+      "award_id": "najboljsi-esej",
+      "award": "Najboljši esej",
+      "genre": "literatura",
+      "n": 19,
+      "median": 53.0,
+      "q1": 37.0,
+      "q3": 59.5
+    },
+    {
+      "award_id": "rozanceva-nagrada",
+      "award": "Rožančeva nagrada",
+      "genre": "literatura",
+      "n": 25,
+      "median": 54.0,
+      "q1": 43.0,
+      "q3": 59.0
+    },
+    {
+      "award_id": "bernekerjeva-nagrada",
+      "award": "Bernekerjeva nagrada",
+      "genre": "umetnost in kultura",
+      "n": 27,
+      "median": 55.0,
+      "q1": 45.0,
+      "q3": 65.5
+    },
+    {
+      "award_id": "mira",
+      "award": "Mira",
+      "genre": "literatura",
+      "n": 15,
+      "median": 57.0,
+      "q1": 52.5,
+      "q3": 68.5
+    },
+    {
+      "award_id": "desetnica",
+      "award": "Desetnica",
+      "genre": "literatura",
+      "n": 25,
+      "median": 57.0,
+      "q1": 53.0,
+      "q3": 59.0
+    },
+    {
+      "award_id": "vilenica",
+      "award": "Vilenica",
+      "genre": "literatura",
+      "n": 43,
+      "median": 58.0,
+      "q1": 51.5,
+      "q3": 66.0
+    },
+    {
+      "award_id": "trdinova-nagrada",
+      "award": "Trdinova nagrada",
+      "genre": "umetnost in kultura",
+      "n": 38,
+      "median": 59.5,
+      "q1": 48.5,
+      "q3": 72.5
+    },
+    {
+      "award_id": "kritisko-pero",
+      "award": "Kritiško pero",
+      "genre": "likovno-vizualna umetnost",
+      "n": 20,
+      "median": 60.0,
+      "q1": 45.0,
+      "q3": 72.0
+    },
+    {
+      "award_id": "borstnikov-prstan",
+      "award": "Borštnikov prstan",
+      "genre": "gledališče",
+      "n": 56,
+      "median": 61.0,
+      "q1": 57.0,
+      "q3": 70.0
+    },
+    {
+      "award_id": "meskova-nagrada",
+      "award": "Meškova nagrada",
+      "genre": "novinarstvo",
+      "n": 41,
+      "median": 61.0,
+      "q1": 45.0,
+      "q3": 85.0
+    },
+    {
+      "award_id": "presernova-nagrada",
+      "award": "Prešernova nagrada",
+      "genre": "umetnost in kultura",
+      "n": 233,
+      "median": 62.0,
+      "q1": 51.0,
+      "q3": 71.0
+    },
+    {
+      "award_id": "glazerjeva-nagrada",
+      "award": "Glazerjeva nagrada",
+      "genre": "umetnost in kultura",
+      "n": 52,
+      "median": 62.5,
+      "q1": 52.75,
+      "q3": 72.5
+    },
+    {
+      "award_id": "trubarjevo-priznanje",
+      "award": "Trubarjevo priznanje",
+      "genre": "literatura",
+      "n": 26,
+      "median": 62.5,
+      "q1": 58.0,
+      "q3": 79.25
+    },
+    {
+      "award_id": "nagrada-poldeta-bibica",
+      "award": "Nagrada Poldeta Bibiča",
+      "genre": "gledališče",
+      "n": 18,
+      "median": 65.0,
+      "q1": 59.25,
+      "q3": 76.25
+    },
+    {
+      "award_id": "jezkova-nagrada",
+      "award": "Ježkova nagrada",
+      "genre": "umetnost in kultura",
+      "n": 28,
+      "median": 66.0,
+      "q1": 49.75,
+      "q3": 70.5
+    },
+    {
+      "award_id": "badjurova-nagrada",
+      "award": "Badjurova nagrada",
+      "genre": "film",
+      "n": 58,
+      "median": 66.5,
+      "q1": 41.0,
+      "q3": 74.0
+    },
+    {
+      "award_id": "valvasorjeva-nagrada",
+      "award": "Valvasorjeva nagrada",
+      "genre": "umetnost in kultura",
+      "n": 22,
+      "median": 67.0,
+      "q1": 62.0,
+      "q3": 72.75
+    },
+    {
+      "award_id": "kozinova-nagrada",
+      "award": "Kozinova nagrada",
+      "genre": "glasba",
+      "n": 22,
+      "median": 67.5,
+      "q1": 64.0,
+      "q3": 77.0
+    },
+    {
+      "award_id": "odlicje-marije-vere",
+      "award": "Odličje Marije Vere",
+      "genre": "gledališče",
+      "n": 35,
+      "median": 68.0,
+      "q1": 64.0,
+      "q3": 73.0
+    },
+    {
+      "award_id": "zlatnik-poezije",
+      "award": "Zlatnik poezije",
+      "genre": "poezija",
+      "n": 20,
+      "median": 73.5,
+      "q1": 71.0,
+      "q3": 78.0
+    },
+    {
+      "award_id": "bert",
+      "award": "Bert",
+      "genre": "film",
+      "n": 15,
+      "median": 78.0,
+      "q1": 71.0,
+      "q3": 84.5
+    }
+  ],
+  "trend": {
+    "n": 4420,
+    "all": {
+      "n": 4420,
+      "raw_per_decade": 0.5922351213403534,
+      "raw_ci": [
+        -0.5181523407135653,
+        1.702622583394272
+      ],
+      "within_award_per_decade": 1.393806433338074,
+      "within_ci": [
+        0.6439272613745503,
+        2.143685605301598
+      ],
+      "within_p": 0.00026947801792908863
+    },
+    "robust": {
+      "n": 1204,
+      "raw_per_decade": 3.2975149087151165,
+      "raw_ci": [
+        1.507454265070073,
+        5.0875755523601605
+      ],
+      "within_award_per_decade": 4.2666057826603545,
+      "within_ci": [
+        2.8646757392400994,
+        5.66853582608061
+      ],
+      "within_p": 2.4476128872753165e-09
+    }
+  },
+  "trend_series": [
+    {
+      "period": 1960,
+      "n": 84,
+      "raw": 39.0,
+      "within": 39.6158653051012
+    },
+    {
+      "period": 1965,
+      "n": 131,
+      "raw": 42.0,
+      "within": 43.89137194870294
+    },
+    {
+      "period": 1970,
+      "n": 142,
+      "raw": 45.0,
+      "within": 45.79380138229101
+    },
+    {
+      "period": 1975,
+      "n": 183,
+      "raw": 47.0,
+      "within": 44.89137194870294
+    },
+    {
+      "period": 1980,
+      "n": 207,
+      "raw": 43.0,
+      "within": 44.89137194870294
+    },
+    {
+      "period": 1985,
+      "n": 202,
+      "raw": 47.0,
+      "within": 46.45677439601029
+    },
+    {
+      "period": 1990,
+      "n": 191,
+      "raw": 46.0,
+      "within": 46.69623081587908
+    },
+    {
+      "period": 1995,
+      "n": 210,
+      "raw": 47.0,
+      "within": 46.87186801907571
+    },
+    {
+      "period": 2000,
+      "n": 361,
+      "raw": 41.0,
+      "within": 45.06959070341423
+    },
+    {
+      "period": 2005,
+      "n": 459,
+      "raw": 43.0,
+      "within": 45.26277252159605
+    },
+    {
+      "period": 2010,
+      "n": 595,
+      "raw": 43.0,
+      "within": 45.94004524886878
+    },
+    {
+      "period": 2015,
+      "n": 653,
+      "raw": 46.0,
+      "within": 47.17970042128257
+    },
+    {
+      "period": 2020,
+      "n": 771,
+      "raw": 47.0,
+      "within": 47.5232678402309
+    },
+    {
+      "period": 2025,
+      "n": 231,
+      "raw": 48.0,
+      "within": 47.808227067050595
+    }
+  ],
+  "jury_winner_gap": [
+    {
+      "period": 1955,
+      "winner_n": 63,
+      "winner_median": 47.0,
+      "jury_n": 45,
+      "jury_median": 50.0,
+      "gap": 3.0
+    },
+    {
+      "period": 1960,
+      "winner_n": 84,
+      "winner_median": 39.0,
+      "jury_n": 44,
+      "jury_median": 55.0,
+      "gap": 16.0
+    },
+    {
+      "period": 1965,
+      "winner_n": 131,
+      "winner_median": 42.0,
+      "jury_n": 75,
+      "jury_median": 48.0,
+      "gap": 6.0
+    },
+    {
+      "period": 1970,
+      "winner_n": 142,
+      "winner_median": 45.0,
+      "jury_n": 67,
+      "jury_median": 47.0,
+      "gap": 2.0
+    },
+    {
+      "period": 1975,
+      "winner_n": 183,
+      "winner_median": 47.0,
+      "jury_n": 69,
+      "jury_median": 52.0,
+      "gap": 5.0
+    },
+    {
+      "period": 1980,
+      "winner_n": 207,
+      "winner_median": 43.0,
+      "jury_n": 75,
+      "jury_median": 49.0,
+      "gap": 6.0
+    },
+    {
+      "period": 1985,
+      "winner_n": 202,
+      "winner_median": 47.0,
+      "jury_n": 108,
+      "jury_median": 46.0,
+      "gap": -1.0
+    },
+    {
+      "period": 1990,
+      "winner_n": 191,
+      "winner_median": 46.0,
+      "jury_n": 115,
+      "jury_median": 53.0,
+      "gap": 7.0
+    },
+    {
+      "period": 1995,
+      "winner_n": 210,
+      "winner_median": 47.0,
+      "jury_n": 171,
+      "jury_median": 51.0,
+      "gap": 4.0
+    },
+    {
+      "period": 2000,
+      "winner_n": 361,
+      "winner_median": 41.0,
+      "jury_n": 385,
+      "jury_median": 51.0,
+      "gap": 10.0
+    },
+    {
+      "period": 2005,
+      "winner_n": 459,
+      "winner_median": 43.0,
+      "jury_n": 731,
+      "jury_median": 49.0,
+      "gap": 6.0
+    },
+    {
+      "period": 2010,
+      "winner_n": 595,
+      "winner_median": 43.0,
+      "jury_n": 907,
+      "jury_median": 50.0,
+      "gap": 7.0
+    },
+    {
+      "period": 2015,
+      "winner_n": 653,
+      "winner_median": 46.0,
+      "jury_n": 976,
+      "jury_median": 48.0,
+      "gap": 2.0
+    },
+    {
+      "period": 2020,
+      "winner_n": 771,
+      "winner_median": 47.0,
+      "jury_n": 1119,
+      "jury_median": 50.0,
+      "gap": 3.0
+    },
+    {
+      "period": 2025,
+      "winner_n": 231,
+      "winner_median": 48.0,
+      "jury_n": 344,
+      "jury_median": 50.0,
+      "gap": 2.0
+    }
+  ],
+  "jury_winner_gap_within_award": {
+    "n_winners": 1183,
+    "n_editions": 1183,
+    "n_strata": 87,
+    "n_awards": 87,
+    "raw_slope": 0.1234836361708036,
+    "raw_ci": [
+      -2.079901694197641,
+      2.326868966539249
+    ],
+    "fe_slope": -0.1092755232472438,
+    "fe_ci": [
+      -1.3749332635141664,
+      1.156382217019679
+    ],
+    "fe_p": 0.8656226747349989,
+    "perm_slope": -0.10927552324728475,
+    "perm_p": 0.7612387612387612,
+    "editions": 1188,
+    "mean_gap": 0.6586700336700336,
+    "share_jury_older": 0.5437710437710438,
+    "by_decade": [
+      {
+        "decade": 1950,
+        "size": 6,
+        "mean": -3.6666666666666665,
+        "median": -1.0
+      },
+      {
+        "decade": 1960,
+        "size": 18,
+        "mean": -1.4444444444444444,
+        "median": 3.75
+      },
+      {
+        "decade": 1970,
+        "size": 20,
+        "mean": -2.4,
+        "median": 3.25
+      },
+      {
+        "decade": 1980,
+        "size": 28,
+        "mean": -2.982142857142857,
+        "median": -2.5
+      },
+      {
+        "decade": 1990,
+        "size": 47,
+        "mean": 0.9361702127659575,
+        "median": 0.5
+      },
+      {
+        "decade": 2000,
+        "size": 223,
+        "mean": 2.914798206278027,
+        "median": 4.0
+      },
+      {
+        "decade": 2010,
+        "size": 447,
+        "mean": 0.16890380313199105,
+        "median": 2.0
+      },
+      {
+        "decade": 2020,
+        "size": 399,
+        "mean": 0.4824561403508772,
+        "median": 2.0
+      }
+    ]
+  },
+  "gender_age_gap": {
+    "median_f": 43.0,
+    "median_m": 46.0,
+    "within_diff_years": -2.858492001309815,
+    "ci": [
+      -3.6825986839093634,
+      -2.0343853187102665
+    ],
+    "p": 1.0584576518623244e-11,
+    "n": 4525
+  },
+  "honoured_late": [
+    {
+      "award_id": "presernova-nagrada",
+      "award": "Prešernova nagrada",
+      "winners": 158,
+      "deaths": 122,
+      "died_within_5y": 0.20507951963648152,
+      "died_within_10y": 0.36779490035731943,
+      "median_age_at_win": 65.0
+    },
+    {
+      "award_id": "meskova-nagrada",
+      "award": "Meškova nagrada",
+      "winners": 44,
+      "deaths": 10,
+      "died_within_5y": 0.15036478077390747,
+      "died_within_10y": 0.303033609228596,
+      "median_age_at_win": 61.0
+    },
+    {
+      "award_id": "badjurova-nagrada",
+      "award": "Badjurova nagrada",
+      "winners": 48,
+      "deaths": 26,
+      "died_within_5y": 0.10950533998988887,
+      "died_within_10y": 0.27682842825476195,
+      "median_age_at_win": 66.0
+    },
+    {
+      "award_id": "vilenica",
+      "award": "Vilenica",
+      "winners": 44,
+      "deaths": 20,
+      "died_within_5y": 0.0988365622511963,
+      "died_within_10y": 0.24398824454573587,
+      "median_age_at_win": 58.5
+    },
+    {
+      "award_id": "nagrada-riharda-jakopica",
+      "award": "Nagrada Riharda Jakopiča",
+      "winners": 84,
+      "deaths": 29,
+      "died_within_5y": 0.09022491006645927,
+      "died_within_10y": 0.09022491006645927,
+      "median_age_at_win": 52.0
+    },
+    {
+      "award_id": "zlata-hruska",
+      "award": "Zlata Hruška",
+      "winners": 39,
+      "deaths": 2,
+      "died_within_5y": 0.0829562594268477,
+      "died_within_10y": 0.0829562594268477,
+      "median_age_at_win": 49.5
+    },
+    {
+      "award_id": "glazerjeva-nagrada",
+      "award": "Glazerjeva nagrada",
+      "winners": 52,
+      "deaths": 16,
+      "died_within_5y": 0.07857142857142863,
+      "died_within_10y": 0.24741274350649345,
+      "median_age_at_win": 62.5
+    },
+    {
+      "award_id": "nagrada-franceta-stiglica",
+      "award": "Nagrada Franceta Štiglica",
+      "winners": 44,
+      "deaths": 4,
+      "died_within_5y": 0.0703488372093023,
+      "died_within_10y": 0.1107684529828109,
+      "median_age_at_win": 43.0
+    },
+    {
+      "award_id": "levstikova-nagrada",
+      "award": "Levstikova nagrada",
+      "winners": 91,
+      "deaths": 43,
+      "died_within_5y": 0.06721220760629631,
+      "died_within_10y": 0.13843118474348615,
+      "median_age_at_win": 47.0
+    },
+    {
+      "award_id": "sovretova-nagrada",
+      "award": "Sovretova nagrada",
+      "winners": 78,
+      "deaths": 32,
+      "died_within_5y": 0.06479582146248808,
+      "died_within_10y": 0.09403545582867323,
+      "median_age_at_win": 45.5
+    },
+    {
+      "award_id": "odlicje-marije-vere",
+      "award": "Odličje Marije Vere",
+      "winners": 35,
+      "deaths": 13,
+      "died_within_5y": 0.06206896551724139,
+      "died_within_10y": 0.24339177212740437,
+      "median_age_at_win": 68.0
+    },
+    {
+      "award_id": "nagrada-hinka-smrekarja",
+      "award": "Nagrada Hinka Smrekarja",
+      "winners": 52,
+      "deaths": 9,
+      "died_within_5y": 0.059262166405023575,
+      "died_within_10y": 0.13353094274146904,
+      "median_age_at_win": 44.5
+    },
+    {
+      "award_id": "majski-salon",
+      "award": "Majski salon",
+      "winners": 35,
+      "deaths": 4,
+      "died_within_5y": 0.05882352941176472,
+      "died_within_10y": 0.05882352941176472,
+      "median_age_at_win": 51.0
+    },
+    {
+      "award_id": "borstnikov-prstan",
+      "award": "Borštnikov prstan",
+      "winners": 56,
+      "deaths": 31,
+      "died_within_5y": 0.056765563368204486,
+      "died_within_10y": 0.24643523131179756,
+      "median_age_at_win": 61.0
+    },
+    {
+      "award_id": "dnevi-komedije-celje",
+      "award": "Dnevi komedije Celje",
+      "winners": 39,
+      "deaths": 3,
+      "died_within_5y": 0.054953560371516996,
+      "died_within_10y": 0.054953560371516996,
+      "median_age_at_win": 41.0
+    },
+    {
+      "award_id": "veronikina-nagrada",
+      "award": "Veronikina nagrada",
+      "winners": 31,
+      "deaths": 5,
+      "died_within_5y": 0.03703703703703698,
+      "died_within_10y": 0.03703703703703698,
+      "median_age_at_win": 50.0
+    },
+    {
+      "award_id": "bratstvo-resnice",
+      "award": "Bratstvo resnice",
+      "winners": 59,
+      "deaths": 7,
+      "died_within_5y": 0.03389830508474578,
+      "died_within_10y": 0.10169491525423746,
+      "median_age_at_win": 41.0
+    },
+    {
+      "award_id": "zupanciceva-nagrada",
+      "award": "Župančičeva nagrada",
+      "winners": 168,
+      "deaths": 80,
+      "died_within_5y": 0.0317158743228968,
+      "died_within_10y": 0.09680527006597672,
+      "median_age_at_win": 50.0
+    },
+    {
+      "award_id": "cuvaj-watchdog",
+      "award": "Čuvaj/watchdog",
+      "winners": 95,
+      "deaths": 2,
+      "died_within_5y": 0.026485568760611256,
+      "died_within_10y": 0.026485568760611256,
+      "median_age_at_win": 39.0
+    },
+    {
+      "award_id": "trdinova-nagrada",
+      "award": "Trdinova nagrada",
+      "winners": 43,
+      "deaths": 10,
+      "died_within_5y": 0.025000000000000022,
+      "died_within_10y": 0.11091954022988504,
+      "median_age_at_win": 60.0
+    },
+    {
+      "award_id": "nagrada-duse-pockaj",
+      "award": "Nagrada Duše Počkaj",
+      "winners": 113,
+      "deaths": 29,
+      "died_within_5y": 0.01923436041083093,
+      "died_within_10y": 0.05992989688705008,
+      "median_age_at_win": 41.0
+    },
+    {
+      "award_id": "presernov-sklad",
+      "award": "Prešernov sklad",
+      "winners": 495,
+      "deaths": 170,
+      "died_within_5y": 0.014484454450352735,
+      "died_within_10y": 0.0431642585687354,
+      "median_age_at_win": 41.0
+    },
+    {
+      "award_id": "plecnikova-nagrada",
+      "award": "Plečnikova nagrada",
+      "winners": 227,
+      "deaths": 9,
+      "died_within_5y": 0.011575003345376755,
+      "died_within_10y": 0.011575003345376755,
+      "median_age_at_win": 41.0
+    },
+    {
+      "award_id": "severjeva-nagrada",
+      "award": "Severjeva nagrada",
+      "winners": 155,
+      "deaths": 19,
+      "died_within_5y": 0.006802721088435382,
+      "died_within_10y": 0.02109332941809816,
+      "median_age_at_win": 32.0
+    },
+    {
+      "award_id": "vesna",
+      "award": "Vesna",
+      "winners": 225,
+      "deaths": 8,
+      "died_within_5y": 0.004444444444444473,
+      "died_within_10y": 0.015265700483091837,
+      "median_age_at_win": 37.0
+    },
+    {
+      "award_id": "bernekerjeva-nagrada",
+      "award": "Bernekerjeva nagrada",
+      "winners": 37,
+      "deaths": 9,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.03125,
+      "median_age_at_win": 53.0
+    },
+    {
+      "award_id": "borstnikovo-srecanje",
+      "award": "Borštnikovo srečanje",
+      "winners": 82,
+      "deaths": 4,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 37.0
+    },
+    {
+      "award_id": "hudi-macek",
+      "award": "Hudi maček",
+      "winners": 33,
+      "deaths": 0,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 39.5
+    },
+    {
+      "award_id": "nagrada-ksenije-hribar",
+      "award": "Nagrada Ksenije Hribar",
+      "winners": 77,
+      "deaths": 1,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.018867924528301883,
+      "median_age_at_win": 41.5
+    },
+    {
+      "award_id": "nagrada-kristine-brenkove",
+      "award": "Nagrada Kristine Brenkove",
+      "winners": 34,
+      "deaths": 3,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 48.0
+    },
+    {
+      "award_id": "mms",
+      "award": "MMS",
+      "winners": 62,
+      "deaths": 1,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.025000000000000022,
+      "median_age_at_win": 35.5
+    },
+    {
+      "award_id": "jurciceva-nagrada",
+      "award": "Jurčičeva nagrada",
+      "winners": 38,
+      "deaths": 4,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.02631578947368418,
+      "median_age_at_win": 41.5
+    },
+    {
+      "award_id": "jenkova-nagrada",
+      "award": "Jenkova nagrada",
+      "winners": 36,
+      "deaths": 11,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.09499314128943759,
+      "median_age_at_win": 44.5
+    },
+    {
+      "award_id": "nagrada-za-najboljsi-literarni-prvenec",
+      "award": "Nagrada za najboljši literarni prvenec",
+      "winners": 39,
+      "deaths": 3,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 29.0
+    },
+    {
+      "award_id": "zlata-ptica",
+      "award": "Zlata ptica",
+      "winners": 88,
+      "deaths": 5,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 31.0
+    },
+    {
+      "award_id": "zlati-svincnik",
+      "award": "Zlati svinčnik",
+      "winners": 30,
+      "deaths": 0,
+      "died_within_5y": 0.0,
+      "died_within_10y": 0.0,
+      "median_age_at_win": 45.0
+    }
+  ],
+  "youngest_awards": [
+    {
+      "award": "Nagrada za najboljši literarni prvenec",
+      "median": 29.0,
+      "n": 39
+    },
+    {
+      "award": "Nagrada skupine OHO",
+      "median": 31.0,
+      "n": 22
+    },
+    {
+      "award": "Zlata ptica",
+      "median": 31.0,
+      "n": 88
+    },
+    {
+      "award": "Nagrada Radojke Vrančič",
+      "median": 32.0,
+      "n": 24
+    },
+    {
+      "award": "Stritarjeva nagrada",
+      "median": 32.0,
+      "n": 21
+    }
+  ],
+  "oldest_awards": [
+    {
+      "award": "Bert",
+      "median": 78.0,
+      "n": 15
+    },
+    {
+      "award": "Zlatnik poezije",
+      "median": 73.5,
+      "n": 20
+    },
+    {
+      "award": "Odličje Marije Vere",
+      "median": 68.0,
+      "n": 35
+    },
+    {
+      "award": "Kozinova nagrada",
+      "median": 67.5,
+      "n": 22
+    },
+    {
+      "award": "Valvasorjeva nagrada",
+      "median": 67.0,
+      "n": 22
+    }
+  ]
+}

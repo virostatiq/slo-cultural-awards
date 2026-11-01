@@ -1,0 +1,1599 @@
+place,canonical,kind,scope,country_code,si_region,si_municipality,is_ljubljana,lat,lon,resolution,confidence,note
+Aachen,Aachen,settlement,foreign,de,,,False,50.77635,6.08386,world_settlement,high,
+Aalborg,Aalborg,settlement,foreign,dk,,,False,57.04626,9.92153,world_settlement,high,
+Aarhus,Aarhus,settlement,foreign,dk,,,False,56.14963,10.21340,world_settlement,high,
+Admont,Admont,settlement,foreign,at,,,False,47.57520,14.52542,world_settlement,high,
+Afganistan,Afganistan,country,foreign,af,,,False,33.76801,66.23851,unrestricted,medium,
+Ahmedabad,Ahmedabad,settlement,foreign,in,,,False,23.02154,72.58006,world_settlement,high,
+Ajdovščina,Ajdovščina,settlement,si,si,Goriška,Ajdovščina,False,45.91220,13.87601,si_settlement,high,
+Albanija,Albanija,country,foreign,al,,,False,41.00003,19.99996,unrestricted,medium,
+Albany,Albany,settlement,foreign,us,,,False,42.65117,-73.75497,exonym_settlement,medium,returned as City of Albany
+Alcorcón,Alcorcón,settlement,foreign,es,,,False,40.34930,-3.82843,world_settlement,high,
+Alentejo,Alentejo,settlement,foreign,pt,,,False,41.16405,-8.11145,world_settlement,high,
+Aljaska,Aljaska,region,foreign,us,,,False,64.44596,-149.68091,exonym_settlement,medium,returned as Alaska
+Allach,Allach,settlement,foreign,de,,,False,48.19599,11.45701,world_settlement,high,
+Almaty,Almaty,settlement,foreign,kz,,,False,43.23639,76.94573,exonym_settlement,medium,returned as Almati
+Altea,Altea,settlement,foreign,es,,,False,38.60282,-0.04721,world_settlement,high,
+Amsterdam,Amsterdam,settlement,foreign,nl,,,False,52.37308,4.89245,world_settlement,high,
+"Amsterdam, Nizozemska","Amsterdam, Nizozemska",settlement,foreign,nl,,,False,52.37308,4.89245,exonym_settlement,medium,returned as Amsterdam
+Anderny,Anderny,settlement,foreign,fr,,,False,49.33480,5.88173,world_settlement,high,
+Angers,Angers,settlement,foreign,fr,,,False,47.47399,-0.55156,world_settlement,high,
+Anglija,Anglija,region,foreign,gb,,,False,52.53102,-1.26491,world_settlement,high,
+Ankaran,Ankaran,settlement,si,si,Obalno-kraška,Ankaran,False,45.59443,13.70342,si_settlement,high,
+Annecy,Annecy,settlement,foreign,fr,,,False,45.89923,6.12888,world_settlement,high,
+Antwerp,Antwerpen,settlement,foreign,be,,,False,51.22111,4.39971,world_settlement,high,
+Antwerpen,Antwerpen,settlement,foreign,be,,,False,51.22111,4.39971,world_settlement,high,
+Apače,Apače,settlement,si,si,Pomurska,Apače,False,46.69729,15.90962,si_settlement,high,
+Aranđelovac,Aranđelovac,settlement,foreign,rs,,,False,44.30715,20.55771,world_settlement,high,
+Argentina,Argentina,country,foreign,ar,,,False,-34.99650,-64.96728,unrestricted,medium,
+Arles,Arles,settlement,foreign,fr,,,False,43.67762,4.63097,world_settlement,high,
+Arnhem,Arnhem,settlement,foreign,nl,,,False,51.98426,5.91086,world_settlement,high,
+Artiče,Artiče,settlement,si,si,Posavska,Brežice,False,45.95351,15.58512,si_settlement,high,
+Assisi,Assisi,settlement,foreign,it,,,False,43.07120,12.61467,world_settlement,high,
+At-Tuwani,At-Tuwani,settlement,foreign,ps,,,False,31.41333,35.15332,exonym_settlement,medium,returned as التوانة
+Atene,Atene,settlement,foreign,gr,,,False,37.97556,23.73483,world_settlement,high,
+Aumetz,Aumetz,settlement,foreign,fr,,,False,49.41770,5.94254,world_settlement,high,
+Austin,Austin,settlement,foreign,us,,,False,30.27113,-97.74370,world_settlement,high,
+Avber,Avber,settlement,si,si,Obalno-kraška,Sežana,False,45.78008,13.87365,si_settlement,high,
+Avstralija,Avstralija,country,foreign,au,,,False,-24.77611,134.75500,unrestricted,medium,
+Avstrija,Avstrija,country,foreign,at,,,False,47.59397,14.12456,unrestricted,medium,
+Avstrijska Koroška,Avstrijska Koroška,region,foreign,at,,,False,46.75000,13.83333,exonym_settlement,medium,returned as Koroška
+Avče,Avče,settlement,si,si,Goriška,Kanal,False,46.10111,13.68312,si_settlement,high,
+Ayvalık,Ayvalık,settlement,foreign,tr,,,False,39.31810,26.69167,world_settlement,high,
+Babići Gornji,Babići Gornji,settlement,foreign,hr,,,False,45.39140,13.58159,exonym_settlement,medium,returned as Gornji Babići
+Bad Schussenried,Bad Schussenried,settlement,foreign,de,,,False,48.00866,9.65413,world_settlement,high,
+Baden-Württemberg,Baden-Württemberg,region,foreign,de,,,False,48.53775,9.04117,world_settlement,high,
+Bagdad,Bagdad,settlement,foreign,iq,,,False,33.30617,44.38722,world_settlement,high,
+Baghdad,Baghdad,settlement,foreign,iq,,,False,33.30617,44.38722,exonym_settlement,medium,returned as Bagdad
+Balkan,Balkan,natural,foreign,bg,,,False,41.77850,23.81468,unrestricted,medium,
+Balkanski polotok,Balkanski polotok,natural,foreign,bg,,,False,41.77850,23.81468,unrestricted_fuzzy,low,"name mismatch: Balkan, Bolgarija"
+Baltimore,Baltimore,settlement,foreign,us,,,False,39.29088,-76.61076,world_settlement,high,
+Bamberg,Bamberg,settlement,foreign,de,,,False,49.89160,10.88685,world_settlement,high,
+Banatsko Aranđelovo,Banatsko Aranđelovo,settlement,foreign,rs,,,False,46.06420,20.24270,exonym_settlement,medium,returned as Банатско Аранђелово
+Banja Luka,Banja Luka,settlement,foreign,ba,,,False,44.77208,17.19177,world_settlement,high,
+Banská Bystrica,Banská Bystrica,settlement,foreign,sk,,,False,48.73543,19.14573,exonym_settlement,medium,returned as Banska Bistrica
+Barcelona,Barcelona,settlement,foreign,es,,,False,41.38258,2.17707,world_settlement,high,
+"Barcelona, Španija","Barcelona, Španija",settlement,foreign,es,,,False,41.38258,2.17707,exonym_settlement,medium,returned as Barcelona
+Bariloche,Bariloche,settlement,foreign,ar,,,False,-41.13348,-71.31015,exonym_settlement,medium,returned as San Carlos de Bariloche
+Barth,Barth,settlement,foreign,de,,,False,54.36905,12.72586,world_settlement,high,
+Basel,Basel,settlement,foreign,ch,,,False,47.55811,7.58783,exonym_settlement,medium,returned as Bazileja
+Bassano del Grappa,Bassano del Grappa,settlement,foreign,it,,,False,45.77260,11.72065,world_settlement,high,
+Baška,Baška,settlement,foreign,sk,,,False,48.70799,21.18216,world_settlement,high,
+Beersheba,Beersheba,settlement,foreign,il,,,False,31.24574,34.79252,exonym_settlement,medium,returned as באר שבע
+Begunje,Begunje,other,si,si,Gorenjska,Radovljica,False,46.37272,14.22615,unrestricted,medium,
+Begunje na Gorenjskem,Begunje na Gorenjskem,settlement,si,si,Gorenjska,Radovljica,False,46.37461,14.19979,si_settlement,high,
+Beirut,Beirut,other,foreign,lb,,,False,33.88923,35.50256,unrestricted_fuzzy,low,"name mismatch: Bejrut, البسطة التحتا, باشورة, محافظة بيروت, Libanon"
+Beiuș,Beiuș,settlement,foreign,ro,,,False,46.66675,22.35271,world_settlement,high,
+Bekštanj,Bekštanj,settlement,foreign,at,,,False,46.56593,13.87136,world_settlement,high,
+Bela Krajina,Bela krajina,region,si,si,Jugovzhodna Slovenija,,False,45.75409,15.01625,region_table,high,informal region
+Bela krajina,Bela krajina,region,si,si,Jugovzhodna Slovenija,,False,45.75409,15.01625,region_table,high,informal region
+Belfast,Belfast,settlement,foreign,gb,,,False,54.59639,-5.93018,world_settlement,high,
+Belgija,Belgija,country,foreign,be,,,False,50.64028,4.66671,unrestricted,medium,
+Belgrade,Beograd,settlement,foreign,rs,,,False,44.81781,20.45690,world_settlement,high,
+Beli Križ,Beli Križ,settlement,si,si,Obalno-kraška,Piran,False,45.52000,13.58005,si_settlement,high,
+Beljak,Beljak,settlement,foreign,at,,,False,46.61673,13.85003,world_settlement,high,
+Beltinci,Beltinci,settlement,si,si,Pomurska,Beltinci,False,46.60691,16.23512,si_settlement,high,
+Benedikt,Benedikt,settlement,si,si,Podravska,Benedikt,False,46.61417,15.88205,si_settlement,high,
+Benetke,Benetke,settlement,foreign,it,,,False,45.44080,12.31550,override,high,Venice
+Benečija,Benečija,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.90500,14.99429,si_settlement,high,
+Beneška Slovenija,Beneška Slovenija,region,foreign,it,,,False,46.17000,13.45000,override,high,Slavia Friulana / Venetian Slovenia
+Beograd,Beograd,settlement,foreign,rs,,,False,44.81781,20.45690,world_settlement,high,
+"Beograd, Srbija","Beograd, Srbija",settlement,foreign,rs,,,False,44.81533,20.44566,exonym_settlement,medium,returned as Beograd
+Bergen-Belsen,Bergen-Belsen,other,foreign,fr,,,False,48.86014,2.40013,unrestricted,medium,
+Berkeley,Berkeley,settlement,foreign,us,,,False,37.87084,-122.27286,world_settlement,high,
+Berlin,Berlin,settlement,foreign,de,,,False,52.51739,13.39513,world_settlement,high,
+"Berlin, Nemčija","Berlin, Nemčija",settlement,foreign,de,,,False,52.51739,13.39513,exonym_settlement,medium,returned as Berlin
+Bern,Bern,settlement,foreign,ch,,,False,46.94847,7.45217,exonym_settlement,medium,returned as Berna
+Beroun,Beroun,settlement,foreign,cz,,,False,49.96403,14.07339,world_settlement,high,
+Bertoki,Bertoki,settlement,si,si,Obalno-kraška,Koper,False,45.54532,13.76655,si_settlement,high,
+Besançon,Besançon,settlement,foreign,fr,,,False,47.23802,6.02436,world_settlement,high,
+Bežigrad,Bežigrad,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.07140,14.51220,override,high,Ljubljana district
+Bilbao,Bilbao,settlement,foreign,es,,,False,43.26300,-2.93500,world_settlement,high,
+"Bilbao, Španija","Bilbao, Španija",settlement,foreign,es,,,False,43.26300,-2.93500,exonym_settlement,medium,returned as Bilbao
+Bileća,Bileća,settlement,foreign,ba,,,False,42.87485,18.42798,world_settlement,high,
+Biserjane,Biserjane,settlement,si,si,Pomurska,Sveti Jurij ob Ščavnici,False,46.57167,16.02934,si_settlement,high,
+Bistra pri Črni na Koroškem,Bistra pri Črni na Koroškem,unknown,,,,,False,,,unresolved,low,
+Bistrica ob Dravi,Bistrica ob Dravi,settlement,si,si,Podravska,Ruše,False,46.55301,15.55018,si_settlement,high,
+Bistrica ob Sotli,Bistrica ob Sotli,settlement,si,si,Savinjska,Bistrica ob Sotli,False,46.05927,15.65301,si_settlement,high,
+Bitola,Bitola,settlement,foreign,mk,,,False,41.03160,21.33025,exonym_settlement,medium,returned as Битола
+Biševo,Biševo,settlement,foreign,hr,,,False,42.97323,16.01187,world_settlement,high,
+Bjelovar,Bjelovar,settlement,foreign,hr,,,False,45.89869,16.84220,exonym_settlement,medium,returned as Belovar
+Bled,Bled,settlement,si,si,Gorenjska,Bled,False,46.36842,14.11006,si_settlement,high,
+Bližnji vzhod,Bližnji vzhod,unknown,,,,,False,,,unresolved,low,
+Bloke,Bloke,settlement,si,si,Primorsko-notranjska,Bloke,False,45.78690,14.49860,si_settlement,high,
+Bloomington,Bloomington,settlement,foreign,us,,,False,39.16704,-86.53429,world_settlement,high,
+Bochum,Bochum,settlement,foreign,de,,,False,51.48181,7.21966,world_settlement,high,
+Bodislavci,Bodislavci,settlement,si,si,Pomurska,Ljutomer,False,46.50968,16.05858,si_settlement,high,
+Bogotá,Bogotá,settlement,foreign,co,,,False,4.65338,-74.08363,world_settlement,high,
+Bohinj,Bohinj,settlement,si,si,Gorenjska,Bohinj,False,46.30203,13.90902,si_settlement,high,
+Bohinjska Bela,Bohinjska Bela,settlement,si,si,Gorenjska,Bled,False,46.34746,14.06091,si_settlement,high,
+Bohinjska Bistrica,Bohinjska Bistrica,settlement,si,si,Gorenjska,Bohinj,False,46.27237,13.95388,si_settlement,high,
+Bohinjsko jezero,Bohinjsko jezero,other,si,si,Gorenjska,Bohinj,False,46.28227,13.86453,unrestricted,medium,
+Bolgarija,Bolgarija,country,foreign,bg,,,False,42.60740,25.48566,unrestricted,medium,
+Bolivija,Bolivija,country,foreign,bo,,,False,-17.05687,-64.99123,unrestricted,medium,
+Bologna,Bologna,settlement,foreign,it,,,False,44.49382,11.34263,world_settlement,high,
+Bonn,Bonn,settlement,foreign,de,,,False,50.73526,7.10246,world_settlement,high,
+Bor,Bor,settlement,foreign,ru,,,False,56.35983,44.05426,exonym_settlement,medium,returned as Бор
+Bordeaux,Bordeaux,settlement,foreign,fr,,,False,44.84123,-0.58004,world_settlement,high,
+Bormio,Bormio,settlement,foreign,it,,,False,46.46767,10.37747,world_settlement,high,
+Borovnica,Borovnica,settlement,si,si,Osrednjeslovenska,Borovnica,False,45.91136,14.38316,si_settlement,high,
+Bosna in Hercegovina,Bosna in Hercegovina,other,foreign,ba,,,False,43.24548,17.79133,world_settlement,high,
+Boston,Boston,settlement,foreign,us,,,False,42.35883,-71.05783,world_settlement,high,
+Boulogne-Billancourt,Boulogne-Billancourt,settlement,foreign,fr,,,False,48.83566,2.24021,world_settlement,high,
+Bovec,Bovec,settlement,si,si,Goriška,Bovec,False,46.35634,13.61442,si_settlement,high,
+Boštanj,Boštanj,settlement,si,si,Posavska,Sevnica,False,46.01233,15.28117,si_settlement,high,
+Braslovče,Braslovče,settlement,si,si,Savinjska,Braslovče,False,46.28038,15.01762,si_settlement,high,
+Brasília,Brasília,settlement,foreign,br,,,False,-15.79399,-47.88280,world_settlement,high,
+Bratislava,Bratislava,settlement,foreign,sk,,,False,48.15170,17.10931,world_settlement,high,
+Brač,Brač,other,foreign,hr,,,False,43.32394,16.65485,unrestricted,medium,
+Brașov,Brașov,settlement,foreign,ro,,,False,45.65251,25.61057,world_settlement,high,
+Brda pri Slovenj Gradcu,Brda pri Slovenj Gradcu,settlement,si,si,Koroška,Slovenj Gradec,False,46.47042,15.14198,exonym_settlement,medium,returned as Brda
+Brdih nad Turiško vasjo,Brdih nad Turiško vasjo,unknown,,,,,False,,,unresolved,low,
+Brdo pri Kranju,Brdo pri Kranju,other,si,si,Gorenjska,Kranj,False,46.27295,14.37678,unrestricted_fuzzy,low,"name mismatch: Grad Brdo pri Kranju, 38, Predoslje, Ilovka, Predoslje, Kran"
+Brdo pri Lukovici,Brdo pri Lukovici,other,si,si,Osrednjeslovenska,Lukovica,False,46.16863,14.68093,unrestricted,medium,
+Brecljevo,Brecljevo,settlement,si,si,Savinjska,Brecljevo,False,46.21935,15.53258,si_settlement,high,
+Bregenz,Bregenz,settlement,foreign,at,,,False,47.50258,9.74729,world_settlement,high,
+Bremen,Bremen,settlement,foreign,de,,,False,53.07582,8.80716,world_settlement,high,
+Breslau,Breslau,other,foreign,pl,,,False,51.12631,16.97820,exonym_settlement,medium,returned as Wrocław
+Brestanica,Brestanica,settlement,si,si,Posavska,Krško,False,45.99650,15.47794,si_settlement,high,
+Brestovica pri Komnu,Brestovica pri Komnu,settlement,si,si,Obalno-kraška,Komen,False,45.81488,13.62693,exonym_settlement,medium,returned as Brestovica
+Brestovica pri Povirju,Brestovica pri Povirju,settlement,si,si,Obalno-kraška,Sežana,False,45.71585,13.94665,si_settlement,high,
+Brezje,Brezje,settlement,si,si,Podravska,Maribor,False,46.54058,15.68426,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.45)
+Breznica,Breznica,settlement,si,si,Koroška,Prevalje,False,46.56077,14.90360,contested_si,medium,also a foreign settlement (Slovaška); kept Slovenian (importance 0.15 vs 0.48)
+Brezovec,Brezovec,settlement,si,si,Podravska,Cirkulane,False,46.35093,16.01660,contested_si,medium,also a foreign settlement (Slovaška); kept Slovenian (importance 0.15 vs 0.48)
+Brezovica,Brezovica,settlement,si,si,Osrednjeslovenska,Brezovica,False,45.94803,14.41803,si_settlement,high,
+Brezovica pri Ljubljani,Brezovica pri Ljubljani,settlement,si,si,Osrednjeslovenska,Brezovica,False,46.02423,14.41794,si_settlement,high,
+Brezovica pri Žirovnici,Brezovica pri Žirovnici,settlement,si,si,Gorenjska,Selo pri Žirovnici,False,46.39948,14.14243,qualified_anchor,low,placed at its anchor Žirovnici
+Brezula,Brezula,settlement,si,si,Podravska,Rače-Fram,False,46.44122,15.69515,si_settlement,high,
+Brežice,Brežice,settlement,si,si,Posavska,Brežice,False,45.93761,15.63293,si_settlement,high,
+Brije,Brije,natural,si,si,Jugovzhodna Slovenija,Mirna,False,45.95902,15.03457,unrestricted,medium,
+Brioni,Brioni,settlement,foreign,it,,,False,45.75658,11.92571,world_settlement,high,
+Britof pri Kranju,Britof pri Kranju,other,si,si,Gorenjska,Kranj,False,46.27295,14.37678,unrestricted_fuzzy,low,"name mismatch: Grad Brdo pri Kranju, 38, Predoslje, Ilovka, Predoslje, Kran"
+Brje pri Ajdovščini,Brje pri Ajdovščini,settlement,si,si,Goriška,Ajdovščina,False,45.86854,13.81545,qualified_anchor,low,via anchor Ajdovščina
+Brno,Brno,settlement,foreign,cz,,,False,49.19224,16.61134,world_settlement,high,
+Bruges,Bruges,settlement,foreign,be,,,False,51.20855,3.22677,exonym_settlement,medium,returned as Brugge
+Bruna vas,Bruna vas,settlement,si,si,Posavska,Mokronog-Trebelno,False,45.95729,15.15771,si_settlement,high,
+Bruselj,Bruselj,settlement,foreign,be,,,False,50.84674,4.35249,world_settlement,high,
+"Bruselj, Belgija","Bruselj, Belgija",settlement,foreign,be,,,False,50.84674,4.35249,exonym_settlement,medium,returned as Bruselj
+Brussels,Bruselj,settlement,foreign,be,,,False,50.84674,4.35249,world_settlement,high,
+Bucharest,Bukarešta,settlement,foreign,ro,,,False,44.43614,26.10268,world_settlement,high,
+Budapest,Budimpešta,settlement,foreign,hu,,,False,47.49788,19.04024,world_settlement,high,
+Budimpešta,Budimpešta,settlement,foreign,hu,,,False,47.49788,19.04024,world_settlement,high,
+"Budimpešta, Madžarska","Budimpešta, Madžarska",settlement,foreign,hu,,,False,47.49788,19.04024,exonym_settlement,medium,returned as Budimpešta
+Budva,Budva,settlement,foreign,me,,,False,42.28857,18.84195,world_settlement,high,
+Buenos Aires,Buenos Aires,settlement,foreign,ar,,,False,-34.60956,-58.38879,world_settlement,high,
+"Buenos Aires, Argentina","Buenos Aires, Argentina",settlement,foreign,ar,,,False,-34.60956,-58.38879,exonym_settlement,medium,returned as Buenos Aires
+Buffalo,Buffalo,settlement,foreign,us,,,False,42.88642,-78.87815,world_settlement,high,
+Buje,Buje,settlement,si,si,Primorsko-notranjska,Pivka,False,45.65471,14.08711,si_settlement,high,
+Bujumbura,Bujumbura,settlement,foreign,bi,,,False,-3.36381,29.36750,world_settlement,high,
+Bukarešta,Bukarešta,settlement,foreign,ro,,,False,44.43614,26.10268,world_settlement,high,
+Bukovec,Bukovec,settlement,si,si,Podravska,Slovenska Bistrica,False,46.43158,15.61994,si_settlement,high,
+Bukovica,Bukovica,settlement,si,si,Gorenjska,Škofja Loka,False,46.19862,14.24566,si_settlement,high,
+Burglengenfeld,Burglengenfeld,settlement,foreign,de,,,False,49.23384,11.99133,world_settlement,high,
+Burkina Faso,Burkina Faso,region,foreign,bf,,,False,12.36732,-1.54309,world_settlement,high,
+Burriana,Burriana,settlement,foreign,es,,,False,39.88769,-0.08463,exonym_settlement,medium,returned as Borriana / Burriana
+Butoraj,Butoraj,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.54358,15.20540,si_settlement,high,
+Bušinec,Bušinec,settlement,si,si,Jugovzhodna Slovenija,Bušinec,False,45.72918,15.07113,si_settlement,high,
+Bydgoszcz,Bydgoszcz,settlement,foreign,pl,,,False,53.12196,18.00025,world_settlement,high,
+Cambridge,Cambridge,settlement,foreign,gb,,,False,52.19758,0.13915,world_settlement,high,
+Cannes,Cannes,settlement,foreign,fr,,,False,43.55152,7.01344,world_settlement,high,
+Canterbury,Canterbury,settlement,foreign,gb,,,False,51.28003,1.08025,world_settlement,high,
+"Cape Town, Južna Afrika","Cape Town, Južna Afrika",settlement,foreign,za,,,False,-33.92883,18.41722,exonym_settlement,medium,returned as Cape Town
+Cegelnica,Cegelnica,settlement,si,si,Gorenjska,Naklo,False,46.27828,14.32080,si_settlement,high,
+Ceglie Messapica,Ceglie Messapica,settlement,foreign,it,,,False,40.64604,17.51706,world_settlement,high,
+Celje,Celje,settlement,si,si,Savinjska,Celje,False,46.22939,15.26168,si_settlement,high,
+Celovec,Celovec,settlement,foreign,at,,,False,46.62470,14.30800,override,high,Klagenfurt
+"Celovec, Avstrija","Celovec, Avstrija",settlement,foreign,at,,,False,46.62394,14.30760,exonym_settlement,medium,returned as Celovec
+Cerklje,Cerklje,settlement,si,si,Gorenjska,Cerklje na Gorenjskem,False,46.25516,14.50360,exonym_settlement,medium,returned as Cerklje na Gorenjskem
+Cerklje na Gorenjskem,Cerklje na Gorenjskem,settlement,si,si,Gorenjska,Cerklje na Gorenjskem,False,46.25516,14.50360,si_settlement,high,
+Cerknica,Cerknica,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.79827,14.34479,si_settlement,high,
+Cerkno,Cerkno,settlement,si,si,Goriška,Cerkno,False,46.12796,13.98812,si_settlement,high,
+Cetinje,Cetinje,settlement,foreign,me,,,False,42.38963,18.92461,world_settlement,high,
+Chaville,Chaville,settlement,foreign,fr,,,False,48.80863,2.18829,world_settlement,high,
+Chengdu,Chengdu,settlement,foreign,cn,,,False,30.65987,104.06332,exonym_settlement,medium,returned as Čengdu
+Chicago,Chicago,settlement,foreign,us,,,False,41.87556,-87.62442,world_settlement,high,
+Chiesanuova,Chiesanuova,settlement,foreign,it,,,False,45.41789,7.65579,world_settlement,high,
+Chrudim,Chrudim,settlement,foreign,cz,,,False,49.95115,15.79476,world_settlement,high,
+Ciper,Ciper,country,foreign,cy,,,False,34.98230,33.14513,unrestricted,medium,
+Cirkovce,Cirkovce,settlement,si,si,Podravska,Kidričevo,False,46.39485,15.72740,si_settlement,high,
+Cirkulane,Cirkulane,settlement,si,si,Podravska,Cirkulane,False,46.34504,15.99619,si_settlement,high,
+Cisternino,Cisternino,settlement,foreign,it,,,False,40.74299,17.42574,world_settlement,high,
+Ciudad de México,Ciudad de México,region,foreign,mx,,,False,19.32077,-99.15147,world_settlement,high,
+"Ciudad de México, Mehika","Ciudad de México, Mehika",region,foreign,mx,,,False,19.32077,-99.15147,exonym_settlement,medium,returned as Ciudad de México
+Cividale del Friuli,Cividale del Friuli,settlement,foreign,it,,,False,46.07315,13.43879,exonym_settlement,medium,returned as Čedad
+Cleveland,Cleveland,settlement,foreign,us,,,False,41.49966,-81.69368,world_settlement,high,
+Cluj-Napoca,Cluj-Napoca,settlement,foreign,ro,,,False,46.76938,23.58995,world_settlement,high,
+Cologne,Köln,settlement,foreign,de,,,False,50.93836,6.95997,world_settlement,high,
+Colorado,Colorado,region,foreign,us,,,False,38.72518,-105.60772,exonym_settlement,medium,returned as Kolorado
+Colorno,Colorno,settlement,foreign,it,,,False,44.93016,10.37549,world_settlement,high,
+Connecticut,Connecticut,region,foreign,us,,,False,41.65002,-72.73422,world_settlement,high,
+Copenhagen,Copenhagen,settlement,foreign,dk,,,False,55.68672,12.57007,exonym_settlement,medium,returned as København
+Cottbus,Cottbus,settlement,foreign,de,,,False,51.75674,14.33573,exonym_settlement,medium,returned as Cottbus - Chóśebuz
+County Kerry,County Kerry,region,foreign,ie,,,False,52.14533,-9.51740,world_settlement,high,
+Crikvenica,Crikvenica,settlement,foreign,hr,,,False,45.17370,14.69279,world_settlement,high,
+Crna Gora,Crna Gora,country,foreign,me,,,False,42.77556,19.20224,unrestricted,medium,
+Czarne,Czarne,settlement,foreign,pl,,,False,53.68353,16.94221,world_settlement,high,
+DR Kongo,DR Kongo,country,foreign,cd,,,False,-2.98143,23.82226,exonym_settlement,medium,returned as Kongo
+Dachau,Dachau,settlement,foreign,de,,,False,48.25951,11.43467,world_settlement,high,
+Dalmacija,Dalmacija,settlement,foreign,ba,,,False,45.05539,16.42812,world_settlement,high,
+Damask,Damask,settlement,foreign,sy,,,False,33.51307,36.30958,world_settlement,high,
+Danska,Danska,country,foreign,dk,,,False,55.67025,10.33333,unrestricted,medium,
+Darfur,Darfur,settlement,foreign,us,,,False,44.05135,-94.83804,world_settlement,high,
+Darmstadt,Darmstadt,settlement,foreign,de,,,False,49.87277,8.65118,world_settlement,high,
+Davis,Davis,region,foreign,us,,,False,40.74748,-92.39653,exonym_settlement,medium,returned as Davis County
+Debrecen,Debrecen,settlement,foreign,hu,,,False,47.53140,21.62598,world_settlement,high,
+Dekani,Dekani,settlement,si,si,Obalno-kraška,Koper,False,45.54833,13.81034,si_settlement,high,
+Delft,Delft,settlement,foreign,nl,,,False,52.01140,4.35839,world_settlement,high,
+Den Bosch,Den Bosch,settlement,foreign,nl,,,False,51.68894,5.30312,exonym_settlement,medium,returned as 's-Hertogenbosch
+Depala vas,Depala vas,settlement,si,si,Osrednjeslovenska,Domžale,False,46.13215,14.57193,si_settlement,high,
+Dessau,Dessau,settlement,foreign,de,,,False,51.83100,12.24307,world_settlement,high,
+Destrnik,Destrnik,settlement,si,si,Podravska,Destrnik,False,46.49165,15.87941,si_settlement,high,
+Detmold,Detmold,settlement,foreign,de,,,False,51.93628,8.87915,world_settlement,high,
+Devin,Devin,settlement,foreign,ir,,,False,36.53641,59.34178,exonym_settlement,medium,returned as دوین
+Dijon,Dijon,settlement,foreign,fr,,,False,47.32158,5.04147,world_settlement,high,
+Divača,Divača,settlement,si,si,Obalno-kraška,Divača,False,45.68691,14.01254,si_settlement,high,
+Diyarbakır,Diyarbakır,settlement,foreign,tr,,,False,37.91622,40.23635,world_settlement,high,
+Dob pri Domžalah,Dob pri Domžalah,settlement,si,si,Osrednjeslovenska,Domžale,False,46.11328,14.59886,qualified_anchor,low,placed at its anchor Domžalah
+Dob pri Pliberku,Dob pri Pliberku,settlement,foreign,at,,,False,46.59000,14.79000,override,high,"Dob / Aich by Bleiburg, Carinthia"
+Doberdob,Doberdob,settlement,foreign,it,,,False,45.84463,13.54014,world_settlement,high,
+Dobliče,Dobliče,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.55868,15.14400,si_settlement,high,
+Dobovec pod Kumom,Dobovec pod Kumom,unknown,,,,,False,,,unresolved,low,
+Dobravlje,Dobravlje,settlement,si,si,Goriška,Ajdovščina,False,45.88294,13.84548,si_settlement,high,
+Dobračeva,Dobračeva,other,si,si,Gorenjska,Žiri,False,46.05666,14.10978,unrestricted,medium,
+Dobrepolje,Dobrepolje,settlement,si,si,Osrednjeslovenska,Dobrepolje,False,45.80975,14.74257,si_settlement,high,
+Dobrna,Dobrna,settlement,si,si,Savinjska,Dobrna,False,46.35273,15.22790,si_settlement,high,
+Dobrova-Polhov Gradec,Dobrova-Polhov Gradec,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.05969,14.32168,si_settlement,high,
+Dobrova–Polhov Gradec,Dobrova–Polhov Gradec,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.05969,14.32168,exonym_settlement,medium,returned as Dobrova-Polhov Gradec
+Dobrovnik,Dobrovnik,settlement,si,si,Pomurska,Dobrovnik,False,46.65177,16.34474,si_settlement,high,
+Dobrovo,Dobrovo,settlement,si,si,Goriška,Brda,False,45.99741,13.52737,si_settlement,high,
+Dol pri Hrastniku,Dol pri Hrastniku,settlement,si,si,Zasavska,Hrastnik,False,46.14149,15.11640,si_settlement,high,
+Dol pri Ljubljani,Dol pri Ljubljani,settlement,si,si,Osrednjeslovenska,Dol pri Ljubljani,False,46.08834,14.64151,si_settlement,high,
+Dolenci,Dolenci,settlement,si,si,Pomurska,Dolenci,False,46.85019,16.28806,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.19)
+Dolenja Dobrava,Dolenja Dobrava,settlement,si,si,Gorenjska,Gorenja vas-Poljane,False,46.10167,14.15178,si_settlement,high,
+Dolenja vas,Dolenja vas,unknown,,,,,False,,,unresolved,low,
+Dolenje,Dolenje,settlement,si,si,Goriška,Nova Gorica,False,45.92466,13.76191,si_settlement,high,
+Dolenje Lazi,Dolenje Lazi,unknown,,,,,False,,,unresolved,low,
+Dolenje Ponikve,Dolenje Ponikve,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.89171,15.04531,si_settlement,high,
+Dolenjska,Dolenjska,region,si,si,Jugovzhodna Slovenija,,False,45.75409,15.01625,region_table,high,informal region
+Dolenjske Toplice,Dolenjske Toplice,settlement,si,si,Jugovzhodna Slovenija,Dolenjske Toplice,False,45.75727,15.05838,si_settlement,high,
+Dolina,Dolina,settlement,foreign,it,,,False,45.61780,13.85060,override,high,"San Dorligo della Valle / Dolina, the Slovene municipality by Trieste"
+Dolina Rezije,Dolina Rezije,region,foreign,it,,,False,46.37000,13.30000,override,high,"Resia valley, Italy"
+Dolnja Bistrica,Dolnja Bistrica,settlement,si,si,Pomurska,Dolnja Bistrica,False,46.54020,16.29047,si_settlement,high,
+Dolnja Lendava,Dolnja Lendava,other,si,si,Pomurska,Lendava,False,46.54866,16.31251,unrestricted_fuzzy,low,"name mismatch: Dolnja Bistrica, Črenšovci, Lendava, 9232, Slovenija"
+Dolnja Prekopa,Dolnja Prekopa,settlement,si,si,Posavska,Kostanjevica na Krki,False,45.85388,15.38004,si_settlement,high,
+Domanjševci,Domanjševci,other,si,si,Pomurska,Domanševci,False,46.79214,16.30397,unrestricted,medium,
+Domžale,Domžale,settlement,si,si,Osrednjeslovenska,Domžale,False,46.13943,14.59446,si_settlement,high,
+Dorfarje,Dorfarje,settlement,si,si,Gorenjska,Škofja Loka,False,46.19524,14.32377,si_settlement,high,
+Dortmund,Dortmund,settlement,foreign,de,,,False,51.51423,7.46528,world_settlement,high,
+Doslovče,Doslovče,settlement,si,si,Gorenjska,Doslovče,False,46.39340,14.16235,si_settlement,high,
+Dovje,Dovje,settlement,si,si,Gorenjska,Kranjska Gora,False,46.46833,13.94780,si_settlement,high,
+Dragatuš,Dragatuš,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.52205,15.17890,si_settlement,high,
+Dramlje,Dramlje,settlement,si,si,Savinjska,Šentjur,False,46.27184,15.39296,si_settlement,high,
+Dramlje pri Celju,Dramlje pri Celju,settlement,si,si,Savinjska,Celje,False,46.25378,15.29383,qualified_anchor,low,placed at its anchor Celju
+Dravlje,Dravlje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.08114,14.47520,exonym_settlement,medium,returned as Četrtna skupnost Dravlje
+Dravograd,Dravograd,settlement,si,si,Koroška,Dravograd,False,46.59150,15.03835,si_settlement,high,
+Dravsko polje,Dravsko polje,natural,si,si,Podravska,,False,46.44761,15.77064,unrestricted,medium,
+Drašča vas,Drašča vas,settlement,si,si,Jugovzhodna Slovenija,Žužemberk,False,45.85503,14.85875,si_settlement,high,
+Dražgoše,Dražgoše,settlement,si,si,Gorenjska,Železniki,False,46.25240,14.17558,si_settlement,high,
+Drbetinci,Drbetinci,settlement,si,si,Podravska,Sveti Andraž v Slovenskih goricah,False,46.53823,15.93118,si_settlement,high,
+Drenov Grič,Drenov Grič,settlement,si,si,Osrednjeslovenska,Vrhnika,False,45.99639,14.32842,si_settlement,high,
+Dresden,Dresden,settlement,foreign,de,,,False,51.04933,13.73814,world_settlement,high,
+Drniš,Drniš,settlement,foreign,hr,,,False,43.86027,16.15579,world_settlement,high,
+Drvar,Drvar,settlement,foreign,ba,,,False,44.37409,16.38455,world_settlement,high,
+Dubai,Dubai,other,foreign,ae,,,False,25.07428,55.18856,exonym_settlement,medium,returned as دبي
+Dubaj,Dubaj,settlement,foreign,ae,,,False,25.26472,55.29241,world_settlement,high,
+Dublin,Dublin,settlement,foreign,ie,,,False,53.34938,-6.26056,world_settlement,high,
+Dubrovnik,Dubrovnik,settlement,foreign,hr,,,False,42.64910,18.09395,exonym_settlement,medium,returned as Grad Dubrovnik
+Duisburg,Duisburg,settlement,foreign,de,,,False,51.43500,6.75956,world_settlement,high,
+Dule,Dule,settlement,si,si,Posavska,Dule,False,45.92559,15.33687,contested_si,medium,also a foreign settlement (Poljska); kept Slovenian (importance 0.15 vs 0.28)
+Dunaj,Dunaj,settlement,foreign,at,,,False,48.20820,16.37380,override,high,Vienna
+"Dunaj, Avstrija","Dunaj, Avstrija",settlement,foreign,at,,,False,48.20835,16.37250,exonym_settlement,medium,returned as Dunaj
+Dunajská Streda,Dunajská Streda,settlement,foreign,sk,,,False,47.99562,17.61629,world_settlement,high,
+Durham,Durham,region,foreign,gb,,,False,54.66667,-1.75000,exonym_settlement,medium,returned as County Durham
+Dutovlje,Dutovlje,settlement,si,si,Obalno-kraška,Sežana,False,45.75565,13.83263,si_settlement,high,
+Dvor pri Polhovem Gradcu,Dvor pri Polhovem Gradcu,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.06345,14.34581,si_settlement,high,
+Dvorska vas,Dvorska vas,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.81034,14.63955,si_settlement,high,
+Düsseldorf,Düsseldorf,settlement,foreign,de,,,False,51.22540,6.77631,world_settlement,high,
+Düzce,Düzce,region,foreign,tr,,,False,40.87745,31.20096,world_settlement,high,
+Edinburgh,Edinburgh,settlement,foreign,gb,,,False,55.95335,-3.18837,exonym_settlement,medium,returned as Edinburg
+Edmonton,Edmonton,settlement,foreign,ca,,,False,53.54621,-113.49124,world_settlement,high,
+Egipt,Egipt,country,foreign,eg,,,False,26.25405,29.26755,unrestricted,medium,
+Eindhoven,Eindhoven,settlement,foreign,nl,,,False,51.43926,5.47863,world_settlement,high,
+Ekvador,Ekvador,country,foreign,ec,,,False,-1.33977,-79.36670,unrestricted,medium,
+Erbil,Erbil,settlement,foreign,iq,,,False,36.19117,44.00941,world_settlement,high,
+Erzelj,Erzelj,settlement,si,si,Goriška,Vipava,False,45.83231,13.90789,si_settlement,high,
+Essen,Essen,settlement,foreign,de,,,False,51.45822,7.01582,world_settlement,high,
+Evropa,Evropa,other,foreign,,,,False,51.00000,10.00000,unrestricted,medium,
+Faenza,Faenza,settlement,foreign,it,,,False,44.28556,11.88321,world_settlement,high,
+Fala,Fala,settlement,si,si,Podravska,Ruše,False,46.54636,15.44977,contested_si,medium,also a foreign settlement (Združeno kraljestvo); kept Slovenian (importance 0.15 vs 0.28)
+Fara,Fara,settlement,si,si,Primorsko-notranjska,Bloke,False,45.76723,14.51019,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.52)
+Feldbach,Feldbach,settlement,foreign,fr,,,False,47.53492,7.26398,world_settlement,high,
+Filipini,Filipini,settlement,foreign,hr,,,False,45.21988,13.67172,world_settlement,high,
+Filovci,Filovci,settlement,si,si,Pomurska,Filovci,False,46.66157,16.29890,si_settlement,high,
+Finska,Finska,country,foreign,fi,,,False,63.24678,25.92092,unrestricted,medium,
+Firence,Firence,settlement,foreign,it,,,False,43.76980,11.25564,world_settlement,high,
+Fojana,Fojana,settlement,si,si,Goriška,Brda,False,45.99694,13.50602,si_settlement,high,
+Fojnica,Fojnica,settlement,foreign,ba,,,False,43.96344,17.89902,world_settlement,high,
+France,France,country,foreign,fr,,,False,46.60335,1.88833,exonym_settlement,medium,returned as Francija
+Francija,Francija,country,foreign,fr,,,False,46.60335,1.88833,unrestricted,medium,
+Frankfurt,Frankfurt,settlement,foreign,de,,,False,50.11064,8.68209,exonym_settlement,medium,returned as Frankfurt ob Majni
+Frankfurt am Main,Frankfurt am Main,settlement,foreign,de,,,False,50.11064,8.68209,exonym_settlement,medium,returned as Frankfurt ob Majni
+Freiburg,Freiburg,settlement,foreign,de,,,False,47.99609,7.84940,exonym_settlement,medium,returned as Freiburg im Breisgau
+Freising,Freising,settlement,foreign,de,,,False,48.40083,11.74396,world_settlement,high,
+Furlanija - Julijska krajina,Furlanija - Julijska krajina,region,foreign,it,,,False,46.15104,13.05590,world_settlement,high,
+Gabrje,Gabrje,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.77802,15.27204,si_settlement,high,
+Gabrovica pri Komnu,Gabrovica pri Komnu,settlement,si,si,Obalno-kraška,Komen,False,45.80704,13.78052,si_settlement,high,
+Gabrovka,Gabrovka,settlement,si,si,Osrednjeslovenska,Litija,False,46.00104,14.98721,si_settlement,high,
+Gaj pri Pragerskem,Gaj pri Pragerskem,other,si,si,Podravska,Kidričevo,False,46.39766,15.67503,unrestricted_fuzzy,low,"name mismatch: Spodnji Gaj pri Pragerskem, Kidričevo, 2331, Slovenija"
+Gameljne,Gameljne,other,si,si,Osrednjeslovenska,Ljubljana,True,46.12681,14.49712,unrestricted,medium,
+Gana,Gana,settlement,foreign,bf,,,False,12.05764,-1.39982,world_settlement,high,
+Garešnica,Garešnica,settlement,foreign,hr,,,False,45.57513,16.94180,exonym_settlement,medium,returned as Grad Garešnica
+Gaza,Gaza,settlement,foreign,ps,,,False,31.51287,34.45814,world_settlement,high,
+Gdańsk,Gdańsk,other,foreign,pl,,,False,54.37069,18.61298,world_settlement,high,
+Geneva,Ženeva,settlement,foreign,ch,,,False,46.20176,6.14660,world_settlement,high,
+Gent,Gent,settlement,foreign,be,,,False,51.05383,3.72501,world_settlement,high,
+Georgetown,Georgetown,settlement,foreign,gy,,,False,6.80326,-58.14554,unrestricted,medium,
+Gerlinci,Gerlinci,settlement,si,si,Pomurska,Gerlinci,False,46.76121,16.00615,si_settlement,high,
+Ghent,Ghent,settlement,foreign,be,,,False,51.05383,3.72501,exonym_settlement,medium,returned as Gent
+Giessen,Giessen,settlement,foreign,de,,,False,50.58621,8.67423,exonym_settlement,medium,returned as Gießen
+Glamoč,Glamoč,settlement,foreign,ba,,,False,44.04499,16.84990,world_settlement,high,
+Glasgow,Glasgow,settlement,foreign,gb,,,False,55.86115,-4.25017,world_settlement,high,
+Gliwice,Gliwice,settlement,foreign,pl,,,False,50.29411,18.66573,world_settlement,high,
+Globoko,Globoko,settlement,si,si,Posavska,Brežice,False,45.95552,15.62988,si_settlement,high,
+Godešič,Godešič,settlement,si,si,Gorenjska,Škofja Loka,False,46.16624,14.35417,si_settlement,high,
+Golavabuka,Golavabuka,settlement,si,si,Koroška,Slovenj Gradec,False,46.48230,15.15875,si_settlement,high,
+Golnik,Golnik,settlement,si,si,Gorenjska,Kranj,False,46.32731,14.33309,si_settlement,high,
+Golo Brdo,Golo Brdo,settlement,si,si,Osrednjeslovenska,Medvode,False,46.11066,14.41547,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.38)
+"Gombosszeg, Madžarska","Gombosszeg, Madžarska",settlement,foreign,hu,,,False,46.75568,16.71925,exonym_settlement,medium,returned as Gombosszeg
+Gomila,Gomila,settlement,si,si,Jugovzhodna Slovenija,Mirna,False,45.93393,15.04671,si_settlement,high,
+Gomila pri Kogu,Gomila pri Kogu,other,si,si,Podravska,Ormož,False,46.47570,16.24880,unrestricted,medium,
+Gonars,Gonars,settlement,foreign,it,,,False,45.89592,13.23713,exonym_settlement,medium,returned as Gonars / Gonârs
+Gora pri Komendi,Gora pri Komendi,settlement,si,si,Osrednjeslovenska,Komenda,False,46.20618,14.55025,si_settlement,high,
+Gorenja vas,Gorenja vas,settlement,si,si,Gorenjska,,False,46.10690,14.14970,override,medium,
+Gorenja vas pri Šmarjeti,Gorenja vas pri Šmarjeti,settlement,si,si,Jugovzhodna Slovenija,Gorenja vas pri Šmarjeti,False,45.88684,15.24091,si_settlement,high,
+Gorenja vas – Poljane,Gorenja vas – Poljane,settlement,si,si,Gorenjska,Gorenja vas-Poljane,False,46.10874,14.12685,exonym_settlement,medium,returned as Gorenja vas-Poljane
+Gorenja vas – Reteče,Gorenja vas – Reteče,settlement,si,si,Osrednjeslovenska,Škofja Loka,False,46.15693,14.37834,exonym_settlement,medium,returned as Gorenja vas - Reteče
+Gorenje Gradišče pri Dolenjskih Toplicah,Gorenje Gradišče pri Dolenjskih Toplicah,settlement,si,si,Jugovzhodna Slovenija,Sela pri Dolenjskih Toplicah,False,45.74899,15.04647,qualified_anchor,low,placed at its anchor Dolenjskih Toplicah
+Gorenje Polje nad Anhovim,Gorenje Polje nad Anhovim,unknown,,,,,False,,,unresolved,low,
+Gorenje pri Divači,Gorenje pri Divači,settlement,si,si,Obalno-kraška,Sežana,False,45.69257,13.94932,si_settlement,high,
+Gorenjska,Gorenjska,region,si,si,Gorenjska,,False,46.31170,14.13098,region_table,high,informal region
+Gorica,Gorica,settlement,foreign,it,,,False,45.94190,13.62160,override,medium,"read as Gorizia; some bios may mean Nova Gorica, counted separately"
+Gorica pri Šmartnem,Gorica pri Šmartnem,settlement,si,si,Savinjska,Celje,False,46.27226,15.22628,si_settlement,high,
+Gorizia,Gorica,settlement,foreign,it,,,False,45.94190,13.62160,override,medium,"read as Gorizia; some bios may mean Nova Gorica, counted separately"
+Goričak,Goričak,settlement,si,si,Podravska,Goričak,False,46.36778,16.06369,si_settlement,high,
+Goričane,Goričane,settlement,si,si,Osrednjeslovenska,Medvode,False,46.14174,14.39617,si_settlement,high,
+Goriče,Goriče,settlement,si,si,Gorenjska,Kranj,False,46.31909,14.34596,si_settlement,high,
+Goričica pri Ihanu,Goričica pri Ihanu,settlement,si,si,Osrednjeslovenska,Domžale,False,46.12202,14.62650,si_settlement,high,
+Goričko,Goričko,region,si,si,Pomurska,,False,46.66895,16.17740,region_table,high,informal region
+Goriška,Goriška,region,si,si,Goriška,,False,46.08878,13.82630,region_table,high,informal region
+Goriška Brda,Goriška Brda,region,si,si,Goriška,,False,46.08878,13.82630,region_table,high,informal region
+Goriška brda,Goriška brda,other,si,si,Goriška,Brda,False,45.99925,13.53005,unrestricted_fuzzy,low,"name mismatch: Goriška cesta, Spodnji Drnovk, Dobrovo, Brda, 5212, Slovenij"
+Gorišnica,Gorišnica,settlement,si,si,Podravska,Gorišnica,False,46.41203,16.01338,si_settlement,high,
+Gorjanci,Gorjanci,settlement,foreign,hr,,,False,45.71307,15.81964,world_settlement,high,
+Gornja Radgona,Gornja Radgona,settlement,si,si,Pomurska,Gornja Radgona,False,46.63612,15.96668,si_settlement,high,
+Gornje Krapje,Gornje Krapje,unknown,,,,,False,,,unresolved,low,
+Gornji Dolič,Gornji Dolič,settlement,si,si,Koroška,Gornji Dolič,False,46.42476,15.18787,si_settlement,high,
+Gornji Grad,Gornji Grad,settlement,si,si,Savinjska,Gornji Grad,False,46.29610,14.80578,si_settlement,high,
+Gornji Logatec,Gornji Logatec,other,si,si,Osrednjeslovenska,Logatec,False,45.90728,14.20013,unrestricted_fuzzy,low,"name mismatch: Pokopališče Gornji Logatec, Kalce, Logatec, Upravna Enota Lo"
+Gornji Petrovci,Gornji Petrovci,settlement,si,si,Pomurska,Gornji Petrovci,False,46.80369,16.21864,si_settlement,high,
+Gorski Kotar,Gorski Kotar,other,foreign,hr,,,False,43.51148,16.42907,unrestricted_fuzzy,low,"name mismatch: Gorski put, Gradski kotar Varoš, Split, Grad Split, Splitsko"
+Gothenburg,Göteborg,settlement,foreign,se,,,False,57.70723,11.96702,world_settlement,high,
+Gottwaldov,Gottwaldov,settlement,foreign,cz,,,False,49.22677,17.66674,exonym_settlement,medium,returned as Zlín
+Gozd,Gozd,settlement,si,si,Gorenjska,Tržič,False,46.34040,14.33505,contested_si,medium,also a foreign settlement (Poljska); kept Slovenian (importance 0.15 vs 0.36)
+Gozd Martuljek,Gozd Martuljek,settlement,si,si,Gorenjska,Kranjska Gora,False,46.48412,13.83873,si_settlement,high,
+Grad Snežnik,Grad Snežnik,other,si,si,Primorsko-notranjska,Loška Dolina,False,45.68269,14.46909,unrestricted,medium,
+Gradac,Gradac,settlement,si,si,Jugovzhodna Slovenija,Metlika,False,45.61437,15.24479,si_settlement,high,
+Gradec,Gradec,settlement,foreign,at,,,False,47.07070,15.43950,override,medium,read as Graz (Slovene: Gradec); Slovenian villages of the name exist
+"Gradec, Avstrija","Gradec, Avstrija",settlement,foreign,at,,,False,47.07087,15.43828,exonym_settlement,medium,returned as Gradec
+Gradež pri Turjaku,Gradež pri Turjaku,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.87230,14.59723,qualified_anchor,low,placed at its anchor Turjaku
+Grahovo,Grahovo,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.77067,14.42511,contested_si,medium,also a foreign settlement (Črna gora); kept Slovenian (importance 0.15 vs 0.46)
+Grahovo ob Bači,Grahovo ob Bači,settlement,si,si,Goriška,Tolmin,False,46.15731,13.86562,si_settlement,high,
+Grahovo pri Cerknici,Grahovo pri Cerknici,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.81558,14.37969,qualified_anchor,low,placed at its anchor Cerknici
+Granada,Granada,settlement,foreign,es,,,False,37.17350,-3.59953,world_settlement,high,
+Graz,Gradec,settlement,foreign,at,,,False,47.07070,15.43950,override,medium,read as Graz (Slovene: Gradec); Slovenian villages of the name exist
+Gračišče,Gračišče,settlement,si,si,Obalno-kraška,Koper,False,45.50533,13.87750,si_settlement,high,
+Graška Gora,Graška Gora,settlement,si,si,Koroška,Velenje,False,46.41762,15.12295,si_settlement,high,
+Grebinj,Grebinj,unknown,,,,,False,,,unresolved,low,
+Grgar,Grgar,settlement,si,si,Goriška,Nova Gorica,False,45.99816,13.67322,si_settlement,high,
+Griže,Griže,settlement,si,si,Savinjska,Žalec,False,46.22958,15.15449,si_settlement,high,
+Grm,Grm,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.89614,15.05205,si_settlement,high,
+Groningen,Groningen,settlement,foreign,nl,,,False,53.21907,6.56801,world_settlement,high,
+Grosuplje,Grosuplje,settlement,si,si,Osrednjeslovenska,Grosuplje,False,45.94429,14.66421,si_settlement,high,
+Grožnjan,Grožnjan,settlement,foreign,hr,,,False,45.37865,13.72245,exonym_settlement,medium,returned as Općina Grožnjan
+Grupije,Grupije,unknown,,,,,False,,,unresolved,low,
+Gruzija,Gruzija,country,foreign,ge,,,False,41.68087,44.02878,unrestricted,medium,
+Grčija,Grčija,country,foreign,gr,,,False,38.99537,21.98771,unrestricted,medium,
+Gstaad,Gstaad,settlement,foreign,ch,,,False,46.47216,7.28875,world_settlement,high,
+Gunclje,Gunclje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.10232,14.45309,si_settlement,high,
+Gvatemala,Gvatemala,settlement,foreign,gt,,,False,14.64161,-90.51328,world_settlement,high,
+Gyula,Gyula,settlement,foreign,hu,,,False,46.64387,21.27476,world_settlement,high,
+Göppingen,Göppingen,settlement,foreign,de,,,False,48.70314,9.65411,world_settlement,high,
+Göteborg,Göteborg,settlement,foreign,se,,,False,57.70723,11.96702,world_settlement,high,
+Göttingen,Göttingen,settlement,foreign,de,,,False,51.53283,9.93518,world_settlement,high,
+Gørding,Gørding,settlement,foreign,dk,,,False,55.47342,8.79995,world_settlement,high,
+Haag,Haag,settlement,foreign,nl,,,False,52.07998,4.31135,world_settlement,high,
+Hag,Hag,settlement,foreign,nl,,,False,52.07998,4.31135,exonym_settlement,medium,returned as Haag
+Hajdina,Hajdina,settlement,si,si,Podravska,Hajdina,False,46.41991,15.82393,si_settlement,high,
+Halle,Halle,settlement,foreign,de,,,False,51.48244,11.97130,exonym_settlement,medium,returned as Halle (Saale)
+Hallein,Hallein,settlement,foreign,at,,,False,47.68215,13.09563,world_settlement,high,
+Haloze,Haloze,region,si,si,Podravska,,False,46.52261,15.71533,region_table,high,informal region
+Hamburg,Hamburg,settlement,foreign,de,,,False,53.55017,10.00132,world_settlement,high,
+Hangzhou,Hangzhou,settlement,foreign,cn,,,False,30.24896,120.20523,exonym_settlement,medium,returned as Hangdžov
+Hannover,Hannover,settlement,foreign,de,,,False,52.37448,9.73855,world_settlement,high,
+Hanover,Hanover,settlement,foreign,de,,,False,52.37448,9.73855,exonym_settlement,medium,returned as Hannover
+"Harkov, Ukrajina","Harkov, Ukrajina",settlement,foreign,ua,,,False,49.99232,36.23101,exonym_settlement,medium,returned as Harkov
+Harpenden,Harpenden,settlement,foreign,gb,,,False,51.81451,-0.35493,world_settlement,high,
+"Harrisburg, Pennsylvania, ZDA","Harrisburg, Pennsylvania, ZDA",unknown,,,,,False,,,unresolved,low,
+Harrogate,Harrogate,settlement,foreign,gb,,,False,53.99215,-1.53910,world_settlement,high,
+Havana,Havana,settlement,foreign,cu,,,False,23.13530,-82.35896,world_settlement,high,
+Heidelberg,Heidelberg,settlement,foreign,de,,,False,49.40936,8.69472,world_settlement,high,
+Helsinki,Helsinki,settlement,foreign,fi,,,False,60.16662,24.94354,world_settlement,high,
+Herceg Novi,Herceg Novi,settlement,foreign,me,,,False,42.45176,18.53675,exonym_settlement,medium,returned as Hercegnovi
+Hlebine,Hlebine,settlement,foreign,hr,,,False,46.15323,16.96701,exonym_settlement,medium,returned as Općina Hlebine
+Hobart,Hobart,settlement,foreign,au,,,False,-42.88251,147.32812,world_settlement,high,
+Hodiše,Hodiše,settlement,foreign,at,,,False,46.59346,14.18722,exonym_settlement,medium,returned as Hodiše ob jezeru
+Hodoš,Hodoš,settlement,si,si,Pomurska,Hodoš,False,46.82599,16.32612,si_settlement,high,
+Hong Kong,Hong Kong,settlement,foreign,cn,,,False,22.28183,114.15828,exonym_settlement,medium,returned as Hongkong
+Horjul,Horjul,settlement,si,si,Osrednjeslovenska,Horjul,False,46.02232,14.29890,si_settlement,high,
+Horn,Horn,settlement,foreign,nl,,,False,52.65327,5.07358,exonym_settlement,medium,returned as Hoorn
+Hotovlja,Hotovlja,settlement,si,si,Gorenjska,Gorenja vas-Poljane,False,46.11961,14.19180,si_settlement,high,
+Houston,Houston,settlement,foreign,us,,,False,29.75894,-95.36770,world_settlement,high,
+Hoče,Hoče,other,si,si,Podravska,Hoče-Slivnica,False,46.50080,15.66290,unrestricted,medium,
+Hrastje–Mota,Hrastje–Mota,settlement,si,si,Pomurska,Hrastje-Mota,False,46.61643,16.07551,exonym_settlement,medium,returned as Hrastje-Mota
+Hrastnik,Hrastnik,settlement,si,si,Zasavska,Hrastnik,False,46.13494,15.11758,si_settlement,high,
+Hrastovica,Hrastovica,settlement,si,si,Posavska,Mokronog-Trebelno,False,45.96702,15.15058,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.19)
+Hrovača,Hrovača,settlement,si,si,Jugovzhodna Slovenija,Ribnica,False,45.73671,14.73668,si_settlement,high,
+Hruševo,Hruševo,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.07091,14.38578,si_settlement,high,
+Hrušica,Hrušica,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.78467,15.24570,si_settlement,high,
+Hrvatini,Hrvatini,settlement,si,si,Obalno-kraška,Koper,False,45.58252,13.75639,si_settlement,high,
+Hrvaška,Hrvaška,country,foreign,hr,,,False,45.36584,15.65752,unrestricted,medium,
+Huda Jama,Huda Jama,settlement,si,si,Savinjska,Laško,False,46.15893,15.18738,si_settlement,high,
+Hum pri Ormožu,Hum pri Ormožu,settlement,si,si,Podravska,Ormož,False,46.41525,16.19845,si_settlement,high,
+Idrija,Idrija,settlement,si,si,Goriška,Idrija,False,46.00240,14.02730,si_settlement,high,
+Idrija pri Bači,Idrija pri Bači,settlement,si,si,Goriška,Tolmin,False,46.13890,13.77940,si_settlement,high,
+Ilirska Bistrica,Ilirska Bistrica,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.57722,14.29703,si_settlement,high,
+Indiana University of Pennsylvania,Indiana University of Pennsylvania,other,foreign,us,,,False,40.61419,-79.16098,unrestricted,medium,
+Indija,Indija,country,foreign,in,,,False,22.35111,78.66774,unrestricted,medium,
+Innsbruck,Innsbruck,settlement,foreign,at,,,False,47.26543,11.39277,world_settlement,high,
+Inđija,Inđija,settlement,foreign,rs,,,False,45.04786,20.08073,exonym_settlement,medium,returned as Инђија
+Irak,Irak,country,foreign,iq,,,False,33.09558,44.17498,unrestricted,medium,
+Iran,Iran,country,foreign,ir,,,False,32.64753,54.56435,unrestricted,medium,
+Irska,Irska,country,foreign,ie,,,False,52.86520,-7.97946,unrestricted,medium,
+Irča vas,Irča vas,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.80225,15.15236,si_settlement,high,
+Island,Island,settlement,foreign,fr,,,False,47.47019,3.84568,world_settlement,high,
+Isle of Wight,Isle of Wight,region,foreign,gb,,,False,50.67105,-1.33271,world_settlement,high,
+Istanbul,Istanbul,settlement,foreign,tr,,,False,41.00638,28.97587,exonym_settlement,medium,returned as Carigrad
+Istra,Istra,region,si,si,Obalno-kraška,,False,45.61329,13.80325,region_table,high,informal region
+Italija,Italija,country,foreign,it,,,False,42.63843,12.67430,unrestricted,medium,
+Ithaca,Ithaca,settlement,foreign,us,,,False,42.43742,-76.54837,exonym_settlement,medium,returned as Town of Ithaca
+Ivangrad,Ivangrad,settlement,foreign,me,,,False,42.84358,19.87287,exonym_settlement,medium,returned as Berane
+Ivano-Frankivsk,Ivano-Frankivsk,settlement,foreign,ua,,,False,48.92248,24.71033,world_settlement,high,
+Ivanovci,Ivanovci,settlement,si,si,Pomurska,Ivanovci,False,46.73778,16.23000,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.39)
+Ivančna Gorica,Ivančna Gorica,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.90428,14.81212,si_settlement,high,
+Izlake,Izlake,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.15359,14.93072,si_settlement,high,
+Izola,Izola,settlement,si,si,Obalno-kraška,Izola,False,45.54732,13.64783,si_settlement,high,
+Izrael,Izrael,country,foreign,il,,,False,30.81242,34.85948,unrestricted,medium,
+Ičići,Ičići,settlement,foreign,hr,,,False,45.31330,14.28476,world_settlement,high,
+Jablan,Jablan,settlement,si,si,Jugovzhodna Slovenija,Jablan,False,45.83791,15.09552,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.45)
+Jagnjenica,Jagnjenica,settlement,si,si,Savinjska,Radeče,False,46.06480,15.12426,contested_si,medium,also a foreign settlement (Kosovo); kept Slovenian (importance 0.15 vs 0.32)
+Jagodina,Jagodina,settlement,foreign,rs,,,False,43.97943,21.26077,world_settlement,high,
+Jakovica,Jakovica,settlement,si,si,Osrednjeslovenska,Logatec,False,45.86255,14.25039,si_settlement,high,
+Japan,Japan,country,foreign,jp,,,False,36.57484,139.23942,exonym_settlement,medium,returned as Japonska
+Japonska,Japonska,country,foreign,jp,,,False,36.57484,139.23942,unrestricted,medium,
+Jarenina,Jarenina,other,si,si,Podravska,Pesnica,False,46.62973,15.69815,unrestricted,medium,
+Jazbina,Jazbina,settlement,si,si,Savinjska,Jazbina,False,46.21840,15.54196,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.19)
+Jeranovo pri Kamniku,Jeranovo pri Kamniku,other,si,si,Osrednjeslovenska,Kamnik,False,46.23662,14.61260,unrestricted_fuzzy,low,"name mismatch: Pot na Jeranovo, Graben, Mekinje, Kamnik, Upravna Enota Kamn"
+Jerusalem,Jerusalem,settlement,foreign,il,,,False,31.77885,35.22579,exonym_settlement,medium,returned as Jeruzalem
+Jeruzalem,Jeruzalem,settlement,foreign,il,,,False,31.76830,35.21370,override,high,"Jerusalem, not the Ljutomer hamlet — carried by Middle-East correspondents"
+"Jeruzalem, Izrael","Jeruzalem, Izrael",settlement,foreign,il,,,False,31.77885,35.22579,exonym_settlement,medium,returned as Jeruzalem
+Jesenice,Jesenice,settlement,si,si,Gorenjska,Jesenice,False,46.44592,14.06631,si_settlement,high,
+Jezersko,Jezersko,settlement,si,si,Gorenjska,Jezersko,False,46.38643,14.48730,si_settlement,high,
+Johannesburg,Johannesburg,settlement,foreign,za,,,False,-26.20500,28.04972,world_settlement,high,
+Jordan,Jordan,settlement,foreign,us,,,False,44.66631,-93.62619,world_settlement,high,
+Jordankal,Jordankal,settlement,si,si,Jugovzhodna Slovenija,Jordankal,False,45.87008,15.04186,si_settlement,high,
+Jošt nad Kranjem,Jošt nad Kranjem,natural,si,si,Gorenjska,Kranj,False,46.24274,14.30303,unrestricted_fuzzy,low,"name mismatch: Sv. Jošt nad Kranjem, Kranj, 4000, Slovenija"
+Judenburg,Judenburg,settlement,foreign,at,,,False,47.16941,14.66011,world_settlement,high,
+Jugorje,Jugorje,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.77819,15.27898,si_settlement,high,
+Jugoslavija,Jugoslavija,country,foreign,,,,False,44.81760,20.45690,override,high,historical state; counted as a foreign/vague tie
+Juricani,Juricani,settlement,foreign,hr,,,False,45.40575,13.59364,world_settlement,high,
+Jurij ob Pesnici,Jurij ob Pesnici,settlement,si,si,Podravska,Mezgovci ob Pesnici,False,46.43126,15.96879,qualified_anchor,low,placed at its anchor Pesnici
+Jurka vas,Jurka vas,settlement,si,si,Jugovzhodna Slovenija,Jurka vas,False,45.78380,15.09175,si_settlement,high,
+Jurovski Dol,Jurovski Dol,settlement,si,si,Podravska,Sveti Jurij v Slovenskih goricah,False,46.60628,15.78411,si_settlement,high,
+Juršinci,Juršinci,settlement,si,si,Podravska,Juršinci,False,46.48593,15.96819,si_settlement,high,
+Južna Moravska,Južna Moravska,region,foreign,cz,,,False,49.12492,16.68277,exonym_settlement,medium,returned as Jihomoravský kraj
+Južni Sudan,Južni Sudan,country,foreign,ss,,,False,7.86994,29.66679,unrestricted,medium,
+Jūrmala,Jūrmala,settlement,foreign,lv,,,False,56.97272,23.78870,world_settlement,high,
+Kabardino-Balkarian Republic,Kabardino-Balkarian Republic,other,foreign,ru,,,False,43.49619,43.59561,unrestricted_fuzzy,low,"name mismatch: Кабардино-Балкарский государственный университет, Кузнечный"
+Kairo,Kairo,settlement,foreign,eg,,,False,30.04439,31.23573,world_settlement,high,
+Kambodža,Kambodža,country,foreign,kh,,,False,12.54332,104.81449,unrestricted,medium,
+Kamering,Kamering,settlement,foreign,at,,,False,46.73459,13.60278,world_settlement,high,
+Kamnik,Kamnik,settlement,si,si,Osrednjeslovenska,Kamnik,False,46.27510,14.62677,si_settlement,high,
+Kamno,Kamno,settlement,si,si,Goriška,Tolmin,False,46.21370,13.63745,si_settlement,high,
+Kanada,Kanada,country,foreign,ca,,,False,61.06669,-107.99171,unrestricted,medium,
+Kanal,Kanal,settlement,si,si,Goriška,Kanal,False,46.08407,13.66348,si_settlement,high,
+Kanal ob Soči,Kanal ob Soči,settlement,si,si,Goriška,Kanal,False,46.08587,13.63393,exonym_settlement,medium,returned as Kanal
+Kanjiža,Kanjiža,settlement,foreign,rs,,,False,46.06571,20.05794,exonym_settlement,medium,returned as Кањижа
+Karlovac,Karlovac,settlement,foreign,hr,,,False,45.48925,15.54863,exonym_settlement,medium,returned as Karlovec
+"Karlovac, Hrvaška","Karlovac, Hrvaška",settlement,foreign,hr,,,False,45.48925,15.54863,exonym_settlement,medium,returned as Karlovec
+Karlovec,Karlovec,settlement,foreign,hr,,,False,45.48925,15.54863,world_settlement,high,
+Karlovy Vary,Karlovy Vary,settlement,foreign,cz,,,False,50.23062,12.87014,exonym_settlement,medium,returned as Karlovi Vari
+Karlsruhe,Karlsruhe,settlement,foreign,de,,,False,49.00687,8.40342,world_settlement,high,
+Karst,Karst,natural,si,si,Obalno-kraška,Sežana,False,45.66784,13.90139,unrestricted_fuzzy,low,"name mismatch: Kras, Sežana, Upravna enota Sežana, 6219, Slovenija"
+Karteljevo,Karteljevo,other,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.85251,15.14371,unrestricted,medium,
+Kassel,Kassel,settlement,foreign,de,,,False,51.31578,9.49785,world_settlement,high,
+Katalonija,Katalonija,region,foreign,es,,,False,41.85231,1.57450,world_settlement,high,
+Katovice,Katovice,settlement,foreign,pl,,,False,50.25990,19.02159,world_settlement,high,
+Katowice,Katowice,other,foreign,pl,,,False,50.21373,19.00588,exonym_settlement,medium,returned as Katovice
+Kaverljag,Kaverljag,unknown,,,,,False,,,unresolved,low,
+Keszthely,Keszthely,settlement,foreign,hu,,,False,46.76751,17.24628,exonym_settlement,medium,returned as Blatenski Kostel
+Kidričevo,Kidričevo,settlement,si,si,Podravska,Kidričevo,False,46.39771,15.75391,si_settlement,high,
+Kiel,Kiel,settlement,foreign,de,,,False,54.32271,10.13556,world_settlement,high,
+Kikinda,Kikinda,settlement,foreign,rs,,,False,45.83001,20.46531,exonym_settlement,medium,returned as Град Кикинда
+Kilovče,Kilovče,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.61953,14.18688,si_settlement,high,
+Kitajska,Kitajska,settlement,si,si,Goriška,Ajdovščina,False,45.93141,13.90361,si_settlement,high,
+Kitakyushu,Kitakyushu,settlement,foreign,jp,,,False,33.88300,130.87490,exonym_settlement,medium,returned as 北九州市
+Klagenfurt,Celovec,settlement,foreign,at,,,False,46.62470,14.30800,override,high,Klagenfurt
+Klaipėda,Klaipėda,settlement,foreign,lt,,,False,55.71275,21.13505,exonym_settlement,medium,returned as Klajpeda
+Klanec pri Kranju,Klanec pri Kranju,settlement,si,si,Gorenjska,Kranj,False,46.24329,14.35494,qualified_anchor,low,placed at its anchor Kranj
+Knežak,Knežak,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.62474,14.24487,si_settlement,high,
+Knin,Knin,settlement,foreign,hr,,,False,44.04085,16.19943,exonym_settlement,medium,returned as Grad Knin
+Kobarid,Kobarid,settlement,si,si,Goriška,Kobarid,False,46.24303,13.54688,si_settlement,high,
+Kolašin,Kolašin,settlement,foreign,me,,,False,42.82384,19.52180,world_settlement,high,
+Kolobje,Kolobje,unknown,,,,,False,,,unresolved,low,
+Kolpa,Kolpa,settlement,foreign,in,,,False,18.42616,76.64072,world_settlement,high,
+Kolumbija,Kolumbija,country,foreign,co,,,False,4.09992,-72.90881,unrestricted,medium,
+Komarna vas,Komarna vas,settlement,si,si,Jugovzhodna Slovenija,Črmošnjice,False,45.67295,15.08137,si_settlement,high,
+Komen,Komen,settlement,si,si,Obalno-kraška,Komen,False,45.81925,13.79008,si_settlement,high,
+Komenda,Komenda,settlement,si,si,Osrednjeslovenska,Komenda,False,46.20705,14.53778,si_settlement,high,
+Komiža,Komiža,settlement,foreign,hr,,,False,43.04457,16.09049,exonym_settlement,medium,returned as Grad Komiža
+Kongo,Kongo,country,foreign,cd,,,False,-2.98143,23.82226,unrestricted,medium,
+Kontovel,Kontovel,settlement,foreign,it,,,False,45.70253,13.73280,world_settlement,high,
+Kopenhagen,Kopenhagen,settlement,foreign,dk,,,False,55.68672,12.57007,exonym_settlement,medium,returned as København
+Koper,Koper,settlement,si,si,Obalno-kraška,Koper,False,45.54799,13.73048,si_settlement,high,
+"Koper, Slovenija",Koper,settlement,si,si,Obalno-kraška,Koper,False,45.54799,13.73048,si_settlement,high,
+Kopriva,Kopriva,settlement,si,si,Obalno-kraška,Sežana,False,45.78243,13.83423,si_settlement,high,
+Kopriva na Krasu,Kopriva na Krasu,settlement,si,si,Goriška,Miren-Kostanjevica,False,45.84451,13.64209,qualified_anchor,low,placed at its anchor Krasu
+Koprivnica,Koprivnica,settlement,si,si,Savinjska,Krško,False,46.03505,15.54098,si_settlement,high,
+Koritnice,Koritnice,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.62249,14.28552,si_settlement,high,
+Koroška,Koroška,region,si,si,Koroška,,False,46.55563,15.04797,region_table,high,informal region
+Koroška Bela,Koroška Bela,settlement,si,si,Gorenjska,Jesenice,False,46.42718,14.09940,si_settlement,high,
+Kosovo,Kosovo,country,foreign,xk,,,False,42.58696,20.90212,unrestricted,medium,
+Kostanjevica na Dolenjskem,Kostanjevica na Dolenjskem,settlement,si,si,Posavska,Brežice,False,45.85936,15.68908,qualified_anchor,low,placed at its anchor Dolenjskem
+Kostanjevica na Krki,Kostanjevica na Krki,settlement,si,si,Posavska,Kostanjevica na Krki,False,45.84138,15.41903,si_settlement,high,
+Kostel,Kostel,settlement,si,si,Jugovzhodna Slovenija,Kostel,False,45.50814,14.91049,si_settlement,high,
+Kotlje,Kotlje,settlement,si,si,Koroška,Ravne na Koroškem,False,46.51942,14.98558,si_settlement,high,
+Kozina,Kozina,settlement,si,si,Obalno-kraška,Hrpelje-Kozina,False,45.60851,13.93530,si_settlement,high,
+Kozjansko,Kozjansko,region,si,si,Savinjska,,False,46.25071,15.17565,region_table,high,informal region
+Kočevje,Kočevje,settlement,si,si,Jugovzhodna Slovenija,Kočevje,False,45.63078,14.86815,si_settlement,high,
+Kočevski Rog,Kočevski Rog,natural,si,si,Jugovzhodna Slovenija,Kočevje,False,45.67923,15.02688,unrestricted,medium,
+Košice,Košice,settlement,foreign,sk,,,False,48.71723,21.24968,world_settlement,high,
+Koštabona,Koštabona,settlement,si,si,Obalno-kraška,Koper,False,45.47892,13.73719,si_settlement,high,
+Kragujevac,Kragujevac,settlement,foreign,rs,,,False,44.01318,20.91964,world_settlement,high,
+Krakov,Kraków,other,foreign,pl,,,False,50.04694,19.99715,unrestricted,medium,
+Kraków,Kraków,other,foreign,pl,,,False,50.04694,19.99715,unrestricted,medium,
+Kraljevo,Kraljevo,settlement,foreign,rs,,,False,43.72345,20.68708,world_settlement,high,
+Kranj,Kranj,settlement,si,si,Gorenjska,Kranj,False,46.24329,14.35494,si_settlement,high,
+Kranjska Gora,Kranjska Gora,settlement,si,si,Gorenjska,Kranjska Gora,False,46.45021,13.84341,si_settlement,high,
+Kras,Kras,region,si,si,Obalno-kraška,,False,45.61329,13.80325,region_table,high,informal region
+Krašnja,Krašnja,settlement,si,si,Osrednjeslovenska,Lukovica,False,46.16696,14.74570,si_settlement,high,
+Kremberk,Kremberk,settlement,si,si,Podravska,Kremberk,False,46.64451,15.84364,si_settlement,high,
+Kreplje,Kreplje,settlement,si,si,Obalno-kraška,Sežana,False,45.74499,13.83726,si_settlement,high,
+Kresnice,Kresnice,settlement,si,si,Osrednjeslovenska,Litija,False,46.10251,14.78678,si_settlement,high,
+Krim,Krim,natural,foreign,ua,,,False,45.28350,34.20082,unrestricted_fuzzy,low,"name mismatch: Крымский полуостров, Ukrajina"
+Križ,Križ,settlement,si,si,Obalno-kraška,Sežana,False,45.74272,13.86395,si_settlement,high,
+Križ pri Trstu,Križ pri Trstu,settlement,foreign,it,,,False,45.75700,13.66900,override,high,"Santa Croce / Križ, a Slovene village near Trieste"
+Križe pri Tržiču,Križe pri Tržiču,settlement,si,si,Gorenjska,Tržič,False,46.35713,14.27573,qualified_anchor,low,placed at its anchor Tržiču
+Križevci,Križevci,settlement,si,si,Pomurska,Križevci,False,46.56685,16.11762,si_settlement,high,
+Križevci pri Ljutomeru,Križevci pri Ljutomeru,settlement,si,si,Pomurska,Križevci,False,46.56324,16.13840,si_settlement,high,
+Križevniška ulica,Križevniška ulica,other,si,si,Osrednjeslovenska,Ljubljana,True,46.04644,14.50446,unrestricted,medium,
+Krk,Krk,settlement,foreign,hr,,,False,45.02698,14.57529,world_settlement,high,
+Krka,Krka,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.82174,15.18856,si_settlement,high,
+Krmelj,Krmelj,settlement,si,si,Posavska,Sevnica,False,45.98453,15.18685,si_settlement,high,
+Kromberk,Kromberk,settlement,si,si,Goriška,Nova Gorica,False,45.95829,13.66441,si_settlement,high,
+Kropa,Kropa,settlement,si,si,Gorenjska,Radovljica,False,46.29109,14.20470,si_settlement,high,
+Krupa,Krupa,settlement,si,si,Jugovzhodna Slovenija,Krupa,False,45.63570,15.21799,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.37)
+Kruševac,Kruševac,settlement,foreign,xk,,,False,42.57667,20.35411,exonym_settlement,medium,returned as Kryshec
+Krušče,Krušče,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.82609,14.43959,si_settlement,high,
+Krvava Peč,Krvava Peč,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.86418,14.51475,si_settlement,high,
+Krvavec,Krvavec,settlement,si,si,Goriška,Nova Gorica,False,46.04166,13.71520,si_settlement,high,
+Krško,Krško,settlement,si,si,Posavska,Krško,False,45.95764,15.49468,si_settlement,high,
+Kuala Lumpur,Kuala Lumpur,region,foreign,my,,,False,3.15170,101.69424,world_settlement,high,
+Kuba,Kuba,country,foreign,cu,,,False,23.01313,-80.83287,unrestricted,medium,
+Kubed,Kubed,settlement,si,si,Obalno-kraška,Koper,False,45.52154,13.86893,si_settlement,high,
+Kuopio,Kuopio,settlement,foreign,fi,,,False,62.89246,27.67836,world_settlement,high,
+Kurdistan,Kurdistan,region,foreign,ir,,,False,35.67278,47.01280,exonym_settlement,medium,returned as استان کردستان
+Kutina,Kutina,settlement,foreign,hr,,,False,45.48310,16.77559,exonym_settlement,medium,returned as Grad Kutina
+Kuvajt,Kuvajt,settlement,foreign,kw,,,False,29.37965,47.97342,world_settlement,high,
+Kyiv,Kyiv,settlement,foreign,ua,,,False,50.45003,30.52414,exonym_settlement,medium,returned as Kijev
+Köln,Köln,settlement,foreign,de,,,False,50.93836,6.95997,world_settlement,high,
+Körmend,Körmend,other,foreign,hu,,,False,47.01610,16.59809,unrestricted_fuzzy,low,"name mismatch: Kermendin, Vasútmellék utca, Kis Amerika, Kermendin, Körmend"
+Kötschach-Lienz,Kötschach-Lienz,unknown,,,,,False,,,unresolved,low,
+København,København,settlement,foreign,dk,,,False,55.68672,12.57007,world_settlement,high,
+L'Hôpital,L'Hôpital,settlement,foreign,fr,,,False,49.16094,6.73341,world_settlement,high,
+"La Plata, Argentina","La Plata, Argentina",settlement,foreign,ar,,,False,-34.92068,-57.95376,exonym_settlement,medium,returned as La Plata
+Lahonci,Lahonci,settlement,si,si,Podravska,Ormož,False,46.47866,16.12806,si_settlement,high,
+Lake Cerknica,Lake Cerknica,other,si,si,Primorsko-notranjska,Cerknica,False,45.77683,14.36091,unrestricted_fuzzy,low,"name mismatch: Muzej Cerkniškega jezera, Dolenje Jezero, Cerknica, 1380, Sl"
+Lanzarote,Lanzarote,other,foreign,es,,,False,29.03971,-13.63629,unrestricted,medium,
+Las Vegas,Las Vegas,settlement,foreign,us,,,False,36.16743,-115.14841,world_settlement,high,
+Latinska Amerika,Latinska Amerika,region,foreign,,,,False,,,override,high,world region
+Latvija,Latvija,country,foreign,lv,,,False,56.84065,24.75376,unrestricted,medium,
+Lausanne,Lausanne,settlement,foreign,ch,,,False,46.52183,6.63270,exonym_settlement,medium,returned as Lozana
+Lawrence,Lawrence,settlement,foreign,us,,,False,38.97191,-95.23594,world_settlement,high,
+Laško,Laško,settlement,si,si,Savinjska,Laško,False,46.12798,15.26955,si_settlement,high,
+Ledine,Ledine,settlement,si,si,Goriška,Idrija,False,46.04218,14.05496,si_settlement,high,
+Leeds,Leeds,settlement,foreign,gb,,,False,53.79742,-1.54379,world_settlement,high,
+"Leeds, Združeno kraljestvo","Leeds, Združeno kraljestvo",settlement,foreign,gb,,,False,53.79742,-1.54379,exonym_settlement,medium,returned as Leeds
+Leeuwarden,Leeuwarden,settlement,foreign,nl,,,False,53.20059,5.79185,world_settlement,high,
+Legen,Legen,settlement,foreign,ro,,,False,46.85594,24.04962,exonym_settlement,medium,returned as Legii
+Legen pri Slovenj Gradcu,Legen pri Slovenj Gradcu,other,si,si,Koroška,Slovenj Gradec,False,46.50650,15.10698,unrestricted_fuzzy,low,"name mismatch: Legen, Dvorska vas, Šmartno pri Slovenj Gradcu, Slovenj Grad"
+Leiden,Leiden,settlement,foreign,nl,,,False,52.15947,4.49088,world_settlement,high,
+Leipzig,Leipzig,settlement,foreign,de,,,False,51.34063,12.37473,world_settlement,high,
+"Leipzig, Nemčija","Leipzig, Nemčija",settlement,foreign,de,,,False,51.34063,12.37473,exonym_settlement,medium,returned as Leipzig
+Lenart pri Gornjem Gradu,Lenart pri Gornjem Gradu,settlement,si,si,Savinjska,Lenart pri Gornjem Gradu,False,46.30414,14.79248,si_settlement,high,
+Lenart v Slovenskih goricah,Lenart v Slovenskih goricah,settlement,si,si,Podravska,Lenart,False,46.57637,15.83097,si_settlement,high,
+Lendava,Lendava,settlement,si,si,Pomurska,Lendava,False,46.56396,16.45265,si_settlement,high,
+Leningrad,Leningrad,region,foreign,ru,,,False,59.96067,30.15866,exonym_settlement,medium,returned as Sankt Peterburg
+Lepena,Lepena,settlement,si,si,Goriška,Bovec,False,46.31207,13.65530,si_settlement,high,
+Lepoglava,Lepoglava,settlement,foreign,hr,,,False,46.20753,16.04417,exonym_settlement,medium,returned as Grad Lepoglava
+Lesce,Lesce,settlement,si,si,Gorenjska,Radovljica,False,46.36180,14.15444,si_settlement,high,
+Leskovac,Leskovac,settlement,foreign,rs,,,False,44.52264,20.33537,exonym_settlement,medium,returned as Лесковац
+Leskovec,Leskovec,settlement,si,si,Savinjska,Celje,False,46.25229,15.30339,contested_si,medium,also a foreign settlement (Češka); kept Slovenian (importance 0.15 vs 0.46)
+Leskovec pri Krškem,Leskovec pri Krškem,settlement,si,si,Posavska,Krško,False,45.93980,15.47693,si_settlement,high,
+Lesni Brdo,Lesni Brdo,unknown,,,,,False,,,unresolved,low,
+Lesno Brdo,Lesno Brdo,settlement,si,si,Osrednjeslovenska,Vrhnika,False,46.00432,14.33392,si_settlement,high,
+Leuven,Leuven,settlement,foreign,be,,,False,50.87920,4.70117,world_settlement,high,
+Levice,Levice,settlement,foreign,it,,,False,44.53824,8.15504,world_settlement,high,
+Levič,Levič,settlement,si,si,Podravska,Slovenska Bistrica,False,46.35110,15.54127,si_settlement,high,
+Libanon,Libanon,country,foreign,lb,,,False,33.87506,35.84341,unrestricted,medium,
+Libija,Libija,country,foreign,ly,,,False,26.82345,18.12367,unrestricted,medium,
+Lienz,Lienz,settlement,foreign,at,,,False,46.82987,12.76813,world_settlement,high,
+Lille,Lille,settlement,foreign,fr,,,False,50.63657,3.06353,world_settlement,high,
+Limbuš,Limbuš,settlement,si,si,Podravska,Maribor,False,46.55432,15.58246,si_settlement,high,
+Linz,Linz,settlement,foreign,at,,,False,48.30591,14.28620,world_settlement,high,
+Lipica,Lipica,settlement,si,si,Gorenjska,Škofja Loka,False,46.16507,14.34056,contested_si,medium,also a foreign settlement (Poljska); kept Slovenian (importance 0.15 vs 0.37)
+Lipovci,Lipovci,settlement,si,si,Pomurska,Lipovci,False,46.62556,16.22838,si_settlement,high,
+Liptovský Mikuláš,Liptovský Mikuláš,settlement,foreign,sk,,,False,49.08358,19.61278,world_settlement,high,
+Litija,Litija,settlement,si,si,Osrednjeslovenska,Litija,False,46.04968,14.99108,si_settlement,high,
+Litva,Litva,country,foreign,lt,,,False,55.35000,23.75000,unrestricted,medium,
+Livek nad Kobaridom,Livek nad Kobaridom,unknown,,,,,False,,,unresolved,low,
+Liverpool,Liverpool,settlement,foreign,gb,,,False,53.39334,-2.91664,world_settlement,high,
+"Liverpool, Združeno kraljestvo","Liverpool, Združeno kraljestvo",settlement,foreign,gb,,,False,53.39334,-2.91664,exonym_settlement,medium,returned as Liverpool
+Livno,Livno,settlement,foreign,ba,,,False,43.82591,17.00424,world_settlement,high,
+Lizbona,Lizbona,settlement,foreign,pt,,,False,38.70775,-9.13659,world_settlement,high,
+Liège,Liège,settlement,foreign,be,,,False,50.64509,5.57361,world_settlement,high,
+Ližnjan,Ližnjan,settlement,foreign,hr,,,False,44.82804,13.95761,exonym_settlement,medium,returned as Općina Ližnjan
+Ljubljana,Ljubljana,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05003,14.50693,si_settlement,high,
+Ljubljana Center,Ljubljana Center,other,si,si,Osrednjeslovenska,Ljubljana,True,46.02566,14.49899,unrestricted_fuzzy,low,"name mismatch: Ljubljana - center, Južna obvoznica, Rakova jelša, Četrtna s"
+"Ljubljana, Slovenija",Ljubljana,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05003,14.50693,si_settlement,high,
+Ljubljana-Vič,Ljubljana-Vič,other,si,si,Osrednjeslovenska,Ljubljana,True,46.04229,14.47783,unrestricted_fuzzy,low,"name mismatch: Vič, Tržaška cesta, Glince, Četrtna skupnost Vič, Ljubljana,"
+Ljubljansko barje,Ljubljansko barje,natural,si,si,Osrednjeslovenska,Brezovica,False,45.98381,14.42911,unrestricted,medium,
+Ljubno ob Savinji,Ljubno ob Savinji,settlement,si,si,Savinjska,Ljubno,False,46.34340,14.83365,si_settlement,high,
+Ljutomer,Ljutomer,settlement,si,si,Pomurska,Ljutomer,False,46.52214,16.13130,si_settlement,high,
+"Ljutomer, Slovenija",Ljutomer,settlement,si,si,Pomurska,Ljutomer,False,46.52214,16.13130,si_settlement,high,
+Lleida,Lleida,settlement,foreign,es,,,False,41.61476,0.62678,world_settlement,high,
+Lobnik,Lobnik,settlement,foreign,at,,,False,46.49159,14.61863,world_settlement,high,
+Log pod Mangartom,Log pod Mangartom,settlement,si,si,Goriška,Bovec,False,46.40669,13.60361,si_settlement,high,
+Logatec,Logatec,settlement,si,si,Osrednjeslovenska,Logatec,False,45.94325,14.17994,si_settlement,high,
+Loka pri Zidanem Mostu,Loka pri Zidanem Mostu,settlement,si,si,Posavska,Sevnica,False,46.05601,15.20876,si_settlement,high,
+Lokavec,Lokavec,settlement,si,si,Goriška,Ajdovščina,False,45.90212,13.87978,si_settlement,high,
+Loke pri Taboru,Loke pri Taboru,other,si,si,Savinjska,Miklavž pri Taboru,False,46.22402,15.01919,unrestricted_fuzzy,low,"name mismatch: Loke, Miklavž pri Taboru, Tabor, 3304, Slovenija"
+Lokve,Lokve,settlement,si,si,Goriška,Nova Gorica,False,46.01205,13.79271,si_settlement,high,
+London,London,settlement,foreign,gb,,,False,51.50745,-0.12777,world_settlement,high,
+"London, Združeno kraljestvo","London, Združeno kraljestvo",settlement,foreign,gb,,,False,51.50745,-0.12777,exonym_settlement,medium,returned as London
+Long Island,Long Island,settlement,foreign,us,,,False,39.94945,-99.53594,world_settlement,high,
+Lopata,Lopata,settlement,si,si,Savinjska,Celje,False,46.26212,15.23070,si_settlement,high,
+Los Alamos,Los Alamos,settlement,foreign,us,,,False,35.88137,-106.29896,world_settlement,high,
+Los Angeles,Los Angeles,settlement,foreign,us,,,False,34.05369,-118.24277,world_settlement,high,
+Louvain,Louvain,settlement,foreign,be,,,False,50.87920,4.70117,exonym_settlement,medium,returned as Leuven
+Lovran,Lovran,settlement,foreign,hr,,,False,45.29168,14.27626,world_settlement,high,
+Lovrenc na Dravskem Polju,Lovrenc na Dravskem Polju,settlement,si,si,Podravska,Kidričevo,False,46.37395,15.78067,si_settlement,high,
+Lovrenc na Dravskem polju,Lovrenc na Dravskem polju,settlement,si,si,Podravska,Kidričevo,False,46.37395,15.78067,si_settlement,high,
+Lovrenc na Pohorju,Lovrenc na Pohorju,settlement,si,si,Podravska,Lovrenc na Pohorju,False,46.54136,15.38857,si_settlement,high,
+Lovrečica,Lovrečica,settlement,foreign,hr,,,False,45.38374,13.53834,world_settlement,high,
+Ločki Vrh,Ločki Vrh,settlement,si,si,Podravska,Benedikt,False,46.59814,15.92018,si_settlement,high,
+Lošinj,Lošinj,other,foreign,hr,,,False,44.51073,14.50365,unrestricted,medium,
+Loška dolina,Loška dolina,settlement,si,si,Primorsko-notranjska,Loška Dolina,False,45.66452,14.49971,si_settlement,high,
+Loški Potok,Loški Potok,settlement,si,si,Jugovzhodna Slovenija,Loški Potok,False,45.66252,14.66997,si_settlement,high,
+Lucija,Lucija,settlement,si,si,Obalno-kraška,,False,45.50710,13.60460,override,high,Piran municipality
+Ludwigsburg,Ludwigsburg,settlement,foreign,de,,,False,48.89539,9.18951,world_settlement,high,
+Luksemburg,Luksemburg,settlement,foreign,lu,,,False,49.61128,6.12980,world_settlement,high,
+Lund,Lund,settlement,foreign,se,,,False,55.70293,13.19294,world_settlement,high,
+Luxembourg,Luxembourg,settlement,foreign,lu,,,False,49.61128,6.12980,exonym_settlement,medium,returned as Luksemburg
+Luče,Luče,settlement,si,si,Savinjska,Luče,False,46.35536,14.74514,si_settlement,high,
+Lviv,Lviv,settlement,foreign,ua,,,False,49.84195,24.03159,exonym_settlement,medium,returned as Lvov
+Lwów,Lwów,settlement,foreign,ua,,,False,49.84195,24.03159,exonym_settlement,medium,returned as Lvov
+Lyon,Lyon,settlement,foreign,fr,,,False,45.75781,4.83201,world_settlement,high,
+"Lyon, Francija","Lyon, Francija",settlement,foreign,fr,,,False,45.75781,4.83201,exonym_settlement,medium,returned as Lyon
+Maaskantje,Maaskantje,settlement,foreign,nl,,,False,51.65887,5.37001,world_settlement,high,
+Madagaskar,Madagaskar,country,foreign,mg,,,False,-18.92496,46.44164,unrestricted,medium,
+Madrid,Madrid,settlement,foreign,es,,,False,40.41678,-3.70351,world_settlement,high,
+"Madrid, Španija","Madrid, Španija",settlement,foreign,es,,,False,40.41678,-3.70351,exonym_settlement,medium,returned as Madrid
+Madžarska,Madžarska,country,foreign,hu,,,False,47.18176,19.50609,unrestricted,medium,
+Magdeburg,Magdeburg,settlement,foreign,de,,,False,52.13148,11.64008,world_settlement,high,
+Maglaj,Maglaj,settlement,foreign,ba,,,False,44.54687,18.10102,world_settlement,high,
+Mainz,Mainz,settlement,foreign,de,,,False,49.99952,8.27363,world_settlement,high,
+Makedonija,Makedonija,country,foreign,mk,,,False,41.61712,21.71684,exonym_settlement,medium,returned as Severna Makedonija
+Mala Ilova Gora,Mala Ilova Gora,settlement,si,si,Osrednjeslovenska,Grosuplje,False,45.88283,14.72903,si_settlement,high,
+Mala Nedelja,Mala Nedelja,settlement,si,si,Pomurska,Ljutomer,False,46.52353,16.05455,si_settlement,high,
+Malenski Vrh,Malenski Vrh,settlement,si,si,Gorenjska,Gorenja vas-Poljane,False,46.14224,14.14777,si_settlement,high,
+Malečnik,Malečnik,settlement,si,si,Podravska,Maribor,False,46.55573,15.69808,si_settlement,high,
+Mali Lipoglav,Mali Lipoglav,settlement,si,si,Osrednjeslovenska,Ljubljana,True,45.99344,14.64417,si_settlement,high,
+Mali Lošinj,Mali Lošinj,settlement,foreign,hr,,,False,44.53161,14.46941,world_settlement,high,
+Mallorca,Mallorca,other,foreign,es,,,False,39.61343,2.88292,unrestricted,medium,
+Malmö,Malmö,settlement,foreign,se,,,False,55.60529,13.00016,world_settlement,high,
+Manchester,Manchester,settlement,foreign,gb,,,False,53.44246,-2.23245,world_settlement,high,
+Manžan,Manžan,settlement,foreign,it,,,False,45.99051,13.38150,exonym_settlement,medium,returned as Manzano / Manzan
+Marezige,Marezige,settlement,si,si,Obalno-kraška,Koper,False,45.50710,13.79976,si_settlement,high,
+Maribor,Maribor,settlement,si,si,Podravska,Maribor,False,46.55764,15.64559,si_settlement,high,
+"Maribor, Slovenija",Maribor,settlement,si,si,Podravska,Maribor,False,46.55764,15.64559,si_settlement,high,
+Mariborsko Pohorje,Mariborsko Pohorje,natural,si,si,Podravska,Maribor,False,46.51534,15.57823,unrestricted,medium,
+Marina Julia,Marina Julia,settlement,foreign,it,,,False,45.77557,13.52833,exonym_settlement,medium,returned as Marina Julia / Marine Julie
+Markišavci,Markišavci,settlement,si,si,Pomurska,Murska Sobota,False,46.68323,16.16421,si_settlement,high,
+Maroko,Maroko,other,foreign,ma,,,False,28.33477,-10.37134,unrestricted,medium,
+Marseille,Marseille,settlement,foreign,fr,,,False,43.29640,5.37779,world_settlement,high,
+Martuljek,Martuljek,other,si,si,Gorenjska,Kranjska Gora,False,46.48084,13.83620,unrestricted,medium,
+Masafer Yatta,Masafer Yatta,unknown,,,,,False,,,unresolved,low,
+Materada,Materada,settlement,foreign,hr,,,False,45.40330,13.60604,world_settlement,high,
+Mašun,Mašun,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.62925,14.36722,si_settlement,high,
+Medno,Medno,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.12349,14.43712,si_settlement,high,
+Medvode,Medvode,settlement,si,si,Osrednjeslovenska,Medvode,False,46.13458,14.40106,si_settlement,high,
+Mehika,Mehika,country,foreign,mx,,,False,23.65851,-102.00771,unrestricted,medium,
+Melbourne,Melbourne,settlement,foreign,au,,,False,-37.81425,144.96317,world_settlement,high,
+"Melbourne, Avstralija","Melbourne, Avstralija",settlement,foreign,au,,,False,-37.81425,144.96317,exonym_settlement,medium,returned as Melbourne
+Mengeš,Mengeš,settlement,si,si,Osrednjeslovenska,Mengeš,False,46.16324,14.56321,si_settlement,high,
+Metelkova Mesto,Metelkova Mesto,other,si,si,Osrednjeslovenska,Ljubljana,True,46.05697,14.51708,override,high,autonomous cultural centre in Ljubljana
+Metković,Metković,settlement,foreign,hr,,,False,43.05353,17.64991,exonym_settlement,medium,returned as Grad Metković
+Metlika,Metlika,settlement,si,si,Jugovzhodna Slovenija,Metlika,False,45.65010,15.31745,si_settlement,high,
+Mežica,Mežica,settlement,si,si,Koroška,Mežica,False,46.52040,14.85000,si_settlement,high,
+Mihajlov,Mihajlov,settlement,foreign,ru,,,False,54.23019,39.02746,exonym_settlement,medium,returned as Михайлов
+Miklavž na Dravskem polju,Miklavž na Dravskem polju,settlement,si,si,Podravska,Miklavž na Dravskem polju,False,46.48862,15.70151,si_settlement,high,
+Milan,Milano,settlement,foreign,it,,,False,45.46419,9.18963,exonym_settlement,medium,returned as Milan
+Milano,Milano,settlement,foreign,it,,,False,45.46419,9.18963,exonym_settlement,medium,returned as Milan
+Miren,Miren,settlement,si,si,Goriška,Miren-Kostanjevica,False,45.89434,13.60892,si_settlement,high,
+Mirna,Mirna,settlement,si,si,Jugovzhodna Slovenija,Mirna,False,45.94607,15.05732,si_settlement,high,
+Mirna Peč,Mirna Peč,settlement,si,si,Jugovzhodna Slovenija,Mirna Peč,False,45.86027,15.08190,si_settlement,high,
+Mislinja,Mislinja,settlement,si,si,Koroška,Mislinja,False,46.44358,15.19835,si_settlement,high,
+Mislinja Valley,Mislinja Valley,unknown,,,,,False,,,unresolved,low,
+Mislinjska dolina,Mislinjska dolina,unknown,,,,,False,,,unresolved,low,
+Mjanmar,Mjanmar,country,foreign,mm,,,False,17.17505,95.99997,unrestricted,medium,
+Mlaka pri Kranju,Mlaka pri Kranju,other,si,si,Gorenjska,Kranj,False,46.27358,14.34881,unrestricted,medium,
+Modesto,Modesto,settlement,foreign,us,,,False,37.63934,-120.99689,world_settlement,high,
+Mohorje,Mohorje,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.82261,14.54284,si_settlement,high,
+Mojstrana,Mojstrana,settlement,si,si,Gorenjska,Kranjska Gora,False,46.46095,13.93942,si_settlement,high,
+Mokreni,Mokreni,settlement,foreign,mk,,,False,41.54853,21.50275,exonym_settlement,medium,returned as Мокрени
+Mokronog,Mokronog,settlement,si,si,Jugovzhodna Slovenija,Mokronog-Trebelno,False,45.94265,15.14468,si_settlement,high,
+Momjan,Momjan,settlement,foreign,hr,,,False,45.43858,13.70961,world_settlement,high,
+Monigo,Monigo,settlement,foreign,it,,,False,45.67696,12.20992,world_settlement,high,
+Mons,Mons,settlement,foreign,be,,,False,50.45496,3.95196,world_settlement,high,
+Montecalvo Irpino,Montecalvo Irpino,settlement,foreign,it,,,False,41.19397,15.03289,world_settlement,high,
+Montreal,Montreal,settlement,foreign,ca,,,False,45.50318,-73.56981,world_settlement,high,
+Montréal,Montréal,settlement,foreign,ca,,,False,45.50318,-73.56981,world_settlement,high,
+Moravče,Moravče,settlement,si,si,Osrednjeslovenska,Moravče,False,46.13567,14.74422,si_settlement,high,
+Moskva,Moskva,settlement,foreign,ru,,,False,55.75054,37.61748,world_settlement,high,
+Most na Soči,Most na Soči,settlement,si,si,Goriška,Tolmin,False,46.15209,13.74402,si_settlement,high,
+Mostar,Mostar,settlement,foreign,ba,,,False,43.34359,17.80766,world_settlement,high,
+Moste,Moste,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.06190,14.54050,override,medium,read as the Ljubljana district
+Mozirje,Mozirje,settlement,si,si,Savinjska,Mozirje,False,46.33964,14.96342,si_settlement,high,
+Moškajnci,Moškajnci,unknown,,,,,False,,,unresolved,low,
+Moškanjci,Moškanjci,settlement,si,si,Podravska,Moškanjci,False,46.42010,15.99147,si_settlement,high,
+Muljava,Muljava,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.90332,14.79986,si_settlement,high,
+"Mumbai, Indija","Mumbai, Indija",settlement,foreign,in,,,False,19.05500,72.86920,exonym_settlement,medium,returned as Mumbaj
+Munich,München,settlement,foreign,de,,,False,48.13711,11.57538,world_settlement,high,
+Mura,Mura,settlement,foreign,it,,,False,45.71386,10.34317,world_settlement,high,
+Murska Sobota,Murska Sobota,settlement,si,si,Pomurska,Murska Sobota,False,46.66246,16.16553,si_settlement,high,
+Muta,Muta,settlement,si,si,Koroška,Muta,False,46.60935,15.16551,si_settlement,high,
+Mülheim,Mülheim,settlement,foreign,de,,,False,51.42729,6.88292,exonym_settlement,medium,returned as Mülheim an der Ruhr
+München,München,settlement,foreign,de,,,False,48.13711,11.57538,world_settlement,high,
+"München, Nemčija","München, Nemčija",settlement,foreign,de,,,False,48.13711,11.57538,exonym_settlement,medium,returned as München
+Nabrežina,Nabrežina,settlement,foreign,it,,,False,45.75043,13.67087,world_settlement,high,
+Nadiške doline,Nadiške doline,region,foreign,it,,,False,46.16000,13.43000,override,high,"Natisone valleys, Venetian Slovenia"
+Nairobi,Nairobi,settlement,foreign,ke,,,False,-1.28900,36.81728,world_settlement,high,
+"Nairobi, Kenija","Nairobi, Kenija",other,foreign,ke,,,False,-1.30240,36.82885,exonym_settlement,medium,returned as Nairobi
+Naklo,Naklo,settlement,si,si,Gorenjska,Naklo,False,46.28727,14.29047,si_settlement,high,
+Nalchik,Nalchik,settlement,foreign,ru,,,False,43.47696,43.59666,exonym_settlement,medium,returned as Нальчик
+Nancy,Nancy,settlement,foreign,fr,,,False,48.69372,6.18341,world_settlement,high,
+Nanning,Nanning,settlement,foreign,cn,,,False,22.81577,108.31802,world_settlement,high,
+"Nantes, Francija","Nantes, Francija",settlement,foreign,fr,,,False,47.21864,-1.55414,exonym_settlement,medium,returned as Nantes
+Nantong,Nantong,settlement,foreign,cn,,,False,31.98279,120.89046,world_settlement,high,
+Natzweiler-Struthof,Natzweiler-Struthof,other,foreign,fr,,,False,48.86031,2.39988,unrestricted,medium,
+Nazarje,Nazarje,settlement,si,si,Savinjska,Nazarje,False,46.28589,14.92039,si_settlement,high,
+Neapelj,Neapelj,settlement,foreign,it,,,False,40.83588,14.24877,world_settlement,high,
+Neblo,Neblo,settlement,si,si,Goriška,Brda,False,46.00659,13.50000,si_settlement,high,
+Negova,Negova,settlement,si,si,Pomurska,Gornja Radgona,False,46.60893,15.93768,si_settlement,high,
+Nemčija,Nemčija,country,foreign,de,,,False,51.16382,10.44783,unrestricted,medium,
+Nemška vas,Nemška vas,settlement,si,si,Posavska,Krško,False,45.95612,15.42442,si_settlement,high,
+Nepal,Nepal,country,foreign,np,,,False,28.37805,83.99999,unrestricted,medium,
+Neuengamme,Neuengamme,settlement,foreign,de,,,False,53.43790,10.22609,world_settlement,high,
+New Delhi,New Delhi,settlement,foreign,in,,,False,28.61390,77.20901,world_settlement,high,
+New Jersey,New Jersey,region,foreign,us,,,False,40.07574,-74.40416,world_settlement,high,
+New York,New York,settlement,foreign,us,,,False,40.71273,-74.00602,world_settlement,high,
+New York City,New York,settlement,foreign,us,,,False,40.71273,-74.00602,world_settlement,high,
+"New York City, ZDA","New York City, ZDA",unknown,,,,,False,,,unresolved,low,
+Newport,Newport,settlement,foreign,us,,,False,41.48998,-71.31377,world_settlement,high,
+"Newport, Wales","Newport, Wales",region,foreign,gb,,,False,51.57189,-2.97525,exonym_settlement,medium,returned as Newport
+Nice,Nice,settlement,foreign,fr,,,False,43.70094,7.26839,exonym_settlement,medium,returned as Nica
+Nieświež,Nieświež,settlement,foreign,by,,,False,53.21890,26.68173,exonym_settlement,medium,returned as Нясвіж
+Nigerija,Nigerija,country,foreign,ng,,,False,9.60004,7.99997,unrestricted,medium,
+Nijmegen,Nijmegen,other,foreign,nl,,,False,51.84257,5.83896,world_settlement,high,
+Nikšić,Nikšić,settlement,foreign,me,,,False,42.77394,18.94881,world_settlement,high,
+Nitra,Nitra,settlement,foreign,sk,,,False,48.31295,18.08946,world_settlement,high,
+Nizozemska,Nizozemska,country,foreign,nl,,,False,52.24350,5.63432,unrestricted,medium,
+Niš,Niš,settlement,foreign,rs,,,False,43.32113,21.89592,world_settlement,high,
+Niška Banja,Niška Banja,settlement,foreign,rs,,,False,43.29331,22.00723,exonym_settlement,medium,returned as Нишка Бања
+Nomenj,Nomenj,settlement,si,si,Gorenjska,Bohinj,False,46.29288,14.00732,si_settlement,high,
+North Carolina,North Carolina,region,foreign,us,,,False,35.67296,-79.03929,exonym_settlement,medium,returned as Severna Karolina
+Northern Rivers,Northern Rivers,other,foreign,us,,,False,42.64862,-73.78353,unrestricted,medium,
+Norveška,Norveška,country,foreign,no,,,False,61.15294,8.78767,unrestricted,medium,
+Notranje Gorice,Notranje Gorice,settlement,si,si,Osrednjeslovenska,Brezovica,False,45.98702,14.39935,si_settlement,high,
+Notranjska,Notranjska,region,si,si,Primorsko-notranjska,,False,45.74768,14.27123,region_table,high,informal region
+Notranjsko-kraška,Notranjsko-kraška,other,si,si,Primorsko-notranjska,,False,45.68003,14.31954,exonym_settlement,medium,returned as Primorsko-notranjska regija
+Nottingham,Nottingham,settlement,foreign,gb,,,False,52.95342,-1.14965,world_settlement,high,
+Nova Gorica,Nova Gorica,settlement,si,si,Goriška,Nova Gorica,False,45.95815,13.64750,si_settlement,high,
+"Nova Gorica, Slovenija",Nova Gorica,settlement,si,si,Goriška,Nova Gorica,False,45.95815,13.64750,si_settlement,high,
+Nova vas nad Dragonjo,Nova vas nad Dragonjo,settlement,si,si,Obalno-kraška,Piran,False,45.47926,13.68980,si_settlement,high,
+Nova vas pri Mariboru,Nova vas pri Mariboru,settlement,si,si,Podravska,Maribor,False,46.53893,15.62643,qualified_anchor,low,via anchor Mariboru
+Nova vas pri Markovcih,Nova vas pri Markovcih,settlement,si,si,Podravska,Nova vas pri Markovcih,False,46.38475,15.93626,si_settlement,high,
+Nova vas pri Ptuju,Nova vas pri Ptuju,other,si,si,Podravska,Ptuj,False,46.44201,15.89001,unrestricted,medium,
+Novi Sad,Novi Sad,settlement,foreign,rs,,,False,45.25513,19.84518,world_settlement,high,
+Novi Travnik,Novi Travnik,settlement,foreign,ba,,,False,44.17075,17.65765,world_settlement,high,
+Novo Mesto,Novo mesto,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.80405,15.16967,si_settlement,high,
+Novo mesto,Novo mesto,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.80405,15.16967,si_settlement,high,
+"Novo mesto, Slovenija",Novo mesto,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.80405,15.16967,si_settlement,high,
+Obala,Obala,settlement,foreign,cm,,,False,4.16571,11.53466,world_settlement,high,
+Obalno-kraška,Obalno-kraška,other,si,si,Obalno-kraška,,False,45.64441,13.99099,exonym_settlement,medium,returned as Obalno-kraška regija
+Obirsko,Obirsko,settlement,foreign,at,,,False,46.47576,14.51576,world_settlement,high,
+Obsotelje,Obsotelje,unknown,,,,,False,,,unresolved,low,
+Občina Ivančna Gorica,Občina Ivančna Gorica,unknown,,,,,False,,,unresolved,low,
+Občina Žužemberk,Občina Žužemberk,unknown,,,,,False,,,unresolved,low,
+Ohrid,Ohrid,settlement,foreign,mk,,,False,41.11702,20.80177,exonym_settlement,medium,returned as Охрид
+Olimje,Olimje,settlement,si,si,Savinjska,Olimje,False,46.14969,15.56170,si_settlement,high,
+Omsk,Omsk,settlement,foreign,ru,,,False,54.99137,73.37153,world_settlement,high,
+Opatija,Opatija,settlement,foreign,hr,,,False,45.33492,14.30678,exonym_settlement,medium,returned as Grad Opatija
+Oplotnica,Oplotnica,settlement,si,si,Podravska,Oplotnica,False,46.38896,15.45083,si_settlement,high,
+Opole,Opole,settlement,foreign,pl,,,False,50.66682,17.92364,world_settlement,high,
+Opčine,Opčine,settlement,foreign,it,,,False,45.68830,13.78900,override,high,"Villa Opicina, a Trieste suburb"
+Orehova vas,Orehova vas,settlement,si,si,Podravska,Hoče-Slivnica,False,46.47128,15.66745,si_settlement,high,
+Orehovica,Orehovica,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.16631,14.91284,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.46)
+Orford,Orford,settlement,foreign,gb,,,False,52.09498,1.53444,world_settlement,high,
+Ormož,Ormož,settlement,si,si,Podravska,Ormož,False,46.43928,16.12245,si_settlement,high,
+Osaka,Osaka,settlement,foreign,jp,,,False,34.69376,135.50145,world_settlement,high,
+Osijek,Osijek,settlement,foreign,hr,,,False,45.55488,18.69537,world_settlement,high,
+Osilnica,Osilnica,settlement,si,si,Jugovzhodna Slovenija,Osilnica,False,45.55079,14.72026,si_settlement,high,
+Oslo,Oslo,region,foreign,no,,,False,59.91333,10.73897,world_settlement,high,
+Osojnica,Osojnica,settlement,si,si,Gorenjska,Žiri,False,46.03670,14.08765,contested_si,medium,also a foreign settlement (Bosna in Hercegovina); kept Slovenian (importance 0.13 vs 0.39)
+Osrečje,Osrečje,settlement,si,si,Jugovzhodna Slovenija,Osrečje,False,45.89061,15.27941,si_settlement,high,
+Otalež,Otalež,settlement,si,si,Goriška,Otalež,False,46.07887,13.98791,si_settlement,high,
+Otočac,Otočac,settlement,foreign,hr,,,False,44.86880,15.23587,world_settlement,high,
+Otočec,Otočec,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.83349,15.22163,si_settlement,high,
+Ottawa,Ottawa,settlement,foreign,ca,,,False,45.42088,-75.69011,world_settlement,high,
+Ouagadougou,Ouagadougou,settlement,foreign,bf,,,False,12.36819,-1.52709,world_settlement,high,
+Ovsiše pri Podnartu,Ovsiše pri Podnartu,other,si,si,Gorenjska,Radovljica,False,46.28758,14.25926,unrestricted_fuzzy,low,"name mismatch: Ovsiše, Radovljica, 4244, Slovenija"
+Oxford,Oxford,settlement,foreign,gb,,,False,51.75201,-1.25785,world_settlement,high,
+"Ozalj, Hrvaška","Ozalj, Hrvaška",settlement,foreign,hr,,,False,45.61263,15.47789,exonym_settlement,medium,returned as Grad Ozalj
+Oševljek,Oševljek,settlement,si,si,Goriška,Renče-Vogrsko,False,45.87946,13.69743,si_settlement,high,
+Padova,Padova,region,foreign,it,,,False,45.39141,11.80585,world_settlement,high,
+Padua,Padua,settlement,foreign,it,,,False,45.39844,11.89568,exonym_settlement,medium,returned as Padova
+Palestina,Palestina,settlement,foreign,br,,,False,-20.38934,-49.43204,world_settlement,high,
+Palić,Palić,settlement,foreign,rs,,,False,46.10228,19.76345,exonym_settlement,medium,returned as Палић
+Palma de Mallorca,Palma de Mallorca,settlement,foreign,es,,,False,39.56958,2.65007,world_settlement,high,
+Palúdzka,Palúdzka,settlement,foreign,sk,,,False,49.08435,19.59476,world_settlement,high,
+Pameče,Pameče,other,si,si,Koroška,Slovenj Gradec,False,46.53237,15.07304,unrestricted,medium,
+Pančevo,Pančevo,settlement,foreign,rs,,,False,44.87057,20.63996,exonym_settlement,medium,returned as Панчево
+Parecag,Parecag,settlement,si,si,Obalno-kraška,Piran,False,45.48692,13.63257,si_settlement,high,
+Paris,Pariz,settlement,foreign,fr,,,False,48.85350,2.34839,world_settlement,high,
+Pariz,Pariz,settlement,foreign,fr,,,False,48.85350,2.34839,world_settlement,high,
+"Pariz, Francija","Pariz, Francija",settlement,foreign,fr,,,False,48.85889,2.32004,exonym_settlement,medium,returned as Pariz
+Parižlje,Parižlje,settlement,si,si,Savinjska,Braslovče,False,46.28088,15.06032,si_settlement,high,
+Paternion,Paternion,settlement,foreign,at,,,False,46.71185,13.63705,exonym_settlement,medium,returned as Špaterjan
+Pavlovski Vrh,Pavlovski Vrh,settlement,si,si,Podravska,Ormož,False,46.43644,16.18260,si_settlement,high,
+Pazin,Pazin,settlement,foreign,hr,,,False,45.23920,13.93633,exonym_settlement,medium,returned as Grad Pazin
+Pedrovo,Pedrovo,settlement,si,si,Goriška,Nova Gorica,False,45.85685,13.76323,si_settlement,high,
+"Pejë, Kosovo","Pejë, Kosovo",settlement,foreign,xk,,,False,42.65940,20.28858,exonym_settlement,medium,returned as Pejë
+Pekel pri Mariboru,Pekel pri Mariboru,other,si,si,Podravska,Pesnica,False,46.59557,15.67581,unrestricted_fuzzy,low,"name mismatch: Pekel, Dolnja Počehova, Pesnica, 2211, Slovenija"
+Peking,Peking,settlement,foreign,cn,,,False,39.90571,116.39130,world_settlement,high,
+Pelješac,Pelješac,natural,foreign,hr,,,False,42.90457,17.47521,unrestricted,medium,
+Penza,Penza,settlement,foreign,ru,,,False,53.19535,45.01904,world_settlement,high,
+Perovo,Perovo,settlement,si,si,Osrednjeslovenska,Grosuplje,False,45.97101,14.65919,si_settlement,high,
+Perugia,Perugia,region,foreign,it,,,False,43.10703,12.40300,world_settlement,high,
+Pesnica,Pesnica,settlement,si,si,Podravska,Pesnica,False,46.61821,15.70615,si_settlement,high,
+Pesnica pri Mariboru,Pesnica pri Mariboru,settlement,si,si,Podravska,Pesnica,False,46.60891,15.67540,si_settlement,high,
+Petanjci,Petanjci,settlement,si,si,Pomurska,Petanjci,False,46.65148,16.06456,si_settlement,high,
+Petrovići,Petrovići,settlement,foreign,hr,,,False,45.42192,14.99330,world_settlement,high,
+Petrovče,Petrovče,settlement,si,si,Savinjska,Žalec,False,46.24532,15.18851,contested_si,medium,also a foreign settlement (Slovaška); kept Slovenian (importance 0.15 vs 0.50)
+Pečnik,Pečnik,settlement,si,si,Goriška,Idrija,False,46.03779,14.04917,si_settlement,high,
+Philadelphia,Philadelphia,settlement,foreign,us,,,False,39.95272,-75.16353,world_settlement,high,
+Pijava Gorica,Pijava Gorica,settlement,si,si,Osrednjeslovenska,Škofljica,False,45.95224,14.57291,si_settlement,high,
+Pilisszentlászló,Pilisszentlászló,settlement,foreign,hu,,,False,47.72315,18.98922,world_settlement,high,
+Piran,Piran,settlement,si,si,Obalno-kraška,Piran,False,45.52849,13.56845,si_settlement,high,
+Pittsburgh,Pittsburgh,settlement,foreign,us,,,False,40.44070,-80.00257,world_settlement,high,
+Pivka,Pivka,settlement,si,si,Primorsko-notranjska,Pivka,False,45.68906,14.22857,si_settlement,high,
+Planica,Planica,unknown,,,,,False,,,unresolved,low,
+Planina,Planina,settlement,si,si,Goriška,Ajdovščina,False,45.85692,13.90904,si_settlement,high,
+Planina pri Rakeku,Planina pri Rakeku,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.81309,14.31921,qualified_anchor,low,placed at its anchor Rakek
+Planina pri Sevnici,Planina pri Sevnici,settlement,si,si,Savinjska,Šentjur,False,46.10441,15.40492,si_settlement,high,
+Planina pri Črnomlju,Planina pri Črnomlju,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.56274,15.15647,qualified_anchor,low,placed at its anchor Črnomlju
+Plave,Plave,settlement,si,si,Goriška,Kanal,False,46.04112,13.58958,si_settlement,high,
+Plač,Plač,settlement,si,si,Podravska,Kungota,False,46.66986,15.60992,si_settlement,high,
+Pleterje,Pleterje,settlement,si,si,Posavska,Krško,False,45.96643,15.52454,si_settlement,high,
+Plešivec,Plešivec,settlement,si,si,Posavska,Krško,False,46.06096,15.46026,contested_si,medium,also a foreign settlement (Slovaška); kept Slovenian (importance 0.13 vs 0.49)
+Pliberk,Pliberk,settlement,foreign,at,,,False,46.59011,14.79899,world_settlement,high,
+Plintovec,Plintovec,settlement,si,si,Podravska,Kungota,False,46.63707,15.61868,si_settlement,high,
+Plovdiv,Plovdiv,settlement,foreign,bg,,,False,42.14185,24.74993,world_settlement,high,
+Pobrežje,Pobrežje,settlement,si,si,Podravska,Maribor,False,46.54969,15.66950,contested_si,medium,also a foreign settlement (Hrvaška); importance 0.33 vs 0.39
+Pobrežje pri Ptuju,Pobrežje pri Ptuju,other,si,si,Podravska,Videm,False,46.37800,15.89196,unrestricted_fuzzy,low,"name mismatch: Pobrežje, Videm pri Ptuju, Videm, 2284, Slovenija"
+Podbočje,Podbočje,settlement,si,si,Posavska,Krško,False,45.86414,15.46669,si_settlement,high,
+Podgora,Podgora,settlement,si,si,Osrednjeslovenska,Dobrepolje,False,45.82646,14.70255,si_settlement,high,
+Podgorci,Podgorci,unknown,,,,,False,,,unresolved,low,
+Podgorica,Podgorica,settlement,foreign,me,,,False,42.43040,19.25940,override,high,"Montenegro's capital, not the Slovenian villages — listed beside Beograd / Cetinje"
+Podgorje,Podgorje,settlement,si,si,Obalno-kraška,Koper,False,45.52975,13.95149,contested_si,medium,also a foreign settlement (Bosna in Hercegovina); kept Slovenian (importance 0.15 vs 0.38)
+Podgorje pri Kamniku,Podgorje pri Kamniku,settlement,si,si,Osrednjeslovenska,Kamnik,False,46.22602,14.68352,qualified_anchor,low,placed at its anchor Kamniku
+Podkum,Podkum,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.06968,15.03440,si_settlement,high,
+Podlipovica,Podlipovica,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.16002,14.91878,si_settlement,high,
+Podlisec pri Dobrniču,Podlisec pri Dobrniču,other,si,si,Jugovzhodna Slovenija,Trebnje,False,45.87802,14.96886,unrestricted_fuzzy,low,"name mismatch: Podlisec, Dobrnič, Trebnje, 8211, Slovenija"
+Podljubelj,Podljubelj,settlement,si,si,Gorenjska,Tržič,False,46.39650,14.28685,si_settlement,high,
+Podova,Podova,settlement,si,si,Podravska,Rače-Fram,False,46.43493,15.69883,si_settlement,high,
+Podravje,Podravje,other,si,si,Obalno-kraška,Koper,False,45.56940,13.85591,unrestricted,medium,
+Podsmreka,Podsmreka,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.03875,14.42887,si_settlement,high,
+Podsreda,Podsreda,settlement,si,si,Savinjska,Kozje,False,46.04018,15.59005,si_settlement,high,
+Podutik,Podutik,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.07304,14.45112,si_settlement,high,
+Podvin pri Polzeli,Podvin pri Polzeli,settlement,si,si,Savinjska,Podvin pri Polzeli,False,46.28929,15.06347,si_settlement,high,
+Podzemelj,Podzemelj,settlement,si,si,Jugovzhodna Slovenija,Metlika,False,45.60847,15.27539,si_settlement,high,
+Pohorje,Pohorje,region,si,si,Podravska,,False,46.52261,15.71533,region_table,high,informal region
+Polane,Polane,settlement,foreign,xk,,,False,42.71945,20.60823,world_settlement,high,
+Polača,Polača,settlement,foreign,hr,,,False,44.02834,15.50135,exonym_settlement,medium,returned as Općina Polača
+Polhov Gradec,Polhov Gradec,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.06536,14.31286,si_settlement,high,
+Polica,Polica,settlement,si,si,Gorenjska,Naklo,False,46.26534,14.32826,contested_si,medium,also a foreign settlement (Črna gora); importance 0.15 vs 0.15
+Poljane,Poljane,settlement,si,si,Podravska,Maribor,False,46.55008,15.62493,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.42)
+Poljane nad Škofjo Loko,Poljane nad Škofjo Loko,settlement,si,si,Gorenjska,Gorenja vas-Poljane,False,46.12186,14.18653,si_settlement,high,
+Poljanska dolina,Poljanska dolina,natural,si,si,Jugovzhodna Slovenija,Kočevje,False,45.50774,15.06545,unrestricted,medium,
+Polje pri Ljubljani,Polje pri Ljubljani,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.08834,14.64151,qualified_anchor,low,placed at its anchor Ljubljani
+Poljska,Poljska,country,foreign,pl,,,False,52.21593,19.13442,unrestricted,medium,
+Poljčane,Poljčane,settlement,si,si,Podravska,Poljčane,False,46.31393,15.57840,si_settlement,high,
+Poljšica pri Gorjah,Poljšica pri Gorjah,settlement,si,si,Gorenjska,Gorje,False,46.37787,14.07319,si_settlement,high,
+Polzela,Polzela,settlement,si,si,Savinjska,Polzela,False,46.27918,15.07543,si_settlement,high,
+Pomurje,Pomurje,region,si,si,Pomurska,,False,46.66895,16.17740,region_table,high,informal region
+Ponikva,Ponikva,settlement,si,si,Savinjska,Šentjur,False,46.25418,15.44460,si_settlement,high,
+Ponikva pri Grobelnem,Ponikva pri Grobelnem,settlement,si,si,Savinjska,Šentjur,False,46.19834,15.43904,qualified_anchor,low,placed at its anchor Grobelnem
+Ponikve,Ponikve,unknown,,,,,False,,,unresolved,low,
+Ponikve pri Trebnjem,Ponikve pri Trebnjem,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.90765,14.97064,qualified_anchor,low,placed at its anchor Trebnjem
+Popuže,Popuže,settlement,foreign,ba,,,False,44.21061,17.11744,world_settlement,high,
+Porabje,Porabje,region,foreign,hu,,,False,46.85000,16.30000,override,high,"Slovene Rába valley, Hungary"
+Porto,Porto,settlement,foreign,pt,,,False,41.15022,-8.61035,world_settlement,high,
+Portoriko,Portoriko,region,foreign,us,,,False,18.22477,-66.48583,exonym_settlement,medium,returned as Puerto Rico
+Portorož,Portorož,settlement,si,si,Obalno-kraška,Piran,False,45.51465,13.59101,si_settlement,high,
+Portugalska,Portugalska,country,foreign,pt,,,False,39.66216,-8.13535,unrestricted,medium,
+Posavje,Posavje,region,si,si,Posavska,,False,45.96446,15.37264,region_table,high,informal region
+Posočje,Posočje,region,si,si,Goriška,,False,46.08878,13.82630,region_table,high,informal region
+Postira,Postira,settlement,foreign,hr,,,False,43.37549,16.62793,exonym_settlement,medium,returned as Općina Postira
+Postojna,Postojna,settlement,si,si,Primorsko-notranjska,Postojna,False,45.78727,14.15931,si_settlement,high,
+Potsdam,Potsdam,settlement,foreign,de,,,False,52.40093,13.05914,world_settlement,high,
+Povžane,Povžane,settlement,si,si,Obalno-kraška,Hrpelje-Kozina,False,45.57401,14.00486,si_settlement,high,
+Poznań,Poznań,other,foreign,pl,,,False,52.40066,16.91973,unrestricted,medium,
+Požega,Požega,settlement,foreign,hr,,,False,45.33107,17.67653,exonym_settlement,medium,returned as Grad Požega
+Praga,Praga,settlement,foreign,cz,,,False,50.08747,14.42125,world_settlement,high,
+Prague,Praga,settlement,foreign,cz,,,False,50.08747,14.42125,world_settlement,high,
+Prapretno nad Hrastnikom,Prapretno nad Hrastnikom,unknown,,,,,False,,,unresolved,low,
+Prato,Prato,region,foreign,it,,,False,43.93572,11.09415,world_settlement,high,
+Prebold,Prebold,settlement,si,si,Savinjska,Prebold,False,46.23569,15.09133,si_settlement,high,
+Preddvor,Preddvor,settlement,si,si,Gorenjska,Preddvor,False,46.30214,14.42166,si_settlement,high,
+Predenca,Predenca,settlement,si,si,Savinjska,Predenca,False,46.22417,15.52360,si_settlement,high,
+Predgrad,Predgrad,settlement,si,si,Jugovzhodna Slovenija,Kočevje,False,45.50512,15.05568,si_settlement,high,
+Predoslje,Predoslje,settlement,si,si,Gorenjska,Kranj,False,46.26559,14.38552,si_settlement,high,
+Pregrada,Pregrada,settlement,foreign,hr,,,False,46.16273,15.75239,world_settlement,high,
+Prekmurje,Prekmurje,region,si,si,Pomurska,,False,46.66895,16.17740,region_table,high,informal region
+Prelog,Prelog,settlement,foreign,hr,,,False,46.33714,16.61479,exonym_settlement,medium,returned as Grad Prelog
+Preloka,Preloka,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.47001,15.34048,si_settlement,high,
+Prem,Prem,unknown,,,,,False,,,unresolved,low,
+Preserje,Preserje,settlement,si,si,Goriška,Nova Gorica,False,45.86996,13.78701,si_settlement,high,
+Preska,Preska,settlement,si,si,Posavska,Sevnica,False,45.98414,15.29007,si_settlement,high,
+Preska pri Medvodah,Preska pri Medvodah,other,si,si,Osrednjeslovenska,Medvode,False,46.13463,14.41168,unrestricted_fuzzy,low,"name mismatch: 815151 ~ Preska / Preska pri Medvodah, Škofjeloška cesta, Sv"
+Prevalje,Prevalje,settlement,si,si,Koroška,Prevalje,False,46.55491,14.89138,si_settlement,high,
+Prečna,Prečna,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.81244,15.12286,si_settlement,high,
+Prešov,Prešov,settlement,foreign,sk,,,False,49.00001,21.23921,world_settlement,high,
+Prievidza,Prievidza,settlement,foreign,sk,,,False,48.77184,18.62349,world_settlement,high,
+Primorska,Primorska,region,si,si,,,False,,,region_table,high,spans several statistical regions
+Primskovo pri Kranju,Primskovo pri Kranju,settlement,si,si,Gorenjska,Kranj,False,46.24760,14.37272,qualified_anchor,low,via anchor Kranj
+"Prishtina, Kosovo","Prishtina, Kosovo",settlement,foreign,xk,,,False,42.66388,21.16408,exonym_settlement,medium,returned as Priština
+Pristava,Pristava,unknown,,,,,False,,,unresolved,low,
+Pristava pri Mestinju,Pristava pri Mestinju,settlement,si,si,Savinjska,Pristava pri Mestinju,False,46.19647,15.59626,si_settlement,high,
+Pristava pri Tržiču,Pristava pri Tržiču,settlement,si,si,Gorenjska,Tržič,False,46.35713,14.27573,qualified_anchor,low,placed at its anchor Tržiču
+Pristina,Pristina,settlement,foreign,xk,,,False,42.66388,21.16408,world_settlement,high,
+Prizren,Prizren,settlement,foreign,xk,,,False,42.21302,20.73633,world_settlement,high,
+"Prizren, Kosovo","Prizren, Kosovo",settlement,foreign,xk,,,False,42.21302,20.73633,exonym_settlement,medium,returned as Prizren
+Priština,Priština,settlement,foreign,xk,,,False,42.66388,21.16408,world_settlement,high,
+Prlekija,Prlekija,region,si,si,Pomurska,,False,46.66895,16.17740,region_table,high,informal region
+Prokuplje,Prokuplje,settlement,foreign,rs,,,False,43.23435,21.58844,world_settlement,high,
+Prosek,Prosek,settlement,foreign,cz,,,False,50.12057,14.49789,world_settlement,high,
+Ptuj,Ptuj,settlement,si,si,Podravska,Ptuj,False,46.41981,15.87174,si_settlement,high,
+Ptujska Gora,Ptujska Gora,settlement,si,si,Podravska,Ptujska Gora,False,46.35414,15.76059,si_settlement,high,
+Pula,Pulj,settlement,foreign,hr,,,False,44.86660,13.84960,override,high,Pula
+Pulj,Pulj,settlement,foreign,hr,,,False,44.86660,13.84960,override,high,Pula
+Puštal,Puštal,settlement,si,si,Gorenjska,Škofja Loka,False,46.16184,14.31071,si_settlement,high,
+Rab,Rab,settlement,foreign,hr,,,False,44.75620,14.76000,override,high,island of Rab
+Radenci,Radenci,settlement,si,si,Pomurska,Radenci,False,46.64090,16.03998,si_settlement,high,
+Radeče,Radeče,settlement,si,si,Savinjska,Radeče,False,46.05956,15.13588,si_settlement,high,
+Radizel,Radizel,settlement,si,si,Podravska,Hoče-Slivnica,False,46.46351,15.65162,si_settlement,high,
+Radlje ob Dravi,Radlje ob Dravi,settlement,si,si,Koroška,Radlje ob Dravi,False,46.59023,15.25011,si_settlement,high,
+Radomlje,Radomlje,settlement,si,si,Osrednjeslovenska,Domžale,False,46.17319,14.61018,si_settlement,high,
+Radovljica,Radovljica,settlement,si,si,Gorenjska,Radovljica,False,46.34502,14.19763,si_settlement,high,
+Rakek,Rakek,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.81309,14.31921,si_settlement,high,
+Rakitna,Rakitna,settlement,si,si,Osrednjeslovenska,Brezovica,False,45.89109,14.44051,si_settlement,high,
+Rakovci,Rakovci,settlement,si,si,Podravska,Rakovci,False,46.49384,16.05383,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.45)
+Rakovlje,Rakovlje,settlement,si,si,Savinjska,Braslovče,False,46.28329,15.04084,si_settlement,high,
+Rangoon,Rangoon,settlement,foreign,mm,,,False,16.79671,96.16099,exonym_settlement,medium,returned as Jangon
+Ratanska vas,Ratanska vas,settlement,si,si,Savinjska,Rogaška Slatina,False,46.24869,15.63035,si_settlement,high,
+Rauma,Rauma,settlement,foreign,fi,,,False,61.12891,21.50394,world_settlement,high,
+Ravance,Ravance,other,foreign,hr,,,False,42.76650,16.89677,unrestricted,medium,
+Ravensbrück,Ravensbrück,settlement,foreign,de,,,False,53.19448,13.14781,world_settlement,high,
+Ravne na Koroškem,Ravne na Koroškem,settlement,si,si,Koroška,Ravne na Koroškem,False,46.54837,14.97503,si_settlement,high,
+Ravne pri Šoštanju,Ravne pri Šoštanju,other,si,si,Savinjska,Šoštanj,False,46.39427,15.05809,unrestricted_fuzzy,low,"name mismatch: Ravne Pri Šoštanju Poštajner 2, Gaberke, Ravne, Šoštanj, 332"
+Rače,Rače,settlement,si,si,Podravska,Rače-Fram,False,46.45332,15.67915,si_settlement,high,
+Rače-Fram,Rače-Fram,settlement,si,si,Podravska,Rače-Fram,False,46.44737,15.65369,si_settlement,high,
+Reading,Reading,settlement,foreign,gb,,,False,51.45642,-0.97007,world_settlement,high,
+Reber,Reber,settlement,si,si,Jugovzhodna Slovenija,Žužemberk,False,45.85402,14.92992,si_settlement,high,
+Reka,Reka,settlement,foreign,hr,,,False,45.32710,14.44220,override,high,Rijeka
+Remšenik,Remšenik,settlement,foreign,at,,,False,46.46603,14.64200,world_settlement,high,
+Renicci,Renicci,settlement,foreign,it,,,False,43.97690,10.81146,world_settlement,high,
+Rennes,Rennes,settlement,foreign,fr,,,False,48.11134,-1.68002,world_settlement,high,
+Renče,Renče,settlement,si,si,Goriška,Renče-Vogrsko,False,45.89001,13.66957,contested_si,medium,also a foreign settlement (Češka); kept Slovenian (importance 0.15 vs 0.49)
+Repen,Repen,settlement,foreign,it,,,False,45.72320,13.79087,world_settlement,high,
+Repče,Repče,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.89173,15.01450,si_settlement,high,
+Rezija,Rezija,settlement,foreign,it,,,False,46.34737,13.33607,world_settlement,high,
+Ribnica,Ribnica,settlement,si,si,Jugovzhodna Slovenija,Ribnica,False,45.72809,14.73910,si_settlement,high,
+Ribnica na Pohorju,Ribnica na Pohorju,settlement,si,si,Koroška,Ribnica na Pohorju,False,46.53505,15.26785,si_settlement,high,
+Ricmanje,Ricmanje,settlement,foreign,it,,,False,45.62529,13.84116,world_settlement,high,
+Riga,Riga,settlement,foreign,lv,,,False,56.94940,24.10518,world_settlement,high,
+Rijeka,Reka,settlement,foreign,hr,,,False,45.32710,14.44220,override,high,Rijeka
+Rim,Rim,settlement,foreign,it,,,False,41.89332,12.48293,override,high,Rim = Rome (legacy geocoder chose a hamlet near Črnomelj)
+"Rim, Italija","Rim, Italija",settlement,foreign,it,,,False,41.89332,12.48293,exonym_settlement,medium,returned as Rim
+Rimavská Sobota,Rimavská Sobota,settlement,foreign,sk,,,False,48.38336,20.01806,world_settlement,high,
+Rimske Toplice,Rimske Toplice,settlement,si,si,Savinjska,Laško,False,46.12341,15.19595,si_settlement,high,
+Rinkole,Rinkole,settlement,foreign,at,,,False,46.62221,14.74575,world_settlement,high,
+Rochester,Rochester,settlement,foreign,us,,,False,43.15729,-77.61521,exonym_settlement,medium,returned as City of Rochester
+Rodica,Rodica,settlement,si,si,Osrednjeslovenska,Domžale,False,46.14768,14.59393,si_settlement,high,
+Rodica pri Domžalah,Rodica pri Domžalah,settlement,si,si,Osrednjeslovenska,Domžale,False,46.11328,14.59886,qualified_anchor,low,placed at its anchor Domžalah
+Rodine,Rodine,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.59872,15.14444,si_settlement,high,
+Roeselare,Roeselare,settlement,foreign,be,,,False,50.94495,3.12439,world_settlement,high,
+Rogatec,Rogatec,settlement,si,si,Savinjska,Rogatec,False,46.23749,15.73733,si_settlement,high,
+Rogaška Slatina,Rogaška Slatina,settlement,si,si,Savinjska,Rogaška Slatina,False,46.23776,15.62699,si_settlement,high,
+Romunija,Romunija,country,foreign,ro,,,False,45.98521,24.68592,unrestricted,medium,
+Rotterdam,Rotterdam,settlement,foreign,nl,,,False,51.92444,4.47775,world_settlement,high,
+Rova,Rova,settlement,si,si,Osrednjeslovenska,Domžale,False,46.17992,14.63042,si_settlement,high,
+Rovinj,Rovinj,settlement,foreign,hr,,,False,45.08074,13.64173,exonym_settlement,medium,returned as Grad Rovinj
+Rovte,Rovte,settlement,si,si,Gorenjska,Radovljica,False,46.27855,14.23608,contested_si,medium,also a foreign settlement (Italija); importance 0.15 vs 0.15
+Rožna Dolina,Rožna dolina,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05030,14.48690,override,medium,read as the Ljubljana district; a Nova Gorica suburb shares the name
+Rožnik,Rožnik,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05108,14.47626,exonym_settlement,medium,returned as Četrtna skupnost Rožnik
+Rudno,Rudno,settlement,si,si,Gorenjska,Železniki,False,46.24695,14.16642,si_settlement,high,
+Rusija,Rusija,country,foreign,ru,,,False,64.68631,97.74531,unrestricted,medium,
+Ruše,Ruše,settlement,si,si,Podravska,Ruše,False,46.51960,15.49211,si_settlement,high,
+Saalfelden,Saalfelden,settlement,foreign,at,,,False,47.42662,12.84810,exonym_settlement,medium,returned as Saalfelden am Steinernen Meer
+Saalfelden am Steinernen Meer,Saalfelden am Steinernen Meer,settlement,foreign,at,,,False,47.42662,12.84810,world_settlement,high,
+Saarbrücken,Saarbrücken,settlement,foreign,de,,,False,49.23436,6.99638,world_settlement,high,
+Sahalahti,Sahalahti,settlement,foreign,fi,,,False,61.47644,24.33216,world_settlement,high,
+Saint Louis,Saint Louis,settlement,foreign,us,,,False,38.62541,-90.19001,exonym_settlement,medium,returned as St. Louis
+Saint Petersburg,Saint Petersburg,region,foreign,ru,,,False,59.96067,30.15866,exonym_settlement,medium,returned as Sankt Peterburg
+Saint-Dié-des-Vosges,Saint-Dié-des-Vosges,settlement,foreign,fr,,,False,48.28723,6.94744,world_settlement,high,
+Saint-Nazaire,Saint-Nazaire,settlement,foreign,fr,,,False,47.27335,-2.21389,world_settlement,high,
+Salzburg,Salzburg,settlement,foreign,at,,,False,47.79813,13.04648,world_settlement,high,
+San Francisco,San Francisco,settlement,foreign,us,,,False,37.78794,-122.40752,world_settlement,high,
+San Francisco Bay Area,San Francisco Bay Area,region,foreign,us,,,False,37.78850,-122.35585,unrestricted,medium,
+Santa Barbara,Santa Barbara,settlement,foreign,us,,,False,34.42213,-119.70267,world_settlement,high,
+Sarajevo,Sarajevo,settlement,foreign,ba,,,False,43.85707,18.41261,world_settlement,high,
+"Sarajevo, Bosna in Hercegovina","Sarajevo, Bosna in Hercegovina",settlement,foreign,ba,,,False,43.85707,18.41261,exonym_settlement,medium,returned as Sarajevo
+Saraorci,Saraorci,settlement,foreign,rs,,,False,44.48907,21.08298,exonym_settlement,medium,returned as Сараорци
+Sassari,Sassari,settlement,foreign,it,,,False,40.72347,8.56127,exonym_settlement,medium,returned as Tàttari/Sassari
+Savinja,Savinja,other,si,si,Savinjska,,False,46.32301,14.95480,unrestricted,medium,
+Savinjska dolina,Savinjska dolina,region,si,si,Savinjska,,False,46.25071,15.17565,region_table,high,informal region
+Savlje,Savlje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.09528,14.50284,si_settlement,high,
+Seattle,Seattle,settlement,foreign,us,,,False,47.60383,-122.33006,world_settlement,high,
+"Seattle, Washington, ZDA","Seattle, Washington, ZDA",settlement,foreign,us,,,False,47.60620,-122.33210,override,high,
+Sebeborci,Sebeborci,settlement,si,si,Pomurska,Sebeborci,False,46.70788,16.19839,si_settlement,high,
+Sela pri Dolenjskih Toplicah,Sela pri Dolenjskih Toplicah,settlement,si,si,Jugovzhodna Slovenija,Sela pri Dolenjskih Toplicah,False,45.74899,15.04647,si_settlement,high,
+Selca,Selca,settlement,si,si,Gorenjska,Železniki,False,46.22418,14.20351,si_settlement,high,
+Sele,Sele,settlement,si,si,Savinjska,Celje,False,46.22939,15.26168,exonym_settlement,medium,returned as Celje
+Selnica ob Dravi,Selnica ob Dravi,settlement,si,si,Podravska,Selnica ob Dravi,False,46.55089,15.49254,si_settlement,high,
+Selo pri Vodicah,Selo pri Vodicah,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,46.15923,14.51417,si_settlement,high,
+Selovec,Selovec,other,foreign,hr,,,False,45.95269,16.36090,world_settlement,high,
+Selšček,Selšček,settlement,si,si,Primorsko-notranjska,Cerknica,False,45.82007,14.39621,si_settlement,high,
+Semič,Semič,settlement,si,si,Jugovzhodna Slovenija,Semič,False,45.65175,15.18352,si_settlement,high,
+Senično,Senično,settlement,si,si,Gorenjska,Tržič,False,46.33348,14.31639,si_settlement,high,
+Senožete,Senožete,settlement,si,si,Posavska,Krško,False,45.97175,15.43925,si_settlement,high,
+Senta,Senta,settlement,foreign,hu,,,False,47.96782,19.28655,exonym_settlement,medium,returned as Szente
+Sergiyev Posad,Sergiyev Posad,settlement,foreign,ru,,,False,56.31533,38.13599,exonym_settlement,medium,returned as Sergijev Posad
+Severna Afrika,Severna Afrika,other,foreign,de,,,False,52.01247,8.79862,exonym_settlement,medium,returned as Afrika
+Severna Amerika,Severna Amerika,other,foreign,,,,False,51.00000,-109.00000,unrestricted,medium,
+Severna Irska,Severna Irska,region,foreign,gb,,,False,54.58598,-6.95916,world_settlement,high,
+Severna Makedonija,Severna Makedonija,country,foreign,mk,,,False,41.61712,21.71684,unrestricted,medium,
+Sevilla,Sevilla,settlement,foreign,es,,,False,37.38863,-5.99534,exonym_settlement,medium,returned as Sevilja
+Sevnica,Sevnica,settlement,si,si,Posavska,Sevnica,False,46.00860,15.26246,si_settlement,high,
+Sečoveljske soline,Sečoveljske soline,other,si,si,Obalno-kraška,Piran,False,45.48226,13.60587,unrestricted_fuzzy,low,"name mismatch: Krajinski park Sečoveljske soline, Seča, Piran, Upravna enot"
+Sečovlje,Sečovlje,settlement,si,si,Obalno-kraška,Piran,False,45.47642,13.62895,si_settlement,high,
+Sežana,Sežana,settlement,si,si,Obalno-kraška,Sežana,False,45.70918,13.87310,si_settlement,high,
+Shenzhen,Shenzhen,settlement,foreign,cn,,,False,22.54457,114.05454,exonym_settlement,medium,returned as Šenžen
+Sicily,Sicily,region,foreign,it,,,False,37.58779,14.15505,exonym_settlement,medium,returned as Sicilija
+Siena,Siena,region,foreign,it,,,False,43.16721,11.46756,world_settlement,high,
+Sighet,Sighet,settlement,foreign,ro,,,False,47.92832,23.89156,exonym_settlement,medium,returned as Sighetu Marmației
+Sinj,Sinj,settlement,foreign,hr,,,False,43.70173,16.63734,exonym_settlement,medium,returned as Grad Sinj
+Sipar,Sipar,settlement,foreign,cr,,,False,9.23961,-83.24665,world_settlement,high,
+Sirija,Sirija,country,foreign,sy,,,False,34.64019,39.04941,unrestricted,medium,
+Sisak,Sisak,settlement,foreign,hr,,,False,45.48918,16.37460,exonym_settlement,medium,returned as Sisek
+Skaručna,Skaručna,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,46.15060,14.48189,si_settlement,high,
+Skopje,Skopje,settlement,foreign,mk,,,False,41.99622,21.43189,world_settlement,high,
+Sladki Vrh,Sladki Vrh,settlement,si,si,Podravska,Šentilj,False,46.69691,15.73528,si_settlement,high,
+Slamna vas,Slamna vas,settlement,si,si,Jugovzhodna Slovenija,Metlika,False,45.67427,15.33534,si_settlement,high,
+Slano,Slano,settlement,foreign,hr,,,False,42.78756,17.88979,world_settlement,high,
+Slap ob Idrijci,Slap ob Idrijci,settlement,si,si,Goriška,Tolmin,False,46.12319,13.80226,si_settlement,high,
+Slape,Slape,settlement,si,si,Podravska,Slape,False,46.34208,15.76767,si_settlement,high,
+Slavina,Slavina,settlement,si,si,Primorsko-notranjska,Postojna,False,45.71207,14.17854,si_settlement,high,
+Slavonska Požega,Slavonska Požega,settlement,foreign,hr,,,False,45.33107,17.67653,exonym_settlement,medium,returned as Grad Požega
+Slavonski Brod,Slavonski Brod,settlement,foreign,hr,,,False,45.15843,18.01256,world_settlement,high,
+Slivno,Slivno,settlement,si,si,Savinjska,Laško,False,46.17239,15.20400,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.39)
+Slomškova ulica 13a,Slomškova ulica 13a,other,si,si,Osrednjeslovenska,Ljubljana,True,46.05569,14.51220,unrestricted_fuzzy,low,"name mismatch: 13A, Slomškova ulica, Ledina, Grajski grič, Četrtna skupnost"
+Slovaška,Slovaška,country,foreign,sk,,,False,48.74115,19.45286,unrestricted,medium,
+Slovenian mountains,Slovenian mountains,unknown,,,,,False,,,unresolved,low,
+Slovenija,Slovenija,country,si,si,,,False,46.11990,14.81530,region_table,high,spans several statistical regions
+Slovenj Gradec,Slovenj Gradec,settlement,si,si,Koroška,Slovenj Gradec,False,46.50914,15.07907,si_settlement,high,
+Slovenska Bistrica,Slovenska Bistrica,settlement,si,si,Podravska,Slovenska Bistrica,False,46.40738,15.56359,si_settlement,high,
+Slovenska Istra,Slovenska Istra,region,si,si,Obalno-kraška,,False,45.61329,13.80325,region_table,high,informal region
+Slovenska obala,Slovenska Istra,region,si,si,Obalno-kraška,,False,45.61329,13.80325,region_table,high,informal region
+Slovenska vas,Slovenska vas,settlement,si,si,Jugovzhodna Slovenija,Kočevje,False,45.66753,14.83028,si_settlement,high,
+Slovenske Gorice,Slovenske Gorice,region,si,si,Podravska,,False,46.60198,15.82501,unrestricted,medium,
+Slovenske Konjice,Slovenske Konjice,settlement,si,si,Savinjska,Slovenske Konjice,False,46.33820,15.42302,si_settlement,high,
+Slovenske gorice,Slovenske gorice,region,si,si,Podravska,,False,46.60198,15.82501,unrestricted,medium,
+Slovenski Javornik,Slovenski Javornik,settlement,si,si,Gorenjska,Jesenice,False,46.42615,14.08480,si_settlement,high,
+Slovensko Gračišče,Slovensko Gračišče,unknown,,,,,False,,,unresolved,low,
+Smederevska Palanka,Smederevska Palanka,settlement,foreign,rs,,,False,44.36582,20.95798,exonym_settlement,medium,returned as Смедеревска Паланка
+Smlednik,Smlednik,settlement,si,si,Osrednjeslovenska,Medvode,False,46.16406,14.43422,si_settlement,high,
+Smolenja vas,Smolenja vas,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.81517,15.20151,si_settlement,high,
+Sneberje,Sneberje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.07799,14.57299,si_settlement,high,
+Sobetinci,Sobetinci,settlement,si,si,Podravska,Sobetinci,False,46.40475,15.97123,si_settlement,high,
+Sodražica,Sodražica,settlement,si,si,Jugovzhodna Slovenija,Sodražica,False,45.75482,14.62205,si_settlement,high,
+Sofija,Sofija,settlement,foreign,bg,,,False,42.69770,23.32174,world_settlement,high,
+"Sofija, Bolgarija","Sofija, Bolgarija",settlement,foreign,bg,,,False,42.69770,23.32174,exonym_settlement,medium,returned as Sofija
+Solbica,Solbica,settlement,foreign,it,,,False,46.36143,13.35411,world_settlement,high,
+Solin,Solin,settlement,foreign,hr,,,False,43.54429,16.48530,exonym_settlement,medium,returned as Grad Solin
+Solingen,Solingen,settlement,foreign,de,,,False,51.17216,7.08459,world_settlement,high,
+Solkan,Solkan,settlement,si,si,Goriška,Nova Gorica,False,45.97151,13.64703,si_settlement,high,
+Solun,Solun,settlement,foreign,gr,,,False,40.64032,22.93527,world_settlement,high,
+Solčava,Solčava,settlement,si,si,Savinjska,Solčava,False,46.41956,14.69202,si_settlement,high,
+Somalija,Somalija,country,foreign,so,,,False,8.36768,49.08342,unrestricted,medium,
+Sombor,Sombor,settlement,foreign,rs,,,False,45.77274,19.11470,exonym_settlement,medium,returned as Сомбор
+Sondrio,Sondrio,region,foreign,it,,,False,46.32337,10.25840,world_settlement,high,
+Sora,Sora,settlement,si,si,Osrednjeslovenska,Medvode,False,46.14184,14.37365,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.56)
+Sosnowiec,Sosnowiec,settlement,foreign,pl,,,False,50.27808,19.13429,world_settlement,high,
+Southampton,Southampton,settlement,foreign,gb,,,False,50.90253,-1.40419,world_settlement,high,
+Sovjetska zveza,Sovjetska zveza,unknown,,,,,False,,,unresolved,low,
+Sovodnje ob Soči,Sovodnje ob Soči,settlement,foreign,it,,,False,45.90588,13.57486,world_settlement,high,
+Spittal an der Drau,Spittal an der Drau,settlement,foreign,at,,,False,46.79822,13.49633,exonym_settlement,medium,returned as Špital ob Dravi
+Split,Split,settlement,foreign,hr,,,False,43.51164,16.43997,world_settlement,high,
+"Split, Hrvaška","Split, Hrvaška",settlement,foreign,hr,,,False,43.51164,16.43997,exonym_settlement,medium,returned as Split
+Spodnja Branica,Spodnja Branica,settlement,si,si,Goriška,Nova Gorica,False,45.84323,13.82881,si_settlement,high,
+Spodnja Hajdina,Spodnja Hajdina,settlement,si,si,Podravska,Hajdina,False,46.40933,15.84363,si_settlement,high,
+Spodnja Idrija,Spodnja Idrija,settlement,si,si,Goriška,Idrija,False,46.03363,14.02120,si_settlement,high,
+Spodnja Nova vas,Spodnja Nova vas,settlement,si,si,Podravska,Slovenska Bistrica,False,46.38560,15.59708,si_settlement,high,
+Spodnja Polskava,Spodnja Polskava,settlement,si,si,Podravska,Slovenska Bistrica,False,46.41202,15.63750,si_settlement,high,
+Spodnja Šiška,Šiška,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.07220,14.48690,override,high,Ljubljana district
+Spodnja Šlezija,Spodnja Šlezija,unknown,,,,,False,,,unresolved,low,
+Spodnje Gameljne,Spodnje Gameljne,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.12248,14.50277,si_settlement,high,
+Spodnje Gorje,Spodnje Gorje,settlement,si,si,Gorenjska,Gorje,False,46.38392,14.07884,si_settlement,high,
+Spodnji Brnik,Spodnji Brnik,settlement,si,si,Gorenjska,Cerklje na Gorenjskem,False,46.22836,14.48569,si_settlement,high,
+Spodnji Hrastnik,Spodnji Hrastnik,unknown,,,,,False,,,unresolved,low,
+Spodnji Log,Spodnji Log,settlement,si,si,Jugovzhodna Slovenija,Kočevje,False,45.52361,15.01037,si_settlement,high,
+Srbija,Srbija,other,foreign,rs,,,False,44.02432,21.07657,unrestricted,medium,
+Središče ob Dravi,Središče ob Dravi,settlement,si,si,Podravska,Središče ob Dravi,False,46.40881,16.25613,si_settlement,high,
+Srednja Bistrica,Srednja Bistrica,settlement,si,si,Pomurska,Srednja Bistrica,False,46.55158,16.27735,si_settlement,high,
+Srednja Dobrava,Srednja Dobrava,settlement,si,si,Gorenjska,Radovljica,False,46.30573,14.22052,si_settlement,high,
+Srednja Kanomlja,Srednja Kanomlja,settlement,si,si,Goriška,Idrija,False,46.02271,13.97998,si_settlement,high,
+Sredozemlje,Sredozemlje,unknown,,,,,False,,,unresolved,low,
+Sremski Karlovci,Sremski Karlovci,settlement,foreign,rs,,,False,45.20305,19.93383,world_settlement,high,
+St. Gallen,St. Gallen,settlement,foreign,ch,,,False,47.42562,9.37624,world_settlement,high,
+St. Louis,St. Louis,settlement,foreign,us,,,False,38.62541,-90.19001,world_settlement,high,
+Stanišić,Stanišić,settlement,foreign,rs,,,False,45.93856,19.16458,exonym_settlement,medium,returned as Станишић
+Stanjevci,Stanjevci,settlement,si,si,Pomurska,Stanjevci,False,46.80692,16.18510,si_settlement,high,
+Stanovišče,Stanovišče,settlement,si,si,Goriška,Kobarid,False,46.25544,13.45723,si_settlement,high,
+Stara Cerkev,Stara Cerkev,settlement,si,si,Jugovzhodna Slovenija,Kočevje,False,45.67048,14.84009,si_settlement,high,
+Stara Fužina,Stara Fužina,settlement,si,si,Gorenjska,Bohinj,False,46.28793,13.89366,si_settlement,high,
+Stara Vrhnika,Stara Vrhnika,settlement,si,si,Osrednjeslovenska,Vrhnika,False,45.97539,14.28299,si_settlement,high,
+Stara vas,Stara vas,settlement,si,si,Primorsko-notranjska,Postojna,False,45.76212,14.21336,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.37)
+Stari trg,Stari trg,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.95775,14.75642,si_settlement,high,
+Stari trg pri Ložu,Stari trg pri Ložu,settlement,si,si,Primorsko-notranjska,Loška Dolina,False,45.71440,14.47194,si_settlement,high,
+Stična,Stična,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.95701,14.80784,si_settlement,high,
+Stockholm,Stockholm,settlement,foreign,se,,,False,59.32512,18.07109,world_settlement,high,
+Straelen,Straelen,settlement,foreign,de,,,False,51.44393,6.26944,world_settlement,high,
+Stranje,Stranje,settlement,si,si,Savinjska,Stranje,False,46.22050,15.56402,si_settlement,high,
+Strasbourg,Strasbourg,settlement,foreign,fr,,,False,48.58461,7.75071,world_settlement,high,
+Straža,Straža,settlement,si,si,Jugovzhodna Slovenija,Straža,False,45.78369,15.07304,si_settlement,high,
+Stražišče,Stražišče,settlement,si,si,Gorenjska,Kranj,False,46.23315,14.34037,si_settlement,high,
+Stražišče pri Kranju,Stražišče pri Kranju,settlement,si,si,Gorenjska,Kranj,False,46.23315,14.34037,qualified_anchor,low,via anchor Kranj
+Strezetina,Strezetina,settlement,si,si,Podravska,Ormož,False,46.45149,16.14404,si_settlement,high,
+Strojna,Strojna,settlement,si,si,Koroška,Ravne na Koroškem,False,46.59592,14.91389,si_settlement,high,
+Stročja vas,Stročja vas,settlement,si,si,Pomurska,Ljutomer,False,46.51021,16.22515,si_settlement,high,
+Strumica,Strumica,settlement,foreign,mk,,,False,41.43901,22.63741,exonym_settlement,medium,returned as Струмица
+Strunjan,Strunjan,settlement,si,si,Obalno-kraška,Piran,False,45.52582,13.61143,si_settlement,high,
+Struževo,Struževo,settlement,si,si,Gorenjska,Kranj,False,46.25026,14.33981,si_settlement,high,
+Studenci,Studenci,settlement,si,si,Podravska,Maribor,False,46.55412,15.62185,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.40)
+Studenec,Studenec,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05602,14.56998,contested_si,medium,also a foreign settlement (Češka); kept Slovenian (importance 0.37 vs 0.51)
+Studenčice pri Medvodah,Studenčice pri Medvodah,settlement,si,si,Osrednjeslovenska,Medvode,False,46.09335,14.37001,qualified_anchor,low,placed at its anchor Medvodah
+Stuttgart,Stuttgart,settlement,foreign,de,,,False,48.77845,9.18001,world_settlement,high,
+Subotica,Subotica,settlement,foreign,rs,,,False,46.10021,19.66533,world_settlement,high,
+Sudan,Sudan,settlement,foreign,us,,,False,34.06712,-102.52444,world_settlement,high,
+Suha krajina,Suha krajina,natural,si,si,Jugovzhodna Slovenija,Žužemberk,False,45.77967,14.90524,unrestricted,medium,
+Suhadole,Suhadole,settlement,si,si,Osrednjeslovenska,Litija,False,46.02559,15.03673,si_settlement,high,
+Suhadole pri Komendi,Suhadole pri Komendi,settlement,si,si,Osrednjeslovenska,Komenda,False,46.19331,14.53626,exonym_settlement,medium,returned as Žeje pri Komendi
+Sulechów,Sulechów,settlement,foreign,pl,,,False,52.08548,15.62591,world_settlement,high,
+Suresnes,Suresnes,settlement,foreign,fr,,,False,48.87091,2.22557,world_settlement,high,
+Susiya,Susiya,settlement,foreign,ps,,,False,31.40111,35.10870,exonym_settlement,medium,returned as معرض تراث (تطريز)
+Sussex,Sussex,region,foreign,us,,,False,36.90969,-77.27411,exonym_settlement,medium,returned as Sussex County
+Suša,Suša,settlement,si,si,Osrednjeslovenska,Lukovica,False,46.18885,14.82460,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.61)
+Sušak,Sušak,settlement,foreign,hr,,,False,45.32600,14.46000,override,high,the Rijeka district
+Sušica,Sušica,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.89264,14.82347,si_settlement,high,
+Sušine,Sušine,settlement,foreign,hr,,,False,45.55094,18.06262,world_settlement,high,
+Sv. Miklavž pri Ormožu,Sv. Miklavž pri Ormožu,settlement,si,si,Podravska,Ormož,False,46.41525,16.19845,qualified_anchor,low,placed at its anchor Ormožu
+Sveta Trojica v Slovenskih goricah,Sveta Trojica v Slovenskih goricah,settlement,si,si,Podravska,Sveta Trojica v Slovenskih goricah,False,46.56708,15.88220,si_settlement,high,
+Sveti Anton,Sveti Anton,settlement,si,si,Obalno-kraška,Koper,False,45.52512,13.83044,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.43)
+Sveti Ivan,Sveti Ivan,settlement,foreign,hr,,,False,45.40660,13.97934,world_settlement,high,
+Sveti Jurij ob Ščavnici,Sveti Jurij ob Ščavnici,settlement,si,si,Pomurska,Sveti Jurij ob Ščavnici,False,46.56179,16.01856,si_settlement,high,
+Sveti Križ pri Rogaški Slatini,Sveti Križ pri Rogaški Slatini,unknown,,,,,False,,,unresolved,low,
+Sveti Višarje,Sveti Višarje,settlement,foreign,it,,,False,46.47800,13.59400,override,high,"Monte Lussari, Italy"
+Sveti Štefan,Sveti Štefan,settlement,foreign,me,,,False,42.25700,18.89200,override,high,"Sveti Stefan, Montenegro — listed beside Beograd"
+Svetvinčenat,Svetvinčenat,settlement,foreign,hr,,,False,45.08784,13.88213,exonym_settlement,medium,returned as Općina Svetvinčenat
+Svečina,Svečina,settlement,si,si,Podravska,Kungota,False,46.66597,15.58809,si_settlement,high,
+Swansea,Swansea,settlement,foreign,gb,,,False,51.61960,-3.94592,world_settlement,high,
+Sydney,Sydney,settlement,foreign,au,,,False,-33.86984,151.20828,world_settlement,high,
+Szamotuły,Szamotuły,settlement,foreign,pl,,,False,52.61203,16.58312,world_settlement,high,
+Sèvres,Sèvres,settlement,foreign,fr,,,False,48.82474,2.21271,world_settlement,high,
+Tabor,Tabor,settlement,si,si,Savinjska,Tabor,False,46.23505,15.01531,si_settlement,high,
+Tabor v Savinjski dolini,Tabor v Savinjski dolini,settlement,si,si,Savinjska,Žalec,False,46.26492,15.13537,qualified_anchor,low,placed at its anchor Savinjski dolini
+Tacen,Tacen,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.11989,14.46582,si_settlement,high,
+Tallinn,Tallinn,settlement,foreign,ee,,,False,59.43724,24.75727,world_settlement,high,
+Tampa,Tampa,settlement,foreign,us,,,False,27.94499,-82.45831,world_settlement,high,
+Tampere,Tampere,settlement,foreign,fi,,,False,61.49780,23.76163,world_settlement,high,
+Tartu,Tartu,settlement,foreign,ee,,,False,58.37795,26.72900,exonym_settlement,medium,returned as Tartu linn
+Teheran,Teheran,settlement,foreign,ir,,,False,35.68925,51.38960,world_settlement,high,
+Teksas,Teksas,region,foreign,us,,,False,31.26389,-98.54561,world_settlement,high,
+Tel Aviv,Tel Aviv,settlement,foreign,il,,,False,32.08530,34.78181,world_settlement,high,
+Temišvar,Temišvar,settlement,foreign,ro,,,False,45.75384,21.22575,world_settlement,high,
+"Tempe, Arizona, USA","Tempe, Arizona, USA",settlement,foreign,us,,,False,33.42551,-111.94002,exonym_settlement,medium,returned as Tempe
+Tenetiše,Tenetiše,settlement,si,si,Gorenjska,Kranj,False,46.29654,14.34735,si_settlement,high,
+Tenna,Tenna,settlement,foreign,it,,,False,46.02154,11.25990,world_settlement,high,
+Terzo d'Aquileia,Terzo d'Aquileia,settlement,foreign,it,,,False,45.78075,13.32435,exonym_settlement,medium,returned as Terzo d'Aquileia / Tierç
+Tezno,Tezno,settlement,si,si,Podravska,Maribor,False,46.53335,15.67030,si_settlement,high,
+The Hague,The Hague,settlement,foreign,nl,,,False,52.07998,4.31135,exonym_settlement,medium,returned as Haag
+"Ticino, Švica","Ticino, Švica",region,foreign,ch,,,False,46.33519,8.75259,exonym_settlement,medium,returned as Ticino
+Timișoara,Timișoara,settlement,foreign,ro,,,False,45.75384,21.22575,exonym_settlement,medium,returned as Temišvar
+Tirana,Tirana,settlement,foreign,al,,,False,41.32815,19.81844,world_settlement,high,
+"Tirana, Albanija","Tirana, Albanija",settlement,foreign,al,,,False,41.32815,19.81844,exonym_settlement,medium,returned as Tirana
+Tišina,Tišina,settlement,si,si,Pomurska,Tišina,False,46.65448,16.08549,si_settlement,high,
+Tlake pri Rogatcu,Tlake pri Rogatcu,settlement,si,si,Savinjska,Rogatec,False,46.22799,15.68239,qualified_anchor,low,placed at its anchor Rogatcu
+Tobačna,Tobačna,other,si,si,Osrednjeslovenska,Ljubljana,True,46.04751,14.49320,unrestricted,medium,
+Tokio,Tokio,region,foreign,jp,,,False,35.67686,139.76389,world_settlement,high,
+Tolmin,Tolmin,settlement,si,si,Goriška,Tolmin,False,46.14373,13.78928,si_settlement,high,
+Tomaj,Tomaj,settlement,si,si,Obalno-kraška,Sežana,False,45.75486,13.85381,si_settlement,high,
+Tomišelj,Tomišelj,settlement,si,si,Osrednjeslovenska,Ig,False,45.96399,14.48127,si_settlement,high,
+Topolc,Topolc,settlement,si,si,Primorsko-notranjska,Ilirska Bistrica,False,45.58341,14.21588,si_settlement,high,
+Topolovo,Topolovo,settlement,si,si,Savinjska,Kozje,False,46.10476,15.48851,si_settlement,high,
+Topolšica,Topolšica,settlement,si,si,Savinjska,Šoštanj,False,46.40135,15.02139,si_settlement,high,
+Topolščica,Topolščica,unknown,,,,,False,,,unresolved,low,
+Torino,Torino,settlement,foreign,it,,,False,45.06776,7.68249,world_settlement,high,
+Toronto,Toronto,settlement,foreign,ca,,,False,43.65348,-79.38393,world_settlement,high,
+Toruń,Toruń,other,foreign,pl,,,False,53.01454,18.59658,unrestricted,medium,
+Toulouse,Toulouse,settlement,foreign,fr,,,False,43.60446,1.44424,world_settlement,high,
+Tourcoing,Tourcoing,settlement,foreign,fr,,,False,50.72350,3.16057,world_settlement,high,
+Tours,Tours,settlement,foreign,fr,,,False,47.39005,0.68893,world_settlement,high,
+Tovarna Rog,Tovarna Rog,settlement,si,si,Osrednjeslovenska,,False,46.05110,14.51420,override,high,"Rog factory, Ljubljana"
+Trate,Trate,settlement,si,si,Podravska,Šentilj,False,46.69791,15.78730,si_settlement,high,
+Travnik,Travnik,settlement,si,si,Jugovzhodna Slovenija,Loški Potok,False,45.69068,14.59907,contested_si,medium,also a foreign settlement (Bosna in Hercegovina); kept Slovenian (importance 0.15 vs 0.55)
+Trboje,Trboje,settlement,si,si,Gorenjska,Trboje,False,46.19673,14.41140,si_settlement,high,
+Trbovlje,Trbovlje,settlement,si,si,Zasavska,Trbovlje,False,46.13709,15.04648,si_settlement,high,
+Trdkova,Trdkova,settlement,si,si,Pomurska,Trdkova,False,46.85259,16.12860,si_settlement,high,
+Trebelno,Trebelno,settlement,si,si,Jugovzhodna Slovenija,Mokronog-Trebelno,False,45.91094,15.14976,si_settlement,high,
+Trebinje,Trebinje,settlement,foreign,ba,,,False,42.70983,18.34573,world_settlement,high,
+Trebišov,Trebišov,settlement,foreign,sk,,,False,48.62862,21.72017,world_settlement,high,
+Trebnje,Trebnje,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.90814,14.99245,si_settlement,high,
+Trebče,Trebče,settlement,si,si,Savinjska,Bistrica ob Sotli,False,46.04760,15.63266,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.33)
+Trenta,Trenta,settlement,si,si,Goriška,Bovec,False,46.38081,13.75184,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.13 vs 0.51)
+Treviso,Treviso,region,foreign,it,,,False,45.80669,12.20632,world_settlement,high,
+Trieste,Trst,settlement,foreign,it,,,False,45.64965,13.77728,world_settlement,high,
+Triglavski narodni park,Triglavski narodni park,other,si,si,Gorenjska,,False,46.33605,13.81387,unrestricted,medium,
+Trnava,Trnava,settlement,foreign,sk,,,False,48.37740,17.58720,override,high,Slovakia — the carrier's other places are all Slovak
+Trnovlje,Trnovlje,settlement,foreign,at,,,False,46.62755,13.97757,world_settlement,high,
+Trnovo,Trnovo,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.04050,14.49890,override,medium,read as the Ljubljana district
+Trojane,Trojane,settlement,si,si,Osrednjeslovenska,Lukovica,False,46.18822,14.88612,si_settlement,high,
+Trondheim,Trondheim,settlement,foreign,no,,,False,63.43045,10.39521,world_settlement,high,
+Trossingen,Trossingen,settlement,foreign,de,,,False,48.07506,8.63630,world_settlement,high,
+Trst,Trst,settlement,foreign,it,,,False,45.64965,13.77728,world_settlement,high,
+"Trst, Italija","Trst, Italija",settlement,foreign,it,,,False,45.64965,13.77728,exonym_settlement,medium,returned as Trst
+Trstenik,Trstenik,settlement,si,si,Podravska,Ormož,False,46.46116,16.16158,si_settlement,high,
+Trzin,Trzin,settlement,si,si,Osrednjeslovenska,Trzin,False,46.12781,14.54442,si_settlement,high,
+Trška Gora,Trška Gora,settlement,si,si,Jugovzhodna Slovenija,Novo mesto,False,45.84261,15.18963,si_settlement,high,
+Tržaški kras,Tržaški kras,region,foreign,it,,,False,45.72000,13.80000,override,high,the Karst above Trieste
+Tržič,Tržič,settlement,si,si,Gorenjska,Tržič,False,46.37975,14.33251,contested_si,medium,also a foreign settlement (Italija); importance 0.55 vs 0.55
+Tuhinj,Tuhinj,settlement,si,si,Osrednjeslovenska,Kamnik,False,46.22717,14.76906,exonym_settlement,medium,returned as Zgornji Tuhinj
+Tunizija,Tunizija,settlement,foreign,tn,,,False,36.80021,10.18578,world_settlement,high,
+Tunjice,Tunjice,settlement,si,si,Osrednjeslovenska,Kamnik,False,46.23722,14.57878,si_settlement,high,
+Tupaliče,Tupaliče,settlement,si,si,Gorenjska,Tupaliče,False,46.29043,14.42777,si_settlement,high,
+Turiška vas,Turiška vas,settlement,si,si,Koroška,Slovenj Gradec,False,46.47353,15.12960,si_settlement,high,
+Turjak,Turjak,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.87780,14.61281,contested_si,medium,also a foreign settlement (Italija); kept Slovenian (importance 0.15 vs 0.47)
+Turčija,Turčija,country,foreign,tr,,,False,39.29408,35.23166,unrestricted,medium,
+Tuttlingen,Tuttlingen,settlement,foreign,de,,,False,47.98443,8.81866,world_settlement,high,
+Tuzla,Tuzla,settlement,foreign,ba,,,False,44.53930,18.67493,world_settlement,high,
+Tübingen,Tübingen,settlement,foreign,de,,,False,48.52033,9.05360,world_settlement,high,
+UK,UK,country,foreign,gb,,,False,54.70235,-3.27658,exonym_settlement,medium,returned as Združeno kraljestvo
+US,US,country,foreign,us,,,False,39.78373,-100.44588,exonym_settlement,medium,returned as Združene države Amerike
+Uccle,Uccle,other,foreign,be,,,False,50.79032,4.35969,exonym_settlement,medium,returned as Uccle - Ukkel
+Udine,Videm,settlement,foreign,it,,,False,46.06370,13.23580,override,medium,read as Udine (Slovene: Videm); a Videm pri Ptuju municipality also exists
+Ukanc,Ukanc,settlement,si,si,Gorenjska,Bohinj,False,46.27929,13.82998,si_settlement,high,
+Ukrajina,Ukrajina,country,foreign,ua,,,False,49.48720,31.27183,unrestricted,medium,
+Umag,Umag,settlement,foreign,hr,,,False,45.43236,13.52241,world_settlement,high,
+Umeå,Umeå,settlement,foreign,se,,,False,63.82566,20.26307,world_settlement,high,
+University of Cambridge,University of Cambridge,other,foreign,gb,,,False,52.18909,0.12130,unrestricted_fuzzy,low,"name mismatch: Q025-7 Trumpington Road, Cambridge, 7, Trumpington Road, Tru"
+University of Oxford,University of Oxford,other,foreign,gb,,,False,51.75480,-1.25440,override,high,
+Urbino,Urbino,settlement,foreign,it,,,False,43.72626,12.63631,world_settlement,high,
+Utah,Utah,region,foreign,us,,,False,39.42252,-111.71436,world_settlement,high,
+Utrecht,Utrecht,settlement,foreign,nl,,,False,52.09070,5.12156,world_settlement,high,
+Valencia,Valencia,settlement,foreign,es,,,False,39.46971,-0.37634,exonym_settlement,medium,returned as Valencija
+Valjevo,Valjevo,settlement,foreign,rs,,,False,44.27087,19.88633,world_settlement,high,
+"Vancouver, Kanada","Vancouver, Kanada",settlement,foreign,ca,,,False,49.26087,-123.11395,exonym_settlement,medium,returned as Vancouver
+Vanganel,Vanganel,settlement,si,si,Obalno-kraška,Koper,False,45.51744,13.77908,si_settlement,high,
+Vantaa,Vantaa,settlement,foreign,fi,,,False,60.29299,25.04367,world_settlement,high,
+Varaždin,Varaždin,settlement,foreign,hr,,,False,46.30796,16.33782,world_settlement,high,
+Varšava,Varšava,settlement,foreign,pl,,,False,52.23196,21.00672,world_settlement,high,
+"Varšava, Poljska","Varšava, Poljska",other,foreign,pl,,,False,52.23337,21.07115,exonym_settlement,medium,returned as Varšava
+Vatikan,Vatikan,settlement,foreign,va,,,False,41.90349,12.45283,world_settlement,high,
+Vavta vas,Vavta vas,settlement,si,si,Jugovzhodna Slovenija,Vavta vas,False,45.78132,15.07779,si_settlement,high,
+Vače,Vače,settlement,si,si,Osrednjeslovenska,Litija,False,46.11927,14.83737,si_settlement,high,
+Velenje,Velenje,settlement,si,si,Savinjska,Velenje,False,46.35929,15.11503,si_settlement,high,
+Veles,Veles,settlement,foreign,mk,,,False,41.71887,21.77057,exonym_settlement,medium,returned as Велес
+Velika Gorica,Velika Gorica,settlement,foreign,hr,,,False,45.71557,16.07172,exonym_settlement,medium,returned as Grad Velika Gorica
+Velika Nedelja,Velika Nedelja,settlement,si,si,Podravska,Ormož,False,46.42087,16.10950,si_settlement,high,
+Velika Polana,Velika Polana,settlement,si,si,Pomurska,Velika Polana,False,46.57860,16.36293,si_settlement,high,
+Velike Lašče,Velike Lašče,settlement,si,si,Osrednjeslovenska,Velike Lašče,False,45.83247,14.63831,si_settlement,high,
+Velike Žablje,Velike Žablje,settlement,si,si,Goriška,Ajdovščina,False,45.86760,13.85130,si_settlement,high,
+Veliki Vrh,Veliki Vrh,settlement,si,si,Primorsko-notranjska,Bloke,False,45.77230,14.52254,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.19)
+Venezuela,Venezuela,country,foreign,ve,,,False,8.00187,-66.11093,unrestricted,medium,
+"Venice, Kalifornija","Venice, Kalifornija",settlement,foreign,us,,,False,33.99504,-118.46689,exonym_settlement,medium,returned as Venice
+Verona,Verona,region,foreign,it,,,False,45.44250,10.98574,world_settlement,high,
+Videm,Videm,settlement,foreign,it,,,False,46.06370,13.23580,override,medium,read as Udine (Slovene: Videm); a Videm pri Ptuju municipality also exists
+Videm ob Savi,Videm ob Savi,other,si,si,Posavska,Krško,False,45.95365,15.51327,unrestricted_fuzzy,low,"name mismatch: Lovski dom Videm ob Savi, 2a, 220, Vrbina, Dolenja vas pri K"
+Videm ob Ščavnici,Videm ob Ščavnici,other,si,si,Pomurska,Sveti Jurij ob Ščavnici,False,46.56889,16.02200,unrestricted_fuzzy,low,"name mismatch: Videm, Sveti Jurij ob Ščavnici, 9244, Slovenija"
+Videm pri Ptuju,Videm pri Ptuju,settlement,si,si,Podravska,Videm,False,46.36964,15.90136,si_settlement,high,
+Videm-Dobrepolje,Videm-Dobrepolje,other,si,si,Osrednjeslovenska,Dobrepolje,False,45.84842,14.69441,unrestricted_fuzzy,low,"name mismatch: Kmetijska zadruga Dobrepolje, 36a, Videm, Dobrepolje, Upravn"
+Vienna,Dunaj,settlement,foreign,at,,,False,48.20820,16.37380,override,high,Vienna
+Vilnius,Vilnius,settlement,foreign,lt,,,False,54.68705,25.28291,exonym_settlement,medium,returned as Vilna
+Vinica,Vinica,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.46014,15.25395,contested_si,medium,also a foreign settlement (Ukrajina); kept Slovenian (importance 0.15 vs 0.62)
+Vinkovci,Vinkovci,settlement,foreign,hr,,,False,45.28838,18.80452,exonym_settlement,medium,returned as Grad Vinkovci
+"Vinkovci, Hrvaška","Vinkovci, Hrvaška",settlement,foreign,hr,,,False,45.28838,18.80452,exonym_settlement,medium,returned as Grad Vinkovci
+Vinski Vrh,Vinski Vrh,settlement,si,si,Podravska,Ormož,False,46.45339,16.20509,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.19)
+Vipava,Vipava,settlement,si,si,Goriška,Vipava,False,45.82153,13.97999,si_settlement,high,
+Vipavska dolina,Vipavska dolina,region,si,si,Goriška,,False,46.08878,13.82630,region_table,high,informal region
+Vipavski Križ,Vipavski Križ,settlement,si,si,Goriška,Ajdovščina,False,45.88081,13.86128,si_settlement,high,
+Vipolže,Vipolže,settlement,si,si,Goriška,Brda,False,45.97517,13.53729,si_settlement,high,
+Virmaše,Virmaše,settlement,si,si,Gorenjska,Škofja Loka,False,46.17864,14.32259,si_settlement,high,
+Vis,Vis,other,foreign,hr,,,False,43.04342,16.16551,unrestricted,medium,
+Visoko,Visoko,settlement,si,si,Gorenjska,Visoko,False,46.27061,14.41807,contested_si,medium,also a foreign settlement (Bosna in Hercegovina); kept Slovenian (importance 0.15 vs 0.53)
+Vitanje,Vitanje,settlement,si,si,Savinjska,Vitanje,False,46.38229,15.29579,si_settlement,high,
+Vitomarci,Vitomarci,settlement,si,si,Podravska,Sveti Andraž v Slovenskih goricah,False,46.52498,15.93386,si_settlement,high,
+Vitry-sur-Seine,Vitry-sur-Seine,settlement,foreign,fr,,,False,48.78760,2.39164,world_settlement,high,
+Vič,Vič,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.04530,14.48050,override,high,Ljubljana district
+Vič-Rudnik,Vič-Rudnik,other,si,si,Osrednjeslovenska,Ljubljana,True,46.04640,14.48707,unrestricted_fuzzy,low,"name mismatch: Zdravstveni dom Ljubljana - Enota Vič-Rudnik, Postojnska uli"
+Višnja Gora,Višnja Gora,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.95544,14.74410,si_settlement,high,
+Vižmarje,Vižmarje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.09560,14.47440,override,high,Ljubljana district
+Vnorovy,Vnorovy,settlement,foreign,cz,,,False,48.93096,17.35050,world_settlement,high,
+Vodice,Vodice,settlement,si,si,Osrednjeslovenska,Vodice,False,46.18922,14.49468,si_settlement,high,
+Vodmat,Vodmat,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05530,14.52525,si_settlement,high,
+Vodnjan,Vodnjan,settlement,foreign,hr,,,False,44.96034,13.84978,unrestricted,medium,
+Voglje pri Kranju,Voglje pri Kranju,settlement,si,si,Gorenjska,Kranj,False,46.24329,14.35494,qualified_anchor,low,placed at its anchor Kranj
+Vojnik,Vojnik,settlement,si,si,Savinjska,Vojnik,False,46.29064,15.30885,si_settlement,high,
+Vojvodina,Vojvodina,region,foreign,rs,,,False,45.48313,19.99186,world_settlement,high,
+Voklo,Voklo,settlement,si,si,Gorenjska,Voklo,False,46.21534,14.42157,si_settlement,high,
+Volče,Volče,settlement,si,si,Goriška,Tolmin,False,46.17600,13.70834,si_settlement,high,
+Volčji Grad,Volčji Grad,settlement,si,si,Obalno-kraška,Komen,False,45.80052,13.75070,si_settlement,high,
+Vranji Vrh,Vranji Vrh,settlement,si,si,Podravska,Šentilj,False,46.68675,15.72618,si_settlement,high,
+Vransko,Vransko,settlement,si,si,Savinjska,Vransko,False,46.24327,14.95027,si_settlement,high,
+Vrba,Vrba,settlement,si,si,Gorenjska,Vrba,False,46.38898,14.14691,contested_si,medium,also a foreign settlement (Avstrija); kept Slovenian (importance 0.15 vs 0.44)
+Vrchlabí,Vrchlabí,settlement,foreign,cz,,,False,50.62715,15.60958,world_settlement,high,
+Vremski Britof,Vremski Britof,settlement,si,si,Obalno-kraška,Divača,False,45.65754,14.03005,si_settlement,high,
+Vrh nad Krašnjo,Vrh nad Krašnjo,settlement,si,si,Osrednjeslovenska,Lukovica,False,46.18627,14.75444,si_settlement,high,
+Vrhnika,Vrhnika,settlement,si,si,Osrednjeslovenska,Vrhnika,False,45.94756,14.28759,si_settlement,high,
+Vrhnika pri Ložu,Vrhnika pri Ložu,settlement,si,si,Primorsko-notranjska,Loška Dolina,False,45.70488,14.50565,si_settlement,high,
+Vrhovlje,Vrhovlje,settlement,si,si,Obalno-kraška,Sežana,False,45.72761,13.82398,si_settlement,high,
+Vrhpolje,Vrhpolje,settlement,si,si,Obalno-kraška,Hrpelje-Kozina,False,45.62766,13.92997,contested_si,medium,also a foreign settlement (Bosna in Hercegovina); kept Slovenian (importance 0.15 vs 0.15)
+Vrzdenec,Vrzdenec,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,46.01962,14.27009,si_settlement,high,
+Vráble,Vráble,settlement,foreign,sk,,,False,48.24428,18.30612,world_settlement,high,
+Vuhred,Vuhred,settlement,si,si,Koroška,Radlje ob Dravi,False,46.59427,15.23065,si_settlement,high,
+Vukovar,Vukovar,settlement,foreign,hr,,,False,45.34441,19.00238,exonym_settlement,medium,returned as Grad Vukovar
+Vuzenica,Vuzenica,settlement,si,si,Koroška,Vuzenica,False,46.59788,15.16578,si_settlement,high,
+Vučja Vas,Vučja Vas,settlement,si,si,Pomurska,Križevci,False,46.59759,16.10218,si_settlement,high,
+Vučja vas,Vučja vas,settlement,si,si,Pomurska,Križevci,False,46.59759,16.10218,si_settlement,high,
+Warsaw,Varšava,settlement,foreign,pl,,,False,52.23196,21.00672,world_settlement,high,
+Washington,Washington,settlement,foreign,us,,,False,38.89510,-77.03638,world_settlement,high,
+"Washington, D.C.","Washington, D.C",settlement,foreign,us,,,False,38.89510,-77.03638,exonym_settlement,medium,returned as Washington
+"Wałbrzych, Poljska","Wałbrzych, Poljska",other,foreign,pl,,,False,50.78522,16.28464,exonym_settlement,medium,returned as Wałbrzych
+Weimar,Weimar,settlement,foreign,de,,,False,50.97933,11.32979,world_settlement,high,
+Wermelskirchen,Wermelskirchen,settlement,foreign,de,,,False,51.14065,7.21569,world_settlement,high,
+Westphalia,Westphalia,settlement,foreign,us,,,False,41.71970,-95.39495,world_settlement,high,
+Wiesbaden,Wiesbaden,settlement,foreign,de,,,False,50.08204,8.24166,world_settlement,high,
+Wilhelmshaven,Wilhelmshaven,settlement,foreign,de,,,False,53.52788,8.10630,world_settlement,high,
+Winchester,Winchester,settlement,foreign,gb,,,False,51.06128,-1.31317,world_settlement,high,
+Wolfsberg,Wolfsberg,settlement,foreign,at,,,False,46.83906,14.84521,exonym_settlement,medium,returned as Volšperk
+Worpswede,Worpswede,settlement,foreign,de,,,False,53.22300,8.92835,world_settlement,high,
+Wołowiec,Wołowiec,settlement,foreign,pl,,,False,53.76681,15.15454,world_settlement,high,
+Wrocław,Wrocław,other,foreign,pl,,,False,51.12631,16.97820,unrestricted,medium,
+Wuppertal,Wuppertal,settlement,foreign,de,,,False,51.26402,7.17804,world_settlement,high,
+Würzburg,Würzburg,region,foreign,de,,,False,49.77804,9.94348,world_settlement,high,
+ZDA,Združene države Amerike,country,foreign,us,,,False,39.78373,-100.44588,unrestricted,medium,
+Zabreznica,Zabreznica,settlement,si,si,Gorenjska,Zabreznica,False,46.39756,14.14790,si_settlement,high,
+Zabukovica,Zabukovica,settlement,si,si,Savinjska,Žalec,False,46.21215,15.15844,si_settlement,high,
+Zadar,Zadar,settlement,foreign,hr,,,False,44.11686,15.23533,world_settlement,high,
+Zadlog,Zadlog,settlement,si,si,Goriška,Idrija,False,45.94120,14.00476,si_settlement,high,
+Zagorica,Zagorica,settlement,si,si,Osrednjeslovenska,Dobrepolje,False,45.84331,14.71805,si_settlement,high,
+Zagorica pri Dobrepolju,Zagorica pri Dobrepolju,unknown,,,,,False,,,unresolved,low,
+Zagorje ob Savi,Zagorje ob Savi,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.14919,14.92859,si_settlement,high,
+Zagradec,Zagradec,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.85960,14.83446,si_settlement,high,
+Zagreb,Zagreb,settlement,foreign,hr,,,False,45.81310,15.97728,world_settlement,high,
+"Zagreb, Hrvaška","Zagreb, Hrvaška",settlement,foreign,hr,,,False,45.81310,15.97728,exonym_settlement,medium,returned as Zagreb
+Zahodna Sahara,Zahodna Sahara,region,foreign,ma,,,False,24.17973,-13.76678,unrestricted,medium,
+Zahodni breg,Zahodni breg,region,foreign,ps,,,False,32.02547,35.28881,world_settlement,high,
+Zajačia Dolina,Zajačia Dolina,settlement,foreign,sk,,,False,48.23652,18.65915,world_settlement,high,
+Zaječar,Zaječar,settlement,foreign,rs,,,False,43.90311,22.27855,exonym_settlement,medium,returned as Зајечар
+Zaklanec,Zaklanec,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,46.02425,14.31487,si_settlement,high,
+Zakojca,Zakojca,settlement,si,si,Goriška,Cerkno,False,46.16458,13.92681,si_settlement,high,
+Zalog,Zalog,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.06198,14.61400,si_settlement,high,
+Zambija,Zambija,country,foreign,zm,,,False,-14.51891,27.55899,unrestricted,medium,
+Zaplana,Zaplana,settlement,si,si,Osrednjeslovenska,Vrhnika,False,45.97244,14.23156,si_settlement,high,
+Zapuže,Zapuže,settlement,si,si,Jugovzhodna Slovenija,Šentjernej,False,45.82056,15.29609,si_settlement,high,
+Zapuže pri Dravljah,Zapuže pri Dravljah,unknown,,,,,False,,,unresolved,low,
+Zasavje,Zasavje,region,si,si,Zasavska,,False,46.13114,14.99632,region_table,high,informal region
+Zavratec,Zavratec,settlement,si,si,Osrednjeslovenska,Idrija,False,45.99229,14.13055,si_settlement,high,
+Zavrh pri Trojanah,Zavrh pri Trojanah,settlement,si,si,Osrednjeslovenska,Lukovica,False,46.18113,14.87848,si_settlement,high,
+Zavrč,Zavrč,settlement,si,si,Podravska,Zavrč,False,46.38602,16.04599,si_settlement,high,
+Združene države Amerike,Združene države Amerike,country,foreign,us,,,False,39.78373,-100.44588,unrestricted,medium,
+Združeno kraljestvo,Združeno kraljestvo,country,foreign,gb,,,False,54.70235,-3.27658,unrestricted,medium,
+Zemelj pri Metliki,Zemelj pri Metliki,settlement,si,si,Jugovzhodna Slovenija,Metlika,False,45.69095,15.30293,qualified_anchor,low,placed at its anchor Metliki
+Zemun,Zemun,settlement,foreign,rs,,,False,44.84440,20.41240,exonym_settlement,medium,returned as Београд (Земун)
+Zenica,Zenica,settlement,foreign,ba,,,False,44.19983,17.90930,world_settlement,high,
+Zgornja Javoršica,Zgornja Javoršica,settlement,si,si,Osrednjeslovenska,Upravna Enota Domžale,False,46.11972,14.69913,si_settlement,high,
+Zgornja Kungota,Zgornja Kungota,settlement,si,si,Podravska,Kungota,False,46.63886,15.61413,si_settlement,high,
+Zgornja Polskava,Zgornja Polskava,settlement,si,si,Podravska,Slovenska Bistrica,False,46.42611,15.60870,si_settlement,high,
+Zgornja vas,Zgornja vas,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.02498,14.70218,exonym_settlement,medium,returned as Zgornja Besnica
+Zgornja Šiška,Zgornja Šiška,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.06979,14.48317,si_settlement,high,
+Zgornje Gameljne,Zgornje Gameljne,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.12766,14.49087,si_settlement,high,
+Zgornje Gorje,Zgornje Gorje,settlement,si,si,Gorenjska,Gorje,False,46.37982,14.06806,si_settlement,high,
+Zgornje Prebukovje,Zgornje Prebukovje,other,si,si,Podravska,Slovenska Bistrica,False,46.44324,15.55400,unrestricted,medium,
+Zgornji Kungota,Zgornji Kungota,unknown,,,,,False,,,unresolved,low,
+Zgornji Legen,Zgornji Legen,unknown,,,,,False,,,unresolved,low,
+Zgornji Porčič,Zgornji Porčič,settlement,si,si,Podravska,Sveta Trojica v Slovenskih goricah,False,46.59256,15.85884,si_settlement,high,
+Zgornji Tuhinj,Zgornji Tuhinj,settlement,si,si,Osrednjeslovenska,Kamnik,False,46.22717,14.76906,si_settlement,high,
+Zidani Most,Zidani Most,settlement,si,si,Savinjska,Laško,False,46.08555,15.17194,si_settlement,high,
+Zilska dolina,Zilska dolina,region,foreign,at,,,False,46.60000,13.60000,override,high,"Gailtal, Carinthia"
+Zlaté Moravce,Zlaté Moravce,settlement,foreign,sk,,,False,48.38333,18.40000,world_settlement,high,
+Zollikon,Zollikon,settlement,foreign,ch,,,False,47.33795,8.57557,world_settlement,high,
+Zrenjanin,Zrenjanin,settlement,foreign,rs,,,False,45.38027,20.39076,world_settlement,high,
+Zreče,Zreče,settlement,si,si,Savinjska,Zreče,False,46.37164,15.39002,si_settlement,high,
+Zreško Pohorje,Zreško Pohorje,unknown,,,,,False,,,unresolved,low,
+Zurich,Zürich,settlement,foreign,ch,,,False,47.37445,8.54104,world_settlement,high,
+Zvezdno mesto,Zvezdno mesto,unknown,,,,,False,,,unresolved,low,
+Zvečan,Zvečan,settlement,foreign,xk,,,False,42.90919,20.83893,world_settlement,high,
+Zürich,Zürich,settlement,foreign,ch,,,False,47.37445,8.54104,world_settlement,high,
+"Zürich, Švica","Zürich, Švica",settlement,foreign,ch,,,False,47.37445,8.54104,exonym_settlement,medium,returned as Zürich
+južna Slovenija,južna Slovenija,other,si,si,Savinjska,Sveti Lovrenc,False,46.22635,15.09954,exonym_settlement,medium,returned as Južna
+Čatež ob Savi,Čatež ob Savi,settlement,si,si,Posavska,Brežice,False,45.89094,15.60234,si_settlement,high,
+Čačak,Čačak,settlement,foreign,rs,,,False,43.89143,20.34916,world_settlement,high,
+Čedad,Čedad,settlement,foreign,it,,,False,46.09250,13.43300,override,high,Cividale del Friuli
+Čehovini,Čehovini,settlement,si,si,Obalno-kraška,Komen,False,45.81181,13.88425,si_settlement,high,
+Čentiba,Čentiba,settlement,si,si,Pomurska,Lendava,False,46.55237,16.48265,si_settlement,high,
+Čezsoča,Čezsoča,settlement,si,si,Goriška,Bovec,False,46.31969,13.54642,si_settlement,high,
+Češka,Češka,country,foreign,cz,,,False,49.74390,15.33811,unrestricted,medium,
+Češkoslovaška,Češkoslovaška,unknown,,,,,False,,,unresolved,low,
+Češnjica nad Podnartom,Češnjica nad Podnartom,unknown,,,,,False,,,unresolved,low,
+Čiginj,Čiginj,settlement,si,si,Goriška,Tolmin,False,46.16316,13.70986,si_settlement,high,
+Čortanovci,Čortanovci,settlement,foreign,rs,,,False,45.15588,20.01806,exonym_settlement,medium,returned as Чортановци
+Črna gora,Črna gora,country,foreign,me,,,False,42.77556,19.20224,unrestricted,medium,
+Črna na Koroškem,Črna na Koroškem,settlement,si,si,Koroška,Črna na Koroškem,False,46.46963,14.85026,si_settlement,high,
+Črna vas,Črna vas,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.00823,14.49976,si_settlement,high,
+Črni Vrh nad Idrijo,Črni Vrh nad Idrijo,other,si,si,Goriška,Idrija,False,45.92559,14.05348,unrestricted_fuzzy,low,"name mismatch: Pošta Črni Vrh nad Idrijo, 121, Črni Vrh, Idrija, 5274, Slov"
+Črnomelj,Črnomelj,settlement,si,si,Jugovzhodna Slovenija,Črnomelj,False,45.52506,15.21069,si_settlement,high,
+Črnovice,Črnovice,settlement,foreign,ua,,,False,48.28647,25.93765,world_settlement,high,
+Črnuče,Črnuče,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.10540,14.53370,override,high,Ljubljana district
+Łódź,Łódź,other,foreign,pl,,,False,51.77282,19.47849,unrestricted,medium,
+Ştei,Ştei,settlement,foreign,ro,,,False,46.53576,22.45575,world_settlement,high,
+Šafarsko,Šafarsko,settlement,si,si,Pomurska,Razkrižje,False,46.52020,16.28883,si_settlement,high,
+Šaleška dolina,Šaleška dolina,other,si,si,Savinjska,Šoštanj,False,46.38188,15.04139,unrestricted_fuzzy,low,"name mismatch: K. Z. Šaleška Dolina, Metleče, Florjan, Lajše, Šoštanj, 3325"
+Šapjane,Šapjane,settlement,foreign,hr,,,False,45.48088,14.25187,world_settlement,high,
+Šavna Peč,Šavna Peč,settlement,si,si,Zasavska,Hrastnik,False,46.11242,15.12510,si_settlement,high,
+Šempas,Šempas,settlement,si,si,Goriška,Nova Gorica,False,45.92895,13.74432,si_settlement,high,
+Šempeter,Šempeter,settlement,foreign,hu,,,False,46.84157,16.41822,exonym_settlement,medium,returned as Šentpeter
+Šempeter pri Gorici,Šempeter pri Gorici,settlement,si,si,Goriška,Šempeter-Vrtojba,False,45.93034,13.63986,si_settlement,high,
+Šempeter pri Novi Gorici,Šempeter pri Novi Gorici,unknown,,,,,False,,,unresolved,low,
+Šempolaj,Šempolaj,settlement,foreign,it,,,False,45.76588,13.68720,world_settlement,high,
+Šent Jurij,Šent Jurij,settlement,si,si,Osrednjeslovenska,Grosuplje,False,45.92728,14.62381,exonym_settlement,medium,returned as Št. Jurij
+Šentanel,Šentanel,settlement,si,si,Koroška,Prevalje,False,46.57247,14.87676,si_settlement,high,
+Šentilj,Šentilj,settlement,si,si,Podravska,Šentilj,False,46.66960,15.76883,si_settlement,high,
+Šentilj v Slovenskih goricah,Šentilj v Slovenskih goricah,settlement,si,si,Podravska,Šentilj,False,46.68040,15.65289,si_settlement,high,
+Šentjakob v Rožu,Šentjakob v Rožu,settlement,foreign,at,,,False,46.52693,14.05142,world_settlement,high,
+Šentjanž,Šentjanž,settlement,si,si,Posavska,Sevnica,False,46.01101,15.16944,si_settlement,high,
+Šentjanž na Dolenjskem,Šentjanž na Dolenjskem,settlement,si,si,Posavska,Brežice,False,45.85936,15.68908,qualified_anchor,low,placed at its anchor Dolenjskem
+Šentjanž pri Dravogradu,Šentjanž pri Dravogradu,settlement,si,si,Koroška,Dravograd,False,46.57718,15.01428,exonym_settlement,medium,returned as Dobrova pri Dravogradu
+Šentjerje,Šentjerje,unknown,,,,,False,,,unresolved,low,
+Šentjernej,Šentjernej,settlement,si,si,Jugovzhodna Slovenija,Šentjernej,False,45.82502,15.31881,si_settlement,high,
+Šentjošt nad Horjulom,Šentjošt nad Horjulom,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.03247,14.22507,si_settlement,high,
+Šentjur,Šentjur,settlement,si,si,Savinjska,Šentjur,False,46.18908,15.40603,si_settlement,high,
+Šentjur pri Celju,Šentjur,settlement,si,si,Savinjska,Šentjur,False,46.18908,15.40603,si_settlement,high,
+Šentjurij pri Mirni Peči,Šentjurij pri Mirni Peči,settlement,si,si,Jugovzhodna Slovenija,Poljane pri Mirni Peči,False,45.89368,15.09026,qualified_anchor,low,placed at its anchor Mirni Peči
+Šentlambert,Šentlambert,settlement,si,si,Zasavska,Zagorje ob Savi,False,46.11062,14.93481,si_settlement,high,
+Šentlipš,Šentlipš,unknown,,,,,False,,,unresolved,low,
+Šentlovrenc,Šentlovrenc,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.94136,14.94409,si_settlement,high,
+Šentpeter,Šentpeter,settlement,foreign,hu,,,False,46.84157,16.41822,world_settlement,high,
+Šentrupert,Šentrupert,settlement,si,si,Jugovzhodna Slovenija,Šentrupert,False,45.98478,15.08155,si_settlement,high,
+Šentvid,Šentvid,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.09680,14.46620,override,medium,read as the Ljubljana district; Šentvid pri Stični is listed separately
+Šentvid nad Ljubljano,Šentvid nad Ljubljano,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05003,14.50693,qualified_anchor,low,placed at its anchor Ljubljano
+Šentvid pri Grobelnem,Šentvid pri Grobelnem,other,si,si,Savinjska,Predenca,False,46.22871,15.51928,unrestricted,medium,
+Šentvid pri Ljubljani,Šentvid pri Ljubljani,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.08834,14.64151,qualified_anchor,low,placed at its anchor Ljubljani
+Šentvid pri Planini,Šentvid pri Planini,settlement,si,si,Savinjska,Šentjur,False,46.09574,15.43252,si_settlement,high,
+Šentvid pri Stični,Šentvid pri Stični,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.95339,14.83860,si_settlement,high,
+Šenčur,Šenčur,settlement,si,si,Gorenjska,Šenčur,False,46.24315,14.41910,si_settlement,high,
+Šešče pri Preboldu,Šešče pri Preboldu,settlement,si,si,Savinjska,Šešče pri Preboldu,False,46.23842,15.12304,si_settlement,high,
+Šibenik,Šibenik,settlement,si,si,Savinjska,Šentjur,False,46.19682,15.37702,si_settlement,high,
+Šipan,Šipan,other,foreign,hr,,,False,42.72777,17.88361,unrestricted,medium,
+Šipovo,Šipovo,settlement,foreign,ba,,,False,44.28094,17.08530,world_settlement,high,
+Šiška,Šiška,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.07220,14.48690,override,high,Ljubljana district
+Škalce,Škalce,settlement,si,si,Savinjska,Slovenske Konjice,False,46.35088,15.42177,si_settlement,high,
+Škale pri Velenju,Škale pri Velenju,settlement,si,si,Savinjska,Velenje,False,46.35474,15.09135,qualified_anchor,low,placed at its anchor Velenju
+Škedenj,Škedenj,settlement,foreign,it,,,False,45.62583,13.78658,world_settlement,high,
+Škocjan,Škocjan,settlement,si,si,Jugovzhodna Slovenija,Škocjan,False,45.90778,15.29062,si_settlement,high,
+Škocjan pri Turjaku,Škocjan pri Turjaku,settlement,si,si,Osrednjeslovenska,Upravna Enota Ljubljana,False,45.87230,14.59723,qualified_anchor,low,placed at its anchor Turjaku
+Škofi,Škofi,settlement,si,si,Obalno-kraška,Komen,False,45.78330,13.73516,contested_si,medium,also a foreign settlement (Hrvaška); importance 0.13 vs 0.13
+Škofije,Škofije,other,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.05544,14.31101,unrestricted,medium,
+Škofja Loka,Škofja Loka,settlement,si,si,Gorenjska,Škofja Loka,False,46.16527,14.30675,si_settlement,high,
+Škofljica,Škofljica,settlement,si,si,Osrednjeslovenska,Škofljica,False,45.95670,14.57836,si_settlement,high,
+Škotska,Škotska,region,foreign,gb,,,False,56.78611,-4.11405,world_settlement,high,
+Škrbina,Škrbina,settlement,si,si,Obalno-kraška,Komen,False,45.84246,13.73512,si_settlement,high,
+Škrjanče,Škrjanče,settlement,si,si,Osrednjeslovenska,Ivančna Gorica,False,45.92805,14.80915,si_settlement,high,
+Šmalčja vas pri Šentjerneju,Šmalčja vas pri Šentjerneju,settlement,si,si,Jugovzhodna Slovenija,Šentjernej,False,45.84588,15.29031,qualified_anchor,low,placed at its anchor Šentjerneju
+Šmarje,Šmarje,settlement,si,si,Obalno-kraška,Koper,False,45.50050,13.71710,si_settlement,high,
+Šmarje pri Jelšah,Šmarje pri Jelšah,settlement,si,si,Savinjska,Šmarje pri Jelšah,False,46.22897,15.52026,si_settlement,high,
+Šmarje-Sap,Šmarje-Sap,settlement,si,si,Osrednjeslovenska,Grosuplje,False,45.97511,14.61317,si_settlement,high,
+Šmarjeta pri Celju,Šmarjeta pri Celju,settlement,si,si,Savinjska,Celje,False,46.26127,15.28124,si_settlement,high,
+Šmarješke Toplice,Šmarješke Toplice,settlement,si,si,Jugovzhodna Slovenija,Šmarješke Toplice,False,45.86354,15.22395,si_settlement,high,
+Šmartno ob Paki,Šmartno ob Paki,settlement,si,si,Savinjska,Šmartno ob Paki,False,46.32988,15.03339,si_settlement,high,
+Šmartno pri Litiji,Šmartno pri Litiji,settlement,si,si,Osrednjeslovenska,Šmartno pri Litiji,False,46.01695,14.83376,si_settlement,high,
+Šmartno pri Ljubljani,Šmartno pri Ljubljani,settlement,si,si,Osrednjeslovenska,Dol pri Ljubljani,False,46.08834,14.64151,qualified_anchor,low,placed at its anchor Ljubljani
+Šmartno pri Slovenj Gradcu,Šmartno pri Slovenj Gradcu,settlement,si,si,Koroška,Slovenj Gradec,False,46.49309,15.10663,si_settlement,high,
+Šmartno v Rožni dolini,Šmartno v Rožni dolini,settlement,si,si,Savinjska,Celje,False,46.29373,15.24613,si_settlement,high,
+Šmatevž,Šmatevž,settlement,si,si,Savinjska,Braslovče,False,46.25937,15.03660,si_settlement,high,
+Šmaver pri Trebnjem,Šmaver pri Trebnjem,settlement,si,si,Jugovzhodna Slovenija,Trebnje,False,45.90765,14.97064,qualified_anchor,low,placed at its anchor Trebnjem
+Šmihel,Šmihel,settlement,si,si,Primorsko-notranjska,Pivka,False,45.65194,14.17789,si_settlement,high,
+Šmohor,Šmohor,settlement,si,si,Savinjska,Laško,False,46.18199,15.17978,contested_si,medium,also a foreign settlement (Avstrija); importance 0.15 vs 0.15
+Šoštanj,Šoštanj,settlement,si,si,Savinjska,Šoštanj,False,46.37739,15.04595,si_settlement,high,
+Španija,Španija,country,foreign,es,,,False,39.32607,-4.83798,unrestricted,medium,
+Španski borci,Španski borci,other,si,si,Osrednjeslovenska,Ljubljana,True,46.05638,14.53537,unrestricted_fuzzy,low,"name mismatch: Center kulture Španski borci, 61, Zaloška cesta, Selo, Kodel"
+Štajerska,Štajerska,region,si,si,,,False,,,region_table,high,spans several statistical regions
+Štandrež,Štandrež,settlement,foreign,it,,,False,45.92266,13.60242,world_settlement,high,
+Štangarske Poljane,Štangarske Poljane,settlement,si,si,Osrednjeslovenska,Šmartno pri Litiji,False,46.03784,14.78964,si_settlement,high,
+Štanjel,Štanjel,settlement,si,si,Obalno-kraška,Komen,False,45.82379,13.84429,si_settlement,high,
+Šteben,Šteben,settlement,foreign,at,,,False,46.57174,14.70890,world_settlement,high,
+Štepanja vas,Štepanja vas,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.04909,14.54157,unrestricted,medium,
+Štepanjsko naselje,Štepanjsko naselje,settlement,si,si,Osrednjeslovenska,Ljubljana,True,46.05171,14.54535,si_settlement,high,
+Šternberk,Šternberk,settlement,foreign,cz,,,False,49.73071,17.29885,world_settlement,high,
+Štjak,Štjak,settlement,si,si,Obalno-kraška,Sežana,False,45.79454,13.90478,si_settlement,high,
+Štore,Štore,settlement,si,si,Savinjska,Štore,False,46.19792,15.32767,si_settlement,high,
+Štrbe,Štrbe,settlement,foreign,ba,,,False,44.76343,17.31790,world_settlement,high,
+Štrekljevec,Štrekljevec,settlement,si,si,Jugovzhodna Slovenija,Štrekljevec,False,45.67127,15.21584,si_settlement,high,
+Štuki,Štuki,other,foreign,hr,,,False,45.87514,16.42849,unrestricted,medium,
+Šturje pri Ajdovščini,Šturje pri Ajdovščini,settlement,si,si,Goriška,Ajdovščina,False,45.88769,13.91075,qualified_anchor,low,via anchor Ajdovščina
+Šujica,Šujica,settlement,si,si,Osrednjeslovenska,Dobrova-Polhov Gradec,False,46.06192,14.41179,si_settlement,high,
+Švedska,Švedska,country,foreign,se,,,False,59.67497,14.52086,unrestricted,medium,
+Švica,Švica,country,foreign,ch,,,False,46.79856,8.23197,unrestricted,medium,
+Žabja vas,Žabja vas,settlement,si,si,Goriška,Nova Gorica,False,45.94690,13.64970,si_settlement,high,Nova Gorica
+Žabnica,Žabnica,settlement,si,si,Gorenjska,Kranj,False,46.19668,14.33203,contested_si,medium,also a foreign settlement (Hrvaška); kept Slovenian (importance 0.15 vs 0.43)
+Žalec,Žalec,settlement,si,si,Savinjska,Žalec,False,46.26116,15.15702,si_settlement,high,
+Železna Kapla,Železna Kapla,settlement,foreign,at,,,False,46.48690,14.57220,override,high,"Bad Eisenkappel, Carinthia"
+Železniki,Železniki,settlement,si,si,Gorenjska,Železniki,False,46.21828,14.12041,si_settlement,high,
+Želimlje,Želimlje,settlement,si,si,Osrednjeslovenska,Škofljica,False,45.91886,14.57157,si_settlement,high,
+Ženeva,Ženeva,settlement,foreign,ch,,,False,46.20176,6.14660,world_settlement,high,
+Ženjak,Ženjak,settlement,si,si,Podravska,Benedikt,False,46.59998,15.87714,si_settlement,high,
+Žibrše,Žibrše,settlement,si,si,Osrednjeslovenska,Logatec,False,45.93952,14.17606,si_settlement,high,
+Žilina,Žilina,settlement,foreign,sk,,,False,49.22347,18.73931,world_settlement,high,
+Žiri,Žiri,settlement,si,si,Gorenjska,Žiri,False,46.04421,14.12371,si_settlement,high,
+Žirovnica,Žirovnica,settlement,si,si,Gorenjska,Žirovnica,False,46.40461,14.13532,si_settlement,high,
+Žužemberk,Žužemberk,settlement,si,si,Jugovzhodna Slovenija,Žužemberk,False,45.80726,14.96848,si_settlement,high,

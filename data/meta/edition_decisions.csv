@@ -1,0 +1,123 @@
+edition_id,action,target,detail,source
+,new-entity,karin-sabadin,Karin Sabadin,docs/review/duplicate-editions.md
+,new-entity,marjeta-drobnic,Marjeta Drobnič,docs/review/duplicate-editions.md
+,new-entity,marjan-kovacevic-beltram,Marjan Kovačevič Beltram,docs/review/duplicate-editions.md
+,merge-entity,jaroslav-novak,jaro-novak -> jaroslav-novak; alias 'Jaro Novak',docs/review/duplicate-editions.md
+vecernica-2002-2,drop,,duplicate of vecernica-2001 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2003-2,drop,,duplicate of vecernica-2002 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2004-2,drop,,duplicate of vecernica-2003 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2005-2,drop,,duplicate of vecernica-2004 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2006-2,drop,,duplicate of vecernica-2005 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2007-2,drop,,duplicate of vecernica-2006 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2008-2,drop,,duplicate of vecernica-2007 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2009-2,drop,,duplicate of vecernica-2008 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2010-2,drop,,duplicate of vecernica-2009 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2011-2,drop,,duplicate of vecernica-2010 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2012-2,drop,,duplicate of vecernica-2011 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2013-2,drop,,duplicate of vecernica-2012 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2014-2,drop,,duplicate of vecernica-2013 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2015-2,drop,,duplicate of vecernica-2014 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2016-2,drop,,duplicate of vecernica-2015 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2017-2,drop,,duplicate of vecernica-2016 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2018-2,drop,,duplicate of vecernica-2017 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2019-2,drop,,duplicate of vecernica-2018 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2020-2,drop,,duplicate of vecernica-2019 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2021-2,drop,,duplicate of vecernica-2020 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2022-2,drop,,duplicate of vecernica-2021 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2023-2,drop,,duplicate of vecernica-2022 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+vecernica-2024-2,drop,,duplicate of vecernica-2023 shifted one year (legacy lines 1035-1057),docs/review/duplicate-editions.md
+grumova-nagrada-2014-2,drop,,exact duplicate,docs/review/duplicate-editions.md
+borstnikovo-srecanje-2012-2,drop,,subset of borstnikovo-srecanje-2012,docs/review/duplicate-editions.md
+zlata-ptica-2013,drop,,"duplicate of zlata-ptica-2012 (ceremony 5. 6. 2013, STA)",docs/review/duplicate-editions.md
+zlata-ptica-2012-2,drop,,winners not found in any source; Kino Udarnik's golden nest is in zlata-ptica-2011,docs/review/duplicate-editions.md
+jenkova-nagrada-2002-2,merge,jenkova-nagrada-2002,,docs/review/duplicate-editions.md
+jenkova-nagrada-2003-2,merge,jenkova-nagrada-2003,,docs/review/duplicate-editions.md
+jenkova-nagrada-2005-2,merge,jenkova-nagrada-2005,,docs/review/duplicate-editions.md
+jenkova-nagrada-2006-2,merge,jenkova-nagrada-2006,,docs/review/duplicate-editions.md
+jenkova-nagrada-2007-2,merge,jenkova-nagrada-2007,,docs/review/duplicate-editions.md
+jenkova-nagrada-2008-2,merge,jenkova-nagrada-2008,,docs/review/duplicate-editions.md
+jenkova-nagrada-2009-2,merge,jenkova-nagrada-2009,,docs/review/duplicate-editions.md
+jenkova-nagrada-2010-2,merge,jenkova-nagrada-2010,,docs/review/duplicate-editions.md
+sovretova-nagrada-2002-2,merge,sovretova-nagrada-2002,,docs/review/duplicate-editions.md
+askercevo-priznanje-2018-2,merge,askercevo-priznanje-2018,,docs/review/duplicate-editions.md
+askercevo-priznanje-2022-2,merge,askercevo-priznanje-2022,,docs/review/duplicate-editions.md
+askercevo-priznanje-2024-2,merge,askercevo-priznanje-2024,,docs/review/duplicate-editions.md
+gibanica-2013-2,merge,gibanica-2013,,docs/review/duplicate-editions.md
+gibanica-2023-2,merge,gibanica-2023,,docs/review/duplicate-editions.md
+jurciceva-nagrada-2012-2,merge,jurciceva-nagrada-2012,,docs/review/duplicate-editions.md
+desetnica-2025-2,move,desetnica-2026,,docs/review/duplicate-editions.md; web search 2026-11-01
+kresnik-2025-2,move,kresnik-2026,,docs/review/duplicate-editions.md; web search 2026-11-01
+kresnik-2025,swap-jury,kresnik-2026,"['igor-zunkovic', 'peter-svetina']",docs/review/duplicate-editions.md; web search 2026-11-01
+grumova-nagrada-1986,set-roles,,"Dane Zajc, Kalevala",web search 2026-11-01
+lastovka-2018,set-roles,,"jury was a copy of lastovka-2023; 1st prize Karin Sabadin, Srečanja",web search 2026-11-01
+grumova-nagrada-1997,not-awarded,,nagrada ni bila podeljena; jury confirmed,web search 2026-11-01
+,new-entity,marjan-bocevski,Marjan Bocevski,docs/review/duplicate-editions.md
+,new-entity,andreja-borin,Andreja Borin,docs/review/duplicate-editions.md
+majski-salon-2024,drop,,no competition in 2024 (retrospective exhibition Od svetlobe k svetlobi),docs/review/duplicate-editions.md
+nagrada-marka-slodnjaka-2022,drop,,not awarded; the ZDUS commission's sitting is kept via the other 2022 ZDUS editions,docs/review/duplicate-editions.md
+trdinova-nagrada-1990,drop,,not awarded (nor in 1991); no jury recorded,docs/review/duplicate-editions.md
+kosobrin-2026,set-roles,,"Marjan Bocevski (AI overview, unverified); DSR board kept as jury like other years",web search 2026-11-01
+nagrada-kristine-brenkove-2025,set-roles,,"Borin & Zavadlav, Pesmice za najmanjši žep; Nove poti: Maja P. Kastelic, Povabilo; jury matches",web search 2026-11-01
+najboljsi-esej-2026,set-roles,,"Nara Petrovič, Med humanizmom in psihopatijo; jury matches",web search 2026-11-01
+zlata-ptica-2014,move,zlata-ptica-2015,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2012,move,zlata-ptica-2013,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2011,move,zlata-ptica-2012,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2010,move,zlata-ptica-2011,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2009,move,zlata-ptica-2010,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2008,move,zlata-ptica-2009,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2007,move,zlata-ptica-2008,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2006,move,zlata-ptica-2007,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2005,move,zlata-ptica-2006,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2004,move,zlata-ptica-2005,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2003,move,zlata-ptica-2004,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2002,move,zlata-ptica-2003,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2001,move,zlata-ptica-2002,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-2000,move,zlata-ptica-2001,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1999,move,zlata-ptica-2000,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1998,move,zlata-ptica-1999,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1997,move,zlata-ptica-1998,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1996,move,zlata-ptica-1997,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1995,move,zlata-ptica-1996,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1994,move,zlata-ptica-1995,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1993,move,zlata-ptica-1994,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1992,move,zlata-ptica-1993,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1991,move,zlata-ptica-1992,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1990,move,zlata-ptica-1991,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1989,move,zlata-ptica-1990,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1988,move,zlata-ptica-1989,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1987,move,zlata-ptica-1988,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1986,move,zlata-ptica-1987,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1985,move,zlata-ptica-1986,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1984,move,zlata-ptica-1985,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1983,move,zlata-ptica-1984,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1982,move,zlata-ptica-1983,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1981,move,zlata-ptica-1982,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1980,move,zlata-ptica-1981,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1979,move,zlata-ptica-1980,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1978,move,zlata-ptica-1979,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1977,move,zlata-ptica-1978,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1976,move,zlata-ptica-1977,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+zlata-ptica-1975,move,zlata-ptica-1976,relabel to ceremony year,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+,set-award,zlata-ptica,ended: 2014 -> 2015,"dobreknjige.si; delo.si (Svetina); rtvslo 135983, 155315, 159030, 229785; STA 5. 6. 2013"
+,new-entity,zdej-loh-spokam-zdej-loh-grem,Zdej loh spokam zdej loh grem,scripts/add_awards.py
+,new-entity,mojca-jug,Mojca Jug,scripts/add_awards.py
+,new-entity,spela-kopitar,Špela Kopitar,scripts/add_awards.py
+,new-entity,catherine-malabou,Catherine Malabou,scripts/add_awards.py
+,new-entity,ida-hirsenfelder,Ida Hiršenfelder,scripts/add_awards.py
+,new-entity,marjeta-pogacnik,Marjeta Pogačnik,scripts/add_awards.py
+,new-entity,roman-jesenko,Roman Jesenko,scripts/add_awards.py
+,new-entity,klara-drnovsek-solina,Klara Drnovšek Solina,scripts/add_awards.py
+,new-entity,benjamin-zajc,Benjamin Zajc,scripts/add_awards.py
+,new-entity,medvedek-mraz,Medvedek Mraz,scripts/add_awards.py
+,new-entity,leon-maric,Leon Marič,scripts/add_awards.py
+,new-entity,pia-macerol,Pia Mačerol,scripts/add_awards.py
+,new-entity,beton-ltd,Beton Ltd.,scripts/add_awards.py
+,new-entity,maja-vizin,Maja Vižin,scripts/add_awards.py
+,add-award,zlata-strela,Zlata strela,scripts/add_awards.py
+zlata-strela-2024,add-edition,zlata-strela,"6 winners, 5 jurors",https://www.aplavz.art/post/zlate-strele (3. 9. 2024); rtvslo 719616
+zlata-strela-2025,add-edition,zlata-strela,"3 winners, 5 jurors",https://www.aplavz.art/post/zlate-strele-v-sezoni-2024-2025; rtvslo 755941 (ceremony 28. 8. 2025)
+zlata-strela-2026,add-edition,zlata-strela,"8 winners, 5 jurors",https://www.aplavz.art/post/zlate-strele-v-sezoni-2025-2026; https://www.aplavz.art/post/zlate-strele-2025-2026-orakelj-je-spregovoril-pot-v-prihodnost-tlakovana-z-zlatom (ceremony 29. 8. 2026)
+,set-award,zlata-ptica,genre: literatura -> umetnost in kultura,"awards.csv description (literatura, film, glasba, scenske, vizualne in intermedijske umetnosti, arhitektura); user decision 2026-11-01"
+,delete-office,,11 party-post rows deleted (names not logged: political affiliation is not published),docs/review/party-offices.md
+,delete-source,,12 source rows pointing to a party website removed (names not logged),docs/review/party-offices.md
+,delete-office,,2 political-organisation memberships deleted before publication (names not logged),docs/review/party-offices.md

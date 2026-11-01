@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "Kulturne nagrade: Slovenian cultural awards, winners and juries"
+authors:
+  - family-names: Plahuta
+    given-names: Marko
+    alias: Virostatiq
+url: "https://virostatiq.com/kulturne-nagrade/"
+repository-code: "https://github.com/virostatiq/slo-cultural-awards"
+license: CC-BY-4.0
+date-released: 2026-11-01
+keywords: [Slovenia, cultural awards, juries, open data]

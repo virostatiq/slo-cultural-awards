@@ -1,0 +1,72 @@
+{
+  "awards": 96,
+  "editions": 2067,
+  "first_year": 1949,
+  "editions_with_jury": 1322,
+  "jury_share": 0.6395742622157716,
+  "median_history_share": 0.8973684210526316,
+  "awards_full_history": 36,
+  "awards_no_jury_data": [
+    "Kozinova nagrada",
+    "Zlata piščal",
+    "zvezda Oriona"
+  ],
+  "by_decade": [
+    {
+      "decade": 1940,
+      "editions": 1,
+      "awards": 1,
+      "jury_share": 0.0
+    },
+    {
+      "decade": 1950,
+      "editions": 16,
+      "awards": 2,
+      "jury_share": 0.375
+    },
+    {
+      "decade": 1960,
+      "editions": 37,
+      "awards": 6,
+      "jury_share": 0.4864864864864865
+    },
+    {
+      "decade": 1970,
+      "editions": 89,
+      "awards": 13,
+      "jury_share": 0.2247191011235955
+    },
+    {
+      "decade": 1980,
+      "editions": 163,
+      "awards": 21,
+      "jury_share": 0.17177914110429449
+    },
+    {
+      "decade": 1990,
+      "editions": 228,
+      "awards": 30,
+      "jury_share": 0.21929824561403508
+    },
+    {
+      "decade": 2000,
+      "editions": 404,
+      "awards": 59,
+      "jury_share": 0.6014851485148515
+    },
+    {
+      "decade": 2010,
+      "editions": 621,
+      "awards": 81,
+      "jury_share": 0.8035426731078905
+    },
+    {
+      "decade": 2020,
+      "editions": 508,
+      "awards": 91,
+      "jury_share": 0.9015748031496063
+    }
+  ],
+  "editions_before_1991": 321,
+  "awards_spanning_1991": 21
+}

@@ -1,0 +1,103 @@
+---
+// Lines over time for the public: up to four series, direct labels at the line ends,
+// optional shaded uncertainty band, a few y gridlines. The lines are SVG stretched to the
+// box (non-scaling strokes); dots, labels and ticks are HTML placed in percent, so text
+// stays readable at any width. A table view sits in a <details>.
+import { dec, fmt } from "../../lib/data";
+
+export type Series = {
+  label: string; color: string; values: (number | null)[];
+  band?: ([number, number] | null)[];
+};
+interface Props {
+  x: (string | number)[];
+  series: Series[];
+  format?: "pct" | "int" | "dec";
+  yMin?: number;
+  yMax?: number;
+  ticks?: number[];
+  xEvery?: number;            // label every nth x
+  height?: number;
+  label?: string;
+  refLine?: { value: number; label: string };
+}
+const { x, series, format = "pct", xEvery = 1, height = 300, label = "Graf", refLine } = Astro.props;
+const all = series.flatMap((s) => [...s.values, ...(s.band ?? []).flat()]).filter((v): v is number => v != null);
+const yMin = Astro.props.yMin ?? 0;
+const yMax = Astro.props.yMax ?? Math.max(...all) * 1.1;
+const f = (v: number) => format === "pct" ? `${Math.round(100 * v)} %` :
+  format === "dec" ? dec(v) : fmt(Math.round(v));
+const ticks = Astro.props.ticks ?? [0, 0.25, 0.5, 0.75, 1].map((t) => yMin + t * (yMax - yMin));
+const n = x.length;
+const px = (i: number) => (n === 1 ? 50 : (100 * i) / (n - 1));
+const py = (v: number) => 100 - (100 * (v - yMin)) / (yMax - yMin);
+const path = (vals: (number | null)[]) => {
+  let d = "", pen = false;
+  vals.forEach((v, i) => {
+    if (v == null) { pen = false; return; }
+    d += `${pen ? "L" : "M"}${px(i).toFixed(2)},${py(v).toFixed(2)}`;
+    pen = true;
+  });
+  return d;
+};
+const bandPath = (b: ([number, number] | null)[]) => {
+  const idx = b.map((v, i) => (v ? i : -1)).filter((i) => i >= 0);
+  if (idx.length < 2) return "";
+  const up = idx.map((i) => `${px(i).toFixed(2)},${py(b[i]![1]).toFixed(2)}`);
+  const lo = [...idx].reverse().map((i) => `${px(i).toFixed(2)},${py(b[i]![0]).toFixed(2)}`);
+  return `M${up.join("L")}L${lo.join("L")}Z`;
+};
+// end labels: last non-null value of each series, nudged apart vertically
+const ends = series.map((s) => {
+  let i = s.values.length - 1;
+  while (i >= 0 && s.values[i] == null) i--;
+  return { s, i, y: i >= 0 ? py(s.values[i]!) : 0 };
+}).sort((a, b) => a.y - b.y);
+for (let k = 1; k < ends.length; k++) if (ends[k].y - ends[k - 1].y < 8) ends[k].y = ends[k - 1].y + 8;
+---
+<figure class="chart lines" role="group" aria-label={label}>
+  <ul class="chart-legend">
+    {series.map((s) => <li><span class="key line" style={`--c:${s.color}`}></span>{s.label}</li>)}
+  </ul>
+  <div class="plot" style={`height:${height}px`}>
+    {ticks.map((t) => <div class="grid" style={`top:${py(t)}%`}><span>{f(t)}</span></div>)}
+    {refLine && <div class="ref" style={`top:${py(refLine.value)}%`}><span>{refLine.label}</span></div>}
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      {series.map((s) => s.band && <path d={bandPath(s.band)} fill={s.color} fill-opacity="0.16" />)}
+      {series.map((s) => <path d={path(s.values)} fill="none" stroke={s.color} stroke-width="2.5"
+        stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" />)}
+    </svg>
+    {series.map((s) => s.values.map((v, i) => v != null && (
+      <span class="pt" style={`left:${px(i)}%;top:${py(v)}%;--c:${s.color}`}
+        title={`${s.label}, ${x[i]}: ${f(v)}`}></span>
+    )))}
+    {ends.filter((e) => e.i >= 0).map((e) => (
+      <span class="end" style={`top:${e.y}%;color:${e.s.color}`}>{f(e.s.values[e.i]!)}</span>
+    ))}
+    <div class="xaxis">
+      {x.map((v, i) => (n - 1 - i) % xEvery === 0 && <span style={`left:${px(i)}%`}>{v}</span>)}
+    </div>
+  </div>
+  <details class="as-table">
+    <summary>Podatki v tabeli</summary>
+    <div class="table-wrap"><table>
+      <thead><tr><th></th>{series.map((s) => <th class="n">{s.label}</th>)}</tr></thead>
+      <tbody>{x.map((v, i) => <tr><td>{v}</td>{series.map((s) => <td class="n">{s.values[i] != null ? f(s.values[i]!) : ""}</td>)}</tr>)}</tbody>
+    </table></div>
+  </details>
+</figure>
+
+<style>
+  .plot { position: relative; margin: 8px 52px 34px 44px; }
+  svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .grid, .ref { position: absolute; left: 0; right: 0; border-top: 1px solid var(--line); }
+  .grid span { position: absolute; right: 100%; transform: translateY(-50%); padding-right: 8px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .ref { border-top: 1px dashed var(--ink-2); }
+  .ref span { position: absolute; left: 4px; bottom: 2px; font-size: 12.5px; color: var(--ink-2); }
+  .pt { position: absolute; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--c); border: 2px solid var(--bg); }
+  .pt:hover { transform: scale(1.5); }
+  .end { position: absolute; left: 100%; padding-left: 10px; transform: translateY(-50%); font-size: 13.5px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .xaxis { position: absolute; left: 0; right: 0; top: 100%; height: 30px; }
+  .xaxis span { position: absolute; top: 8px; transform: translateX(-50%); font-size: 12.5px; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) { .xaxis span:nth-child(even):not(:last-child) { display: none; } }
+</style>

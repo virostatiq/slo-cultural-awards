@@ -1,0 +1,1276 @@
+{
+  "n_sittings": 1123,
+  "n_people": 1751,
+  "n_pairs": 8611,
+  "pairs_vs_field_period_null": {
+    "repeat_pairs": {
+      "observed": 2551,
+      "expected": 769.0066666666667,
+      "null_lo": 734.0,
+      "null_hi": 803.525,
+      "ratio": 3.3172664302866903,
+      "p": 0.0033222591362126247
+    },
+    "travelling_pairs": {
+      "observed": 243,
+      "expected": 1194.5566666666666,
+      "null_lo": 1125.475,
+      "null_hi": 1255.1,
+      "ratio": 0.20342274818830977,
+      "p": 1.0
+    },
+    "travelling_pairs_3": {
+      "observed": 10,
+      "expected": 109.82666666666667,
+      "null_lo": 91.475,
+      "null_hi": 129.52499999999998,
+      "ratio": 0.09105256768240864,
+      "p": 1.0
+    }
+  },
+  "pairs_vs_award_null": {
+    "repeat_pairs": {
+      "observed": 2551,
+      "expected": 1882.9,
+      "null_lo": 1860.475,
+      "null_hi": 1904.525,
+      "ratio": 1.3548250039832173,
+      "p": 0.0033222591362126247
+    },
+    "travelling_pairs": {
+      "observed": 243,
+      "expected": 246.15333333333334,
+      "null_lo": 234.0,
+      "null_hi": 260.525,
+      "ratio": 0.9871895566449097,
+      "p": 0.6877076411960132
+    },
+    "travelling_pairs_3": {
+      "observed": 10,
+      "expected": 12.126666666666667,
+      "null_lo": 8.0,
+      "null_hi": 17.0,
+      "ratio": 0.8246289169873556,
+      "p": 0.8704318936877077
+    }
+  },
+  "top_co_sitting_pairs": [
+    {
+      "a": "Tone Peršak",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 34,
+      "awards": 1
+    },
+    {
+      "a": "Tone Peršak",
+      "b": "Veno Taufer",
+      "co_sittings": 32,
+      "awards": 1
+    },
+    {
+      "a": "Veno Taufer",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 32,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 31,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Tone Peršak",
+      "co_sittings": 31,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Veno Taufer",
+      "co_sittings": 29,
+      "awards": 1
+    },
+    {
+      "a": "Niko Jež",
+      "b": "Tone Peršak",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Niko Jež",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Miran Košuta",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Miran Košuta",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Miran Košuta",
+      "b": "Niko Jež",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Niko Jež",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Miran Košuta",
+      "b": "Tone Peršak",
+      "co_sittings": 19,
+      "awards": 1
+    },
+    {
+      "a": "Iztok Osojnik",
+      "b": "Vesna Kondrič Horvat",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Iztok Osojnik",
+      "b": "Veno Taufer",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Niko Jež",
+      "b": "Veno Taufer",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Iztok Osojnik",
+      "b": "Miran Košuta",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Jani Virk",
+      "b": "Niko Grafenauer",
+      "co_sittings": 18,
+      "awards": 2
+    },
+    {
+      "a": "Jani Virk",
+      "b": "Veno Taufer",
+      "co_sittings": 18,
+      "awards": 2
+    },
+    {
+      "a": "Niko Grafenauer",
+      "b": "Veno Taufer",
+      "co_sittings": 18,
+      "awards": 2
+    },
+    {
+      "a": "Iztok Osojnik",
+      "b": "Niko Jež",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Miran Košuta",
+      "b": "Veno Taufer",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Iztok Osojnik",
+      "b": "Tone Peršak",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Andrej Blatnik",
+      "b": "Iztok Osojnik",
+      "co_sittings": 18,
+      "awards": 1
+    },
+    {
+      "a": "Ludwig Hartinger",
+      "b": "Tone Peršak",
+      "co_sittings": 17,
+      "awards": 1
+    }
+  ],
+  "top_travelling_pairs": [
+    {
+      "a": "Darko Sinko",
+      "b": "Urša Menart",
+      "awards": 4,
+      "co_sittings": 15
+    },
+    {
+      "a": "Sonja Prosenc",
+      "b": "Špela Čadež",
+      "awards": 3,
+      "co_sittings": 14
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Matevž Luzar",
+      "awards": 3,
+      "co_sittings": 14
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Matevž Luzar",
+      "awards": 3,
+      "co_sittings": 14
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Urša Menart",
+      "awards": 3,
+      "co_sittings": 14
+    },
+    {
+      "a": "Matevž Luzar",
+      "b": "Urša Menart",
+      "awards": 3,
+      "co_sittings": 14
+    },
+    {
+      "a": "Aljaž Koprivnikar",
+      "b": "Diana Pungeršič",
+      "awards": 3,
+      "co_sittings": 8
+    },
+    {
+      "a": "Ana Geršak",
+      "b": "Matej Bogataj",
+      "awards": 3,
+      "co_sittings": 7
+    },
+    {
+      "a": "Aljaž Koprivnikar",
+      "b": "Veronika Dintinjana",
+      "awards": 3,
+      "co_sittings": 3
+    },
+    {
+      "a": "Polona Petek",
+      "b": "Varja Močnik",
+      "awards": 3,
+      "co_sittings": 3
+    },
+    {
+      "a": "Jani Virk",
+      "b": "Niko Grafenauer",
+      "awards": 2,
+      "co_sittings": 18
+    },
+    {
+      "a": "Jani Virk",
+      "b": "Veno Taufer",
+      "awards": 2,
+      "co_sittings": 18
+    },
+    {
+      "a": "Niko Grafenauer",
+      "b": "Veno Taufer",
+      "awards": 2,
+      "co_sittings": 18
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Boris Petkovič",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Darko Sinko",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Juš Premrov",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Martin Srebotnjak",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Sonja Prosenc",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Špela Čadež",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Urša Menart",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Blaž Završnik",
+      "b": "Urška Kos",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Darko Sinko",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Juš Premrov",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Martin Srebotnjak",
+      "awards": 2,
+      "co_sittings": 13
+    },
+    {
+      "a": "Boris Petkovič",
+      "b": "Sonja Prosenc",
+      "awards": 2,
+      "co_sittings": 13
+    }
+  ],
+  "communities": {
+    "n_communities": 67,
+    "n_communities_20plus": 15,
+    "modularity": 0.7483409004887648,
+    "modularity_genre_partition": 0.5559566718515744,
+    "null_modularity": 0.6572794746803554,
+    "null_modularity_range": [
+      0.6483700355158666,
+      0.6655337648091884
+    ],
+    "p": 0.024390243902439025,
+    "mean_top_genre_share_20plus": 0.6631716906946264
+  },
+  "community_table": [
+    {
+      "community": 1,
+      "size": 220,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 0.4818181818181818,
+      "genres": {
+        "likovno-vizualna umetnost": 106,
+        "literatura": 77,
+        "umetnost in kultura": 18,
+        "film": 10,
+        "gledališče": 6,
+        "glasba": 2,
+        "poezija": 1
+      }
+    },
+    {
+      "community": 2,
+      "size": 214,
+      "top_genre": "gledališče",
+      "top_genre_share": 0.5280373831775701,
+      "genres": {
+        "gledališče": 113,
+        "umetnost in kultura": 35,
+        "film": 22,
+        "ples": 13,
+        "arhitektura": 12,
+        "likovno-vizualna umetnost": 10,
+        "literatura": 9
+      }
+    },
+    {
+      "community": 3,
+      "size": 212,
+      "top_genre": "literatura",
+      "top_genre_share": 0.7216981132075472,
+      "genres": {
+        "literatura": 153,
+        "gledališče": 39,
+        "poezija": 15,
+        "ples": 3,
+        "film": 2
+      }
+    },
+    {
+      "community": 4,
+      "size": 162,
+      "top_genre": "film",
+      "top_genre_share": 0.5246913580246914,
+      "genres": {
+        "film": 85,
+        "arhitektura": 54,
+        "umetnost in kultura": 12,
+        "likovno-vizualna umetnost": 6,
+        "gledališče": 4,
+        "literatura": 1
+      }
+    },
+    {
+      "community": 5,
+      "size": 111,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.9099099099099099,
+      "genres": {
+        "umetnost in kultura": 101,
+        "literatura": 9,
+        "gledališče": 1
+      }
+    },
+    {
+      "community": 6,
+      "size": 106,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 106
+      }
+    },
+    {
+      "community": 7,
+      "size": 99,
+      "top_genre": "glasba",
+      "top_genre_share": 0.42424242424242425,
+      "genres": {
+        "glasba": 42,
+        "umetnost in kultura": 32,
+        "film": 17,
+        "literatura": 7,
+        "gledališče": 1
+      }
+    },
+    {
+      "community": 8,
+      "size": 80,
+      "top_genre": "literatura",
+      "top_genre_share": 0.65,
+      "genres": {
+        "literatura": 52,
+        "poezija": 24,
+        "gledališče": 2,
+        "umetnost in kultura": 2
+      }
+    },
+    {
+      "community": 9,
+      "size": 71,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.647887323943662,
+      "genres": {
+        "umetnost in kultura": 46,
+        "gledališče": 20,
+        "literatura": 3,
+        "film": 2
+      }
+    },
+    {
+      "community": 10,
+      "size": 62,
+      "top_genre": "novinarstvo",
+      "top_genre_share": 0.8870967741935484,
+      "genres": {
+        "novinarstvo": 55,
+        "film": 3,
+        "likovno-vizualna umetnost": 3,
+        "literatura": 1
+      }
+    },
+    {
+      "community": 11,
+      "size": 50,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.82,
+      "genres": {
+        "umetnost in kultura": 41,
+        "literatura": 7,
+        "gledališče": 2
+      }
+    },
+    {
+      "community": 12,
+      "size": 48,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.5833333333333334,
+      "genres": {
+        "umetnost in kultura": 28,
+        "novinarstvo": 15,
+        "literatura": 4,
+        "gledališče": 1
+      }
+    },
+    {
+      "community": 13,
+      "size": 38,
+      "top_genre": "literatura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "literatura": 38
+      }
+    },
+    {
+      "community": 14,
+      "size": 33,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.7878787878787878,
+      "genres": {
+        "umetnost in kultura": 26,
+        "gledališče": 3,
+        "film": 2,
+        "literatura": 2
+      }
+    },
+    {
+      "community": 15,
+      "size": 20,
+      "top_genre": "glasba",
+      "top_genre_share": 1.0,
+      "genres": {
+        "glasba": 20
+      }
+    },
+    {
+      "community": 16,
+      "size": 15,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 15
+      }
+    },
+    {
+      "community": 17,
+      "size": 13,
+      "top_genre": "novinarstvo",
+      "top_genre_share": 1.0,
+      "genres": {
+        "novinarstvo": 13
+      }
+    },
+    {
+      "community": 18,
+      "size": 12,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 12
+      }
+    },
+    {
+      "community": 19,
+      "size": 12,
+      "top_genre": "literatura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "literatura": 12
+      }
+    },
+    {
+      "community": 20,
+      "size": 9,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 0.6666666666666666,
+      "genres": {
+        "umetnost in kultura": 6,
+        "gledališče": 3
+      }
+    },
+    {
+      "community": 21,
+      "size": 9,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 9
+      }
+    },
+    {
+      "community": 22,
+      "size": 8,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 8
+      }
+    },
+    {
+      "community": 23,
+      "size": 7,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 7
+      }
+    },
+    {
+      "community": 24,
+      "size": 7,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 7
+      }
+    },
+    {
+      "community": 25,
+      "size": 7,
+      "top_genre": "novinarstvo",
+      "top_genre_share": 1.0,
+      "genres": {
+        "novinarstvo": 7
+      }
+    },
+    {
+      "community": 26,
+      "size": 5,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 5
+      }
+    },
+    {
+      "community": 27,
+      "size": 5,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 5
+      }
+    },
+    {
+      "community": 28,
+      "size": 5,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 5
+      }
+    },
+    {
+      "community": 29,
+      "size": 4,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 4
+      }
+    },
+    {
+      "community": 30,
+      "size": 4,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 4
+      }
+    },
+    {
+      "community": 31,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 32,
+      "size": 3,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 3
+      }
+    },
+    {
+      "community": 33,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 34,
+      "size": 3,
+      "top_genre": "glasba",
+      "top_genre_share": 1.0,
+      "genres": {
+        "glasba": 3
+      }
+    },
+    {
+      "community": 35,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 36,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 37,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 38,
+      "size": 3,
+      "top_genre": "arhitektura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "arhitektura": 3
+      }
+    },
+    {
+      "community": 39,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 40,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 41,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 42,
+      "size": 3,
+      "top_genre": "ples",
+      "top_genre_share": 1.0,
+      "genres": {
+        "ples": 3
+      }
+    },
+    {
+      "community": 43,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 44,
+      "size": 3,
+      "top_genre": "ples",
+      "top_genre_share": 1.0,
+      "genres": {
+        "ples": 3
+      }
+    },
+    {
+      "community": 45,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 46,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 47,
+      "size": 3,
+      "top_genre": "ples",
+      "top_genre_share": 1.0,
+      "genres": {
+        "ples": 3
+      }
+    },
+    {
+      "community": 48,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 49,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 50,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 51,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 52,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 53,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 54,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 55,
+      "size": 3,
+      "top_genre": "ples",
+      "top_genre_share": 1.0,
+      "genres": {
+        "ples": 3
+      }
+    },
+    {
+      "community": 56,
+      "size": 3,
+      "top_genre": "likovno-vizualna umetnost",
+      "top_genre_share": 1.0,
+      "genres": {
+        "likovno-vizualna umetnost": 3
+      }
+    },
+    {
+      "community": 57,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 58,
+      "size": 3,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 3
+      }
+    },
+    {
+      "community": 59,
+      "size": 3,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 3
+      }
+    },
+    {
+      "community": 60,
+      "size": 3,
+      "top_genre": "ples",
+      "top_genre_share": 1.0,
+      "genres": {
+        "ples": 3
+      }
+    },
+    {
+      "community": 61,
+      "size": 3,
+      "top_genre": "film",
+      "top_genre_share": 1.0,
+      "genres": {
+        "film": 3
+      }
+    },
+    {
+      "community": 62,
+      "size": 3,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 3
+      }
+    },
+    {
+      "community": 63,
+      "size": 2,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 2
+      }
+    },
+    {
+      "community": 64,
+      "size": 2,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 2
+      }
+    },
+    {
+      "community": 65,
+      "size": 1,
+      "top_genre": "gledališče",
+      "top_genre_share": 1.0,
+      "genres": {
+        "gledališče": 1
+      }
+    },
+    {
+      "community": 66,
+      "size": 1,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 1
+      }
+    },
+    {
+      "community": 67,
+      "size": 1,
+      "top_genre": "umetnost in kultura",
+      "top_genre_share": 1.0,
+      "genres": {
+        "umetnost in kultura": 1
+      }
+    }
+  ],
+  "brokers": [
+    {
+      "entity_id": "ignacija-j-fridl",
+      "betweenness": 0.06791993573227999,
+      "null": 0.03257028308280273,
+      "excess": 0.03534965264947726,
+      "name": "Ignacija J. Fridl",
+      "sittings": 34,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "andrej-blatnik",
+      "betweenness": 0.06318765032614818,
+      "null": 0.05149674399769819,
+      "excess": 0.011690906328449983,
+      "name": "Andrej Blatnik",
+      "sittings": 51,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "aljosa-harlamov",
+      "betweenness": 0.04798206625297848,
+      "null": 0.040089343186156125,
+      "excess": 0.007892723066822357,
+      "name": "Aljoša Harlamov",
+      "sittings": 31,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "varja-mocnik",
+      "betweenness": 0.04776411597204457,
+      "null": 0.03149622861763103,
+      "excess": 0.016267887354413542,
+      "name": "Varja Močnik",
+      "sittings": 11,
+      "fields": 2,
+      "main_genre": "film"
+    },
+    {
+      "entity_id": "matej-bogataj",
+      "betweenness": 0.046687163112224754,
+      "null": 0.054809561591080615,
+      "excess": -0.00812239847885586,
+      "name": "Matej Bogataj",
+      "sittings": 42,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "nadja-zgonik",
+      "betweenness": 0.04008314976144115,
+      "null": 0.04018163106185315,
+      "excess": -9.848130041199832e-05,
+      "name": "Nadja Zgonik",
+      "sittings": 18,
+      "fields": 2,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "igor-vidmar",
+      "betweenness": 0.03424882495789507,
+      "null": 0.021007657746403077,
+      "excess": 0.013241167211491996,
+      "name": "Igor Vidmar",
+      "sittings": 18,
+      "fields": 1,
+      "main_genre": "film"
+    },
+    {
+      "entity_id": "tone-partljic",
+      "betweenness": 0.033737679596212704,
+      "null": 0.01809169041099257,
+      "excess": 0.015645989185220133,
+      "name": "Tone Partljič",
+      "sittings": 26,
+      "fields": 3,
+      "main_genre": "gledališče"
+    },
+    {
+      "entity_id": "milcek-komelj",
+      "betweenness": 0.030863055652950538,
+      "null": 0.02271411316043928,
+      "excess": 0.008148942492511257,
+      "name": "Milček Komelj",
+      "sittings": 23,
+      "fields": 3,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "miha-hocevar",
+      "betweenness": 0.03039634354239843,
+      "null": 0.005454763230971757,
+      "excess": 0.024941580311426674,
+      "name": "Miha Hočevar",
+      "sittings": 6,
+      "fields": 1,
+      "main_genre": "film"
+    },
+    {
+      "entity_id": "marko-mihevc",
+      "betweenness": 0.029559686893919492,
+      "null": 0.00879759096632093,
+      "excess": 0.02076209592759856,
+      "name": "Marko Mihevc",
+      "sittings": 5,
+      "fields": 2,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "petra-vidali",
+      "betweenness": 0.029446791023217064,
+      "null": 0.021598539552344864,
+      "excess": 0.0078482514708722,
+      "name": "Petra Vidali",
+      "sittings": 28,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "ales-steger",
+      "betweenness": 0.028552802569367017,
+      "null": 0.004503067311055244,
+      "excess": 0.024049735258311774,
+      "name": "Aleš Šteger",
+      "sittings": 14,
+      "fields": 3,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "patrik-greblo",
+      "betweenness": 0.027923028116071738,
+      "null": 0.032255063884801566,
+      "excess": -0.004332035768729828,
+      "name": "Patrik Greblo",
+      "sittings": 12,
+      "fields": 2,
+      "main_genre": "glasba"
+    },
+    {
+      "entity_id": "alja-predan",
+      "betweenness": 0.026618030093606783,
+      "null": 0.029922016281961564,
+      "excess": -0.0033039861883547815,
+      "name": "Alja Predan",
+      "sittings": 23,
+      "fields": 4,
+      "main_genre": "gledališče"
+    },
+    {
+      "entity_id": "milena-zupancic",
+      "betweenness": 0.026083166916698892,
+      "null": 0.01739521366862141,
+      "excess": 0.00868795324807748,
+      "name": "Milena Zupančič",
+      "sittings": 9,
+      "fields": 3,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "ales-vodopivec",
+      "betweenness": 0.02273121240305099,
+      "null": 0.028536636411395408,
+      "excess": -0.005805424008344419,
+      "name": "Aleš Vodopivec",
+      "sittings": 10,
+      "fields": 2,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "tomaz-toporisic",
+      "betweenness": 0.022056705732164797,
+      "null": 0.02055684304401904,
+      "excess": 0.0014998626881457568,
+      "name": "Tomaž Toporišič",
+      "sittings": 20,
+      "fields": 4,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "niko-grafenauer",
+      "betweenness": 0.021901901527216328,
+      "null": 0.01673036560066726,
+      "excess": 0.005171535926549068,
+      "name": "Niko Grafenauer",
+      "sittings": 27,
+      "fields": 4,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "joze-kusar",
+      "betweenness": 0.021529278270435423,
+      "null": 0.02867878162945738,
+      "excess": -0.007149503359021956,
+      "name": "Jože Kušar",
+      "sittings": 16,
+      "fields": 1,
+      "main_genre": "umetnost in kultura"
+    },
+    {
+      "entity_id": "zala-dobovsek",
+      "betweenness": 0.02086798380673632,
+      "null": 0.006364833206349526,
+      "excess": 0.014503150600386793,
+      "name": "Zala Dobovšek",
+      "sittings": 11,
+      "fields": 2,
+      "main_genre": "gledališče"
+    },
+    {
+      "entity_id": "petra-seliskar",
+      "betweenness": 0.019743237763243802,
+      "null": 0.0018662841497984403,
+      "excess": 0.01787695361344536,
+      "name": "Petra Seliškar",
+      "sittings": 4,
+      "fields": 1,
+      "main_genre": "film"
+    },
+    {
+      "entity_id": "dusan-moravec",
+      "betweenness": 0.0195031846098768,
+      "null": 0.002040539694631647,
+      "excess": 0.017462644915245153,
+      "name": "Dušan Moravec",
+      "sittings": 4,
+      "fields": 1,
+      "main_genre": "film"
+    },
+    {
+      "entity_id": "peter-kolsek",
+      "betweenness": 0.01917660518988148,
+      "null": 0.0035211605719400367,
+      "excess": 0.015655444617941446,
+      "name": "Peter Kolšek",
+      "sittings": 13,
+      "fields": 2,
+      "main_genre": "literatura"
+    },
+    {
+      "entity_id": "samo-hubad",
+      "betweenness": 0.01868946913730967,
+      "null": 0.019255437955958556,
+      "excess": -0.0005659688186488848,
+      "name": "Samo Hubad",
+      "sittings": 15,
+      "fields": 1,
+      "main_genre": "umetnost in kultura"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+---
+import { url } from "../../lib/url";
+import Base from "../../layouts/Base.astro";
+import Chart from "../../components/charts/Chart.astro";
+import { getCollection } from "astro:content";
+import { findingData, fill, findingUrl } from "../../lib/findings";
+import { awards, awardUrl } from "../../lib/data";
+
+export async function getStaticPaths() {
+  const items = (await getCollection("ugotovitve")).sort((a, b) => a.data.order - b.data.order);
+  const known = items.filter((e) => findingData[e.id]);
+  return known.map((entry, i) => ({
+    params: { id: entry.id },
+    props: { entry, prev: known[i - 1] ?? null, next: known[i + 1] ?? null },
+  }));
+}
+const { entry, prev, next } = Astro.props;
+const { n, chart } = findingData[entry.id];
+const d = entry.data;
+const body = fill(entry.rendered?.html ?? "", n).replace(/href="\//g, `href="${url("/")}`);
+const title = fill(d.title, n);
+const lede = fill(d.lede, n);
+const linked = d.awards.filter((a) => awards[a]);
+---
+<Base title={title} description={lede} type="article">
+  <article class="finding">
+    <p class="crumb"><a href={url("/ugotovitve/")}>Ugotovitve</a></p>
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+
+    <section class="chart-box">
+      <h2>{fill(d.chartTitle, n)}</h2>
+      <Chart spec={chart} />
+      {d.chartNote && <p class="small muted">{fill(d.chartNote, n)}</p>}
+    </section>
+
+    <div class="prose" set:html={body} />
+
+    <details class="method">
+      <summary>Kako smo merili</summary>
+      <p>{fill(d.method, n)}</p>
+      <p class="small muted">Podrobnosti so v <a href={url("/o-podatkih/#metode")}>opisu metod</a>.</p>
+    </details>
+
+    {linked.length > 0 && (
+      <p class="chips">{linked.map((a) => <a class="chip" href={awardUrl(a)}>{awards[a].name}</a>)}</p>
+    )}
+
+    <nav class="pager" aria-label="Druge ugotovitve">
+      {prev ? <a href={findingUrl(prev.id)}><span>prejšnja</span>{fill(prev.data.title, findingData[prev.id].n)}</a> : <span></span>}
+      {next && <a class="next" href={findingUrl(next.id)}><span>naslednja</span>{fill(next.data.title, findingData[next.id].n)}</a>}
+    </nav>
+  </article>
+</Base>
+<style>
+  .finding { max-width: 760px; }
+  .finding h1 { font-size: clamp(32px, 5vw, 50px); }
+  .chart-box { margin: 36px 0 28px; padding: 20px 20px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+  .chart-box h2 { margin: 0 0 4px; font-size: 21px; }
+  .prose { font: 18px/1.65 var(--serif); max-width: 38em; }
+  .prose :global(p) { margin: 0 0 16px; }
+  .method { margin: 28px 0; border-top: 1px solid var(--line); padding-top: 14px; }
+  .method summary { cursor: pointer; font-weight: 600; }
+  .method p { margin-top: 10px; max-width: 40em; }
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 18px; }
+  .pager a { text-decoration: none; font: 18px/1.35 var(--serif); }
+  .pager a span { display: block; font: 13px var(--sans); color: var(--ink-2); margin-bottom: 4px; }
+  .pager .next { text-align: right; }
+  @media (max-width: 640px) { .chart-box { padding: 14px 12px 8px; margin-left: -4px; margin-right: -4px; } .pager { grid-template-columns: 1fr; } .pager .next { text-align: left; } }
+</style>

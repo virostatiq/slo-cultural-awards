@@ -1,0 +1,1862 @@
+{
+  "totals": {
+    "awards": 96,
+    "editions": 2067,
+    "years": [
+      1949,
+      2026
+    ],
+    "wins_all_entities": 5181,
+    "wins_people": 4993,
+    "winners_people": 2868,
+    "winners_other": {
+      "group": 62,
+      "institution": 54,
+      "work": 41
+    },
+    "jury_sittings_seats": 6080,
+    "jurors": 1751,
+    "share_winners_once": 0.6802649930264993,
+    "share_jurors_once": 0.40319817247287265,
+    "median_wins_per_winner": 1.0,
+    "median_sittings_per_juror": 2.0
+  },
+  "top_winners": [
+    {
+      "entity_id": "dusan-jovanovic",
+      "name": "Dušan Jovanović",
+      "wins": 20,
+      "awards": 10,
+      "first": 1979,
+      "last": 2009,
+      "top_prestige": 5,
+      "award_list": "Borštnikovo srečanje, Grumova nagrada, Dnevi komedije Celje"
+    },
+    {
+      "entity_id": "boris-cavazza",
+      "name": "Boris Cavazza",
+      "wins": 14,
+      "awards": 10,
+      "first": 1973,
+      "last": 2024,
+      "top_prestige": 5,
+      "award_list": "Ježkova nagrada, Severjeva nagrada, Vesna"
+    },
+    {
+      "entity_id": "vinko-moderndorfer",
+      "name": "Vinko Möderndorfer",
+      "wins": 14,
+      "awards": 10,
+      "first": 2000,
+      "last": 2022,
+      "top_prestige": 5,
+      "award_list": "Grumova nagrada, Desetnica, Ježkova nagrada"
+    },
+    {
+      "entity_id": "janez-burger",
+      "name": "Janez Burger",
+      "wins": 13,
+      "awards": 5,
+      "first": 1999,
+      "last": 2024,
+      "top_prestige": 5,
+      "award_list": "Vesna, butnskala, Nagrada filmskih kritikov in publicistov"
+    },
+    {
+      "entity_id": "damijan-stepancic",
+      "name": "Damijan Stepančič",
+      "wins": 13,
+      "awards": 4,
+      "first": 2003,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Nagrada Hinka Smrekarja, Levstikova nagrada, Nagrada Kristine Brenkove"
+    },
+    {
+      "entity_id": "svetlana-makarovic",
+      "name": "Svetlana Makarovič",
+      "wins": 12,
+      "awards": 9,
+      "first": 1973,
+      "last": 2023,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Jenkova nagrada, Ježkova nagrada"
+    },
+    {
+      "entity_id": "drago-jancar",
+      "name": "Drago Jančar",
+      "wins": 12,
+      "awards": 7,
+      "first": 1979,
+      "last": 2018,
+      "top_prestige": 5,
+      "award_list": "Kresnik, Grumova nagrada, Župančičeva nagrada"
+    },
+    {
+      "entity_id": "zvonko-coh",
+      "name": "Zvonko Čoh",
+      "wins": 12,
+      "awards": 7,
+      "first": 1984,
+      "last": 2023,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Nagrada Kristine Brenkove, Nagrada Hinka Smrekarja"
+    },
+    {
+      "entity_id": "jernej-lorenci",
+      "name": "Jernej Lorenci",
+      "wins": 12,
+      "awards": 3,
+      "first": 2006,
+      "last": 2026,
+      "top_prestige": 5,
+      "award_list": "Borštnikovo srečanje, Šeligova nagrada, Prešernov sklad"
+    },
+    {
+      "entity_id": "milan-jesih",
+      "name": "Milan Jesih",
+      "wins": 11,
+      "awards": 10,
+      "first": 1982,
+      "last": 2021,
+      "top_prestige": 5,
+      "award_list": "Jenkova nagrada, Grumova nagrada, Kritiško sito"
+    },
+    {
+      "entity_id": "tone-pavcek",
+      "name": "Tone Pavček",
+      "wins": 11,
+      "awards": 9,
+      "first": 1958,
+      "last": 2007,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Prešernov sklad, Prešernova nagrada"
+    },
+    {
+      "entity_id": "andrej-e-skubic",
+      "name": "Andrej E. Skubic",
+      "wins": 11,
+      "awards": 7,
+      "first": 2000,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Kresnik, Večernica, Desetnica"
+    },
+    {
+      "entity_id": "niko-grafenauer",
+      "name": "Niko Grafenauer",
+      "wins": 11,
+      "awards": 7,
+      "first": 1980,
+      "last": 2014,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Jenkova nagrada, Župančičeva nagrada"
+    },
+    {
+      "entity_id": "natasa-barbara-gracner",
+      "name": "Nataša Barbara Gračner",
+      "wins": 11,
+      "awards": 6,
+      "first": 1997,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Borštnikovo srečanje, Severjeva nagrada, Vesna"
+    },
+    {
+      "entity_id": "marlenka-stupica",
+      "name": "Marlenka Stupica",
+      "wins": 11,
+      "awards": 5,
+      "first": 1950,
+      "last": 2019,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Nagrada Hinka Smrekarja, Prešernov sklad"
+    },
+    {
+      "entity_id": "matija-bevk",
+      "name": "Matija Bevk",
+      "wins": 11,
+      "awards": 2,
+      "first": 2002,
+      "last": 2024,
+      "top_prestige": 5,
+      "award_list": "Plečnikova nagrada, Prešernov sklad"
+    },
+    {
+      "entity_id": "vaso-j-perovic",
+      "name": "Vaso J. Perović",
+      "wins": 11,
+      "awards": 1,
+      "first": 2002,
+      "last": 2024,
+      "top_prestige": 5,
+      "award_list": "Plečnikova nagrada"
+    },
+    {
+      "entity_id": "vlado-novak",
+      "name": "Vlado Novak",
+      "wins": 10,
+      "awards": 9,
+      "first": 1984,
+      "last": 2026,
+      "top_prestige": 5,
+      "award_list": "Severjeva nagrada, Bert, Borštnikov prstan"
+    },
+    {
+      "entity_id": "milena-zupancic",
+      "name": "Milena Zupančič",
+      "wins": 10,
+      "awards": 8,
+      "first": 1969,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Severjeva nagrada, Župančičeva nagrada, Badjurova nagrada"
+    },
+    {
+      "entity_id": "silva-cusin",
+      "name": "Silva Čušin",
+      "wins": 10,
+      "awards": 8,
+      "first": 1981,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Severjeva nagrada, Vesna, Bert"
+    },
+    {
+      "entity_id": "andrej-rozman-roza",
+      "name": "Andrej Rozman Roza",
+      "wins": 10,
+      "awards": 7,
+      "first": 1984,
+      "last": 2021,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Desetnica, Ježkova nagrada"
+    },
+    {
+      "entity_id": "kajetan-kovic",
+      "name": "Kajetan Kovič",
+      "wins": 10,
+      "awards": 7,
+      "first": 1963,
+      "last": 2007,
+      "top_prestige": 5,
+      "award_list": "Levstikova nagrada, Župančičeva nagrada, Jenkova nagrada"
+    },
+    {
+      "entity_id": "ivo-svetina",
+      "name": "Ivo Svetina",
+      "wins": 10,
+      "awards": 5,
+      "first": 1976,
+      "last": 2011,
+      "top_prestige": 5,
+      "award_list": "Grumova nagrada, Jenkova nagrada, Prešernov sklad"
+    },
+    {
+      "entity_id": "jure-henigman",
+      "name": "Jure Henigman",
+      "wins": 10,
+      "awards": 5,
+      "first": 2002,
+      "last": 2026,
+      "top_prestige": 5,
+      "award_list": "Vesna, Severjeva nagrada, Borštnikovo srečanje"
+    },
+    {
+      "entity_id": "ana-zavadlav",
+      "name": "Ana Zavadlav",
+      "wins": 10,
+      "awards": 4,
+      "first": 2010,
+      "last": 2025,
+      "top_prestige": 5,
+      "award_list": "Nagrada Hinka Smrekarja, Levstikova nagrada, Zlata Hruška"
+    }
+  ],
+  "top_jurors": [
+    {
+      "entity_id": "andrej-blatnik",
+      "name": "Andrej Blatnik",
+      "sittings": 51,
+      "awards": 7,
+      "first": 1984,
+      "last": 2026,
+      "wins": 2
+    },
+    {
+      "entity_id": "veno-taufer",
+      "name": "Veno Taufer",
+      "sittings": 47,
+      "awards": 5,
+      "first": 1986,
+      "last": 2019,
+      "wins": 7
+    },
+    {
+      "entity_id": "tone-persak",
+      "name": "Tone Peršak",
+      "sittings": 45,
+      "awards": 4,
+      "first": 1986,
+      "last": 2026,
+      "wins": 0
+    },
+    {
+      "entity_id": "matej-bogataj",
+      "name": "Matej Bogataj",
+      "sittings": 42,
+      "awards": 12,
+      "first": 2000,
+      "last": 2026,
+      "wins": 1
+    },
+    {
+      "entity_id": "ignacija-j-fridl",
+      "name": "Ignacija J. Fridl",
+      "sittings": 34,
+      "awards": 9,
+      "first": 1997,
+      "last": 2019,
+      "wins": 0
+    },
+    {
+      "entity_id": "vesna-kondric-horvat",
+      "name": "Vesna Kondrič Horvat",
+      "sittings": 34,
+      "awards": 1,
+      "first": 1986,
+      "last": 2019,
+      "wins": 0
+    },
+    {
+      "entity_id": "aljosa-harlamov",
+      "name": "Aljoša Harlamov",
+      "sittings": 31,
+      "awards": 8,
+      "first": 2010,
+      "last": 2024,
+      "wins": 1
+    },
+    {
+      "entity_id": "petra-vidali",
+      "name": "Petra Vidali",
+      "sittings": 28,
+      "awards": 9,
+      "first": 2002,
+      "last": 2022,
+      "wins": 0
+    },
+    {
+      "entity_id": "niko-grafenauer",
+      "name": "Niko Grafenauer",
+      "sittings": 27,
+      "awards": 4,
+      "first": 1990,
+      "last": 2016,
+      "wins": 11
+    },
+    {
+      "entity_id": "tone-partljic",
+      "name": "Tone Partljič",
+      "sittings": 26,
+      "awards": 5,
+      "first": 2000,
+      "last": 2013,
+      "wins": 6
+    },
+    {
+      "entity_id": "niko-jez",
+      "name": "Niko Jež",
+      "sittings": 26,
+      "awards": 3,
+      "first": 1986,
+      "last": 2025,
+      "wins": 1
+    },
+    {
+      "entity_id": "evald-flisar",
+      "name": "Evald Flisar",
+      "sittings": 25,
+      "awards": 3,
+      "first": 2006,
+      "last": 2026,
+      "wins": 5
+    },
+    {
+      "entity_id": "jani-virk",
+      "name": "Jani Virk",
+      "sittings": 25,
+      "awards": 3,
+      "first": 2005,
+      "last": 2016,
+      "wins": 2
+    },
+    {
+      "entity_id": "alja-predan",
+      "name": "Alja Predan",
+      "sittings": 23,
+      "awards": 8,
+      "first": 2004,
+      "last": 2026,
+      "wins": 3
+    },
+    {
+      "entity_id": "milcek-komelj",
+      "name": "Milček Komelj",
+      "sittings": 23,
+      "awards": 4,
+      "first": 1992,
+      "last": 2017,
+      "wins": 2
+    },
+    {
+      "entity_id": "alenka-urh",
+      "name": "Alenka Urh",
+      "sittings": 23,
+      "awards": 3,
+      "first": 2009,
+      "last": 2026,
+      "wins": 0
+    },
+    {
+      "entity_id": "igor-saksida",
+      "name": "Igor Saksida",
+      "sittings": 22,
+      "awards": 4,
+      "first": 1996,
+      "last": 2023,
+      "wins": 0
+    },
+    {
+      "entity_id": "matevz-luzar",
+      "name": "Matevž Luzar",
+      "sittings": 21,
+      "awards": 5,
+      "first": 2014,
+      "last": 2026,
+      "wins": 6
+    },
+    {
+      "entity_id": "irena-novak-popov",
+      "name": "Irena Novak Popov",
+      "sittings": 21,
+      "awards": 4,
+      "first": 2001,
+      "last": 2025,
+      "wins": 0
+    },
+    {
+      "entity_id": "jana-unuk",
+      "name": "Jana Unuk",
+      "sittings": 21,
+      "awards": 3,
+      "first": 2005,
+      "last": 2019,
+      "wins": 0
+    },
+    {
+      "entity_id": "tomaz-toporisic",
+      "name": "Tomaž Toporišič",
+      "sittings": 20,
+      "awards": 5,
+      "first": 2004,
+      "last": 2026,
+      "wins": 1
+    },
+    {
+      "entity_id": "darka-tancer-kajnih",
+      "name": "Darka Tancer Kajnih",
+      "sittings": 20,
+      "awards": 3,
+      "first": 1996,
+      "last": 2024,
+      "wins": 0
+    },
+    {
+      "entity_id": "miran-kosuta",
+      "name": "Miran Košuta",
+      "sittings": 20,
+      "awards": 2,
+      "first": 1986,
+      "last": 2004,
+      "wins": 1
+    },
+    {
+      "entity_id": "darja-lavrencic-vrabec",
+      "name": "Darja Lavrenčič Vrabec",
+      "sittings": 19,
+      "awards": 4,
+      "first": 1999,
+      "last": 2025,
+      "wins": 0
+    },
+    {
+      "entity_id": "melita-forstneric-hajnsek",
+      "name": "Melita Forstnerič Hajnšek",
+      "sittings": 19,
+      "awards": 4,
+      "first": 1996,
+      "last": 2026,
+      "wins": 0
+    }
+  ],
+  "both_roles": {
+    "people": 716,
+    "share_of_winners": 0.2496513249651325,
+    "share_of_jurors": 0.4089091947458595,
+    "top": [
+      {
+        "entity_id": "veno-taufer",
+        "wins": 7,
+        "sittings": 47,
+        "name": "Veno Taufer",
+        "total": 54
+      },
+      {
+        "entity_id": "andrej-blatnik",
+        "wins": 2,
+        "sittings": 51,
+        "name": "Andrej Blatnik",
+        "total": 53
+      },
+      {
+        "entity_id": "matej-bogataj",
+        "wins": 1,
+        "sittings": 42,
+        "name": "Matej Bogataj",
+        "total": 43
+      },
+      {
+        "entity_id": "niko-grafenauer",
+        "wins": 11,
+        "sittings": 27,
+        "name": "Niko Grafenauer",
+        "total": 38
+      },
+      {
+        "entity_id": "tone-partljic",
+        "wins": 6,
+        "sittings": 26,
+        "name": "Tone Partljič",
+        "total": 32
+      },
+      {
+        "entity_id": "aljosa-harlamov",
+        "wins": 1,
+        "sittings": 31,
+        "name": "Aljoša Harlamov",
+        "total": 32
+      },
+      {
+        "entity_id": "evald-flisar",
+        "wins": 5,
+        "sittings": 25,
+        "name": "Evald Flisar",
+        "total": 30
+      },
+      {
+        "entity_id": "matevz-luzar",
+        "wins": 6,
+        "sittings": 21,
+        "name": "Matevž Luzar",
+        "total": 27
+      },
+      {
+        "entity_id": "jani-virk",
+        "wins": 2,
+        "sittings": 25,
+        "name": "Jani Virk",
+        "total": 27
+      },
+      {
+        "entity_id": "niko-jez",
+        "wins": 1,
+        "sittings": 26,
+        "name": "Niko Jež",
+        "total": 27
+      },
+      {
+        "entity_id": "dusan-jovanovic",
+        "wins": 20,
+        "sittings": 6,
+        "name": "Dušan Jovanović",
+        "total": 26
+      },
+      {
+        "entity_id": "alja-predan",
+        "wins": 3,
+        "sittings": 23,
+        "name": "Alja Predan",
+        "total": 26
+      },
+      {
+        "entity_id": "tomaz-salamun",
+        "wins": 7,
+        "sittings": 18,
+        "name": "Tomaž Šalamun",
+        "total": 25
+      },
+      {
+        "entity_id": "milcek-komelj",
+        "wins": 2,
+        "sittings": 23,
+        "name": "Milček Komelj",
+        "total": 25
+      },
+      {
+        "entity_id": "vinko-moderndorfer",
+        "wins": 14,
+        "sittings": 9,
+        "name": "Vinko Möderndorfer",
+        "total": 23
+      }
+    ]
+  },
+  "leaders_per_decade": [
+    {
+      "decade": 1940,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "decade": 1950,
+      "win_n": 4,
+      "win_names": [
+        "France Mihelič",
+        "Marlenka Stupica"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 6.0,
+      "jury_names": [
+        "Samo Hubad"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "decade": 1960,
+      "win_n": 5,
+      "win_names": [
+        "Jože Ciuha"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 5.0,
+      "jury_names": [
+        "Bogdan Brecelj",
+        "Bojan Štih",
+        "Fran Albreht",
+        "France Avčin",
+        "France Koblar",
+        "Jože Goričar",
+        "Karel Dobida",
+        "Samo Hubad",
+        "Svetozar Ilešič"
+      ],
+      "jury_tied": 9.0
+    },
+    {
+      "decade": 1970,
+      "win_n": 3,
+      "win_names": [
+        "Dane Zajc",
+        "Ivan Seljak - Čopič",
+        "Janez Menart",
+        "Jože Babič",
+        "Svetlana Makarovič"
+      ],
+      "win_tied": 5.0,
+      "jury_n": 6.0,
+      "jury_names": [
+        "Branko Berčič"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "decade": 1980,
+      "win_n": 7,
+      "win_names": [
+        "Dušan Jovanović"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 6.0,
+      "jury_names": [
+        "Andrej Blatnik"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "decade": 1990,
+      "win_n": 7,
+      "win_names": [
+        "Dušan Jovanović"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 11.0,
+      "jury_names": [
+        "Andrej Blatnik",
+        "Veno Taufer"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "decade": 2000,
+      "win_n": 8,
+      "win_names": [
+        "Peter Musevski"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 21.0,
+      "jury_names": [
+        "Ignacija J. Fridl"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "decade": 2010,
+      "win_n": 10,
+      "win_names": [
+        "Vinko Möderndorfer"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 21.0,
+      "jury_names": [
+        "Andrej Blatnik"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "decade": 2020,
+      "win_n": 7,
+      "win_names": [
+        "Damijan Stepančič"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 17.0,
+      "jury_names": [
+        "Matej Bogataj"
+      ],
+      "jury_tied": 1.0
+    }
+  ],
+  "leaders_per_year": [
+    {
+      "year": 1949,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1950,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1951,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1952,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1953,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": NaN,
+      "jury_names": NaN,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1954,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1955,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1956,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1957,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1958,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1959,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1960,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1961,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1962,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1963,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1964,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1965,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1966,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1967,
+      "win_n": 2,
+      "win_names": [
+        "Kajetan Kovič"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1968,
+      "win_n": 2,
+      "win_names": [
+        "Smiljan Rozman"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1969,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1970,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1971,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1972,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1973,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1974,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1975,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1976,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1977,
+      "win_n": 2,
+      "win_names": [
+        "Adriana Maraž"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1978,
+      "win_n": 2,
+      "win_names": [
+        "Slavko Pregl"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1979,
+      "win_n": 2,
+      "win_names": [
+        "Dušan Jovanović",
+        "Tone Pavček"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1980,
+      "win_n": 2,
+      "win_names": [
+        "Dušan Jovanović",
+        "Karpo Godina",
+        "Niko Grafenauer"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1981,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1982,
+      "win_n": 2,
+      "win_names": [
+        "Dušan Jovanović",
+        "Sandi Pavlin"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1983,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1984,
+      "win_n": 2,
+      "win_names": [
+        "Polde Bibič"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1985,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1986,
+      "win_n": 2,
+      "win_names": [
+        "Dominik Smole"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1987,
+      "win_n": 2,
+      "win_names": [
+        "Boris Cavazza",
+        "Ivanka Mežan",
+        "Veno Taufer"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1988,
+      "win_n": 2,
+      "win_names": [
+        "Jožica Avbelj"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1989,
+      "win_n": 2,
+      "win_names": [
+        "Pavle Ravnohrib"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1990,
+      "win_n": 3,
+      "win_names": [
+        "Dušan Jovanović"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1991,
+      "win_n": 2,
+      "win_names": [
+        "Milan Jesih"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1992,
+      "win_n": 2,
+      "win_names": [
+        "Boris Cavazza",
+        "Jurij Souček"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1993,
+      "win_n": 2,
+      "win_names": [
+        "Evald Flisar"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Milček Komelj"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 1994,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 1.0,
+      "jury_names": null,
+      "jury_tied": NaN
+    },
+    {
+      "year": 1995,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Marijan Tršar"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 1996,
+      "win_n": 2,
+      "win_names": [
+        "Silva Čušin"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Igor Saksida"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 1997,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Ignacija J. Fridl",
+        "Igor Saksida",
+        "Veno Taufer"
+      ],
+      "jury_tied": 3.0
+    },
+    {
+      "year": 1998,
+      "win_n": 2,
+      "win_names": [
+        "Milan Erič"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Andrej Blatnik",
+        "Igor Saksida"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "year": 1999,
+      "win_n": 2,
+      "win_names": [
+        "Janez Starina",
+        "Nataša Burger",
+        "Zvonko Čoh"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Igor Saksida"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2000,
+      "win_n": 2,
+      "win_names": [
+        "Andrej E. Skubic",
+        "Drago Ivanuša",
+        "Jan Cvitkovič",
+        "Janez Burger"
+      ],
+      "win_tied": 4.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Silvan Furlan",
+        "Vasja Predan"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "year": 2001,
+      "win_n": 2,
+      "win_names": [
+        "Drago Jančar",
+        "Jožica Avbelj",
+        "Milan Jesih"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Ignacija J. Fridl"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2002,
+      "win_n": 2,
+      "win_names": [
+        "Jure Ivanušič",
+        "Peter Musevski"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Ignacija J. Fridl",
+        "Niko Jež",
+        "Urban Vovk"
+      ],
+      "jury_tied": 3.0
+    },
+    {
+      "year": 2003,
+      "win_n": 1,
+      "win_names": null,
+      "win_tied": NaN,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Tone Partljič"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2004,
+      "win_n": 2,
+      "win_names": [
+        "Rok Klanjšček",
+        "Tjaša Železnik",
+        "Uroš Smolej"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Ignacija J. Fridl",
+        "Matej Bogataj",
+        "Petra Vidali",
+        "Tone Partljič"
+      ],
+      "jury_tied": 4.0
+    },
+    {
+      "year": 2005,
+      "win_n": 2,
+      "win_names": [
+        "Matija Bevk",
+        "Matjaž Zupančič"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Ignacija J. Fridl",
+        "Matej Bogataj",
+        "Petra Vidali"
+      ],
+      "jury_tied": 3.0
+    },
+    {
+      "year": 2006,
+      "win_n": 2,
+      "win_names": [
+        "Jernej Lorenci",
+        "Milan Dekleva",
+        "Nejc Gazvoda",
+        "Tjaša Ferme"
+      ],
+      "win_tied": 4.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Petra Vidali"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2007,
+      "win_n": 2,
+      "win_names": [
+        "Anja Štefan",
+        "Silva Čušin"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Jani Virk",
+        "Niko Grafenauer",
+        "Petra Vidali",
+        "Veno Taufer"
+      ],
+      "jury_tied": 4.0
+    },
+    {
+      "year": 2008,
+      "win_n": 3,
+      "win_names": [
+        "Veronika Dintinjana"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Jani Virk",
+        "Niko Grafenauer",
+        "Veno Taufer"
+      ],
+      "jury_tied": 3.0
+    },
+    {
+      "year": 2009,
+      "win_n": 2,
+      "win_names": [
+        "Dušan Jovanović",
+        "Goran Vojnović",
+        "Ifigenija Simonović",
+        "Igor Samobor",
+        "Marko Mandić",
+        "Polona Juh",
+        "Primož Pirnat",
+        "Vesna Lemaič"
+      ],
+      "win_tied": 8.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Jani Virk",
+        "Niko Grafenauer"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "year": 2010,
+      "win_n": 2,
+      "win_names": [
+        "Peter Kovačič Peršin",
+        "Vinko Möderndorfer"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Evald Flisar",
+        "Jani Virk",
+        "Niko Grafenauer"
+      ],
+      "jury_tied": 3.0
+    },
+    {
+      "year": 2011,
+      "win_n": 2,
+      "win_names": [
+        "Barbara Korun",
+        "Janja Majzelj",
+        "Miklavž Komelj",
+        "Nejc Gazvoda"
+      ],
+      "win_tied": 4.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Andrej Blatnik",
+        "Jani Virk",
+        "Melita Forstnerič Hajnšek",
+        "Veno Taufer"
+      ],
+      "jury_tied": 4.0
+    },
+    {
+      "year": 2012,
+      "win_n": 2,
+      "win_names": [
+        "Andrej E. Skubic",
+        "Gregor Baković",
+        "Meta Kušar",
+        "Nataša Barbara Gračner",
+        "Vesna Pernarčič Žunič"
+      ],
+      "win_tied": 5.0,
+      "jury_n": 4.0,
+      "jury_names": [
+        "Andrej Blatnik"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2013,
+      "win_n": 2,
+      "win_names": [
+        "Evald Flisar",
+        "Luka Prinčič",
+        "Maja Delak",
+        "Mala Kline",
+        "Pia Zemljič",
+        "Rok Biček",
+        "Vili Ravnjak",
+        "Vinko Möderndorfer"
+      ],
+      "win_tied": 8.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Irena Novak Popov"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2014,
+      "win_n": 2,
+      "win_names": [
+        "Davorin Lenko",
+        "Hanna Preuss",
+        "Jernej Lorenci",
+        "Jože Barši",
+        "Vinko Möderndorfer"
+      ],
+      "win_tied": 5.0,
+      "jury_n": 4.0,
+      "jury_names": [
+        "Petra Vidali"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2015,
+      "win_n": 2,
+      "win_names": [
+        "Maja P. Kastelic",
+        "Marko Brdar",
+        "Nika Rozman",
+        "Simona Semenič",
+        "Siniša Gačić",
+        "Tomaž Gorkič"
+      ],
+      "win_tied": 6.0,
+      "jury_n": 4.0,
+      "jury_names": [
+        "Aljoša Harlamov"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2016,
+      "win_n": 2,
+      "win_names": [
+        "Dušan Milavec",
+        "Jure Jakob",
+        "Miha Mazzini"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Andrej Blatnik"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2017,
+      "win_n": 2,
+      "win_names": [
+        "Boris A. Novak",
+        "Goran Vojnović",
+        "Janez Burger",
+        "Jure Henigman",
+        "Lena Krušec",
+        "Mojca Kumerdej",
+        "Tomaž Krušec",
+        "Vid Kurinčič",
+        "Špela Čadež"
+      ],
+      "win_tied": 9.0,
+      "jury_n": 5.0,
+      "jury_names": [
+        "Mojca Pišek"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2018,
+      "win_n": 2,
+      "win_names": [
+        "Darko Štante",
+        "Eva Markun",
+        "Karpo Godina",
+        "Mitja Ličen",
+        "Paul Urkijo Alijo",
+        "Timon Šturbej",
+        "Tone Škrjanec"
+      ],
+      "win_tied": 7.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Ana Geršak",
+        "Mojca Pišek"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "year": 2019,
+      "win_n": 2,
+      "win_names": [
+        "Andrej Rozman Roza",
+        "Leja Jurišić",
+        "Milan Erič",
+        "Tomi Janežič",
+        "Urša Menart"
+      ],
+      "win_tied": 5.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Diana Pungeršič",
+        "Maja Šučur"
+      ],
+      "jury_tied": 2.0
+    },
+    {
+      "year": 2020,
+      "win_n": 2,
+      "win_names": [
+        "Boštjan Videmšek",
+        "Jani Sever",
+        "Sebastijan Pregelj"
+      ],
+      "win_tied": 3.0,
+      "jury_n": 4.0,
+      "jury_names": [
+        "Matej Bogataj"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2021,
+      "win_n": 2,
+      "win_names": [
+        "Damijan Stepančič",
+        "Marija Zidar",
+        "Marko Mlačnik",
+        "Mitja Ličen",
+        "Nataša Strlič",
+        "Žiga Divjak"
+      ],
+      "win_tied": 6.0,
+      "jury_n": 5.0,
+      "jury_names": [
+        "Matej Bogataj"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2022,
+      "win_n": 2,
+      "win_names": [
+        "Boris Matić",
+        "Damijan Močnik",
+        "Helena Koder",
+        "Iva Krajnc Bagola",
+        "Jernej Šipoš",
+        "Marko Studen",
+        "Tijana Zinajić",
+        "Vito Weiss"
+      ],
+      "win_tied": 8.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Aljoša Harlamov",
+        "Maja Šučur",
+        "Matej Bogataj",
+        "Robert Kuret",
+        "Rok Andres"
+      ],
+      "jury_tied": 5.0
+    },
+    {
+      "year": 2023,
+      "win_n": 4,
+      "win_names": [
+        "Leo Černic"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Gregor Podlogar"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2024,
+      "win_n": 2,
+      "win_names": [
+        "Aleksandra Gačić",
+        "Andrej E. Skubic",
+        "Branko Šturbej",
+        "Damjan Kozole",
+        "Denis Škofič",
+        "Ivan Gergolet",
+        "Jernej Gašperin",
+        "Maja Doroteja Prelog",
+        "Maja Prettner",
+        "Marko Šantić",
+        "Miljana Cunta",
+        "Nataša Konc Lorenzutti",
+        "Nina Rajić Kranjac",
+        "Tosja Flaker Berce"
+      ],
+      "win_tied": 14.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Matevž Luzar",
+        "Nada Grošelj",
+        "Nadja Zgonik",
+        "Rok Vevar"
+      ],
+      "jury_tied": 4.0
+    },
+    {
+      "year": 2025,
+      "win_n": 3,
+      "win_names": [
+        "Ana Svetel",
+        "Ana Zavadlav"
+      ],
+      "win_tied": 2.0,
+      "jury_n": 3.0,
+      "jury_names": [
+        "Tone Peršak"
+      ],
+      "jury_tied": 1.0
+    },
+    {
+      "year": 2026,
+      "win_n": 2,
+      "win_names": [
+        "Ajda Bračič"
+      ],
+      "win_tied": 1.0,
+      "jury_n": 2.0,
+      "jury_names": [
+        "Maja Prettner",
+        "Martin Lissiach",
+        "Slobodan Maksimović",
+        "Sonja Prosenc",
+        "Urban Leskovar"
+      ],
+      "jury_tied": 5.0
+    }
+  ],
+  "awards_most_winners": [
+    {
+      "award_id": "presernov-sklad",
+      "award": "Prešernov sklad",
+      "winners": 608,
+      "wins": 620,
+      "editions": 64,
+      "jurors": 263
+    },
+    {
+      "award_id": "plecnikova-nagrada",
+      "award": "Plečnikova nagrada",
+      "winners": 227,
+      "wins": 337,
+      "editions": 31,
+      "jurors": 98
+    },
+    {
+      "award_id": "vesna",
+      "award": "Vesna",
+      "winners": 226,
+      "wins": 330,
+      "editions": 28,
+      "jurors": 121
+    },
+    {
+      "award_id": "presernova-nagrada",
+      "award": "Prešernova nagrada",
+      "winners": 220,
+      "wins": 234,
+      "editions": 72,
+      "jurors": 274
+    },
+    {
+      "award_id": "zupanciceva-nagrada",
+      "award": "Župančičeva nagrada",
+      "winners": 183,
+      "wins": 212,
+      "editions": 61,
+      "jurors": 31
+    },
+    {
+      "award_id": "levstikova-nagrada",
+      "award": "Levstikova nagrada",
+      "winners": 155,
+      "wins": 252,
+      "editions": 59,
+      "jurors": 36
+    },
+    {
+      "award_id": "severjeva-nagrada",
+      "award": "Severjeva nagrada",
+      "winners": 155,
+      "wins": 195,
+      "editions": 45,
+      "jurors": 22
+    },
+    {
+      "award_id": "nagrada-duse-pockaj",
+      "award": "Nagrada Duše Počkaj",
+      "winners": 113,
+      "wins": 113,
+      "editions": 48,
+      "jurors": 20
+    },
+    {
+      "award_id": "cuvaj-watchdog",
+      "award": "Čuvaj/watchdog",
+      "winners": 95,
+      "wins": 113,
+      "editions": 13,
+      "jurors": 47
+    },
+    {
+      "award_id": "zlata-ptica",
+      "award": "Zlata ptica",
+      "winners": 88,
+      "wins": 90,
+      "editions": 37,
+      "jurors": 42
+    },
+    {
+      "award_id": "nagrada-riharda-jakopica",
+      "award": "Nagrada Riharda Jakopiča",
+      "winners": 85,
+      "wins": 85,
+      "editions": 55,
+      "jurors": 45
+    },
+    {
+      "award_id": "borstnikovo-srecanje",
+      "award": "Borštnikovo srečanje",
+      "winners": 83,
+      "wins": 142,
+      "editions": 46,
+      "jurors": 88
+    },
+    {
+      "award_id": "sovretova-nagrada",
+      "award": "Sovretova nagrada",
+      "winners": 81,
+      "wins": 89,
+      "editions": 58,
+      "jurors": 34
+    },
+    {
+      "award_id": "nagrada-ksenije-hribar",
+      "award": "Nagrada Ksenije Hribar",
+      "winners": 77,
+      "wins": 90,
+      "editions": 8,
+      "jurors": 21
+    },
+    {
+      "award_id": "mms",
+      "award": "MMS",
+      "winners": 62,
+      "wins": 73,
+      "editions": 18,
+      "jurors": 46
+    }
+  ]
+}

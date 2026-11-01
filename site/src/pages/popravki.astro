@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Popravki" description="Sporočite napako ali manjkajoč podatek v zbirki slovenskih kulturnih nagrad." noindex>
+  <h1>Popravki</h1>
+  <p class="lede">Zbirka nastaja iz javnih virov in ni brez napak. Vsak popravek preverimo pred objavo.</p>
+  <p id="ref" class="note" hidden></p>
+  <h2>Kaj nam sporočite</h2>
+  <ul>
+    <li>katero stran ali zapis popravljate (povezava),</li>
+    <li>kaj je narobe ali kaj manjka (npr. manjkajoč nagrajenec, napačno leto, dve osebi z istim imenom),</li>
+    <li>vir, iz katerega to vemo (spletna stran, članek, katalog).</li>
+  </ul>
+  <p>Če želite, da kakšen osebni podatek o vas odstranimo, nam to prav tako sporočite.</p>
+  <p>Popravke sporočite kot <a href="https://github.com/virostatiq/slo-cultural-awards/issues">zahtevek na GitHubu</a>
+    ali v sporočilu na <a href="https://x.com/Virostatiq">X (@Virostatiq)</a>.</p>
+  <script>
+    import { url } from "../lib/url";
+    const z = new URLSearchParams(location.search).get("zapis");
+    if (z && /^[a-z]+\/[a-z0-9-]+$/.test(z)) {
+      const el = document.getElementById("ref")!;
+      el.hidden = false;
+      el.innerHTML = `Popravek za: <a href="${url(`/${z}/`)}">/${z}/</a>`;
+    }
+  </script>
+</Base>

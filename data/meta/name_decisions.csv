@@ -1,0 +1,259 @@
+entity_id,action,detail
+adrian-garcia-bogliano,rename,Adrian Garcia Bogliano -> Adrián García Bogliano
+adrian-garcia-bogliano,alias,Adrian Garcia Bogliano
+aleksander-ostan,alias,Aleksander Saša Ostan
+aleksandra-kocmu,rename,Aleksandra Kocmu -> Aleksandra Kocmut
+aleksandra-kocmu,alias,Aleksandra Kocmu
+alenka-moder,alias,Alenka Moder Saje
+alesh-maatko,alias,Aleš Maatko
+alessio-princic,alias-skipped,'Aleš Prinčič' belongs to ales-princic
+alex-volasko,alias,Aleksander Volasko
+alex-de-la-iglesia,alias,Alejandro de la Iglesia Mendoza
+alexander-gadjiev,alias,Aleksander Gadžijev
+ales-blatnik,wrong-person,cleared enrichment matched to Andrej Blatnik
+ales-vavpotic,rename,Aleš Vavpotič -> Aleš Vaupotič
+ales-vavpotic,alias,Aleš Vavpotič
+alma-causevic-klemencic-2,rename,Alma Čauševič Klemenčič -> Alma Čaušević Klemenčič
+alma-causevic-klemencic-2,alias,Alma Čauševič Klemenčič
+alya,alias,Alja Omladič
+ana-marij-kozlevcar,alias,Ana Marija Kozlevčar
+ana-stefanec,alias,Ana Štefanec Knez
+andrey-breznik,alias,Andrej Breznik
+andriej-moskwin,alias,Andrej Moskwin
+anja-planiscek,rename,Anja Planišček -> Anja Planišček
+anja-planiscek,alias,Anja Planišček
+anne-gavalda,rename,Anne Gavalda -> Anna Gavalda
+anne-gavalda,alias,Anne Gavalda
+anton-demsar,alias,Anton Jernej Demšar
+antony-gardner,alias,Anthony Gardner
+arhitekturni-atelje-medprostor,rename,Arhitekturni Atelje Medprostor -> Arhitekturni atelje Medprostor
+arhitekturni-atelje-medprostor,alias,Arhitekturni Atelje Medprostor
+asta-vrecko,rename,Asta Vrečko -> Asta Vrečko
+asta-vrecko,alias,Asta Vrečko
+ati-soss,alias,Karel Soss
+balladero,alias,Dominik Bagola
+bina-stampe-zmavc,rename,Bina Štampe žmavc -> Bina Štampe Žmavc
+bina-stampe-zmavc,alias,Bina Štampe žmavc
+bine-rogelj,alias,Albin Rogelj
+bogdan,wrong-person,cleared enrichment matched to Bogdan Borčić
+bogdan-mesko,alias,Kiar (Bogdan) Meško
+bogo-leskovic,alias,Bogomir Leskovič
+bogo-sajovic,alias,Bogdan Sajovic
+boris-sinigoj,alias,Boris Šinigoj (mlajši)
+ciril-cvetko,alias,Ciril Gabrijel Cvetko
+cristoph-huber,rename,Cristoph Huber -> Christoph Huber
+cristoph-huber,alias,Cristoph Huber
+cro,alias,Luiza Crobath
+celestin,wrong-person,cleared enrichment matched to Fran Celestin
+damjan-levec-emperatrizz,alias,Damjan Levec
+david-verbucthe,rename,David VerbučThe -> David Verbuč
+david-verbucthe,alias,David VerbučThe
+davorina-lenko,rename,Davorina Lenko -> Davorin Lenko
+davorina-lenko,alias,Davorina Lenko
+davorin-lenko,id-rename,davorina-lenko -> davorin-lenko
+defonija,group,cleared person data matched to Miha Zadnikar
+delavska-godba-iz-trbovelj,rename,Delavska Godba Iz Trbovelj -> Delavska godba iz Trbovelj
+delavska-godba-iz-trbovelj,alias,Delavska Godba Iz Trbovelj
+denis-zivcec,alias,Denis Bende Živčec
+diskolektiv,group,cleared person data matched to Gregor Kamnikar
+dragan-jelicic,rename,Dragan Jelićić -> Dragan Jeličić
+dragan-jelicic,alias,Dragan Jelićić
+dusan-velkavrh,rename,Dušan Velkavrh -> Dušan Velkaverh
+dusan-velkavrh,alias,Dušan Velkavrh
+dzevad-karahsan,rename,Dževad Karahsan -> Dževad Karahasan
+dzevad-karahsan,alias,Dževad Karahsan
+edo-ravnikar-ml,rename,Edo Ravnikar Ml. -> Edo Ravnikar ml.
+edo-ravnikar-ml,alias,Edo Ravnikar Ml.
+elise-gravel,rename,Elise Gravel -> Élise Gravel
+elise-gravel,alias,Elise Gravel
+emerik-bernard-b,rename,Emerik Bernard[b] -> Emerik Bernard
+emerik-bernard-b,alias,Emerik Bernard[b]
+damjan-levec-emperatrizz,alias,Empera3zz
+damjan-levec-emperatrizz,merge,empera3zz -> damjan-levec-emperatrizz
+filip-kumbatovic-kalan,alias,Filip Kumbatovič Kalan
+godalni-kvartet-tartini,rename,Godalni Kvartet Tartini -> Godalni kvartet Tartini
+godalni-kvartet-tartini,alias,Godalni Kvartet Tartini
+goran-lisica-fox,alias,Goran Lisica
+goran-strefanovski,rename,Goran Strefanovski -> Goran Stefanovski
+goran-strefanovski,alias,Goran Strefanovski
+ida,alias-skipped,'Ida Weiss' belongs to ida-weiss
+ignacija-j-fridl,alias,Ignacija Fridl Jarc
+igor-skulj,rename,Igor Skulj -> Igor Škulj
+igor-skulj,alias,Igor Skulj
+ina-shai,alias,Martina Šraj
+isaac-palma,alias,Isaac Leandro Palma
+ivan-marincek,alias,Ivan Andrej Marinček
+ivan-stuhec,alias,Ivan Janez Štuhec
+jan-podbreznik,alias,Jan Franc Podbrežnik
+janez-boncina-benc,alias,Janez Bončina
+janez-petretic-ive,alias,Janez Petretič
+jedert-vodopivec,alias,Jedert Vodopivec Tomažič
+jelka-ciglenicki,rename,Jelka Ciglenički -> Jelka Ciglenečki
+jelka-ciglenicki,alias,Jelka Ciglenički
+kaja-perat,wrong-person,cleared enrichment matched to Katja Perat
+karl-markus-gauss,rename,Karl-Markus Gauss -> Karl-Markus Gauß
+karl-markus-gauss,alias,Karl-Markus Gauss
+karpo-godina,alias,Karpo Ačimović Godina
+komorni-godalni-orkester-slovenske-filharmonije,rename,Komorni Godalni Orkester Slovenske Filharmonije -> Komorni godalni orkester Slovenske filharmonije
+komorni-godalni-orkester-slovenske-filharmonije,alias,Komorni Godalni Orkester Slovenske Filharmonije
+komorni-zbor-ave,rename,Komorni Zbor Ave -> Komorni zbor Ave
+komorni-zbor-ave,alias,Komorni Zbor Ave
+koni-steinbaher,rename,Koni Steinbaher -> Koni Steinbacher
+koni-steinbaher,alias,Koni Steinbaher
+koni-steinbaher,alias-skipped,'Konrad Steinbacher' belongs to konrad-steinbacher
+kristina-buozyte,rename,Kristina Buožyte -> Kristina Buožytė
+kristina-buozyte,alias,Kristina Buožyte
+kristjan-lesnik-musek,alias,Kristijan Musek Lešnik
+kukla,alias,Katarina Rešek
+lenart-kucic,alias,Lenart J. Kučić
+lili-prap,alias-skipped,'Lilijana Praprotnik Zupančič' belongs to lilijana-praprotnik-zupancic
+ljubljanska-drama,alias,Slovensko narodno gledališče Drama Ljubljana
+lojz-kraigher,alias,Alojz Kraigher
+luka-zabric,rename,Luka Zabric -> Luka Zabrič
+luka-zabric,alias,Luka Zabric
+luna-j-sribar,rename,LunA J. Šribar -> Luna J. Šribar
+luna-j-sribar,alias,LunA J. Šribar
+mgl,alias,Mestno gledališče ljubljansko
+maja-jancic,alias,Maja Bogataj Jančič
+majda-bozeglav,alias,Majda Božeglav Japelj
+maks-strmcnik,alias,Maksimiljan Strmčnik
+manica-j-ambrozic,alias,Manica Janežič Ambrožič
+mara-partida-munoz,rename,Mara Partida Munoz -> Mara Partida Muñoz
+mara-partida-munoz,alias,Mara Partida Munoz
+marcos-fink,alias,Marcos Teodoro Fink
+mare-bulc,rename,Mare Bulc -> Marko Bulc
+mare-bulc,alias,Mare Bulc
+maria-sako,alias,Maria Pauliina Säkö
+marija-rapa-suklje,alias,Marija Šuklje
+marijan-britovsek,alias,Marjan Britovšek
+marina-milivojevic-madjarev,rename,Marina Milivojević-Madjarev -> Marina Milivojević-Mađarev
+marina-milivojevic-madjarev,alias,Marina Milivojević-Madjarev
+marina-richter,alias,Marina D. Richter
+marjan-amalietti,alias,Marijan Amalietti
+marko-dekleva,alias,Marko Marjan Dekleva
+marko-rupnik,alias,Marko Ivan Rupnik
+martina,wrong-person,cleared enrichment matched to Martina Batič
+martina-ozbot,alias,Martina Ožbot Currie
+masayah,alias,Mia Puhar Rodin
+matej-kucina,rename,Matej Kučina -> Matej Kučina
+matej-kucina,alias,Matej Kučina
+matevz-vidmar-celik,alias,Matevž Čelik Vidmar
+matija-kozamernik-jojo,alias,Matija Kozamernik
+miha-gunzek,alias,Mihael Gunzek
+mikko-roiha,alias,Mikko Aleksi Roiha
+mile-de-gleria,rename,Mile De Gleria -> Mile de Gleria
+mile-de-gleria,alias,Mile De Gleria
+milica-maslo,alias,Milica Maslo Bezer
+mimi-inhof,gender,f
+miran-gracer,alias,Miran Gracer mlajši
+mircea-cartarescu,rename,Mircea Cartarescu -> Mircea Cărtărescu
+mircea-cartarescu,alias,Mircea Cartarescu
+miriam-kicinova,rename,Miriam Kičinova -> Miriam Kičiňová
+miriam-kicinova,alias,Miriam Kičinova
+mirjam-bevc,alias,Mirjam Bevc Peressutti
+miro-purivatra,alias,Mirsad Purivatra
+mico-micovic,alias,Miloslav Mićović
+misa-cermak,alias,Milojka Miša Čermak
+mladen-djordjevic,rename,Mladen Djordjević -> Mladen Đorđević
+mladen-djordjevic,alias,Mladen Djordjević
+mladinski-pevski-zbor-iz-maribora,rename,Mladinski Pevski Zbor Iz Maribora -> Mladinski pevski zbor iz Maribora
+mladinski-pevski-zbor-iz-maribora,alias,Mladinski Pevski Zbor Iz Maribora
+moises-romera,alias,Moisés Romera Pérez
+mojmir-lasan,rename,Mojmir Lasan -> Mojmir Lašan
+mojmir-lasan,alias,Mojmir Lasan
+narvika-bavcon,rename,Narvika Bavcon -> Narvika Bovcon
+narvika-bavcon,alias,Narvika Bavcon
+natasa-prosenc,alias,Nataša Prosenc Stearns
+nenad-zivkovic-neso,alias,Nenad Živković
+niko-jez,alias,Nikolaj Jež
+niko-r-kolar,alias,Niko Rudolf Kolar
+ninnay,alias,Nina Bužanin Simčič
+nusa-jurkovic,rename,Nuša Jurkovič -> Nuša Jurkovič
+nusa-jurkovic,alias,Nuša Jurkovič
+olga-tokarczuk,alias,Olga Nawoja Tokarczuk
+oto-bajde,alias,Oton Bajde
+otto-tolnai,rename,Otto Tolnai -> Ottó Tolnai
+otto-tolnai,alias,Otto Tolnai
+paula-caspao,rename,Paula Caspao -> Paula Caspão
+paula-caspao,alias,Paula Caspao
+pavel-golia,alias,Pavel Metod Golia
+pavle-merku,rename,Pavle Merkú -> Pavle Merkù
+pavle-merku,alias,Pavle Merkú
+petra-trampuz,alias,Petra Trampuž Bocevska
+polona-filipic,alias,Polona Filipič Gorenšek
+peter-nadas,rename,Péter Nadas -> Péter Nádas
+peter-nadas,alias,Péter Nadas
+raay,alias,Aleš Vovk
+rade-krstic,alias,Rade Krstič
+radio-smarje-pri-jelsah,institution,cleared person data matched to Jože Jakoš
+rastko-pecar,rename,Rastko Pečar -> Rastko Pečar
+rastko-pecar,alias,Rastko Pečar
+raul-monge,rename,Raúl Monge -> Raúl Monge
+raul-monge,alias,Raúl Monge
+rene-maurin,alias,Rene Jože Maurin
+roberto-magnifico,alias,Robert Pešut
+rok-k-nagode,alias,Rok Kajzer Nagode
+sng-ng,alias,Slovensko narodno gledališče Nova Gorica
+sadar-vuga,alias,SADAR+VUGA
+sam-orti,rename,Sam Orti -> Sam Ortí
+sam-orti,alias,Sam Orti
+samo-m-strelec,alias,Samo Marija Strelec
+sandi-krosl,alias-skipped,'Aleksander Krošl' belongs to aleksander-krosl
+sandra-basic,alias,Sandra Bašič Hrvatin
+sandra-krkoc,alias,Sandra Krkoč Lasič
+sasa-begovic,alias,Saša Begović
+sasa-loncar,alias,Aleksandra Saša Lončar
+sasa-machtig,alias,Saša Janez Mächtig
+simon-hudolin-salci,alias,Simon Hudolin
+srdjan-golubovic,rename,Srdjan Golubović -> Srdan Golubović
+srdjan-golubovic,alias,Srdjan Golubović
+stane-rozman,wrong-person,cleared enrichment matched to Franc Rozman – Stane
+stanislava-chrobakova-repar,rename,Stanislava Chrobaková Repar -> Stanislava Chrobáková Repar
+stanislava-chrobakova-repar,alias,Stanislava Chrobaková Repar
+steffy-stefica-graselli,alias,Štefica Graselli
+stephane-everaert,rename,Stephane Everaert -> Stéphane Everaert
+stephane-everaert,alias,Stephane Everaert
+suncan-stone,alias,Sunčan Patrick Stone
+tadeja-krecic,alias,Tadeja Krečič Scholten
+tallulah-h-schwab,alias,Tallulah Hazekamp Schwab
+tjasa-koprivec,alias,Tjaša Koprivec Vuga
+tjasa-slokar,alias-skipped,'Tjaša Slokar Kos' belongs to tjasa-slokar-kos
+tomy-declerque,rename,Tomy Declerque -> Tomy DeClerque
+tomy-declerque,alias,Tomy Declerque
+tugo-susnik,alias-skipped,'Tugomir Šušnik' belongs to tugomir-susnik
+vasif-kortun,rename,Vasif Kortun -> Vasıf Kortun
+vasif-kortun,alias,Vasif Kortun
+vaso-perovic,alias,Vaso Perović
+vid-sagadin,alias,Vid Sagadin Žigon
+vida-skerk,rename,Vida Skerk -> Vida Škerk
+vida-skerk,alias,Vida Skerk
+viktorija-bencik,alias,Viktorija Bencik Emeršič
+yvonna-kreuzmannova,rename,Yvonna Kreuzmannova -> Yvonna Kreuzmannová
+yvonna-kreuzmannova,alias,Yvonna Kreuzmannova
+zlata-ognjanovic,alias,Zlata Gašperšič Ognjanović
+skupina-nonument-nonument-group,rename,skupina Nonument / Nonument group -> skupina Nonument
+skupina-nonument-nonument-group,alias,skupina Nonument / Nonument group
+tandem-son-da,group,cleared person data matched to Metka Golec
+stefka-drolc,alias,Štefanija Ana Drolc
+zivko-marusic,alias,Živko Ira Marušič
+alma-causevic-klemencic,merge,alma-causevic-klemencic-2 -> alma-causevic-klemencic
+bojan-labovic,alias,Bojan Labovič
+bojan-labovic,merge,bojan-labovic-2 -> bojan-labovic
+jaroslav-skrusny-2,alias,Jaroslav Skrušny
+jaroslav-skrusny-2,merge,jaroslav-skrusny -> jaroslav-skrusny-2
+jaroslav-skrusny,id-rename,jaroslav-skrusny-2 -> jaroslav-skrusny
+david-verbuc,id-rename,david-verbucthe -> david-verbuc
+emerik-bernard-b,id-rename-skipped,emerik-bernard exists
+ales-princic,alias,Alessio Princic
+ales-princic,merge,alessio-princic -> ales-princic
+konrad-steinbacher,alias,Koni Steinbacher
+konrad-steinbacher,merge,koni-steinbaher -> konrad-steinbacher
+lilijana-praprotnik-zupancic,alias,Lili Prap
+lilijana-praprotnik-zupancic,merge,lili-prap -> lilijana-praprotnik-zupancic
+aleksander-krosl,alias,Sandi Krošl
+aleksander-krosl,merge,sandi-krosl -> aleksander-krosl
+tjasa-slokar-kos,alias,Tjaša Slokar
+tjasa-slokar-kos,merge,tjasa-slokar -> tjasa-slokar-kos
+tugo-susnik,alias,Tugomir Šušnik
+tugo-susnik,merge,tugomir-susnik -> tugo-susnik
+emerik-bernard,merge,emerik-bernard-b -> emerik-bernard

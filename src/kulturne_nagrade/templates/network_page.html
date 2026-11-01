@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zemljevid kulturnih nagrad</title>
+<meta name="description" content="Interaktivni zemljevid slovenskih kulturnih nagrad: kdo sedi v žirijah skupaj, kdo je koga nagradil in okoli katerih nagrad.">
+<style>
+:root {
+  --bg: #fcfcfb; --surface: #ffffff; --ink: #0b0b0b; --ink-2: #52514e; --muted: #a8a69d;
+  --line: #e1e0d9; --dim: #e9e8e2; --accent: #6250d6; --shadow: 0 1px 3px rgba(0,0,0,.08);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141413; --surface: #1d1d1b; --ink: #f1f0ec; --ink-2: #b4b2aa; --muted: #6f6d66;
+    --line: #33322f; --dim: #2a2a27; --accent: #9b8ff0; --shadow: 0 1px 3px rgba(0,0,0,.4);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141413; --surface: #1d1d1b; --ink: #f1f0ec; --ink-2: #b4b2aa; --muted: #6f6d66;
+  --line: #33322f; --dim: #2a2a27; --accent: #9b8ff0; --shadow: 0 1px 3px rgba(0,0,0,.4);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden;
+}
+header {
+  display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+  padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--surface);
+}
+header h1 { font-size: 17px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+header .sub { color: var(--ink-2); font-size: 12.5px; flex: 1 1 260px; }
+.controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+input[type=search] {
+  font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--ink); width: 230px; max-width: 60vw;
+}
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button {
+  font: inherit; font-size: 12.5px; padding: 6px 10px; border: 0; background: var(--bg);
+  color: var(--ink-2); cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+main { position: relative; display: grid; grid-template-columns: 1fr 340px; min-height: 0; }
+#graph { position: relative; min-height: 0; }
+#regions { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.region {
+  position: absolute; transform: translate(-50%, -50%); white-space: nowrap;
+  font-weight: 750; font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink); opacity: .32; text-shadow: 0 0 6px var(--bg), 0 0 2px var(--bg);
+}
+aside {
+  border-left: 1px solid var(--line); background: var(--surface); overflow-y: auto;
+  padding: 14px 16px 24px;
+}
+aside h2 { font-size: 18px; margin: 0 0 4px; line-height: 1.25; }
+aside h3 {
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2);
+  margin: 16px 0 6px; font-weight: 650;
+}
+.meta { color: var(--ink-2); font-size: 12.5px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 2px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 8px;
+  border: 1px solid var(--line); border-radius: 999px; color: var(--ink);
+}
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 10px; }
+.stat { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.stat b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 11.5px; color: var(--ink-2); }
+ol, ul { margin: 0; padding: 0; list-style: none; }
+.list li {
+  display: grid; grid-template-columns: 44px 1fr auto; gap: 6px; padding: 3px 0;
+  border-bottom: 1px solid var(--line); font-size: 13px;
+}
+.list li .y { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.list li .n { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.list.people li { grid-template-columns: 1fr auto; }
+a.node { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--muted); cursor: pointer; }
+a.node:hover, a.node:focus { color: var(--accent); border-color: var(--accent); outline: none; }
+.more { font-size: 12px; color: var(--ink-2); margin-top: 4px; }
+.legend { margin-top: 6px; display: grid; gap: 4px; }
+.legend button {
+  font: inherit; font-size: 13px; display: flex; gap: 8px; align-items: center; text-align: left;
+  background: none; border: 0; color: var(--ink); padding: 2px 0; cursor: pointer;
+}
+.legend button .n { color: var(--ink-2); margin-left: auto; font-variant-numeric: tabular-nums; }
+.legend button[aria-pressed="false"] { opacity: .35; }
+.note { font-size: 12px; color: var(--ink-2); margin-top: 16px; }
+.ties { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); margin-top: 10px; }
+.ties span { display: inline-flex; align-items: center; gap: 6px; }
+.ties i { width: 18px; height: 3px; border-radius: 2px; display: inline-block; }
+.close {
+  float: right; font: inherit; font-size: 12px; border: 1px solid var(--line); background: var(--bg);
+  color: var(--ink-2); border-radius: 6px; padding: 2px 8px; cursor: pointer;
+}
+#tip {
+  position: absolute; pointer-events: none; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 8px; padding: 6px 9px;
+  font-size: 12.5px; display: none; max-width: 260px; z-index: 5;
+}
+#tip b { display: block; }
+#tip span { color: var(--ink-2); }
+.zoom { position: absolute; right: 12px; bottom: 12px; display: grid; gap: 4px; z-index: 4; }
+.zoom button {
+  width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink); font-size: 16px; cursor: pointer; box-shadow: var(--shadow);
+}
+#loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-2); }
+@media (max-width: 760px) {
+  body { overflow: auto; }
+  main { grid-template-columns: 1fr; grid-template-rows: 62vh auto; }
+  aside { border-left: 0; border-top: 1px solid var(--line); }
+  input[type=search] { width: 100%; max-width: none; }
+  .controls { width: 100%; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Zemljevid kulturnih nagrad</h1>
+  <div class="sub">Bližje so si ljudje, ki so pogosto skupaj sedeli v žirijah ali so drug drugega izbirali.
+    Premaknite miško na piko za povezave, kliknite za podrobnosti.</div>
+  <div class="controls">
+    <label for="q" class="sr" style="position:absolute;left:-9999px">Iskanje</label>
+    <input id="q" type="search" list="names" placeholder="Poišči osebo ali nagrado …" autocomplete="off">
+    <datalist id="names"></datalist>
+    <div class="seg" role="group" aria-label="Barva">
+      <button id="by-field" aria-pressed="true">področja</button>
+      <button id="by-role" aria-pressed="false">vloge</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="graph"><div id="loading">Nalagam zemljevid …</div><div id="regions"></div>
+    <div id="tip" role="status"></div>
+    <div class="zoom"><button id="zin" aria-label="Povečaj">+</button><button id="zout" aria-label="Pomanjšaj">−</button><button id="zreset" aria-label="Celoten zemljevid">⤢</button></div>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+
+<script>/*__GRAPHOLOGY__*/</script>
+<script>/*__SIGMA__*/</script>
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+(() => {
+"use strict";
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const SigmaCls = (window.Sigma && (Sigma.Sigma || Sigma.default)) || window.Sigma;
+const A = DATA.attributes;
+const FIELD_COLOR = A.fields, ROLE_COLOR = A.roles;
+const ROLE_LABEL = {winner: "samo nagrajenci", jury: "samo žiranti", both: "nagrajenci in žiranti"};
+const KIND_LABEL = {person: "oseba", group: "skupina", institution: "ustanova", work: "delo", award: "nagrada"};
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt = (n) => n.toLocaleString("sl-SI");
+
+// --- graph: one undirected display edge per pair; raw ties kept for the panel ------
+const graph = new graphology.UndirectedGraph();
+const byLabel = new Map();
+for (const n of DATA.nodes) {
+  graph.addNode(n.key, {...n.attributes});
+  byLabel.set(n.attributes.label.toLocaleLowerCase("sl"), n.key);
+}
+const co = new Map(), judgedOut = new Map(), judgedIn = new Map();
+const push = (m, k, v) => { if (!m.has(k)) m.set(k, []); m.get(k).push(v); };
+for (const e of DATA.edges) {
+  const {source: s, target: t} = e, a = e.attributes;
+  if (a.kind === "co_jury") { push(co, s, [t, a.sittings]); push(co, t, [s, a.sittings]); }
+  else { push(judgedOut, s, [t, a.editions]); push(judgedIn, t, [s, a.editions]); }
+  const key = s < t ? s + "|" + t : t + "|" + s;
+  if (graph.hasEdge(key)) {
+    const d = graph.getEdgeAttributes(key);
+    if (a.kind === "co_jury") d.co = a.sittings; else d.judged = (d.judged || 0) + a.editions;
+    d.w += a.weight;
+  } else {
+    graph.addUndirectedEdgeWithKey(key, s, t, a.kind === "co_jury"
+      ? {co: a.sittings, judged: 0, w: a.weight} : {co: 0, judged: a.editions, w: a.weight});
+  }
+}
+// award -> people, from the people's own lists
+const awardKey = new Map();
+graph.forEachNode((k, d) => { if (d.kind === "award") awardKey.set(d.label, k); });
+const awardPeople = new Map();
+graph.forEachNode((k, d) => {
+  if (d.kind === "award") return;
+  for (const [y, a] of d.win_list || []) push(awardPeople, a, [k, y, "winner"]);
+  for (const [y, a] of d.jury_list || []) push(awardPeople, a, [k, y, "jury"]);
+});
+
+// --- state ----------------------------------------------------------------------------
+let mode = "field", hovered = null, selected = null, hiddenGroups = new Set();
+// Zoomed out, only the top landmarks are always labelled; zoomed in, all of them.
+const TOP_PEOPLE = new Set(DATA.nodes.filter((n) => n.attributes.kind !== "award")
+  .sort((a, b) => (b.attributes.wins + b.attributes.sittings) - (a.attributes.wins + a.attributes.sittings))
+  .slice(0, 15).map((n) => n.key));
+const ZOOMED = 0.45;
+let zoomedIn = false;
+const SIZE = 0.5;  // graph sizes are for the static preview; sigma sizes are pixels
+let focusSet = null;
+const neighbours = (k) => new Set([k, ...graph.neighbors(k)]);
+function setFocus() {
+  const k = hovered || selected;
+  if (!k) { focusSet = null; return; }
+  if (graph.getNodeAttribute(k, "kind") === "award") {
+    const label = graph.getNodeAttribute(k, "label");
+    focusSet = new Set([k, ...(awardPeople.get(label) || []).map((r) => r[0])]);
+  } else focusSet = neighbours(k);
+}
+const groupOf = (d) => d.kind === "award" ? "award" : (mode === "field" ? d.field : d.role);
+function colorOf(d) {
+  if (mode === "role") return d.kind === "award" ? css("--ink") : ROLE_COLOR[d.role];
+  return d.color;
+}
+
+// --- renderer -------------------------------------------------------------------------
+const container = document.getElementById("graph");
+// Hover label: sigma's default draws a white box with text in the label colour, which
+// is white in dark mode. Draw the box and text in the theme's surface and ink instead.
+function drawHover(ctx, d, s) {
+  const size = s.labelSize, pad = 4, label = d.label || "";
+  ctx.font = `600 ${size}px ${s.labelFont}`;
+  const w = label ? ctx.measureText(label).width + pad * 2 : 0;
+  const h = Math.max(size + pad * 2, d.size * 2 + 4);
+  const x0 = d.x - d.size - 3, y0 = d.y - h / 2, bw = d.size * 2 + 6 + w;
+  ctx.save();
+  ctx.fillStyle = css("--surface"); ctx.strokeStyle = css("--line"); ctx.lineWidth = 1;
+  ctx.shadowColor = "rgba(0,0,0,.3)"; ctx.shadowBlur = 8;
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(x0, y0, bw, h, 6); else ctx.rect(x0, y0, bw, h);
+  ctx.fill(); ctx.shadowBlur = 0; ctx.stroke();
+  ctx.fillStyle = d.color; ctx.beginPath(); ctx.arc(d.x, d.y, d.size, 0, Math.PI * 2); ctx.fill();
+  if (label) { ctx.fillStyle = css("--ink"); ctx.fillText(label, d.x + d.size + 3 + pad, d.y + size / 3); }
+  ctx.restore();
+}
+document.getElementById("loading").remove();
+const renderer = new SigmaCls(graph, container, {
+  // Only the focused node's ties are ever drawn, so there is nothing to hide on move
+  // (hiding them also left them hidden after the fly-to animation).
+  renderEdgeLabels: false, hideEdgesOnMove: false, zIndex: true,
+  labelRenderedSizeThreshold: 5, labelDensity: 0.3, labelGridCellSize: 80,
+  labelFont: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif", labelSize: 12,
+  labelWeight: "500", labelColor: {color: css("--ink")},
+  minCameraRatio: 0.03, maxCameraRatio: 2.5, defaultEdgeColor: css("--muted"),
+  hoverRenderer: drawHover,
+  nodeReducer: (k, d) => {
+    const r = {x: d.x, y: d.y, size: d.size * SIZE, label: d.kind === "award" ? "◆ " + d.label : d.label,
+               color: colorOf(d), zIndex: d.kind === "award" ? 2 : 1};
+    if (d.landmark && (zoomedIn || (d.kind === "award" ? d.prestige >= 4 : TOP_PEOPLE.has(k))))
+      r.forceLabel = true;
+    if (hiddenGroups.has(groupOf(d))) { r.color = css("--dim"); r.label = ""; r.forceLabel = false; r.zIndex = 0; }
+    if (focusSet) {
+      if (focusSet.has(k)) { r.zIndex = 3; r.forceLabel = k === hovered || k === selected || d.kind === "award"; }
+      else { r.color = css("--dim"); r.label = ""; r.forceLabel = false; r.zIndex = 0; }
+      if (k === hovered || k === selected) r.highlighted = true;
+    }
+    return r;
+  },
+  edgeReducer: (e, d) => {
+    const k = hovered || selected;
+    if (!k || graph.getNodeAttribute(k, "kind") === "award" || !graph.hasExtremity(e, k))
+      return {hidden: true};
+    return {color: d.co ? ROLE_COLOR.jury : ROLE_COLOR.winner,
+            size: Math.min(4, 0.6 + Math.sqrt(d.w) * 1.4), zIndex: 1};
+  },
+});
+const camera = renderer.getCamera();
+
+camera.on("updated", () => {
+  const z = camera.ratio < ZOOMED;
+  if (z !== zoomedIn) { zoomedIn = z; renderer.refresh({skipIndexation: true}); }
+});
+
+// field names over the map
+const regionsEl = document.getElementById("regions");
+const regionEls = A.regions.map((r) => {
+  const el = document.createElement("div");
+  el.className = "region"; el.textContent = r.field; regionsEl.appendChild(el); return [r, el];
+});
+function placeRegions() {
+  const show = mode === "field" && camera.ratio > 0.35;
+  for (const [r, el] of regionEls) {
+    const p = renderer.graphToViewport({x: r.x, y: r.y});
+    el.style.left = p.x + "px"; el.style.top = p.y + "px";
+    el.style.display = show && !hiddenGroups.has(r.field) ? "" : "none";
+  }
+}
+renderer.on("afterRender", placeRegions);
+placeRegions();  // the first frame was drawn before this listener existed
+
+// --- interaction ------------------------------------------------------------------------
+const tip = document.getElementById("tip");
+function tipText(k) {
+  const d = graph.getNodeAttributes(k);
+  if (d.kind === "award") {
+    const n = (awardPeople.get(d.label) || []).length;
+    return `<b>${esc(d.label)}</b><span>nagrada · ${esc(d.field)} · ${fmt(n)} vlog v zbirki</span>`;
+  }
+  return `<b>${esc(d.label)}</b><span>${fmt(d.wins)} nagrad · ${fmt(d.sittings)} žirij · ${d.first}–${d.last}</span>`;
+}
+renderer.on("enterNode", ({node, event}) => {
+  hovered = node; setFocus(); renderer.refresh({skipIndexation: true});
+  tip.innerHTML = tipText(node); tip.style.display = "block"; placeTip(event);
+  container.style.cursor = "pointer";
+});
+renderer.on("leaveNode", () => {
+  hovered = null; setFocus(); renderer.refresh({skipIndexation: true});
+  tip.style.display = "none"; container.style.cursor = "";
+});
+renderer.getMouseCaptor().on("mousemovebody", (e) => { if (hovered) placeTip(e); });
+function placeTip(e) {
+  const r = container.getBoundingClientRect();
+  const x = (e.x ?? e.clientX - r.left), y = (e.y ?? e.clientY - r.top);
+  tip.style.left = Math.min(x + 14, r.width - 270) + "px"; tip.style.top = (y + 14) + "px";
+}
+renderer.on("clickNode", ({node}) => select(node));
+renderer.on("clickStage", () => select(null));
+
+function select(k, fly = false) {
+  selected = k; setFocus(); renderer.refresh({skipIndexation: true});
+  if (k && fly) {
+    const p = renderer.getNodeDisplayData(k);
+    camera.animate({x: p.x, y: p.y, ratio: Math.min(camera.ratio, 0.25)}, {duration: 600});
+  }
+  render();
+}
+
+// --- panel ------------------------------------------------------------------------------
+const panel = document.getElementById("panel");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const link = (k) => `<a class="node" tabindex="0" data-k="${esc(k)}">${esc(graph.getNodeAttribute(k, "label"))}</a>`;
+const awardLink = (name) => awardKey.has(name) ? link(awardKey.get(name)) : esc(name);
+function yearList(rows, limit = 40) {
+  const items = rows.slice(0, limit).map(([y, a]) => `<li><span class="y">${y}</span><span>${awardLink(a)}</span><span></span></li>`).join("");
+  const more = rows.length > limit ? `<div class="more">… in še ${fmt(rows.length - limit)}</div>` : "";
+  return `<ol class="list">${items}</ol>${more}`;
+}
+function peopleList(rows, unit, limit = 12) {
+  const s = [...rows].sort((a, b) => b[1] - a[1] || graph.getNodeAttribute(a[0], "label").localeCompare(graph.getNodeAttribute(b[0], "label"), "sl"));
+  const items = s.slice(0, limit).map(([k, n]) => `<li>${link(k)}<span class="n">${n} ${unit}</span></li>`).join("");
+  const more = s.length > limit ? `<div class="more">… in še ${fmt(s.length - limit)}</div>` : "";
+  return `<ul class="list people">${items}</ul>${more}`;
+}
+const chip = (color, text) => `<span class="chip"><span class="dot" style="background:${color}"></span>${esc(text)}</span>`;
+
+function render() {
+  if (!selected) { panel.innerHTML = intro(); bindLegend(); return; }
+  const d = graph.getNodeAttributes(selected);
+  let h = `<button class="close" id="close">zapri</button><h2>${esc(d.label)}</h2>`;
+  if (d.kind === "award") {
+    const rows = awardPeople.get(d.label) || [];
+    const winners = rows.filter((r) => r[2] === "winner").map((r) => [r[1], graph.getNodeAttribute(r[0], "label"), r[0]]);
+    const jury = new Map();
+    rows.filter((r) => r[2] === "jury").forEach((r) => jury.set(r[0], (jury.get(r[0]) || 0) + 1));
+    const years = rows.map((r) => r[1]);
+    h += `<div class="chips">${chip(FIELD_COLOR[d.field], d.field)}<span class="chip">ugled ${d.prestige} / 5</span></div>`;
+    h += `<div class="stats"><div class="stat"><b>${fmt(winners.length)}</b><span>nagrad</span></div><div class="stat"><b>${fmt(jury.size)}</b><span>žirantov</span></div><div class="stat"><b>${years.length ? Math.min(...years) + "–" + Math.max(...years) : "—"}</b><span>v zbirki</span></div></div>`;
+    h += `<h3>Najpogostejši žiranti</h3>${peopleList([...jury.entries()], "×")}`;
+    winners.sort((a, b) => b[0] - a[0]);
+    h += `<h3>Nagrajenci</h3><ol class="list">${winners.slice(0, 60).map(([y, , k]) => `<li><span class="y">${y}</span><span>${link(k)}</span><span></span></li>`).join("")}</ol>`;
+    if (winners.length > 60) h += `<div class="more">… in še ${fmt(winners.length - 60)}</div>`;
+  } else {
+    const role = d.role ? chip(ROLE_COLOR[d.role], ROLE_LABEL[d.role]) : "";
+    h += `<div class="meta">${KIND_LABEL[d.kind] || d.kind} · ${d.first}–${d.last}</div>`;
+    h += `<div class="chips">${chip(FIELD_COLOR[d.field], d.field)}${role}</div>`;
+    h += `<div class="stats"><div class="stat"><b>${fmt(d.wins)}</b><span>nagrad</span></div><div class="stat"><b>${fmt(d.sittings)}</b><span>žirij</span></div><div class="stat"><b>${fmt((co.get(selected) || []).length)}</b><span>sožirantov</span></div></div>`;
+    h += `<div class="ties"><span><i style="background:${ROLE_COLOR.jury}"></i>skupaj v žiriji</span><span><i style="background:${ROLE_COLOR.winner}"></i>žirant–nagrajenec</span></div>`;
+    if (d.win_list) h += `<h3>Nagrade</h3>${yearList([...d.win_list].reverse())}`;
+    if (d.jury_list) h += `<h3>V žirijah</h3>${yearList([...d.jury_list].reverse())}`;
+    if (co.has(selected)) h += `<h3>Najpogostejši sožiranti</h3>${peopleList(co.get(selected), "×")}`;
+    if (judgedIn.has(selected)) h += `<h3>Žiranti, ki so to osebo nagradili</h3>${peopleList(judgedIn.get(selected), "×")}`;
+    if (judgedOut.has(selected)) h += `<h3>Nagrajenci tega žiranta</h3>${peopleList(judgedOut.get(selected), "×")}`;
+  }
+  panel.innerHTML = h;
+  document.getElementById("close").onclick = () => select(null);
+}
+function intro() {
+  const counts = {};
+  graph.forEachNode((k, d) => { const g = groupOf(d); counts[g] = (counts[g] || 0) + 1; });
+  const entries = mode === "field"
+    ? Object.entries(FIELD_COLOR).map(([f, c]) => [f, c, f])
+    : Object.entries(ROLE_COLOR).map(([r, c]) => [r, c, ROLE_LABEL[r]]);
+  entries.push(["award", mode === "role" ? css("--ink") : css("--muted"), "nagrade (◆)"]);
+  const people = DATA.nodes.length - (counts.award || 0);
+  return `<h2>${fmt(people)} ljudi, ${fmt(counts.award || 0)} nagrad</h2>
+    <div class="meta">Nagrajenci in žiranti slovenskih kulturnih nagrad, 1949–2026.</div>
+    <h3>${mode === "field" ? "Področja" : "Vloge"} (klik skrije ali pokaže)</h3>
+    <div class="legend">${entries.map(([g, c, label]) => `<button data-g="${esc(g)}" aria-pressed="${!hiddenGroups.has(g)}"><span class="dot" style="background:${c}"></span>${esc(label)}<span class="n">${fmt(counts[g] || 0)}</span></button>`).join("")}</div>
+    <p class="note">${mode === "field"
+      ? "Barva pove področje, na katerem ima oseba največ nagrad in sedežev v žirijah. Poezija šteje k literaturi, ples h gledališču, arhitektura k likovni umetnosti; »splošno« so Prešernova, Župančičeva in podobne nagrade."
+      : "Barva pove, ali je oseba v zbirki samo nagrajenec, samo žirant ali oboje."}
+      Velikost pike raste s številom nagrad in žirij.</p>
+    <p class="note">Postavitev je slika, ne meritev: bližina povzema, kdo se pogosto znajde skupaj v žirijah ali v vlogi žirant–nagrajenec (node2vec in UMAP). Žirija, ki podeli več nagrad hkrati, šteje enkrat. Zbirka ni popolna, zlasti pred letom 2000.</p>
+    <p class="note">Vir: zbirka Kulturne nagrade.</p>`;
+}
+function bindLegend() {
+  panel.querySelectorAll(".legend button").forEach((b) => b.onclick = () => {
+    const g = b.dataset.g;
+    hiddenGroups.has(g) ? hiddenGroups.delete(g) : hiddenGroups.add(g);
+    renderer.refresh({skipIndexation: true}); render();
+  });
+}
+panel.addEventListener("click", (e) => { const a = e.target.closest("a.node"); if (a) select(a.dataset.k, true); });
+panel.addEventListener("keydown", (e) => { const a = e.target.closest("a.node"); if (a && e.key === "Enter") select(a.dataset.k, true); });
+
+// --- controls -----------------------------------------------------------------------------
+const q = document.getElementById("q");
+document.getElementById("names").innerHTML = DATA.nodes
+  .map((n) => n.attributes.label).sort((a, b) => a.localeCompare(b, "sl"))
+  .map((l) => `<option value="${esc(l)}">`).join("");
+q.addEventListener("change", () => {
+  const k = byLabel.get(q.value.trim().toLocaleLowerCase("sl"));
+  if (k) select(k, true);
+});
+q.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
+  const v = q.value.trim().toLocaleLowerCase("sl");
+  let k = byLabel.get(v);
+  if (!k) for (const [l, key] of byLabel) if (l.includes(v)) { k = key; break; }
+  if (k) { q.value = graph.getNodeAttribute(k, "label"); select(k, true); }
+});
+function setMode(m) {
+  mode = m; hiddenGroups.clear();
+  document.getElementById("by-field").setAttribute("aria-pressed", m === "field");
+  document.getElementById("by-role").setAttribute("aria-pressed", m === "role");
+  renderer.refresh({skipIndexation: true}); render();
+}
+document.getElementById("by-field").onclick = () => setMode("field");
+document.getElementById("by-role").onclick = () => setMode("role");
+document.getElementById("zin").onclick = () => camera.animatedZoom({duration: 300});
+document.getElementById("zout").onclick = () => camera.animatedUnzoom({duration: 300});
+document.getElementById("zreset").onclick = () => camera.animatedReset({duration: 400});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") select(null); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  renderer.setSetting("labelColor", {color: css("--ink")}); renderer.refresh();
+});
+render();
+})();
+</script>
+</body>
+</html>

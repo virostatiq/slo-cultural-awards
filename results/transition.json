@@ -1,0 +1,704 @@
+{
+  "window_years": 10,
+  "rates": [
+    {
+      "break": 1971,
+      "role": "winner",
+      "people": 207,
+      "continued": 61,
+      "rate_any": 0.2946859903381642,
+      "lo": 0.23677449296389297,
+      "hi": 0.36007925885737946,
+      "person_awards": 231,
+      "rate_same_award": 0.09956709956709957,
+      "lo_same": 0.06726542335053283,
+      "hi_same": 0.14496954694433828,
+      "spanning_awards": 7
+    },
+    {
+      "break": 1971,
+      "role": "jury",
+      "people": 55,
+      "continued": 30,
+      "rate_any": 0.5454545454545454,
+      "lo": 0.41522461348360484,
+      "hi": 0.669749282535538,
+      "person_awards": 110,
+      "rate_same_award": 0.44545454545454544,
+      "lo_same": 0.3559755711590631,
+      "hi_same": 0.53861480705066,
+      "spanning_awards": 7
+    },
+    {
+      "break": 1981,
+      "role": "winner",
+      "people": 286,
+      "continued": 72,
+      "rate_any": 0.2517482517482518,
+      "lo": 0.20496344801077965,
+      "hi": 0.30511378037879594,
+      "person_awards": 329,
+      "rate_same_award": 0.0851063829787234,
+      "lo_same": 0.05953689192011312,
+      "hi_same": 0.12025313432660602,
+      "spanning_awards": 15
+    },
+    {
+      "break": 1981,
+      "role": "jury",
+      "people": 58,
+      "continued": 26,
+      "rate_any": 0.4482758620689655,
+      "lo": 0.32749651292941145,
+      "hi": 0.5754814177838947,
+      "person_awards": 116,
+      "rate_same_award": 0.35344827586206895,
+      "lo_same": 0.27242847468283177,
+      "hi_same": 0.443863697651316,
+      "spanning_awards": 15
+    },
+    {
+      "break": 1991,
+      "role": "winner",
+      "people": 308,
+      "continued": 89,
+      "rate_any": 0.288961038961039,
+      "lo": 0.24118359096065492,
+      "hi": 0.3419380964601383,
+      "person_awards": 375,
+      "rate_same_award": 0.10933333333333334,
+      "lo_same": 0.08162214550434631,
+      "hi_same": 0.14496754263972234,
+      "spanning_awards": 21
+    },
+    {
+      "break": 1991,
+      "role": "jury",
+      "people": 86,
+      "continued": 37,
+      "rate_any": 0.43023255813953487,
+      "lo": 0.3307917119906583,
+      "hi": 0.5356398742678232,
+      "person_awards": 162,
+      "rate_same_award": 0.2777777777777778,
+      "lo_same": 0.21456128510028577,
+      "hi_same": 0.3512895026393406,
+      "spanning_awards": 21
+    },
+    {
+      "break": 2001,
+      "role": "winner",
+      "people": 336,
+      "continued": 140,
+      "rate_any": 0.4166666666666667,
+      "lo": 0.36518340133998334,
+      "hi": 0.47003394697758577,
+      "person_awards": 407,
+      "rate_same_award": 0.14496314496314497,
+      "lo_same": 0.1140774964817135,
+      "hi_same": 0.18248838194929246,
+      "spanning_awards": 32
+    },
+    {
+      "break": 2001,
+      "role": "jury",
+      "people": 132,
+      "continued": 82,
+      "rate_any": 0.6212121212121212,
+      "lo": 0.536137141742131,
+      "hi": 0.699431343905859,
+      "person_awards": 192,
+      "rate_same_award": 0.4322916666666667,
+      "lo_same": 0.3642238585962902,
+      "hi_same": 0.5030157881386221,
+      "spanning_awards": 32
+    },
+    {
+      "break": 2011,
+      "role": "winner",
+      "people": 686,
+      "continued": 275,
+      "rate_any": 0.4008746355685131,
+      "lo": 0.3648508332257119,
+      "hi": 0.43800245947220595,
+      "person_awards": 827,
+      "rate_same_award": 0.17049576783555018,
+      "lo_same": 0.1464020626039552,
+      "hi_same": 0.19763656040192226,
+      "spanning_awards": 60
+    },
+    {
+      "break": 2011,
+      "role": "jury",
+      "people": 502,
+      "continued": 281,
+      "rate_any": 0.5597609561752988,
+      "lo": 0.5160439392061938,
+      "hi": 0.602570267296395,
+      "person_awards": 711,
+      "rate_same_award": 0.36427566807313644,
+      "lo_same": 0.3297197866029712,
+      "hi_same": 0.4002903303236318,
+      "spanning_awards": 60
+    }
+  ],
+  "within_award": {
+    "n": 2926,
+    "awards": 32,
+    "vs_1991": {
+      "1971": {
+        "diff": 0.04059721013733693,
+        "ci": [
+          -0.026261651638850997,
+          0.10745607191352485
+        ],
+        "p": 0.23400510152682608
+      },
+      "1981": {
+        "diff": -0.0037102192103845837,
+        "ci": [
+          -0.05558942684460937,
+          0.0481689884238402
+        ],
+        "p": 0.8885258648681318
+      },
+      "2001": {
+        "diff": 0.04461957646088449,
+        "ci": [
+          -0.03824699479006931,
+          0.1274861477118383
+        ],
+        "p": 0.2912678915519822
+      },
+      "2011": {
+        "diff": 0.04565507804786573,
+        "ci": [
+          -0.025746808798255513,
+          0.11705696489398697
+        ],
+        "p": 0.21012546959834144
+      }
+    }
+  },
+  "spanning_awards": {
+    "1971": [
+      "Borštnikov prstan",
+      "Levstikova nagrada",
+      "Nagrada Riharda Jakopiča",
+      "Prešernov sklad",
+      "Prešernova nagrada",
+      "Sovretova nagrada",
+      "Župančičeva nagrada"
+    ],
+    "1981": [
+      "Badjurova nagrada",
+      "Bernekerjeva nagrada",
+      "Borštnikov prstan",
+      "Borštnikovo srečanje",
+      "Grumova nagrada",
+      "Grün-Filipičeva nagrada",
+      "Levstikova nagrada",
+      "Nagrada Duše Počkaj",
+      "Nagrada Riharda Jakopiča",
+      "Prešernov sklad",
+      "Prešernova nagrada",
+      "Severjeva nagrada",
+      "Sovretova nagrada",
+      "Zlata ptica",
+      "Župančičeva nagrada"
+    ],
+    "1991": [
+      "Badjurova nagrada",
+      "Bernekerjeva nagrada",
+      "Borštnikov prstan",
+      "Borštnikovo srečanje",
+      "Dnevnikova nagrada",
+      "Glazerjeva nagrada",
+      "Grumova nagrada",
+      "Grün-Filipičeva nagrada",
+      "Jenkova nagrada",
+      "Levstikova nagrada",
+      "Nagrada Duše Počkaj",
+      "Nagrada Riharda Jakopiča",
+      "Nagrada za najboljši literarni prvenec",
+      "Prešernov sklad",
+      "Prešernova nagrada",
+      "Severjeva nagrada",
+      "Sovretova nagrada",
+      "Trdinova nagrada",
+      "Vilenica",
+      "Zlata ptica",
+      "Župančičeva nagrada"
+    ],
+    "2001": [
+      "Badjurova nagrada",
+      "Bernekerjeva nagrada",
+      "Borštnikov prstan",
+      "Borštnikovo srečanje",
+      "Dnevnikova nagrada",
+      "Glazerjeva nagrada",
+      "Grumova nagrada",
+      "Grün-Filipičeva nagrada",
+      "Jenkova nagrada",
+      "Ježkova nagrada",
+      "Jurčičeva nagrada",
+      "Kresnik",
+      "Levstikova nagrada",
+      "Majski salon",
+      "Nagrada Duše Počkaj",
+      "Nagrada Hinka Smrekarja",
+      "Nagrada Riharda Jakopiča",
+      "Nagrada za najboljši literarni prvenec",
+      "Odličje Marije Vere",
+      "Plečnikova nagrada",
+      "Prešernov sklad",
+      "Prešernova nagrada",
+      "Severjeva nagrada",
+      "Sovretova nagrada",
+      "Trdinova nagrada",
+      "Valvasorjeva nagrada",
+      "Veronikina nagrada",
+      "Vesna",
+      "Večernica",
+      "Vilenica",
+      "Zlata ptica",
+      "Župančičeva nagrada"
+    ],
+    "2011": [
+      "Aškerčeva nagrada za življenjsko delo",
+      "Aškerčevo priznanje",
+      "Badjurova nagrada",
+      "Bernekerjeva nagrada",
+      "Borštnikov prstan",
+      "Borštnikovo srečanje",
+      "Bratstvo resnice",
+      "Desetnica",
+      "Dnevi komedije Celje",
+      "Dnevnikova nagrada",
+      "Fabula",
+      "Glazerjeva nagrada",
+      "Grumova nagrada",
+      "Grün-Filipičeva nagrada",
+      "Hrupni maček",
+      "Hudi maček",
+      "Jazzon",
+      "Jenkova nagrada",
+      "Ježkova nagrada",
+      "Jurčičeva nagrada",
+      "Kozinova nagrada",
+      "Kratka zgodba AirBeletrina",
+      "Kresnik",
+      "Lastovka",
+      "Levstikova nagrada",
+      "MMS",
+      "Majski salon",
+      "Mantuanijeva nagrada",
+      "Nagrada Duše Počkaj",
+      "Nagrada Hinka Smrekarja",
+      "Nagrada Igorja Zabela",
+      "Nagrada Kristine Brenkove",
+      "Nagrada Poldeta Bibiča",
+      "Nagrada Radojke Vrančič",
+      "Nagrada Riharda Jakopiča",
+      "Nagrada filmskih kritikov in publicistov",
+      "Nagrada skupine OHO",
+      "Nagrada za najboljši literarni prvenec",
+      "Najboljši esej",
+      "Odličje Marije Vere",
+      "Pesniški turnir",
+      "Plečnikova nagrada",
+      "Prešernov sklad",
+      "Prešernova nagrada",
+      "Rožančeva nagrada",
+      "Severjeva nagrada",
+      "Slakov hudi maček",
+      "Sovretova nagrada",
+      "Stritarjeva nagrada",
+      "Trdinova nagrada",
+      "Trubarjevo priznanje",
+      "Valvasorjeva nagrada",
+      "Veronikina nagrada",
+      "Vesna",
+      "Večernica",
+      "Vilenica",
+      "Zlata ptica",
+      "Zlatnik poezije",
+      "Šeligova nagrada",
+      "Župančičeva nagrada"
+    ]
+  },
+  "new_entrant_share": [
+    {
+      "year": 1965,
+      "active": 42,
+      "new": 30,
+      "share_new": 0.7142857142857143
+    },
+    {
+      "year": 1966,
+      "active": 41,
+      "new": 27,
+      "share_new": 0.6585365853658537
+    },
+    {
+      "year": 1967,
+      "active": 42,
+      "new": 18,
+      "share_new": 0.42857142857142855
+    },
+    {
+      "year": 1968,
+      "active": 39,
+      "new": 24,
+      "share_new": 0.6153846153846154
+    },
+    {
+      "year": 1969,
+      "active": 45,
+      "new": 23,
+      "share_new": 0.5111111111111111
+    },
+    {
+      "year": 1970,
+      "active": 47,
+      "new": 32,
+      "share_new": 0.6808510638297872
+    },
+    {
+      "year": 1971,
+      "active": 44,
+      "new": 19,
+      "share_new": 0.4318181818181818
+    },
+    {
+      "year": 1972,
+      "active": 48,
+      "new": 25,
+      "share_new": 0.5208333333333334
+    },
+    {
+      "year": 1973,
+      "active": 38,
+      "new": 15,
+      "share_new": 0.39473684210526316
+    },
+    {
+      "year": 1974,
+      "active": 38,
+      "new": 26,
+      "share_new": 0.6842105263157895
+    },
+    {
+      "year": 1975,
+      "active": 41,
+      "new": 12,
+      "share_new": 0.2926829268292683
+    },
+    {
+      "year": 1976,
+      "active": 51,
+      "new": 25,
+      "share_new": 0.49019607843137253
+    },
+    {
+      "year": 1977,
+      "active": 60,
+      "new": 25,
+      "share_new": 0.4166666666666667
+    },
+    {
+      "year": 1978,
+      "active": 48,
+      "new": 29,
+      "share_new": 0.6041666666666666
+    },
+    {
+      "year": 1979,
+      "active": 61,
+      "new": 30,
+      "share_new": 0.4918032786885246
+    },
+    {
+      "year": 1980,
+      "active": 63,
+      "new": 46,
+      "share_new": 0.7301587301587301
+    },
+    {
+      "year": 1981,
+      "active": 61,
+      "new": 30,
+      "share_new": 0.4918032786885246
+    },
+    {
+      "year": 1982,
+      "active": 54,
+      "new": 35,
+      "share_new": 0.6481481481481481
+    },
+    {
+      "year": 1983,
+      "active": 57,
+      "new": 20,
+      "share_new": 0.3508771929824561
+    },
+    {
+      "year": 1984,
+      "active": 56,
+      "new": 32,
+      "share_new": 0.5714285714285714
+    },
+    {
+      "year": 1985,
+      "active": 62,
+      "new": 29,
+      "share_new": 0.46774193548387094
+    },
+    {
+      "year": 1986,
+      "active": 64,
+      "new": 34,
+      "share_new": 0.53125
+    },
+    {
+      "year": 1987,
+      "active": 63,
+      "new": 17,
+      "share_new": 0.2698412698412698
+    },
+    {
+      "year": 1988,
+      "active": 63,
+      "new": 24,
+      "share_new": 0.38095238095238093
+    },
+    {
+      "year": 1989,
+      "active": 62,
+      "new": 23,
+      "share_new": 0.3709677419354839
+    },
+    {
+      "year": 1990,
+      "active": 54,
+      "new": 24,
+      "share_new": 0.4444444444444444
+    },
+    {
+      "year": 1991,
+      "active": 71,
+      "new": 23,
+      "share_new": 0.323943661971831
+    },
+    {
+      "year": 1992,
+      "active": 62,
+      "new": 28,
+      "share_new": 0.45161290322580644
+    },
+    {
+      "year": 1993,
+      "active": 60,
+      "new": 20,
+      "share_new": 0.3333333333333333
+    },
+    {
+      "year": 1994,
+      "active": 55,
+      "new": 17,
+      "share_new": 0.3090909090909091
+    },
+    {
+      "year": 1995,
+      "active": 63,
+      "new": 16,
+      "share_new": 0.25396825396825395
+    },
+    {
+      "year": 1996,
+      "active": 60,
+      "new": 24,
+      "share_new": 0.4
+    },
+    {
+      "year": 1997,
+      "active": 82,
+      "new": 33,
+      "share_new": 0.4024390243902439
+    },
+    {
+      "year": 1998,
+      "active": 89,
+      "new": 40,
+      "share_new": 0.449438202247191
+    },
+    {
+      "year": 1999,
+      "active": 87,
+      "new": 41,
+      "share_new": 0.47126436781609193
+    },
+    {
+      "year": 2000,
+      "active": 117,
+      "new": 51,
+      "share_new": 0.4358974358974359
+    },
+    {
+      "year": 2001,
+      "active": 118,
+      "new": 46,
+      "share_new": 0.3898305084745763
+    },
+    {
+      "year": 2002,
+      "active": 156,
+      "new": 68,
+      "share_new": 0.4358974358974359
+    },
+    {
+      "year": 2003,
+      "active": 167,
+      "new": 58,
+      "share_new": 0.3473053892215569
+    },
+    {
+      "year": 2004,
+      "active": 198,
+      "new": 78,
+      "share_new": 0.3939393939393939
+    },
+    {
+      "year": 2005,
+      "active": 205,
+      "new": 73,
+      "share_new": 0.35609756097560974
+    },
+    {
+      "year": 2006,
+      "active": 232,
+      "new": 97,
+      "share_new": 0.41810344827586204
+    },
+    {
+      "year": 2007,
+      "active": 250,
+      "new": 86,
+      "share_new": 0.344
+    },
+    {
+      "year": 2008,
+      "active": 250,
+      "new": 94,
+      "share_new": 0.376
+    },
+    {
+      "year": 2009,
+      "active": 260,
+      "new": 87,
+      "share_new": 0.3346153846153846
+    },
+    {
+      "year": 2010,
+      "active": 304,
+      "new": 119,
+      "share_new": 0.39144736842105265
+    },
+    {
+      "year": 2011,
+      "active": 293,
+      "new": 86,
+      "share_new": 0.2935153583617747
+    },
+    {
+      "year": 2012,
+      "active": 303,
+      "new": 113,
+      "share_new": 0.37293729372937295
+    },
+    {
+      "year": 2013,
+      "active": 320,
+      "new": 120,
+      "share_new": 0.375
+    },
+    {
+      "year": 2014,
+      "active": 309,
+      "new": 121,
+      "share_new": 0.39158576051779936
+    },
+    {
+      "year": 2015,
+      "active": 337,
+      "new": 110,
+      "share_new": 0.3264094955489614
+    },
+    {
+      "year": 2016,
+      "active": 346,
+      "new": 128,
+      "share_new": 0.3699421965317919
+    },
+    {
+      "year": 2017,
+      "active": 364,
+      "new": 111,
+      "share_new": 0.30494505494505497
+    },
+    {
+      "year": 2018,
+      "active": 357,
+      "new": 111,
+      "share_new": 0.31092436974789917
+    },
+    {
+      "year": 2019,
+      "active": 369,
+      "new": 116,
+      "share_new": 0.3143631436314363
+    },
+    {
+      "year": 2020,
+      "active": 307,
+      "new": 101,
+      "share_new": 0.3289902280130293
+    },
+    {
+      "year": 2021,
+      "active": 402,
+      "new": 121,
+      "share_new": 0.3009950248756219
+    },
+    {
+      "year": 2022,
+      "active": 426,
+      "new": 164,
+      "share_new": 0.38497652582159625
+    },
+    {
+      "year": 2023,
+      "active": 471,
+      "new": 188,
+      "share_new": 0.3991507430997877
+    },
+    {
+      "year": 2024,
+      "active": 467,
+      "new": 167,
+      "share_new": 0.3576017130620985
+    },
+    {
+      "year": 2025,
+      "active": 454,
+      "new": 144,
+      "share_new": 0.31718061674008813
+    },
+    {
+      "year": 2026,
+      "active": 200,
+      "new": 56,
+      "share_new": 0.28
+    }
+  ]
+}

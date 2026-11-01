@@ -1,0 +1,338 @@
+---
+import { url } from "../lib/url";
+import Base from "../layouts/Base.astro";
+import { meta, fmt } from "../lib/data";
+---
+<Base title="Zemljevid" wide description={`Interaktivni zemljevid ${fmt(meta.counts.people)} nagrajencev in žirantov slovenskih kulturnih nagrad: kdo sedi v žirijah skupaj in kdo je koga izbral.`}>
+  <div class="map-tools" slot="header-tools">
+    <label class="sr" for="mq">Iskanje na zemljevidu</label>
+    <input id="mq" type="search" list="mnames" placeholder="Poišči na zemljevidu …" autocomplete="off" />
+    <datalist id="mnames"></datalist>
+    <div class="seg" role="group" aria-label="Barva">
+      <button id="by-field" aria-pressed="true">področja</button>
+      <button id="by-role" aria-pressed="false">vloge</button>
+    </div>
+  </div>
+  <div class="map-shell">
+    <div class="map-main">
+      <div id="graph"><div id="loading">Nalagam zemljevid …</div><div id="regions"></div><div id="tip"></div>
+        <details class="map-legend" id="legend" open>
+          <summary>Legenda</summary>
+          <p class="hint">Bližje so si ljudje, ki so pogosto skupaj sedeli v žirijah ali so drug drugega izbirali.
+            Premaknite miško na piko za povezave, kliknite za podrobnosti.</p>
+          <div class="legend" id="legend-groups"></div>
+          <p class="hint">Klik na skupino jo skrije ali pokaže.</p>
+        </details>
+        <div class="zoom"><button id="zin" aria-label="Povečaj">+</button><button id="zout" aria-label="Pomanjšaj">−</button><button id="zreset" aria-label="Celoten zemljevid">⤢</button></div>
+      </div>
+      <aside id="panel" aria-live="polite"></aside>
+    </div>
+  </div>
+  <script>
+    import { url } from "../lib/url";
+    import * as GraphNS from "graphology";
+    import * as SigmaNS from "sigma";
+    // Both packages are CommonJS; depending on the bundler, the class is the default
+    // export or nested one level deeper.
+    const unwrap = (ns: any, name: string) => ns[name] ?? ns.default?.[name] ?? ns.default?.default ?? ns.default;
+    const Graph = unwrap(GraphNS, "Graph");
+    const Sigma = unwrap(SigmaNS, "Sigma");
+
+    type Attrs = Record<string, any>;
+    const css = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+    const nf = new Intl.NumberFormat("sl-SI"), fmt = (n: number) => nf.format(n);
+    const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
+    const ROLE_LABEL: Record<string, string> = { winner: "samo nagrajenci", jury: "samo žiranti", both: "nagrajenci in žiranti" };
+
+    const header = document.querySelector(".site-header") as HTMLElement;
+    const fit = () => document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
+    fit(); addEventListener("resize", fit);
+    if (innerWidth < 760) (document.getElementById("legend") as HTMLDetailsElement).open = false;
+    const DATA = await fetch(url("/data/graph.json")).then((r) => r.json());
+    const A = DATA.attributes, FIELD_COLOR = A.fields, ROLE_COLOR = A.roles;
+    const graph = new Graph({ type: "undirected" });
+    const byLabel = new Map<string, string>();
+    for (const n of DATA.nodes) { graph.addNode(n.key, { ...n.attributes }); byLabel.set(n.attributes.label.toLocaleLowerCase("sl"), n.key); }
+    const co = new Map<string, [string, number][]>();
+    const judgedOut = new Map<string, [string, number][]>(), judgedIn = new Map<string, [string, number][]>();
+    const push = (m: Map<string, any[]>, k: string, v: any) => { if (!m.has(k)) m.set(k, []); m.get(k)!.push(v); };
+    for (const e of DATA.edges) {
+      const { source: s, target: t } = e, a = e.attributes;
+      if (a.kind === "co_jury") { push(co, s, [t, a.sittings]); push(co, t, [s, a.sittings]); }
+      else { push(judgedOut, s, [t, a.editions]); push(judgedIn, t, [s, a.editions]); }
+      const key = s < t ? `${s}|${t}` : `${t}|${s}`;
+      if (graph.hasEdge(key)) {
+        const d = graph.getEdgeAttributes(key);
+        if (a.kind === "co_jury") d.co = a.sittings; else d.judged = (d.judged || 0) + a.editions;
+        d.w += a.weight;
+      } else graph.addEdgeWithKey(key, s, t, a.kind === "co_jury" ? { co: a.sittings, judged: 0, w: a.weight } : { co: 0, judged: a.editions, w: a.weight });
+    }
+    // award -> people, from the people's own [year, award] lists
+    const awardKey = new Map<string, string>();
+    graph.forEachNode((k, d) => { if (d.kind === "award") awardKey.set(d.label, k); });
+    const awardPeople = new Map<string, string[]>();
+    const awardRoles = new Map<string, [string, number, "winner" | "jury"][]>();
+    graph.forEachNode((k, d) => {
+      if (d.kind === "award") return;
+      for (const [y, a] of d.win_list || []) { push(awardPeople, a, k); push(awardRoles, a, [k, y, "winner"]); }
+      for (const [y, a] of d.jury_list || []) { push(awardPeople, a, k); push(awardRoles, a, [k, y, "jury"]); }
+    });
+
+    let mode = "field", hovered: string | null = null, selected: string | null = null;
+    const hidden = new Set<string>();
+    let focus: Set<string> | null = null;
+    const TOP = new Set(DATA.nodes.filter((n: any) => n.attributes.kind !== "award")
+      .sort((a: any, b: any) => (b.attributes.wins + b.attributes.sittings) - (a.attributes.wins + a.attributes.sittings))
+      .slice(0, 15).map((n: any) => n.key));
+    let zoomedIn = false;
+    const SIZE = 0.5;
+    function setFocus() {
+      const k = hovered || selected;
+      if (!k) { focus = null; return; }
+      const d = graph.getNodeAttributes(k);
+      focus = d.kind === "award" ? new Set([k, ...(awardPeople.get(d.label) || [])]) : new Set([k, ...graph.neighbors(k)]);
+    }
+    const groupOf = (d: Attrs) => d.kind === "award" ? "award" : (mode === "field" ? d.field : d.role);
+    const colorOf = (d: Attrs) => mode === "role" ? (d.kind === "award" ? css("--ink") : ROLE_COLOR[d.role]) : d.color;
+
+    function drawHover(ctx: CanvasRenderingContext2D, d: Attrs, s: Attrs) {
+      const size = s.labelSize, pad = 4, label = d.label || "";
+      ctx.font = `600 ${size}px ${s.labelFont}`;
+      const w = label ? ctx.measureText(label).width + pad * 2 : 0;
+      const h = Math.max(size + pad * 2, d.size * 2 + 4), x0 = d.x - d.size - 3, y0 = d.y - h / 2, bw = d.size * 2 + 6 + w;
+      ctx.save();
+      ctx.fillStyle = css("--surface"); ctx.strokeStyle = css("--line"); ctx.lineWidth = 1;
+      ctx.shadowColor = "rgba(0,0,0,.3)"; ctx.shadowBlur = 8;
+      ctx.beginPath(); (ctx as any).roundRect ? (ctx as any).roundRect(x0, y0, bw, h, 6) : ctx.rect(x0, y0, bw, h);
+      ctx.fill(); ctx.shadowBlur = 0; ctx.stroke();
+      ctx.fillStyle = d.color; ctx.beginPath(); ctx.arc(d.x, d.y, d.size, 0, Math.PI * 2); ctx.fill();
+      if (label) { ctx.fillStyle = css("--ink"); ctx.fillText(label, d.x + d.size + 3 + pad, d.y + size / 3); }
+      ctx.restore();
+    }
+
+    const container = document.getElementById("graph")!;
+    document.getElementById("loading")!.remove();
+    const renderer = new Sigma(graph, container, {
+      renderEdgeLabels: false, hideEdgesOnMove: false, zIndex: true,
+      labelRenderedSizeThreshold: 5, labelDensity: 0.3, labelGridCellSize: 80,
+      labelFont: css("--sans"), labelSize: 12, labelWeight: "500",
+      labelColor: { color: css("--ink") }, minCameraRatio: 0.03, maxCameraRatio: 2.5,
+      hoverRenderer: drawHover as any,
+      nodeReducer: (k, d) => {
+        const r: Attrs = { x: d.x, y: d.y, size: d.size * SIZE, label: d.kind === "award" ? "◆ " + d.label : d.label,
+          color: colorOf(d), zIndex: d.kind === "award" ? 2 : 1 };
+        if (d.landmark && (zoomedIn || (d.kind === "award" ? d.prestige >= 4 : TOP.has(k)))) r.forceLabel = true;
+        if (hidden.has(groupOf(d))) Object.assign(r, { color: css("--dim"), label: "", forceLabel: false, zIndex: 0 });
+        if (focus) {
+          if (focus.has(k)) { r.zIndex = 3; r.forceLabel = k === hovered || k === selected || d.kind === "award"; }
+          else Object.assign(r, { color: css("--dim"), label: "", forceLabel: false, zIndex: 0 });
+          if (k === hovered || k === selected) r.highlighted = true;
+        }
+        return r as any;
+      },
+      edgeReducer: (e, d) => {
+        const k = hovered || selected;
+        if (!k || graph.getNodeAttribute(k, "kind") === "award" || !graph.hasExtremity(e, k)) return { hidden: true } as any;
+        return { color: d.co ? ROLE_COLOR.jury : ROLE_COLOR.winner, size: Math.min(4, 0.6 + Math.sqrt(d.w) * 1.4), zIndex: 1 } as any;
+      },
+    });
+    const camera = renderer.getCamera();
+    camera.on("updated", () => { const z = camera.ratio < 0.45; if (z !== zoomedIn) { zoomedIn = z; renderer.refresh(); } });
+
+    const regionsEl = document.getElementById("regions")!;
+    const regionEls = A.regions.map((r: Attrs) => { const el = document.createElement("div"); el.className = "region"; el.textContent = r.field; regionsEl.appendChild(el); return [r, el]; });
+    function placeRegions() {
+      const show = mode === "field" && camera.ratio > 0.35;
+      for (const [r, el] of regionEls) {
+        const p = renderer.graphToViewport({ x: r.x, y: r.y });
+        el.style.left = p.x + "px"; el.style.top = p.y + "px";
+        el.style.display = show && !hidden.has(r.field) ? "" : "none";
+      }
+    }
+    renderer.on("afterRender", placeRegions);
+    placeRegions();
+
+    const tip = document.getElementById("tip")!;
+    renderer.on("enterNode", ({ node }) => {
+      hovered = node; setFocus(); renderer.refresh();
+      const d = graph.getNodeAttributes(node);
+      tip.innerHTML = d.kind === "award"
+        ? `<b>${esc(d.label)}</b><span>nagrada · ${esc(d.field)}</span>`
+        : `<b>${esc(d.label)}</b><span>${fmt(d.wins)} nagrad · ${fmt(d.sittings)} žirij · ${d.first}–${d.last}</span>`;
+      tip.style.display = "block"; container.style.cursor = "pointer";
+    });
+    renderer.on("leaveNode", () => { hovered = null; setFocus(); renderer.refresh(); tip.style.display = "none"; container.style.cursor = ""; });
+    renderer.getMouseCaptor().on("mousemovebody", (e: any) => {
+      if (!hovered) return;
+      const w = container.clientWidth;
+      tip.style.left = Math.min(e.x + 14, w - 270) + "px"; tip.style.top = (e.y + 14) + "px";
+    });
+    renderer.on("clickNode", ({ node }) => select(node));
+    renderer.on("clickStage", () => select(null));
+
+    function select(k: string | null, fly = false) {
+      selected = k; setFocus(); renderer.refresh();
+      if (k && fly) { const p = renderer.getNodeDisplayData(k)!; camera.animate({ x: p.x, y: p.y, ratio: Math.min(camera.ratio, 0.25) }, { duration: 600 }); }
+      render();
+    }
+    const panel = document.getElementById("panel")!;
+    const pageUrl = (k: string) => k.startsWith("award:") ? url(`/nagrada/${k.slice(6)}/`) : url(`/oseba/${k}/`);
+    const link = (k: string) => `<a class="node" href="${pageUrl(k)}" data-k="${esc(k)}">${esc(graph.getNodeAttribute(k, "label"))}</a>`;
+    const awardLink = (n: string) => awardKey.has(n) ? link(awardKey.get(n)!) : esc(n);
+    // the first `limit` items show; the rest sit behind a "pokaži vse" toggle
+    function collapsible(items: string[], limit: number, cls: string, tag = "ul") {
+      const head = `<${tag} class="${cls}">${items.slice(0, limit).join("")}</${tag}>`;
+      if (items.length <= limit) return head;
+      return head + `<details class="more-list"><summary class="btn"><span class="show">pokaži vse (${fmt(items.length)})</span><span class="hide">skrij</span></summary>` +
+        `<${tag} class="${cls}">${items.slice(limit).join("")}</${tag}></details>`;
+    }
+    function yearList(rows: [number, string][], limit = 30) {
+      return collapsible(rows.map(([y, a]) => `<li><span class="y">${y}</span><span>${awardLink(a)}</span></li>`), limit, "list yl", "ol");
+    }
+    function peopleList(rows: [string, number][], limit = 12) {
+      const s = [...rows].sort((a, b) => b[1] - a[1] || graph.getNodeAttribute(a[0], "label").localeCompare(graph.getNodeAttribute(b[0], "label"), "sl"));
+      return collapsible(s.map(([k, n]) => `<li>${link(k)}<span class="n">${n}×</span></li>`), limit, "list");
+    }
+    const chip = (color: string, text: string) => `<span class="chip"><span class="dot" style="background:${color}"></span>${esc(text)}</span>`;
+    const stat = (v: string, l: string) => `<div class="pstat"><b>${v}</b><span>${l}</span></div>`;
+    function render() {
+      renderLegend();
+      if (!selected) { panel.innerHTML = intro(); return; }
+      const d = graph.getNodeAttributes(selected);
+      let h = `<button class="close" id="close">zapri</button><h2>${esc(d.label)}</h2>`;
+      h += `<div class="chips">${chip(FIELD_COLOR[d.field], d.field)}${d.role ? chip(ROLE_COLOR[d.role], ROLE_LABEL[d.role]) : ""}</div>`;
+      if (d.kind === "award") {
+        const rows = awardRoles.get(d.label) || [];
+        const winners = rows.filter((r) => r[2] === "winner").sort((a, b) => b[1] - a[1]);
+        const jury = new Map<string, number>();
+        rows.filter((r) => r[2] === "jury").forEach(([k]) => jury.set(k, (jury.get(k) || 0) + 1));
+        const ys = rows.map((r) => r[1]);
+        h += `<div class="pstats">${stat(fmt(winners.length), "nagrad")}${stat(fmt(jury.size), "žirantov")}${stat(ys.length ? `${Math.min(...ys)}–${Math.max(...ys)}` : "—", "v zbirki")}</div>`;
+        h += `<p class="muted small">ugled ${d.prestige} / 5</p>`;
+        h += `<p><a class="btn" href="${pageUrl(selected)}">Odpri stran nagrade →</a></p>`;
+        if (jury.size) h += `<h3>Najpogostejši žiranti</h3>${peopleList([...jury.entries()])}`;
+        if (winners.length) h += `<h3>Nagrajenci</h3>${collapsible(winners.map(([k, y]) => `<li><span class="y">${y}</span><span>${link(k)}</span></li>`), 50, "list yl", "ol")}`;
+      } else {
+        h += `<p class="muted small">${d.first}–${d.last}</p>`;
+        h += `<div class="pstats">${stat(fmt(d.wins), "nagrad")}${stat(fmt(d.sittings), "žirij")}${stat(fmt((co.get(selected) || []).length), "sožirantov")}</div>`;
+        h += `<div class="ties"><span><i style="background:${ROLE_COLOR.jury}"></i>skupaj v žiriji</span><span><i style="background:${ROLE_COLOR.winner}"></i>žirant–nagrajenec</span></div>`;
+        h += `<p><a class="btn" href="${pageUrl(selected)}">Odpri stran →</a></p>`;
+        if (d.win_list) h += `<h3>Nagrade</h3>${yearList([...d.win_list].reverse())}`;
+        if (d.jury_list) h += `<h3>V žirijah</h3>${yearList([...d.jury_list].reverse())}`;
+        if (co.has(selected)) h += `<h3>Najpogostejši sožiranti</h3>${peopleList(co.get(selected)!)}`;
+        if (judgedIn.has(selected)) h += `<h3>Žiranti, ki so to osebo nagradili</h3>${peopleList(judgedIn.get(selected)!)}`;
+        if (judgedOut.has(selected)) h += `<h3>Nagrajenci tega žiranta</h3>${peopleList(judgedOut.get(selected)!)}`;
+      }
+      panel.innerHTML = h;
+      panel.scrollTop = 0;
+      document.getElementById("close")!.onclick = () => select(null);
+    }
+    const legendEl = document.getElementById("legend-groups")!;
+    function renderLegend() {
+      const counts: Record<string, number> = {};
+      graph.forEachNode((_, d) => { const g = groupOf(d); counts[g] = (counts[g] || 0) + 1; });
+      const entries: [string, string, string][] = mode === "field"
+        ? Object.entries(FIELD_COLOR).map(([f, c]) => [f, c as string, f])
+        : Object.entries(ROLE_COLOR).map(([r, c]) => [r, c as string, ROLE_LABEL[r]]);
+      entries.push(["award", mode === "role" ? css("--ink") : css("--muted"), "nagrade (◆)"]);
+      legendEl.innerHTML = entries.map(([g, c, l]) => `<button data-g="${esc(g)}" aria-pressed="${!hidden.has(g)}"><span class="dot" style="background:${c}"></span>${esc(l)}<span class="n">${fmt(counts[g] || 0)}</span></button>`).join("");
+      legendEl.querySelectorAll<HTMLButtonElement>("button").forEach((b) => b.onclick = () => {
+        const g = b.dataset.g!; hidden.has(g) ? hidden.delete(g) : hidden.add(g); renderer.refresh(); renderLegend();
+      });
+    }
+    function intro() {
+      return `<h2>${mode === "field" ? "Področja" : "Vloge"}</h2>
+        <p class="small muted">${mode === "field" ? "Barva pove področje, na katerem je oseba prejela največ nagrad. Pri osebah brez takih nagrad šteje področje žirij. Poezija šteje k literaturi, ples h gledališču, arhitektura k likovni umetnosti." : "Barva pove, ali je oseba samo nagrajenec, samo žirant ali oboje."} Velikost pike raste s številom nagrad in žirij.</p>
+        <p class="small muted">Postavitev je slika, ne meritev: bližina povzema, kdo se pogosto znajde skupaj v žirijah ali v vlogi žirant–nagrajenec (node2vec in UMAP). <a href="${url("/o-podatkih/#zemljevid")}">Več o zemljevidu</a></p>`;
+    }
+    panel.addEventListener("click", (e) => {
+      const a = (e.target as HTMLElement).closest("a.node") as HTMLAnchorElement | null;
+      if (a && !(e as MouseEvent).metaKey && !(e as MouseEvent).ctrlKey) { e.preventDefault(); select(a.dataset.k!, true); }
+    });
+    const q = document.getElementById("mq") as HTMLInputElement;
+    document.getElementById("mnames")!.innerHTML = DATA.nodes.map((n: any) => n.attributes.label).sort((a: string, b: string) => a.localeCompare(b, "sl")).map((l: string) => `<option value="${esc(l)}">`).join("");
+    const find = () => {
+      const v = q.value.trim().toLocaleLowerCase("sl");
+      let k = byLabel.get(v);
+      if (!k) for (const [l, key] of byLabel) if (l.includes(v)) { k = key; break; }
+      if (k) { q.value = graph.getNodeAttribute(k, "label"); select(k, true); }
+    };
+    q.addEventListener("change", find);
+    q.addEventListener("keydown", (e) => { if (e.key === "Enter") find(); });
+    function setMode(m: string) {
+      mode = m; hidden.clear();
+      document.getElementById("by-field")!.setAttribute("aria-pressed", String(m === "field"));
+      document.getElementById("by-role")!.setAttribute("aria-pressed", String(m === "role"));
+      renderer.refresh(); render();
+    }
+    document.getElementById("by-field")!.onclick = () => setMode("field");
+    document.getElementById("by-role")!.onclick = () => setMode("role");
+    document.getElementById("zin")!.onclick = () => camera.animatedZoom({ duration: 300 });
+    document.getElementById("zout")!.onclick = () => camera.animatedUnzoom({ duration: 300 });
+    document.getElementById("zreset")!.onclick = () => camera.animatedReset({ duration: 400 });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") select(null); });
+    const start = new URLSearchParams(location.search).get("oseba");
+    if (start && graph.hasNode(start)) select(start, true); else render();
+  </script>
+</Base>
+<style is:global>
+  .site-header { border-bottom: 1px solid var(--line); }
+  .site-header .wrap { max-width: none; padding-top: 12px; padding-bottom: 12px; align-items: center; }
+  .map-tools { margin-left: auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .map-tools input { width: 240px; max-width: 100%; font-size: 14px; padding: 6px 14px; }
+  .map-shell { display: grid; height: calc(100vh - var(--header-h, 60px)); height: calc(100dvh - var(--header-h, 60px)); }
+  .map-legend { position: absolute; left: 12px; bottom: 12px; z-index: 4; width: 270px; max-width: calc(100% - 64px);
+                background: color-mix(in srgb, var(--surface) 92%, transparent); border: 1px solid var(--line);
+                border-radius: 10px; padding: 8px 12px 6px; font-size: 13px; box-shadow: var(--shadow); }
+  .map-legend summary { cursor: pointer; color: var(--ink-2); font-size: 12.5px; }
+  .map-legend[open] summary { margin-bottom: 4px; }
+  .map-legend .hint { color: var(--ink-2); font-size: 12.5px; line-height: 1.45; margin: 0 0 6px; }
+  .map-legend .legend { margin: 4px 0 6px; gap: 1px; }
+  .map-legend .legend button { font-size: 13px; padding: 1px 0; }
+  .seg { display: inline-flex; border: 1px solid var(--line-2); border-radius: 999px; overflow: hidden; }
+  .seg button { font: inherit; font-size: 13px; padding: 6px 10px; border: 0; background: var(--bg); color: var(--ink-2); cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .map-main { display: grid; grid-template-columns: 1fr 320px; min-height: 0; }
+  #graph { position: relative; min-height: 0; }
+  #regions { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .region { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; font: 400 20px var(--serif);
+            color: var(--ink); opacity: .45; text-shadow: 0 0 6px var(--bg); }
+  #panel { border-left: 1px solid var(--line); background: var(--surface); overflow-y: auto; padding: 14px 16px 24px; font-size: 14px; }
+  #panel h2 { margin: 0 0 6px; font-size: 24px; }
+  #panel .close { float: right; font: inherit; font-size: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--ink-2); border-radius: 6px; padding: 2px 8px; cursor: pointer; }
+  .legend { display: grid; gap: 4px; margin: 6px 0 12px; }
+  .legend button { font: inherit; font-size: 14px; display: flex; gap: 8px; align-items: center; background: none; border: 0; color: var(--ink); padding: 2px 0; cursor: pointer; text-align: left; }
+  .legend button .n { margin-left: auto; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .legend button[aria-pressed="false"] { opacity: .35; }
+  #panel h3 { font-size: 13px; color: var(--ink-2); margin: 16px 0 6px; font-weight: 600; }
+  #panel .list li { padding: 4px 0; font-size: 13.5px; }
+  #panel .yl li { justify-content: flex-start; }
+  #panel .yl .y { width: 40px; flex: none; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  #panel .more-list summary { list-style: none; margin-top: 8px; font-size: 12.5px; padding: 3px 10px; }
+  #panel .more-list summary::-webkit-details-marker { display: none; }
+  #panel .more-list .hide, #panel .more-list[open] .show { display: none; }
+  #panel .more-list[open] .hide { display: inline; }
+  #panel .more-list[open] { display: flex; flex-direction: column-reverse; }
+  #panel a.node { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  #panel a.node:hover { color: var(--accent); border-color: var(--accent); }
+  .pstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 10px 0; }
+  .pstat { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+  .pstat b { display: block; font: 300 22px var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+  .pstat span { font-size: 11.5px; color: var(--ink-2); }
+  .ties { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); margin: 10px 0; }
+  .ties span { display: inline-flex; align-items: center; gap: 6px; }
+  .ties i { width: 18px; height: 3px; border-radius: 2px; display: inline-block; }
+  #tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+         box-shadow: var(--shadow); border-radius: 8px; padding: 6px 9px; font-size: 13px; display: none; max-width: 260px; z-index: 5; }
+  #tip b { display: block; } #tip span { color: var(--ink-2); }
+  .zoom { position: absolute; right: 12px; bottom: 12px; display: grid; gap: 4px; z-index: 4; }
+  .zoom button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 16px; cursor: pointer; }
+  #loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-2); }
+  @media (max-width: 760px) {
+    .map-shell { height: auto; }
+    .map-tools { margin-left: 0; width: 100%; }
+    .map-tools input { flex: 1; }
+    .map-main { grid-template-columns: 1fr; grid-template-rows: 65vh auto; }
+    #panel { border-left: 0; border-top: 1px solid var(--line); }
+  }
+</style>

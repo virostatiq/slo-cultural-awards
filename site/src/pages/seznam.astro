@@ -1,0 +1,154 @@
+---
+import Base from "../layouts/Base.astro";
+import { meta, awards, fmt } from "../lib/data";
+const awardList = Object.values(awards).sort((a, b) => a.name.localeCompare(b.name, "sl"));
+const decades: number[] = [];
+for (let d = Math.floor(meta.counts.years[0] / 10) * 10; d <= meta.counts.years[1]; d += 10) decades.push(d);
+---
+<Base title="Seznam" description={`Poiščite med ${fmt(meta.counts.people)} nagrajenci in žiranti ter ${fmt(meta.counts.awards)} slovenskimi kulturnimi nagradami.`}>
+  <h1>Seznam</h1>
+  <p class="lede">Vsi nagrajenci, žiranti in nagrade v zbirki. Iskanje deluje tudi brez šumnikov.</p>
+  <form class="filters" id="filters" role="search" onsubmit="return false">
+    <label class="sr" for="q">Ime</label>
+    <input id="q" type="search" placeholder="Ime osebe ali nagrade …" autocomplete="off" autofocus />
+    <div class="selects">
+    <label class="sr" for="t">Vrsta</label>
+    <select id="t"><option value="">osebe in nagrade</option><option value="p">osebe</option><option value="a">nagrade</option></select>
+    <label class="sr" for="f">Področje</label>
+    <select id="f"><option value="">vsa področja</option>{Object.keys(meta.fields).map((f) => <option value={f}>{f}</option>)}</select>
+    <label class="sr" for="r">Vloga</label>
+    <select id="r"><option value="">vse vloge</option>{Object.entries(meta.role_labels).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+    <label class="sr" for="aw">Nagrada</label>
+    <select id="aw"><option value="">vse nagrade</option>{awardList.map((a) => <option value={a.id}>{a.name}</option>)}</select>
+    <label class="sr" for="d">Desetletje</label>
+    <select id="d"><option value="">vsa leta</option>{decades.map((d) => <option value={d}>{d}–{d + 9}</option>)}</select>
+    </div>
+  </form>
+  <p class="small muted" id="count" aria-live="polite">Nalagam …</p>
+  <div class="table-wrap"><table>
+    <thead><tr>
+      <th data-sort="n" aria-sort="ascending"><button type="button">Ime</button></th>
+      <th data-sort="f"><button type="button">Področje</button></th>
+      <th data-sort="w" class="n"><button type="button">Nagrade</button></th>
+      <th data-sort="j" class="n"><button type="button">Žirije</button></th>
+      <th data-sort="a" class="n"><button type="button">Leta</button></th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <p><button class="btn" id="more" hidden>Pokaži več</button></p>
+  <script is:inline define:vars={{ fields: meta.fields }}>
+    window.__FIELDS = fields;
+  </script>
+  <script>
+    import { url } from "../lib/url";
+    type Row = { id: string; t: "p" | "a"; n: string; f: string; r?: string; w: number; s: number;
+                 a: number | null; b: number | null; x?: string[]; k?: string };
+    const PAGE = 100;
+    const fields: Record<string, string> = (window as any).__FIELDS;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+    const nf = new Intl.NumberFormat("sl-SI");
+    let rows: Row[] = [], shown = PAGE;
+
+    const params = new URLSearchParams(location.search);
+    for (const k of ["q", "t", "f", "r", "aw", "d"]) if (params.get(k)) $(k).value = params.get(k)!;
+    // sort: column key and direction; counts start high-to-low, the rest low-to-high
+    const DESC_FIRST = new Set(["w", "j"]);
+    let sortKey = "n", sortDir = 1;
+    const sp = params.get("s");
+    if (sp && /^-?[nfwja]$/.test(sp)) { sortKey = sp.replace("-", ""); sortDir = sp.startsWith("-") ? -1 : 1; }
+    else if (sp === "w" || sp === "j") sortDir = -1;
+
+    fetch(url("/data/index.json")).then((r) => r.json()).then((data: Row[]) => {
+      rows = data.map((r) => ({ ...r, k: norm(r.n) }));
+      render();
+    });
+
+    function filtered() {
+      const q = norm($("q").value.trim()), t = $("t").value, f = $("f").value, r = $("r").value;
+      const aw = $("aw").value, d = $("d").value ? Number($("d").value) : null;
+      const words = q.split(/\s+/).filter(Boolean);
+      let out = rows.filter((x) =>
+        (!t || x.t === t) && (!f || x.f === f) && (!r || x.r === r) &&
+        (!aw || (x.t === "p" ? x.x?.includes(aw) : x.id === aw)) &&
+        (d == null || (x.a != null && x.a <= d + 9 && (x.b ?? x.a) >= d)) &&
+        words.every((w) => x.k!.includes(w)));
+      const name = (a: Row, b: Row) => a.n.localeCompare(b.n, "sl");
+      const by: Record<string, (a: Row, b: Row) => number> = {
+        n: name,
+        f: (a, b) => a.f.localeCompare(b.f, "sl"),
+        w: (a, b) => a.w - b.w,
+        j: (a, b) => a.s - b.s,
+        a: (a, b) => (a.a ?? 9999) - (b.a ?? 9999),
+      };
+      // For awards the count columns mean editions and jurors, not a person's wins and
+      // seats, so when sorting by counts people come first and awards after them.
+      const kindFirst = (sortKey === "w" || sortKey === "j") && !t;
+      const cmp = (a: Row, b: Row) =>
+        (kindFirst ? Number(a.t === "a") - Number(b.t === "a") : 0) || sortDir * by[sortKey](a, b) || name(a, b);
+      // a name that starts with the query ranks first when sorting by name
+      if (sortKey === "n" && sortDir === 1 && q)
+        out.sort((a, b) => Number(!a.k!.startsWith(q)) - Number(!b.k!.startsWith(q)) || cmp(a, b));
+      else out.sort(cmp);
+      return out;
+    }
+    function esc(s: string) { return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!)); }
+    function render() {
+      const out = filtered();
+      const body = document.getElementById("rows")!;
+      body.innerHTML = out.slice(0, shown).map((x) => {
+        const href = x.t === "p" ? url(`/oseba/${x.id}/`) : url(`/nagrada/${x.id}/`);
+        const yrs = x.a == null ? "" : x.a === x.b ? `${x.a}` : `${x.a}–${x.b}`;
+        const tag = x.t === "a" ? ' <span class="flag">nagrada</span>' : "";
+        return `<tr><td><a href="${href}">${esc(x.n)}</a>${tag}</td>` +
+          `<td class="small"><span class="dot" style="background:${fields[x.f] ?? "var(--muted)"}"></span> ${esc(x.f)}</td>` +
+          `<td class="n">${x.t === "a" ? nf.format(x.w) + " pod." : nf.format(x.w)}</td><td class="n">${nf.format(x.s)}</td><td class="n">${yrs}</td></tr>`;
+      }).join("");
+      document.getElementById("count")!.textContent =
+        `${nf.format(out.length)} zadetkov` + (out.length > shown ? `, prikazanih ${nf.format(shown)}` : "");
+      (document.getElementById("more") as HTMLButtonElement).hidden = out.length <= shown;
+    }
+    let timer: number | undefined;
+    document.getElementById("filters")!.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        shown = PAGE; render();
+        const p = new URLSearchParams();
+        syncUrl();
+      }, 120);
+    });
+    function syncUrl() {
+      const p = new URLSearchParams();
+      for (const k of ["q", "t", "f", "r", "aw", "d"]) if ($(k).value) p.set(k, $(k).value);
+      if (sortKey !== "n" || sortDir !== 1) p.set("s", (sortDir < 0 ? "-" : "") + sortKey);
+      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+    }
+    const heads = document.querySelectorAll<HTMLTableCellElement>("th[data-sort]");
+    function markSort() {
+      heads.forEach((th) => th.dataset.sort === sortKey
+        ? th.setAttribute("aria-sort", sortDir > 0 ? "ascending" : "descending")
+        : th.removeAttribute("aria-sort"));
+    }
+    heads.forEach((th) => th.querySelector("button")!.addEventListener("click", () => {
+      const k = th.dataset.sort!;
+      if (k === sortKey) sortDir = -sortDir;
+      else { sortKey = k; sortDir = DESC_FIRST.has(k) ? -1 : 1; }
+      markSort(); shown = PAGE; render(); syncUrl();
+    }));
+    markSort();
+    document.getElementById("more")!.addEventListener("click", () => { shown += PAGE * 5; render(); });
+  </script>
+</Base>
+<style>
+  .filters { display: grid; gap: 8px; margin: 20px 0 10px; }
+  .filters input { width: 100%; font-size: 16px; padding: 9px 12px; }
+  .selects { display: flex; flex-wrap: wrap; gap: 6px; }
+  .selects select { font-size: 13px; padding: 4px 8px; max-width: 100%; }
+  th button { font: inherit; text-transform: inherit; letter-spacing: inherit; color: inherit;
+              background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+  th button:hover { color: var(--ink); }
+  th button::after { content: "↕"; opacity: .35; font-size: 11px; }
+  th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
+  th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
+  th[aria-sort] button { color: var(--ink); }
+</style>

@@ -1,0 +1,81 @@
+---
+// Horizontal bars for the public: one bar per row, an optional "expected" tick, a direct
+// value label, an optional note in words. HTML and CSS only (responsive, no JS); a table
+// view sits in a <details> for screen readers and copying.
+import { dec, fmt } from "../../lib/data";
+import { url } from "../../lib/url";
+
+export type BarRow = {
+  label: string; href?: string; value: number; compare?: number | null;
+  color?: string; text?: string; note?: string;
+};
+interface Props {
+  rows: BarRow[];
+  format?: "pct" | "int" | "dec";
+  max?: number;
+  legend?: { label: string; color: string; tick?: boolean }[];
+  compareLabel?: string;       // name of the tick, e.g. "pričakovano"
+  valueLabel?: string;         // table column heading for the value
+  label?: string;              // aria label
+}
+const { rows, format = "int", legend = [], compareLabel = "pričakovano",
+        valueLabel = "vrednost", label = "Graf" } = Astro.props;
+const max = Astro.props.max ??
+  Math.max(...rows.map((r) => Math.max(r.value, r.compare ?? 0))) * 1.08;
+const f = (v: number) => format === "pct" ? `${Math.round(100 * v)} %` :
+  format === "dec" ? dec(v) : fmt(Math.round(v));
+const w = (v: number) => `${Math.max(0, Math.min(100, (100 * v) / max))}%`;
+const hasCompare = rows.some((r) => r.compare != null);
+---
+<figure class="chart bars" role="group" aria-label={label}>
+  {legend.length > 0 && (
+    <ul class="chart-legend">
+      {legend.map((l) => <li><span class={l.tick ? "key tick" : "key"} style={`--c:${l.color}`}></span>{l.label}</li>)}
+    </ul>
+  )}
+  <div class="rows">
+    {rows.map((r) => (
+      <div class="row" title={`${r.label}: ${r.text ?? f(r.value)}${r.compare != null ? ` (${compareLabel}: ${f(r.compare)})` : ""}`}>
+        <div class="lab">{r.href ? <a href={url(r.href)}>{r.label}</a> : r.label}</div>
+        <div class="track">
+          <span class="bar" style={`width:${w(r.value)};--c:${r.color ?? "var(--accent)"}`}></span>
+          {r.compare != null && <span class="cmp" style={`left:${w(r.compare)}`}></span>}
+          <span class="val" style={`left:${w(r.value)}`}>
+            <b>{r.text ?? f(r.value)}</b>
+          </span>
+        </div>
+        {r.note && <div class="note-line">{r.note}</div>}
+      </div>
+    ))}
+  </div>
+  <details class="as-table">
+    <summary>Podatki v tabeli</summary>
+    <div class="table-wrap"><table>
+      <thead><tr><th></th><th class="n">{valueLabel}</th>{hasCompare && <th class="n">{compareLabel}</th>}</tr></thead>
+      <tbody>{rows.map((r) => <tr><td>{r.label}</td><td class="n">{r.text ?? f(r.value)}</td>{hasCompare && <td class="n">{r.compare != null ? f(r.compare) : ""}</td>}</tr>)}</tbody>
+    </table></div>
+  </details>
+</figure>
+
+<style>
+  .rows { display: grid; gap: 10px; }
+  .row { display: grid; grid-template-columns: minmax(9em, 30%) 1fr; gap: 14px; align-items: center; }
+  .lab { font-size: 15px; text-align: right; line-height: 1.25; }
+  .lab a { text-decoration: none; }
+  .lab a:hover { text-decoration: underline; }
+  .track { position: relative; height: 22px; }
+  .bar { position: absolute; left: 0; top: 2px; bottom: 2px; background: var(--c); border-radius: 0 4px 4px 0; }
+  .cmp { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--ink-2); border-radius: 1px; }
+  .val { position: absolute; top: 0; padding-left: 8px; font-size: 14px; white-space: nowrap; color: var(--ink-2); line-height: 22px; }
+  .val b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .note-line { grid-column: 2; margin-top: -8px; font-size: 13px; line-height: 1.35; color: var(--ink-2); }
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 1fr; gap: 2px; }
+    .lab { text-align: left; font-size: 14px; }
+    .val { white-space: normal; position: static; display: block; padding: 0; margin-top: 2px; }
+    .track { height: auto; min-height: 18px; }
+    .track .bar, .track .cmp { height: 18px; top: 0; bottom: auto; }
+    .track .val { padding-top: 20px; }
+    .note-line { grid-column: 1; margin-top: 0; }
+  }
+</style>
