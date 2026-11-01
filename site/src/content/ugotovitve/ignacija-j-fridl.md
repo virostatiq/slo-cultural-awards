@@ -1,7 +1,7 @@
 ---
 title: Ignacija J. Fridl je med najbolj dejavnimi žiranti
 lede: "Ob imenovanju Ignacije J. Fridl na čelo ministrstva za kulturo smo pregledali zapise o žirijah: {{sittings}} sedežev pri {{awards}} nagradah ({{first}}–{{last}}) in nobena prejeta nagrada."
-order: 16
+order: 17
 chartTitle: Največ sedežev v žirijah
 chartNote: Skupna žirija, ki podeli več nagrad hkrati, šteje kot en sedež.
 method: Primerjali smo s {{peers}} ljudmi, ki imajo vsaj deset sedežev v žirijah. Za nagrajence, ki so jih izbrale žirije s to osebo, smo preverili, kolikšen delež jih je pozneje sedel v žiriji in kolikšen delež je žensk, ter to primerjali z drugimi nagrajenci istih nagrad. Uporabili smo le javne sezname žirij, ne političnih opredelitev.

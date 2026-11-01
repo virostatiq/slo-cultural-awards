@@ -25,6 +25,11 @@ Questions:
 5. Are juries more Ljubljana-bound than the winners they pick (same edition)?
 6. Regional homophily: do juries with more members from outside Ljubljana pick more
    winners from outside Ljubljana? Within award × decade, permutation null.
+7. The path into juries: do winners tied to Ljubljana reach a jury seat sooner than
+   winners tied only to other places? Cox model stratified by field, with richness.
+8. Ties abroad: did ties to former Yugoslavia and to the rest of the world change after
+   1991? Within award, controlling for how many places a biography lists.
+9. Places: distinct people tied to each Slovenian place (for the site's map).
 """
 
 from __future__ import annotations
@@ -37,6 +42,7 @@ from io import BytesIO
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
+from statsmodels.duration.hazard_regression import PHReg
 from matplotlib.collections import PolyCollection
 from matplotlib.colors import LogNorm
 from matplotlib.lines import Line2D
@@ -46,6 +52,8 @@ from kulturne_nagrade import PROJECT_ROOT, frames
 from kulturne_nagrade import plotting as P
 from kulturne_nagrade.analysis.common import (
     bh_fdr,
+    kaplan_meier,
+    km_at,
     permutation_p,
     rng,
     wilson,
@@ -116,6 +124,10 @@ def run() -> dict:
     jvw = jury_vs_winners(roles, geo)
     hom = homophily(roles, geo)
     plot_homophily(hom)
+    path = jury_path(roles, geo)
+    plot_jury_path(path)
+    abroad = foreign_ties(roles, geo)
+    plot_foreign_ties(abroad)
 
     return {
         "coverage": cov,
@@ -134,6 +146,11 @@ def run() -> dict:
         "home_advantage": home,
         "jury_vs_winners": jvw,
         "homophily": {k: v for k, v in hom.items() if k != "null"},
+        "jury_path": {k: v for k, v in path.items() if k != "curves"}
+        | {"km": {g: {f"{t}y": km_at(k, t) for t in (3, 5, 10)}
+                  for g, k in path["curves"].items()}},
+        "foreign_ties": abroad,
+        "places": places(roles),
     }
 
 
@@ -563,3 +580,172 @@ def plot_homophily(h):
                    f"{h['n_editions']} podelitev, {h['n_awards']} nagrad")
     P.source_note(fig)
     P.save(fig, THEME, "regionalna_homofilija")
+
+
+# --- 7. the path into juries ------------------------------------------------------------
+
+PATH_FROM = 2000
+PATH_HORIZON = 10
+PATH_LABEL = {True: "z vezjo na Ljubljano", False: "brez vezi z Ljubljano"}
+
+
+def jury_path(roles, geo) -> dict:
+    """Time from a first win (since PATH_FROM) to a first jury seat, Ljubljana tie vs
+    none. Same cohort rules as careers.winner_to_juror: people who judged before their
+    first win are left out. Cox model stratified by the field of the first award, with
+    richness dummies; robustness: strata by award, municipal awards left out."""
+    w = (roles[roles["role"] == "winner"].sort_values(["year", "prestige"],
+                                                      ascending=[True, False])
+         .drop_duplicates("entity_id"))
+    first_jury = frames.jury_sittings().groupby("entity_id")["year"].min()
+    f = w[w["year"] >= PATH_FROM][["entity_id", "year", "genre", "award_id"]].copy()
+    f["first_jury"] = f["entity_id"].map(first_jury)
+    f = f[~(f["first_jury"] <= f["year"]).fillna(False).astype(bool)]
+    f = attach(f, geo)
+    f = f[f["placed"].fillna(False).astype(bool)].copy()
+    end_year = int(roles["year"].max())
+    f["event"] = f["first_jury"].notna()
+    f["t"] = (f["first_jury"].fillna(end_year) - f["year"]).astype(float)
+    curves = {PATH_LABEL[g]: kaplan_meier(d["t"], d["event"]) for g, d in f.groupby("lj")}
+
+    def cox(d, strata):
+        x = np.column_stack([d["lj"], d["richness"] == 2, d["richness"] >= 3]).astype(float)
+        fit = PHReg(d["t"].clip(lower=0.5).to_numpy(), x, status=d["event"].to_numpy(),
+                    strata=d[strata].to_numpy()).fit()
+        return {"hr": float(np.exp(fit.params[0])),
+                "ci": [float(v) for v in np.exp(fit.conf_int()[0])],
+                "p": float(fit.pvalues[0]), "n": len(d), "n_outside": int((~d["lj"]).sum())}
+
+    return {"n": len(f), "n_lj": int(f["lj"].sum()), "n_outside": int((~f["lj"]).sum()),
+            "events": int(f["event"].sum()), "curves": curves,
+            "cox_by_field": cox(f, "genre"), "cox_by_award": cox(f, "award_id"),
+            "cox_no_municipal": cox(f[~f["award_id"].isin(MUNICIPAL)], "genre")}
+
+
+def plot_jury_path(path):
+    fig, ax = P.figure(8.5, 4.8)
+    colors = {PATH_LABEL[True]: P.SERIES[6], PATH_LABEL[False]: P.SERIES[1]}
+    for label, k in path["curves"].items():
+        k = k[k["t"] <= PATH_HORIZON]
+        c = colors[label]
+        ax.step(k["t"], k["cum_incidence"], where="post", color=c, lw=2, label=label)
+        ax.fill_between(k["t"], k["lo"], k["hi"], step="post", color=c, alpha=0.12, lw=0)
+        end = k.iloc[-1]
+        ax.annotate(P.pct(end["cum_incidence"]), (end["t"], end["cum_incidence"]),
+                    xytext=(6, 0), textcoords="offset points", va="center", fontsize=9)
+    ax.set_xlim(0, PATH_HORIZON + 1)
+    ax.set_ylim(0, None)
+    ax.yaxis.set_major_formatter(P.pct_fmt)
+    ax.set_xlabel("let po prvi nagradi")
+    ax.legend(loc="upper left")
+    hr = path["cox_by_field"]
+    verdict = ("razlika verjetno ni naključna" if hr["p"] < 0.05
+               else "razlika je lahko naključna")
+    ax.set_title("Nagrajenci, povezani z Ljubljano, pogosteje sedejo v žirijo")
+    P.subtitle(ax, f"Prvič nagrajeni od leta {PATH_FROM}, ki pred tem niso sodili · "
+                   f"{path['n_lj']} z vezjo na Ljubljano, {path['n_outside']} brez nje\n"
+                   f"Na istem področju {P.dec(hr['hr'], 1)}-krat hitreje; {verdict} · "
+                   "upošteva, da so nedavni nagrajenci imeli manj časa")
+    P.source_note(fig)
+    P.save(fig, THEME, "pot_v_zirijo")
+
+
+# --- 8. ties abroad ---------------------------------------------------------------------
+
+EX_YU = {"hr", "rs", "ba", "mk", "me", "xk"}
+
+
+def foreign_ties(roles, geo) -> dict:
+    """Winner-editions of people with any recorded place. Measures: any foreign tie, a
+    tie to former Yugoslavia (outside Slovenia), a tie elsewhere abroad. Raw shares by
+    decade; within the same award, controlling for the number of places listed (older
+    biographies list more places): the linear trend per decade, and a break at 1991 on
+    top of that trend, against placebo breaks ten years either side."""
+    loc = frames.table("entity_locations").merge(frames.table("places"), on="place")
+    fo = loc[loc["scope"] == "foreign"]
+    per = fo.groupby("entity_id").agg(
+        ex_yu=("country_code", lambda s: s.isin(EX_YU).any()),
+        west=("country_code", lambda s: (~s.isin(EX_YU) & s.notna()).any()))
+    w = roles[roles["role"] == "winner"].drop_duplicates(["edition_id", "entity_id"])
+    w = w.join(geo[["n_places"]], on="entity_id")
+    w = w[w["n_places"].fillna(0) > 0].join(per, on="entity_id")
+    for c in ("ex_yu", "west"):
+        w[c] = w[c].fillna(False).astype(float)
+    w["any"] = w[["ex_yu", "west"]].max(axis=1)
+    w["lnp"] = np.log1p(w["n_places"].astype(float))
+    w["yc"] = (w["year"].astype(float) - 1991) / 10
+    w["decade"] = w["year"] // 10 * 10
+    by = w.groupby("decade").agg(n=("any", "size"), any=("any", "mean"), ex_yu=("ex_yu", "mean"),
+                                 west=("west", "mean"), places=("n_places", "mean"))
+    by = by[by["n"] >= MIN_BIN_N].reset_index()
+    fit = lambda f: smf.ols(f, w).fit(cov_type="cluster", cov_kwds={"groups": w["award_id"]})
+    out = {"by_decade": by, "n": len(w), "trend": {}, "breaks": {}}
+    for m in ("any", "ex_yu", "west"):
+        t = fit(f"{m} ~ yc + lnp + C(award_id)")
+        out["trend"][m] = {"per_decade": float(t.params["yc"]),
+                           "ci": [float(v) for v in t.conf_int().loc["yc"]],
+                           "p": float(t.pvalues["yc"])}
+    for brk in (1981, 1991, 2001):
+        w["post"] = (w["year"] >= brk).astype(float)
+        t = fit("ex_yu ~ post + yc + lnp + C(award_id)")
+        out["breaks"][brk] = {"jump": float(t.params["post"]),
+                              "ci": [float(v) for v in t.conf_int().loc["post"]],
+                              "p": float(t.pvalues["post"])}
+    return out
+
+
+def _points(x: float) -> str:
+    n = round(x)
+    m = abs(n) % 100
+    return f"{n} " + ("odstotna točka" if m == 1 else "odstotni točki" if m == 2 else
+                      "odstotne točke" if m in (3, 4) else "odstotnih točk")
+
+
+def plot_foreign_ties(f):
+    by = f["by_decade"]
+    fig, ax = P.figure(8.5, 4.6)
+    for m, c, lab in (("ex_yu", P.SERIES[1], "nekdanja Jugoslavija"),
+                      ("west", P.SERIES[0], "drugod v tujini")):
+        ax.plot(by["decade"] + 5, by[m], color=c, marker="o", ms=4)
+        ax.annotate(lab, (by["decade"].iloc[-1] + 5, by[m].iloc[-1]), xytext=(8, 0),
+                    textcoords="offset points", va="center", fontsize=9, color=c)
+    ax.axvline(1991, color=P.MUTED, lw=1, ls=":")
+    ax.annotate("1991", (1991, 0.02), xytext=(4, 0), textcoords="offset points", fontsize=8,
+                color=P.TEXT_2)
+    ax.set_ylim(0, None)
+    ax.yaxis.set_major_formatter(P.pct_fmt)
+    ax.set_xlabel("desetletje nagrade")
+    tr = f["trend"]["ex_yu"]["per_decade"]
+    ax.set_title("Vezi z nekdanjo Jugoslavijo so se rahljale postopoma, ne šele leta 1991")
+    P.subtitle(ax, "Delež nagrajencev s krajem v tujini v življenjepisu · starejši "
+                   "življenjepisi naštejejo več krajev\n"
+                   f"Pri isti nagradi in enako podrobnem življenjepisu: vezi z nekdanjo "
+                   f"Jugoslavijo {_points(-100 * tr)} manj na desetletje, "
+                   "brez preloma ob osamosvojitvi")
+    P.source_note(fig)
+    P.save(fig, THEME, "vezi_s_tujino")
+
+
+# --- 9. places (site map) ---------------------------------------------------------------
+
+def places(roles) -> pd.DataFrame:
+    """Distinct people tied to each Slovenian settlement, by role, all years. Places
+    inside Ljubljana's city municipality are merged into Ljubljana; vague regional ties
+    ("Primorska") are left out."""
+    loc = frames.table("entity_locations").merge(frames.table("places"), on="place")
+    si = loc[(loc["scope"] == "si") & (loc["kind"] == "settlement") & loc["lat"].notna()].copy()
+    lj = si["is_ljubljana"].astype(bool)
+    si.loc[lj, "canonical"] = LJ
+    coords = si.groupby("canonical")[["lat", "lon"]].median()
+    coords.loc[LJ] = (46.0511, 14.5051)
+    region = si.groupby("canonical")["si_region"].agg(lambda s: s.mode().iat[0])
+    region.loc[LJ] = LJ
+    who = roles.drop_duplicates(["entity_id", "role"])[["entity_id", "role"]]
+    tied = si.drop_duplicates(["entity_id", "canonical"])[["entity_id", "canonical"]]
+    m = tied.merge(who, on="entity_id")
+    out = (m.pivot_table(index="canonical", columns="role", values="entity_id",
+                         aggfunc="nunique", fill_value=0)
+           .rename(columns={"winner": "winners"}))
+    out["people"] = m.groupby("canonical")["entity_id"].nunique()
+    out = out.join(coords).join(region.rename("region")).reset_index()
+    return out.rename(columns={"canonical": "place"}).sort_values("people", ascending=False)

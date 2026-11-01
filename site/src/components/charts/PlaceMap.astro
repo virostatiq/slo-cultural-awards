@@ -1,0 +1,142 @@
+---
+// Bubble map of Slovenia: one circle per place, area = distinct people tied to it
+// (birthplace, schooling or work, from their biographies). Counts only, no names.
+// A segmented control switches between everyone, winners and jurors; hover or tap a
+// circle for its numbers. The SVG is drawn at build time; a small script resizes the
+// circles and runs the tooltip. A table of the largest places sits in a <details>.
+import { fmt } from "../../lib/data";
+
+type Place = { name: string; region: string; x: number; y: number;
+               people: number; winners: number; jury: number };
+interface Props {
+  width: number; height: number; regions: { name: string; d: string }[];
+  ljubljana: string; places: Place[]; label?: string;
+}
+const { width, height, regions, ljubljana, places, label = "Zemljevid" } = Astro.props;
+const K = 1.1, MIN_R = 3;
+const r = (n: number) => (n > 0 ? Math.max(MIN_R, K * Math.sqrt(n)) : 0);
+const sorted = [...places].sort((a, b) => b.people - a.people);
+// Label the largest places; skip a label that would sit on top of a bigger one's.
+const labels: Place[] = [];
+for (const p of sorted.slice(0, 24)) {
+  if (labels.length >= 14) break;
+  if (labels.every((q) => Math.hypot(q.x - p.x, q.y - p.y) > 70)) labels.push(p);
+}
+const legend = [10, 100, 1000];
+---
+<figure class="chart placemap" role="group" aria-label={label}>
+  <div class="tools">
+    <div class="seg" role="group" aria-label="Koga prikažem">
+      <button type="button" data-mode="people" aria-pressed="true">Vsi</button>
+      <button type="button" data-mode="winners" aria-pressed="false">Nagrajenci</button>
+      <button type="button" data-mode="jury" aria-pressed="false">Žiranti</button>
+    </div>
+  </div>
+  <div class="stage">
+    <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={label}>
+      <g class="regions">{regions.map((g) => <path d={g.d}><title>{g.name}</title></path>)}</g>
+      <path class="lj" d={ljubljana} />
+      <g class="dots">
+        {sorted.map((p) => (
+          <circle cx={p.x} cy={p.y} r={r(p.people)} data-name={p.name} data-region={p.region}
+                  data-people={p.people} data-winners={p.winners} data-jury={p.jury} tabindex="-1" />
+        ))}
+      </g>
+      <g class="size-key" aria-hidden="true" transform={`translate(${width - 250} ${height - 40})`}>
+        {legend.map((n, i) => {
+          const x = [0, 40, 110][i];
+          return <g><circle cx={x} cy={-r(n)} r={r(n)} /><text x={x} y={22} text-anchor="middle">{fmt(n)}</text></g>;
+        })}
+        <text x={190} y={22}>ljudi</text>
+      </g>
+      <g class="labels" aria-hidden="true">
+        {labels.map((p) => (
+          <text x={p.x} y={p.y - r(p.people) - 5} text-anchor="middle"
+                class={p.name === "Ljubljana" ? "big" : ""}>{p.name}</text>
+        ))}
+      </g>
+    </svg>
+    <div class="tip" role="status" hidden></div>
+  </div>
+  <details class="as-table">
+    <summary>Podatki v tabeli (30 krajev z največ ljudmi)</summary>
+    <div class="table-wrap"><table>
+      <thead><tr><th>kraj</th><th>regija</th><th class="n">vsi</th><th class="n">nagrajenci</th><th class="n">žiranti</th></tr></thead>
+      <tbody>{sorted.slice(0, 30).map((p) => (
+        <tr><td>{p.name}</td><td>{p.region}</td><td class="n">{fmt(p.people)}</td><td class="n">{fmt(p.winners)}</td><td class="n">{fmt(p.jury)}</td></tr>
+      ))}</tbody>
+    </table></div>
+  </details>
+</figure>
+
+<script define:vars={{ K, MIN_R }}>
+  const nf = new Intl.NumberFormat("sl-SI");
+  const pl = (n, f) => { const m = n % 100; return m === 1 ? f[0] : m === 2 ? f[1] : m === 3 || m === 4 ? f[2] : f[3]; };
+  const ljudi = (n) => `${nf.format(n)} ${pl(n, ["oseba", "osebi", "osebe", "oseb"])}`;
+  for (const fig of document.querySelectorAll(".placemap")) {
+    const dots = [...fig.querySelectorAll(".dots circle")];
+    const tip = fig.querySelector(".tip");
+    const stage = fig.querySelector(".stage");
+    const buttons = [...fig.querySelectorAll(".seg button")];
+    const r = (n) => (n > 0 ? Math.max(MIN_R, K * Math.sqrt(n)) : 0);
+    const setMode = (mode) => {
+      buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+      // bigger circles first, so small places stay on top and reachable
+      dots.sort((a, b) => b.dataset[mode] - a.dataset[mode]).forEach((c) => {
+        c.setAttribute("r", r(+c.dataset[mode]));
+        c.parentNode.appendChild(c);
+      });
+    };
+    buttons.forEach((b) => b.addEventListener("click", () => setMode(b.dataset.mode)));
+    const show = (c, ev) => {
+      const d = c.dataset;
+      tip.innerHTML = `<b>${d.name}</b><span>${d.region === d.name ? "" : d.region}</span>` +
+        `<span>${ljudi(+d.people)}: ${nf.format(+d.winners)} ${pl(+d.winners, ["nagrajenec", "nagrajenca", "nagrajenci", "nagrajencev"])}, ` +
+        `${nf.format(+d.jury)} ${pl(+d.jury, ["žirant", "žiranta", "žiranti", "žirantov"])}</span>`;
+      tip.hidden = false;
+      const box = stage.getBoundingClientRect();
+      const cb = c.getBoundingClientRect();
+      let x = (ev && ev.clientX ? ev.clientX : cb.left + cb.width / 2) - box.left;
+      const y = (ev && ev.clientY ? ev.clientY : cb.top) - box.top;
+      x = Math.min(Math.max(x, tip.offsetWidth / 2 + 4), box.width - tip.offsetWidth / 2 - 4);
+      tip.style.left = `${x}px`;
+      tip.style.top = `${y}px`;
+      dots.forEach((o) => o.classList.toggle("on", o === c));
+    };
+    const hide = () => { tip.hidden = true; dots.forEach((o) => o.classList.remove("on")); };
+    fig.querySelector(".dots").addEventListener("pointermove", (e) => {
+      if (e.target instanceof SVGCircleElement) show(e.target, e);
+    });
+    fig.querySelector(".dots").addEventListener("pointerdown", (e) => {
+      if (e.target instanceof SVGCircleElement) show(e.target, e);
+    });
+    fig.querySelector(".dots").addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") hide(); });
+    document.addEventListener("pointerdown", (e) => { if (!stage.contains(e.target)) hide(); });
+  }
+</script>
+
+<style>
+  .tools { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; margin: 10px 0 6px; }
+  .seg { display: inline-flex; border: 1px solid var(--line-2); border-radius: 999px; overflow: hidden; }
+  .seg button { font: inherit; font-size: 13px; padding: 6px 12px; border: 0; background: var(--bg); color: var(--ink-2); cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .size-key circle { fill: none; stroke: var(--ink-2); stroke-width: 1.2; }
+  .size-key text { font: 14px var(--sans); fill: var(--ink-2); }
+  .stage { position: relative; }
+  .stage svg { display: block; width: 100%; height: auto; touch-action: manipulation; }
+  .regions path { fill: var(--raise); stroke: var(--line-2); stroke-width: 1; stroke-linejoin: round; }
+  .lj { fill: none; stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 3; }
+  .dots circle { fill: color-mix(in srgb, var(--accent) 70%, transparent); stroke: var(--bg); stroke-width: 1; cursor: pointer; transition: r .35s ease; }
+  .dots circle:hover, .dots circle.on { fill: var(--accent); stroke: var(--ink); stroke-width: 1.5; }
+  .labels text { font: 600 15px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+  .labels text.big { font-size: 19px; }
+  .tip { position: absolute; transform: translate(-50%, calc(-100% - 12px)); pointer-events: none; background: var(--bg); border: 1px solid var(--line-2); border-radius: 8px; padding: 7px 10px; font-size: 13px; line-height: 1.4; box-shadow: var(--shadow); white-space: nowrap; z-index: 2; }
+  .tip :global(b) { display: block; font-size: 14px; }
+  .tip :global(span) { display: block; color: var(--ink-2); }
+  .tip :global(span:empty) { display: none; }
+  @media (max-width: 640px) {
+    .labels text { font-size: 22px; stroke-width: 5px; }
+    .labels text.big { font-size: 26px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .dots circle { transition: none; } }
+</style>

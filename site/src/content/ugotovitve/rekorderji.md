@@ -1,7 +1,7 @@
 ---
 title: Kdo je prejel največ nagrad in kdo največkrat sodil
 lede: "Največ nagrad, {{top_wins}}, ima {{top_name}}. Največ sedežev v žirijah, {{top_juror_n}}, ima {{top_juror}}."
-order: 17
+order: 18
 chartTitle: Največ prejetih nagrad
 chartNote: Surovo štetje. Zbirka je po letu 2000 popolnejša, zato seznami dajejo prednost novejšim karieram in nagradam, ki vsako leto podelijo veliko priznanj.
 method: Prešteli smo nagrade in sedeže v žirijah za vsako osebo. Skupna žirija, ki podeli več nagrad hkrati, šteje kot en sedež.

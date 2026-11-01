@@ -151,9 +151,23 @@ comparisons are therefore made within the number of units (1 / 2 / 3+).
   decade fixed effects plus richness; permutation of jury compositions within
   strata.
 
-Maps use GADM 4.1 boundaries (levels 1 and 2), downloaded at runtime to
-`.cache/geo/`. They are not committed, because the GADM licence does not allow
-redistribution.
+- **Path into juries.** First wins since 2000, excluding people who judged
+  first; time to a first jury seat by Ljubljana tie (Kaplan–Meier), and a Cox
+  model stratified by the field of the first award with richness dummies.
+  Checks: strata by award; municipal awards left out.
+- **Ties abroad.** Winner-editions of people with any place; a tie to former
+  Yugoslavia (hr, rs, ba, mk, me, xk) or elsewhere abroad. Linear trend per
+  decade within award, controlling for log(1 + number of places); a step at
+  1991 on top of the trend, compared with placebo steps at 1981 and 2001.
+- **Places (site map).** Distinct people tied to each Slovenian settlement
+  (places inside Ljubljana's city municipality merged into Ljubljana), by role,
+  all years. Counts only; who is tied to a place is not published.
+
+Analysis figures use GADM 4.1 boundaries (levels 1 and 2), downloaded at runtime
+to `.cache/geo/`. They are not committed, because the GADM licence does not allow
+redistribution. The site map ships its outlines, so it uses openly licensed ones:
+NUTS 3 regions from Eurostat GISCO (© EuroGeographics) and Ljubljana's municipality
+from geoBoundaries ADM2 (OpenStreetMap, ODbL), also cached in `.cache/geo/`.
 
 ### network
 The data is a bipartite graph of people and jury sittings; two people are linked

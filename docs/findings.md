@@ -144,6 +144,14 @@ Compared with winners of other awards in the same field and year:
   advantage. The municipal awards, as their rules require, do (2.5–5.5×);
   they confirm that the method detects a real home bias.
 
+**The path into juries is the exception.** Of people first awarded in 2000 or
+later (who had not judged before), 19% of those with a Ljubljana tie sat on a
+jury within 10 years, against 10% of those without one (Kaplan–Meier). Within
+the same field and richness stratum, the Ljubljana-tied reach a jury **1.8×**
+as fast (Cox, 95% CI 1.2–2.8); 1.7× within the same first award (CI 1.0–2.8)
+and 1.7× without the municipal awards (CI 1.1–2.7). Only 212 people are in the
+outside group, so the size is uncertain, but the direction holds in every check.
+
 **Caveat.** The places come from LLM enrichment and list ties, not residence.
 How detailed a biography is changes the strict measures. Of winners with a
 single recorded tie, 85% have Ljubljana as that tie; anyone with two or more
@@ -151,7 +159,7 @@ ties is by definition not "Ljubljana only". Every comparison is therefore made
 within strata of the number of ties.
 *Figures: `plots/geography/zastopanost_regij.png`, `zemljevid_zastopanosti.png`,
 `ljubljana_skozi_cas.png`, `nagrade_proti_podrocju.png`, `domaca_prednost.png`,
-`regionalna_homofilija.png`*
+`regionalna_homofilija.png`, `pot_v_zirijo.png`*
 
 ### 12. Juries are reappointed in the same line-up, but there are no groups moving between awards
 **2,551** pairs of people sat together on at least three juries. If juries in
@@ -358,6 +366,22 @@ awards. Compared within the same period, the difference is −0.6 points per
 10 years of award age (p = 0.58).
 *Figures: `plots/awards/ponovni_nagrajenci_po_nagradah.png`, `skupni_ziranti_nagrad.png`,
 `stabilnost_zirij_in_starost_nagrade.png`*
+
+### 22. Ties to former Yugoslavia thinned out steadily, not at independence
+Among winners with any recorded place, 36% of those awarded in the 1950s had a
+tie (birth, schooling or work) elsewhere in former Yugoslavia, against 10% in
+the 2020s. Older biographies list more places, so the raw drop overstates the
+change. Within the same award and at the same number of listed places, the
+share falls by **2.2 pp per decade** (95% CI 1.5–2.9). On top of that trend
+there is no extra drop at 1991 (−3.9 pp, CI −11 to +3), nor at the placebo
+breaks 1981 and 2001. Ties to the rest of the world (Trieste, Vienna, Paris,
+Berlin, New York) stay at about a third of winners; within award the trend is
++1.1 pp per decade (CI −0.5 to +2.8), so no clear change.
+
+The legacy plot read the before/after-1991 comparison as a shift "from the
+Yugoslav axis to the west". The decline is generational and predates 1991; the
+western share did not grow.
+*Figure: `plots/geography/vezi_s_tujino.png`*
 
 ## Smaller results
 - **Prestige and gender.** Since 2010, women won 37% of top-prestige awards,

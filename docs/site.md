@@ -64,8 +64,10 @@ Text in `site/src/content/ugotovitve/<id>.md` (frontmatter: title, lede, order, 
 chartNote, method, awards). Numbers appear as `{{key}}` and are filled from
 `src/data/findings.json`, written by `kulturne_nagrade.site_findings` from `results/*.json`
 during `npm run data`; an unknown key stays visible so it shows up in review. Each finding
-has one chart spec (`bars` or `lines`) rendered by `src/components/charts/` (HTML/SVG at
-build time, a table view in a `<details>`). Charts are for the general public: plain
+has one chart spec (`bars`, `lines` or `placemap`) rendered by `src/components/charts/`
+(HTML/SVG at build time, a table view in a `<details>`), and optionally `extra` charts
+(title, note, spec) shown after the text. `placemap` (Ljubljana finding) is a bubble map
+of places with a Vsi / Nagrajenci / Žiranti switch and a hover tooltip; counts only. Charts are for the general public: plain
 labels, verdicts in words ("razlika je prevelika, da bi bila naključna"), no p-values.
 Only "judged first, then won" counts as an insider; laureates joining juries later is a
 custom. Individuals are written about in neutral grammar (no gendered verb forms).

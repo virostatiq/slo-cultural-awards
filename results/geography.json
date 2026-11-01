@@ -2789,5 +2789,5666 @@
     "fe_p": 0.6084641703681568,
     "perm_slope": -0.06182291023682756,
     "perm_p": 0.4777611194402799
-  }
+  },
+  "jury_path": {
+    "n": 1490,
+    "n_lj": 1278,
+    "n_outside": 212,
+    "events": 286,
+    "cox_by_field": {
+      "hr": 1.804568937397702,
+      "ci": [
+        1.1539096033336007,
+        2.822117989496627
+      ],
+      "p": 0.009669555646285109,
+      "n": 1490,
+      "n_outside": 212
+    },
+    "cox_by_award": {
+      "hr": 1.6666384270092045,
+      "ci": [
+        1.0074199600251246,
+        2.757225146019979
+      ],
+      "p": 0.04672928187295741,
+      "n": 1490,
+      "n_outside": 212
+    },
+    "cox_no_municipal": {
+      "hr": 1.6881481948304702,
+      "ci": [
+        1.0700596853061317,
+        2.6632573554942107
+      ],
+      "p": 0.024381460108614462,
+      "n": 1412,
+      "n_outside": 173
+    },
+    "km": {
+      "brez vezi z Ljubljano": {
+        "3y": 0.07475500291840553,
+        "5y": 0.07475500291840553,
+        "10y": 0.10368325841028658
+      },
+      "z vezjo na Ljubljano": {
+        "3y": 0.0889392681570298,
+        "5y": 0.1280963776926477,
+        "10y": 0.1934880482692336
+      }
+    }
+  },
+  "foreign_ties": {
+    "by_decade": [
+      {
+        "decade": 1950,
+        "n": 101,
+        "any": 0.6732673267326733,
+        "ex_yu": 0.3564356435643564,
+        "west": 0.5247524752475248,
+        "places": 4.425742574257426
+      },
+      {
+        "decade": 1960,
+        "n": 220,
+        "any": 0.5818181818181818,
+        "ex_yu": 0.2909090909090909,
+        "west": 0.42727272727272725,
+        "places": 3.9318181818181817
+      },
+      {
+        "decade": 1970,
+        "n": 331,
+        "any": 0.5468277945619335,
+        "ex_yu": 0.22054380664652568,
+        "west": 0.4078549848942598,
+        "places": 3.5861027190332324
+      },
+      {
+        "decade": 1980,
+        "n": 414,
+        "any": 0.4758454106280193,
+        "ex_yu": 0.19082125603864733,
+        "west": 0.3526570048309179,
+        "places": 3.3067632850241546
+      },
+      {
+        "decade": 1990,
+        "n": 408,
+        "any": 0.4387254901960784,
+        "ex_yu": 0.15931372549019607,
+        "west": 0.3382352941176471,
+        "places": 3.1200980392156863
+      },
+      {
+        "decade": 2000,
+        "n": 863,
+        "any": 0.3939745075318656,
+        "ex_yu": 0.11935110081112399,
+        "west": 0.32792584009269987,
+        "places": 2.8064889918887603
+      },
+      {
+        "decade": 2010,
+        "n": 1337,
+        "any": 0.3911742707554226,
+        "ex_yu": 0.1256544502617801,
+        "west": 0.318623784592371,
+        "places": 2.7329842931937174
+      },
+      {
+        "decade": 2020,
+        "n": 1151,
+        "any": 0.39096437880104257,
+        "ex_yu": 0.09556907037358818,
+        "west": 0.33796698523023455,
+        "places": 2.6012163336229364
+      }
+    ],
+    "n": 4835,
+    "trend": {
+      "any": {
+        "per_decade": -0.00567620922235444,
+        "ci": [
+          -0.02308283863127944,
+          0.011730420186570561
+        ],
+        "p": 0.5227358766657233
+      },
+      "ex_yu": {
+        "per_decade": -0.021988450681903936,
+        "ci": [
+          -0.02942616899508157,
+          -0.014550732368726303
+        ],
+        "p": 6.859572561212609e-09
+      },
+      "west": {
+        "per_decade": 0.011258099436345996,
+        "ci": [
+          -0.005049340789910853,
+          0.027565539662602848
+        ],
+        "p": 0.17602619174277878
+      }
+    },
+    "breaks": {
+      "1981": {
+        "jump": -0.03435202298460254,
+        "ci": [
+          -0.07620423524462056,
+          0.0075001892754154795
+        ],
+        "p": 0.10767634208528905
+      },
+      "1991": {
+        "jump": -0.03943369647414831,
+        "ci": [
+          -0.1130532349644701,
+          0.03418584201617349
+        ],
+        "p": 0.2937923771798582
+      },
+      "2001": {
+        "jump": 0.01597070838885472,
+        "ci": [
+          -0.04270750027182596,
+          0.0746489170495354
+        ],
+        "p": 0.5937206650116744
+      }
+    }
+  },
+  "places": [
+    {
+      "place": "Ljubljana",
+      "jury": 1366,
+      "winners": 2259,
+      "people": 2971,
+      "lat": 46.0511,
+      "lon": 14.5051,
+      "region": "Ljubljana"
+    },
+    {
+      "place": "Maribor",
+      "jury": 263,
+      "winners": 439,
+      "people": 581,
+      "lat": 46.55764,
+      "lon": 15.64559,
+      "region": "Podravska"
+    },
+    {
+      "place": "Celje",
+      "jury": 128,
+      "winners": 210,
+      "people": 262,
+      "lat": 46.22939,
+      "lon": 15.26168,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Kranj",
+      "jury": 74,
+      "winners": 164,
+      "people": 198,
+      "lat": 46.24329,
+      "lon": 14.35494,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Nova Gorica",
+      "jury": 83,
+      "winners": 117,
+      "people": 161,
+      "lat": 45.95815,
+      "lon": 13.6475,
+      "region": "Goriška"
+    },
+    {
+      "place": "Novo mesto",
+      "jury": 58,
+      "winners": 119,
+      "people": 150,
+      "lat": 45.80405,
+      "lon": 15.16967,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Koper",
+      "jury": 67,
+      "winners": 85,
+      "people": 134,
+      "lat": 45.54799,
+      "lon": 13.73048,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Slovenj Gradec",
+      "jury": 48,
+      "winners": 80,
+      "people": 99,
+      "lat": 46.50914,
+      "lon": 15.07907,
+      "region": "Koroška"
+    },
+    {
+      "place": "Ptuj",
+      "jury": 45,
+      "winners": 69,
+      "people": 87,
+      "lat": 46.41981,
+      "lon": 15.87174,
+      "region": "Podravska"
+    },
+    {
+      "place": "Murska Sobota",
+      "jury": 35,
+      "winners": 48,
+      "people": 68,
+      "lat": 46.66246,
+      "lon": 16.16553,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Jesenice",
+      "jury": 18,
+      "winners": 50,
+      "people": 55,
+      "lat": 46.44592,
+      "lon": 14.06631,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Škofja Loka",
+      "jury": 19,
+      "winners": 44,
+      "people": 54,
+      "lat": 46.16527,
+      "lon": 14.30675,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Ljutomer",
+      "jury": 30,
+      "winners": 27,
+      "people": 51,
+      "lat": 46.52214,
+      "lon": 16.1313,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Postojna",
+      "jury": 23,
+      "winners": 38,
+      "people": 48,
+      "lat": 45.78727,
+      "lon": 14.15931,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Kamnik",
+      "jury": 20,
+      "winners": 29,
+      "people": 43,
+      "lat": 46.2751,
+      "lon": 14.62677,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Trbovlje",
+      "jury": 18,
+      "winners": 35,
+      "people": 42,
+      "lat": 46.13709,
+      "lon": 15.04648,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Piran",
+      "jury": 17,
+      "winners": 28,
+      "people": 39,
+      "lat": 45.52849,
+      "lon": 13.56845,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Šempeter pri Gorici",
+      "jury": 17,
+      "winners": 33,
+      "people": 38,
+      "lat": 45.93034,
+      "lon": 13.63986,
+      "region": "Goriška"
+    },
+    {
+      "place": "Ravne na Koroškem",
+      "jury": 14,
+      "winners": 22,
+      "people": 30,
+      "lat": 46.54837,
+      "lon": 14.97503,
+      "region": "Koroška"
+    },
+    {
+      "place": "Idrija",
+      "jury": 11,
+      "winners": 24,
+      "people": 28,
+      "lat": 46.0024,
+      "lon": 14.0273,
+      "region": "Goriška"
+    },
+    {
+      "place": "Velenje",
+      "jury": 12,
+      "winners": 24,
+      "people": 28,
+      "lat": 46.35929,
+      "lon": 15.11503,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Brežice",
+      "jury": 15,
+      "winners": 20,
+      "people": 28,
+      "lat": 45.93761,
+      "lon": 15.63293,
+      "region": "Posavska"
+    },
+    {
+      "place": "Ajdovščina",
+      "jury": 12,
+      "winners": 21,
+      "people": 27,
+      "lat": 45.9122,
+      "lon": 13.87601,
+      "region": "Goriška"
+    },
+    {
+      "place": "Bled",
+      "jury": 6,
+      "winners": 22,
+      "people": 26,
+      "lat": 46.36842,
+      "lon": 14.11006,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Kočevje",
+      "jury": 6,
+      "winners": 21,
+      "people": 23,
+      "lat": 45.63078,
+      "lon": 14.86815,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Portorož",
+      "jury": 16,
+      "winners": 11,
+      "people": 22,
+      "lat": 45.51465,
+      "lon": 13.59101,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Radovljica",
+      "jury": 10,
+      "winners": 16,
+      "people": 22,
+      "lat": 46.34502,
+      "lon": 14.19763,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Domžale",
+      "jury": 10,
+      "winners": 14,
+      "people": 22,
+      "lat": 46.13943,
+      "lon": 14.59446,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Izola",
+      "jury": 9,
+      "winners": 14,
+      "people": 21,
+      "lat": 45.54732,
+      "lon": 13.64783,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Tolmin",
+      "jury": 9,
+      "winners": 17,
+      "people": 21,
+      "lat": 46.14373,
+      "lon": 13.78928,
+      "region": "Goriška"
+    },
+    {
+      "place": "Črnomelj",
+      "jury": 4,
+      "winners": 18,
+      "people": 20,
+      "lat": 45.52506,
+      "lon": 15.21069,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Sežana",
+      "jury": 10,
+      "winners": 13,
+      "people": 20,
+      "lat": 45.70918,
+      "lon": 13.8731,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Krško",
+      "jury": 8,
+      "winners": 17,
+      "people": 20,
+      "lat": 45.95764,
+      "lon": 15.49468,
+      "region": "Posavska"
+    },
+    {
+      "place": "Vrhnika",
+      "jury": 8,
+      "winners": 13,
+      "people": 18,
+      "lat": 45.94756,
+      "lon": 14.28759,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Metlika",
+      "jury": 6,
+      "winners": 14,
+      "people": 17,
+      "lat": 45.6501,
+      "lon": 15.31745,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Zagorje ob Savi",
+      "jury": 6,
+      "winners": 13,
+      "people": 15,
+      "lat": 46.14919,
+      "lon": 14.92859,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Prevalje",
+      "jury": 3,
+      "winners": 14,
+      "people": 15,
+      "lat": 46.55491,
+      "lon": 14.89138,
+      "region": "Koroška"
+    },
+    {
+      "place": "Solkan",
+      "jury": 9,
+      "winners": 8,
+      "people": 14,
+      "lat": 45.97151,
+      "lon": 13.64703,
+      "region": "Goriška"
+    },
+    {
+      "place": "Ribnica",
+      "jury": 4,
+      "winners": 13,
+      "people": 13,
+      "lat": 45.72809,
+      "lon": 14.7391,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Trebnje",
+      "jury": 5,
+      "winners": 9,
+      "people": 13,
+      "lat": 45.90814,
+      "lon": 14.99245,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Lendava",
+      "jury": 6,
+      "winners": 8,
+      "people": 12,
+      "lat": 46.56396,
+      "lon": 16.45265,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Golnik",
+      "jury": 4,
+      "winners": 11,
+      "people": 12,
+      "lat": 46.32731,
+      "lon": 14.33309,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Grosuplje",
+      "jury": 8,
+      "winners": 7,
+      "people": 12,
+      "lat": 45.94429,
+      "lon": 14.66421,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Medvode",
+      "jury": 6,
+      "winners": 7,
+      "people": 11,
+      "lat": 46.13458,
+      "lon": 14.40106,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Slovenska Bistrica",
+      "jury": 5,
+      "winners": 9,
+      "people": 11,
+      "lat": 46.40738,
+      "lon": 15.56359,
+      "region": "Podravska"
+    },
+    {
+      "place": "Litija",
+      "jury": 2,
+      "winners": 11,
+      "people": 11,
+      "lat": 46.04968,
+      "lon": 14.99108,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Kostanjevica na Krki",
+      "jury": 4,
+      "winners": 10,
+      "people": 11,
+      "lat": 45.84138,
+      "lon": 15.41903,
+      "region": "Posavska"
+    },
+    {
+      "place": "Ilirska Bistrica",
+      "jury": 5,
+      "winners": 8,
+      "people": 10,
+      "lat": 45.57722,
+      "lon": 14.29703,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Šoštanj",
+      "jury": 2,
+      "winners": 9,
+      "people": 10,
+      "lat": 46.37739,
+      "lon": 15.04595,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Ormož",
+      "jury": 5,
+      "winners": 6,
+      "people": 10,
+      "lat": 46.43928,
+      "lon": 16.12245,
+      "region": "Podravska"
+    },
+    {
+      "place": "Cerknica",
+      "jury": 4,
+      "winners": 8,
+      "people": 10,
+      "lat": 45.79827,
+      "lon": 14.34479,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Bohinj",
+      "jury": 4,
+      "winners": 8,
+      "people": 9,
+      "lat": 46.30203,
+      "lon": 13.90902,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Laško",
+      "jury": 4,
+      "winners": 7,
+      "people": 9,
+      "lat": 46.12798,
+      "lon": 15.26955,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Slovenske Konjice",
+      "jury": 2,
+      "winners": 7,
+      "people": 9,
+      "lat": 46.3382,
+      "lon": 15.42302,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Žalec",
+      "jury": 4,
+      "winners": 7,
+      "people": 9,
+      "lat": 46.26116,
+      "lon": 15.15702,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Šmarje pri Jelšah",
+      "jury": 4,
+      "winners": 6,
+      "people": 8,
+      "lat": 46.22897,
+      "lon": 15.52026,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Mokronog",
+      "jury": 4,
+      "winners": 5,
+      "people": 8,
+      "lat": 45.94265,
+      "lon": 15.14468,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Žiri",
+      "jury": 1,
+      "winners": 7,
+      "people": 8,
+      "lat": 46.04421,
+      "lon": 14.12371,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Logatec",
+      "jury": 1,
+      "winners": 7,
+      "people": 8,
+      "lat": 45.94325,
+      "lon": 14.17994,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Vipava",
+      "jury": 3,
+      "winners": 7,
+      "people": 8,
+      "lat": 45.82153,
+      "lon": 13.97999,
+      "region": "Goriška"
+    },
+    {
+      "place": "Bohinjska Bistrica",
+      "jury": 2,
+      "winners": 7,
+      "people": 8,
+      "lat": 46.27237,
+      "lon": 13.95388,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Bovec",
+      "jury": 3,
+      "winners": 5,
+      "people": 8,
+      "lat": 46.35634,
+      "lon": 13.61442,
+      "region": "Goriška"
+    },
+    {
+      "place": "Rogaška Slatina",
+      "jury": 5,
+      "winners": 4,
+      "people": 7,
+      "lat": 46.23776,
+      "lon": 15.62699,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Stražišče pri Kranju",
+      "jury": 0,
+      "winners": 7,
+      "people": 7,
+      "lat": 46.23315,
+      "lon": 14.34037,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Ankaran",
+      "jury": 2,
+      "winners": 6,
+      "people": 7,
+      "lat": 45.59443,
+      "lon": 13.70342,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Tržič",
+      "jury": 3,
+      "winners": 6,
+      "people": 7,
+      "lat": 46.37975,
+      "lon": 14.33251,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Šentjur",
+      "jury": 3,
+      "winners": 5,
+      "people": 7,
+      "lat": 46.18908,
+      "lon": 15.40603,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Horjul",
+      "jury": 1,
+      "winners": 6,
+      "people": 7,
+      "lat": 46.02232,
+      "lon": 14.2989,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Škofljica",
+      "jury": 2,
+      "winners": 5,
+      "people": 6,
+      "lat": 45.9567,
+      "lon": 14.57836,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sevnica",
+      "jury": 4,
+      "winners": 2,
+      "people": 6,
+      "lat": 46.0086,
+      "lon": 15.26246,
+      "region": "Posavska"
+    },
+    {
+      "place": "Železniki",
+      "jury": 2,
+      "winners": 6,
+      "people": 6,
+      "lat": 46.21828,
+      "lon": 14.12041,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Mengeš",
+      "jury": 1,
+      "winners": 6,
+      "people": 6,
+      "lat": 46.16324,
+      "lon": 14.56321,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Mežica",
+      "jury": 2,
+      "winners": 6,
+      "people": 6,
+      "lat": 46.5204,
+      "lon": 14.85,
+      "region": "Koroška"
+    },
+    {
+      "place": "Mislinja",
+      "jury": 0,
+      "winners": 6,
+      "people": 6,
+      "lat": 46.44358,
+      "lon": 15.19835,
+      "region": "Koroška"
+    },
+    {
+      "place": "Trzin",
+      "jury": 1,
+      "winners": 5,
+      "people": 6,
+      "lat": 46.12781,
+      "lon": 14.54442,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Semič",
+      "jury": 0,
+      "winners": 6,
+      "people": 6,
+      "lat": 45.65175,
+      "lon": 15.18352,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Črna na Koroškem",
+      "jury": 3,
+      "winners": 4,
+      "people": 6,
+      "lat": 46.46963,
+      "lon": 14.85026,
+      "region": "Koroška"
+    },
+    {
+      "place": "Preddvor",
+      "jury": 2,
+      "winners": 6,
+      "people": 6,
+      "lat": 46.30214,
+      "lon": 14.42166,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Lucija",
+      "jury": 3,
+      "winners": 3,
+      "people": 5,
+      "lat": 45.5071,
+      "lon": 13.6046,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vitanje",
+      "jury": 4,
+      "winners": 4,
+      "people": 5,
+      "lat": 46.38229,
+      "lon": 15.29579,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Brezovica pri Ljubljani",
+      "jury": 3,
+      "winners": 3,
+      "people": 5,
+      "lat": 46.02423,
+      "lon": 14.41794,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gornja Radgona",
+      "jury": 4,
+      "winners": 1,
+      "people": 5,
+      "lat": 46.63612,
+      "lon": 15.96668,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Most na Soči",
+      "jury": 2,
+      "winners": 3,
+      "people": 5,
+      "lat": 46.15209,
+      "lon": 13.74402,
+      "region": "Goriška"
+    },
+    {
+      "place": "Ivančna Gorica",
+      "jury": 2,
+      "winners": 5,
+      "people": 5,
+      "lat": 45.90428,
+      "lon": 14.81212,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Kitajska",
+      "jury": 3,
+      "winners": 3,
+      "people": 5,
+      "lat": 45.93141,
+      "lon": 13.90361,
+      "region": "Goriška"
+    },
+    {
+      "place": "Prebold",
+      "jury": 4,
+      "winners": 3,
+      "people": 5,
+      "lat": 46.23569,
+      "lon": 15.09133,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Poljčane",
+      "jury": 2,
+      "winners": 3,
+      "people": 5,
+      "lat": 46.31393,
+      "lon": 15.5784,
+      "region": "Podravska"
+    },
+    {
+      "place": "Dolenjske Toplice",
+      "jury": 4,
+      "winners": 2,
+      "people": 4,
+      "lat": 45.75727,
+      "lon": 15.05838,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Rakek",
+      "jury": 0,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.81309,
+      "lon": 14.31921,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Dutovlje",
+      "jury": 3,
+      "winners": 2,
+      "people": 4,
+      "lat": 45.75565,
+      "lon": 13.83263,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Stražišče",
+      "jury": 0,
+      "winners": 4,
+      "people": 4,
+      "lat": 46.23315,
+      "lon": 14.34037,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Borovnica",
+      "jury": 2,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.91136,
+      "lon": 14.38316,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šentvid pri Stični",
+      "jury": 0,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.95339,
+      "lon": 14.8386,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmartno pri Slovenj Gradcu",
+      "jury": 2,
+      "winners": 3,
+      "people": 4,
+      "lat": 46.49309,
+      "lon": 15.10663,
+      "region": "Koroška"
+    },
+    {
+      "place": "Žužemberk",
+      "jury": 1,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.80726,
+      "lon": 14.96848,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Brestanica",
+      "jury": 2,
+      "winners": 3,
+      "people": 4,
+      "lat": 45.9965,
+      "lon": 15.47794,
+      "region": "Posavska"
+    },
+    {
+      "place": "Stična",
+      "jury": 1,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.95701,
+      "lon": 14.80784,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Čezsoča",
+      "jury": 0,
+      "winners": 4,
+      "people": 4,
+      "lat": 46.31969,
+      "lon": 13.54642,
+      "region": "Goriška"
+    },
+    {
+      "place": "Beltinci",
+      "jury": 2,
+      "winners": 2,
+      "people": 4,
+      "lat": 46.60691,
+      "lon": 16.23512,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Grgar",
+      "jury": 2,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.99816,
+      "lon": 13.67322,
+      "region": "Goriška"
+    },
+    {
+      "place": "Mozirje",
+      "jury": 3,
+      "winners": 2,
+      "people": 4,
+      "lat": 46.33964,
+      "lon": 14.96342,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Radlje ob Dravi",
+      "jury": 2,
+      "winners": 3,
+      "people": 4,
+      "lat": 46.59023,
+      "lon": 15.25011,
+      "region": "Koroška"
+    },
+    {
+      "place": "Radeče",
+      "jury": 2,
+      "winners": 3,
+      "people": 4,
+      "lat": 46.05956,
+      "lon": 15.13588,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Polzela",
+      "jury": 3,
+      "winners": 2,
+      "people": 4,
+      "lat": 46.27918,
+      "lon": 15.07543,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Dravograd",
+      "jury": 3,
+      "winners": 3,
+      "people": 4,
+      "lat": 46.5915,
+      "lon": 15.03835,
+      "region": "Koroška"
+    },
+    {
+      "place": "Kobarid",
+      "jury": 1,
+      "winners": 3,
+      "people": 4,
+      "lat": 46.24303,
+      "lon": 13.54688,
+      "region": "Goriška"
+    },
+    {
+      "place": "Štanjel",
+      "jury": 1,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.82379,
+      "lon": 13.84429,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Dobrepolje",
+      "jury": 1,
+      "winners": 4,
+      "people": 4,
+      "lat": 45.80975,
+      "lon": 14.74257,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Velike Lašče",
+      "jury": 2,
+      "winners": 3,
+      "people": 4,
+      "lat": 45.83247,
+      "lon": 14.63831,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šentjanž na Dolenjskem",
+      "jury": 2,
+      "winners": 1,
+      "people": 3,
+      "lat": 45.85936,
+      "lon": 15.68908,
+      "region": "Posavska"
+    },
+    {
+      "place": "Škocjan pri Turjaku",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 45.8723,
+      "lon": 14.59723,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Škocjan",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.90778,
+      "lon": 15.29062,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šentrupert",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.98478,
+      "lon": 15.08155,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Bohinjska Bela",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.34746,
+      "lon": 14.06091,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Šmarje-Sap",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 45.97511,
+      "lon": 14.61317,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Volče",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.176,
+      "lon": 13.70834,
+      "region": "Goriška"
+    },
+    {
+      "place": "Straža",
+      "jury": 2,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.78369,
+      "lon": 15.07304,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Pivka",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 45.68906,
+      "lon": 14.22857,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Podgora",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.82646,
+      "lon": 14.70255,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Radomlje",
+      "jury": 2,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.17319,
+      "lon": 14.61018,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Radenci",
+      "jury": 2,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.6409,
+      "lon": 16.03998,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Ruše",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.5196,
+      "lon": 15.49211,
+      "region": "Podravska"
+    },
+    {
+      "place": "Rogatec",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.23749,
+      "lon": 15.73733,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Renče",
+      "jury": 2,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.89001,
+      "lon": 13.66957,
+      "region": "Goriška"
+    },
+    {
+      "place": "Rače",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.45332,
+      "lon": 15.67915,
+      "region": "Podravska"
+    },
+    {
+      "place": "Dol pri Ljubljani",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.08834,
+      "lon": 14.64151,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zreče",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.37164,
+      "lon": 15.39002,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Cerkno",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.12796,
+      "lon": 13.98812,
+      "region": "Goriška"
+    },
+    {
+      "place": "Divača",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.68691,
+      "lon": 14.01254,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Sveti Jurij ob Ščavnici",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.56179,
+      "lon": 16.01856,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Topolšica",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.40135,
+      "lon": 15.02139,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Spodnja Idrija",
+      "jury": 3,
+      "winners": 1,
+      "people": 3,
+      "lat": 46.03363,
+      "lon": 14.0212,
+      "region": "Goriška"
+    },
+    {
+      "place": "Petrovče",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.24532,
+      "lon": 15.18851,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Krmelj",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.98453,
+      "lon": 15.18685,
+      "region": "Posavska"
+    },
+    {
+      "place": "Kropa",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.29109,
+      "lon": 14.2047,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Ljubno ob Savinji",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.3434,
+      "lon": 14.83365,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Luče",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.35536,
+      "lon": 14.74514,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Gornji Grad",
+      "jury": 2,
+      "winners": 1,
+      "people": 3,
+      "lat": 46.2961,
+      "lon": 14.80578,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Gozd Martuljek",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.48412,
+      "lon": 13.83873,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Notranje Gorice",
+      "jury": 2,
+      "winners": 2,
+      "people": 3,
+      "lat": 45.98702,
+      "lon": 14.39935,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Hrastnik",
+      "jury": 2,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.13494,
+      "lon": 15.11758,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Kanal ob Soči",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.08587,
+      "lon": 13.63393,
+      "region": "Goriška"
+    },
+    {
+      "place": "Knežak",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 45.62474,
+      "lon": 14.24487,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Kopriva",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.78243,
+      "lon": 13.83423,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Koroška Bela",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.42718,
+      "lon": 14.0994,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Hajdina",
+      "jury": 1,
+      "winners": 2,
+      "people": 3,
+      "lat": 46.41991,
+      "lon": 15.82393,
+      "region": "Podravska"
+    },
+    {
+      "place": "Izlake",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 46.15359,
+      "lon": 14.93072,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Bertoki",
+      "jury": 1,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.54532,
+      "lon": 13.76655,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Artiče",
+      "jury": 0,
+      "winners": 3,
+      "people": 3,
+      "lat": 45.95351,
+      "lon": 15.58512,
+      "region": "Posavska"
+    },
+    {
+      "place": "Žabja vas",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.9469,
+      "lon": 13.6497,
+      "region": "Goriška"
+    },
+    {
+      "place": "Šmihel",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.65194,
+      "lon": 14.17789,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Šempas",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.92895,
+      "lon": 13.74432,
+      "region": "Goriška"
+    },
+    {
+      "place": "Šentilj",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.6696,
+      "lon": 15.76883,
+      "region": "Podravska"
+    },
+    {
+      "place": "Šentilj v Slovenskih goricah",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.6804,
+      "lon": 15.65289,
+      "region": "Podravska"
+    },
+    {
+      "place": "Šentjanž pri Dravogradu",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.57718,
+      "lon": 15.01428,
+      "region": "Koroška"
+    },
+    {
+      "place": "Koprivnica",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.03505,
+      "lon": 15.54098,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Koritnice",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.62249,
+      "lon": 14.28552,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Šenčur",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.24315,
+      "lon": 14.4191,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Škalce",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.35088,
+      "lon": 15.42177,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Boštanj",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.01233,
+      "lon": 15.28117,
+      "region": "Posavska"
+    },
+    {
+      "place": "Zabukovica",
+      "jury": 2,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.21215,
+      "lon": 15.15844,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Zadlog",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.9412,
+      "lon": 14.00476,
+      "region": "Goriška"
+    },
+    {
+      "place": "Zaplana",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.97244,
+      "lon": 14.23156,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zgornja Kungota",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.63886,
+      "lon": 15.61413,
+      "region": "Podravska"
+    },
+    {
+      "place": "Vransko",
+      "jury": 2,
+      "winners": 0,
+      "people": 2,
+      "lat": 46.24327,
+      "lon": 14.95027,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Vrba",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.38898,
+      "lon": 14.14691,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Velika Nedelja",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.42087,
+      "lon": 16.1095,
+      "region": "Podravska"
+    },
+    {
+      "place": "Veliki Vrh",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.7723,
+      "lon": 14.52254,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Jurij ob Pesnici",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.43126,
+      "lon": 15.96879,
+      "region": "Podravska"
+    },
+    {
+      "place": "Jurovski Dol",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.60628,
+      "lon": 15.78411,
+      "region": "Podravska"
+    },
+    {
+      "place": "Kidričevo",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.39771,
+      "lon": 15.75391,
+      "region": "Podravska"
+    },
+    {
+      "place": "Višnja Gora",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.95544,
+      "lon": 14.7441,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Vojnik",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.29064,
+      "lon": 15.30885,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Dobrovo",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.99741,
+      "lon": 13.52737,
+      "region": "Goriška"
+    },
+    {
+      "place": "Trenta",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.38081,
+      "lon": 13.75184,
+      "region": "Goriška"
+    },
+    {
+      "place": "Trdkova",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.85259,
+      "lon": 16.1286,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Dobravlje",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.88294,
+      "lon": 13.84548,
+      "region": "Goriška"
+    },
+    {
+      "place": "Sveta Trojica v Slovenskih goricah",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.56708,
+      "lon": 15.8822,
+      "region": "Podravska"
+    },
+    {
+      "place": "Tezno",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.53335,
+      "lon": 15.6703,
+      "region": "Podravska"
+    },
+    {
+      "place": "Tomaj",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.75486,
+      "lon": 13.85381,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Tomišelj",
+      "jury": 2,
+      "winners": 0,
+      "people": 2,
+      "lat": 45.96399,
+      "lon": 14.48127,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Stročja vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.51021,
+      "lon": 16.22515,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Suša",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.18885,
+      "lon": 14.8246,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sodražica",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.75482,
+      "lon": 14.62205,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Solčava",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.41956,
+      "lon": 14.69202,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Sora",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.14184,
+      "lon": 14.37365,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Središče ob Dravi",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.40881,
+      "lon": 16.25613,
+      "region": "Podravska"
+    },
+    {
+      "place": "Kotlje",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.51942,
+      "lon": 14.98558,
+      "region": "Koroška"
+    },
+    {
+      "place": "Kozina",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.60851,
+      "lon": 13.9353,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Koštabona",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.47892,
+      "lon": 13.73719,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Kranjska Gora",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.45021,
+      "lon": 13.84341,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Krašnja",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.16696,
+      "lon": 14.7457,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Kresnice",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.10251,
+      "lon": 14.78678,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dramlje",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.27184,
+      "lon": 15.39296,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Smlednik",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.16406,
+      "lon": 14.43422,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Rovte",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.27855,
+      "lon": 14.23608,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Sele",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.22939,
+      "lon": 15.26168,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Selnica ob Dravi",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.55089,
+      "lon": 15.49254,
+      "region": "Podravska"
+    },
+    {
+      "place": "Selšček",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.82007,
+      "lon": 14.39621,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Loka pri Zidanem Mostu",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.05601,
+      "lon": 15.20876,
+      "region": "Posavska"
+    },
+    {
+      "place": "Križ",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.74272,
+      "lon": 13.86395,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Križevci pri Ljutomeru",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.56324,
+      "lon": 16.1384,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Krka",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.82174,
+      "lon": 15.18856,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Krušče",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.82609,
+      "lon": 14.43959,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Krvava Peč",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.86418,
+      "lon": 14.51475,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dolnja Bistrica",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.5402,
+      "lon": 16.29047,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Gabrovica pri Komnu",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.80704,
+      "lon": 13.78052,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Rakitna",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.89109,
+      "lon": 14.44051,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Ribnica na Pohorju",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.53505,
+      "lon": 15.26785,
+      "region": "Koroška"
+    },
+    {
+      "place": "Dražgoše",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.2524,
+      "lon": 14.17558,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Poljane nad Škofjo Loko",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.12186,
+      "lon": 14.18653,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Preloka",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.47001,
+      "lon": 15.34048,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Plešivec",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.06096,
+      "lon": 15.46026,
+      "region": "Posavska"
+    },
+    {
+      "place": "Plintovec",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.63707,
+      "lon": 15.61868,
+      "region": "Podravska"
+    },
+    {
+      "place": "Podsmreka",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.03875,
+      "lon": 14.42887,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Godešič",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.16624,
+      "lon": 14.35417,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Gorenja vas – Reteče",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.15693,
+      "lon": 14.37834,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gračišče",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.50533,
+      "lon": 13.8775,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Lenart v Slovenskih goricah",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.57637,
+      "lon": 15.83097,
+      "region": "Podravska"
+    },
+    {
+      "place": "Lepena",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.31207,
+      "lon": 13.6553,
+      "region": "Goriška"
+    },
+    {
+      "place": "Leskovec pri Krškem",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.9398,
+      "lon": 15.47693,
+      "region": "Posavska"
+    },
+    {
+      "place": "Limbuš",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.55432,
+      "lon": 15.58246,
+      "region": "Podravska"
+    },
+    {
+      "place": "Lipica",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.16507,
+      "lon": 14.34056,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Otalež",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.07887,
+      "lon": 13.98791,
+      "region": "Goriška"
+    },
+    {
+      "place": "Pesnica pri Mariboru",
+      "jury": 2,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.60891,
+      "lon": 15.6754,
+      "region": "Podravska"
+    },
+    {
+      "place": "Planina pri Sevnici",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.10441,
+      "lon": 15.40492,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Negova",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.60893,
+      "lon": 15.93768,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Nomenj",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.29288,
+      "lon": 14.00732,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Oplotnica",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.38896,
+      "lon": 15.45083,
+      "region": "Podravska"
+    },
+    {
+      "place": "Orehovica",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.16631,
+      "lon": 14.91284,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Miklavž na Dravskem polju",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.48862,
+      "lon": 15.70151,
+      "region": "Podravska"
+    },
+    {
+      "place": "Miren",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.89434,
+      "lon": 13.60892,
+      "region": "Goriška"
+    },
+    {
+      "place": "Moravče",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.13567,
+      "lon": 14.74422,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gorišnica",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 46.41203,
+      "lon": 16.01338,
+      "region": "Podravska"
+    },
+    {
+      "place": "Gradac",
+      "jury": 1,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.61437,
+      "lon": 15.24479,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Breznica",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.56077,
+      "lon": 14.9036,
+      "region": "Koroška"
+    },
+    {
+      "place": "Brezovica",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.94803,
+      "lon": 14.41803,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmarje",
+      "jury": 2,
+      "winners": 1,
+      "people": 2,
+      "lat": 45.5005,
+      "lon": 13.7171,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Šmarješke Toplice",
+      "jury": 1,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.86354,
+      "lon": 15.22395,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Brezje",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 46.54058,
+      "lon": 15.68426,
+      "region": "Podravska"
+    },
+    {
+      "place": "Avber",
+      "jury": 0,
+      "winners": 2,
+      "people": 2,
+      "lat": 45.78008,
+      "lon": 13.87365,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Štrekljevec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.67127,
+      "lon": 15.21584,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Cerklje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25516,
+      "lon": 14.5036,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Cerklje na Gorenjskem",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25516,
+      "lon": 14.5036,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Šafarsko",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.5202,
+      "lon": 16.28883,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Šavna Peč",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11242,
+      "lon": 15.1251,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Šent Jurij",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.92728,
+      "lon": 14.62381,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šentanel",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.57247,
+      "lon": 14.87676,
+      "region": "Koroška"
+    },
+    {
+      "place": "Šentjanž",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.01101,
+      "lon": 15.16944,
+      "region": "Posavska"
+    },
+    {
+      "place": "Kostanjevica na Dolenjskem",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.85936,
+      "lon": 15.68908,
+      "region": "Posavska"
+    },
+    {
+      "place": "Kostel",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.50814,
+      "lon": 14.91049,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šentlovrenc",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.94136,
+      "lon": 14.94409,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šentvid pri Planini",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.09574,
+      "lon": 15.43252,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Šešče pri Preboldu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.23842,
+      "lon": 15.12304,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Šibenik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19682,
+      "lon": 15.37702,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Škale pri Velenju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.35474,
+      "lon": 15.09135,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Škofi",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.7833,
+      "lon": 13.73516,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Škrbina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.84246,
+      "lon": 13.73512,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Loška dolina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.66452,
+      "lon": 14.49971,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Loški Potok",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.66252,
+      "lon": 14.66997,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Mala Ilova Gora",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.88283,
+      "lon": 14.72903,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Mala Nedelja",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.52353,
+      "lon": 16.05455,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Gornji Dolič",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.42476,
+      "lon": 15.18787,
+      "region": "Koroška"
+    },
+    {
+      "place": "Gozd",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.3404,
+      "lon": 14.33505,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Gradež pri Turjaku",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.8723,
+      "lon": 14.59723,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Jazbina",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.2184,
+      "lon": 15.54196,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Jezersko",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.38643,
+      "lon": 14.4873,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Jordankal",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.87008,
+      "lon": 15.04186,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Jugorje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.77819,
+      "lon": 15.27898,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Brezovec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.35093,
+      "lon": 16.0166,
+      "region": "Podravska"
+    },
+    {
+      "place": "Škrjanče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.92805,
+      "lon": 14.80915,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmalčja vas pri Šentjerneju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.84588,
+      "lon": 15.29031,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šmarjeta pri Celju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.26127,
+      "lon": 15.28124,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Šmartno ob Paki",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.32988,
+      "lon": 15.03339,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Graška Gora",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.41762,
+      "lon": 15.12295,
+      "region": "Koroška"
+    },
+    {
+      "place": "Griže",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.22958,
+      "lon": 15.15449,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Grm",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89614,
+      "lon": 15.05205,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Malenski Vrh",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.14224,
+      "lon": 14.14777,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Malečnik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.55573,
+      "lon": 15.69808,
+      "region": "Podravska"
+    },
+    {
+      "place": "Marezige",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.5071,
+      "lon": 13.79976,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Markišavci",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.68323,
+      "lon": 16.16421,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Mašun",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.62925,
+      "lon": 14.36722,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Mirna",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.94607,
+      "lon": 15.05732,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Mirna Peč",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.86027,
+      "lon": 15.0819,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Mohorje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.82261,
+      "lon": 14.54284,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Mojstrana",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.46095,
+      "lon": 13.93942,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Moškanjci",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.4201,
+      "lon": 15.99147,
+      "region": "Podravska"
+    },
+    {
+      "place": "Lovrenc na Dravskem polju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.37395,
+      "lon": 15.78067,
+      "region": "Podravska"
+    },
+    {
+      "place": "Lovrenc na Pohorju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.54136,
+      "lon": 15.38857,
+      "region": "Podravska"
+    },
+    {
+      "place": "Ločki Vrh",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.59814,
+      "lon": 15.92018,
+      "region": "Podravska"
+    },
+    {
+      "place": "Pečnik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.03779,
+      "lon": 14.04917,
+      "region": "Goriška"
+    },
+    {
+      "place": "Pijava Gorica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.95224,
+      "lon": 14.57291,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Planina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.85692,
+      "lon": 13.90904,
+      "region": "Goriška"
+    },
+    {
+      "place": "Planina pri Rakeku",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81309,
+      "lon": 14.31921,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Muljava",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.90332,
+      "lon": 14.79986,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Muta",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.60935,
+      "lon": 15.16551,
+      "region": "Koroška"
+    },
+    {
+      "place": "Naklo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28727,
+      "lon": 14.29047,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Nazarje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28589,
+      "lon": 14.92039,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Neblo",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.00659,
+      "lon": 13.5,
+      "region": "Goriška"
+    },
+    {
+      "place": "Nemška vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.95612,
+      "lon": 15.42442,
+      "region": "Posavska"
+    },
+    {
+      "place": "Nova vas pri Mariboru",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.53893,
+      "lon": 15.62643,
+      "region": "Podravska"
+    },
+    {
+      "place": "Nova vas pri Markovcih",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.38475,
+      "lon": 15.93626,
+      "region": "Podravska"
+    },
+    {
+      "place": "Olimje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.14969,
+      "lon": 15.5617,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Orehova vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.47128,
+      "lon": 15.66745,
+      "region": "Podravska"
+    },
+    {
+      "place": "Osilnica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.55079,
+      "lon": 14.72026,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Osojnica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.0367,
+      "lon": 14.08765,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Levič",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.3511,
+      "lon": 15.54127,
+      "region": "Podravska"
+    },
+    {
+      "place": "Lipovci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.62556,
+      "lon": 16.22838,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Log pod Mangartom",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.40669,
+      "lon": 13.60361,
+      "region": "Goriška"
+    },
+    {
+      "place": "Gorenje pri Divači",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.69257,
+      "lon": 13.94932,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Goričak",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.36778,
+      "lon": 16.06369,
+      "region": "Podravska"
+    },
+    {
+      "place": "Goričane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.14174,
+      "lon": 14.39617,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Goriče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.31909,
+      "lon": 14.34596,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Osrečje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89061,
+      "lon": 15.27941,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Otočec",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.83349,
+      "lon": 15.22163,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Oševljek",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.87946,
+      "lon": 13.69743,
+      "region": "Goriška"
+    },
+    {
+      "place": "Parecag",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.48692,
+      "lon": 13.63257,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Parižlje",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28088,
+      "lon": 15.06032,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Pavlovski Vrh",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.43644,
+      "lon": 16.1826,
+      "region": "Podravska"
+    },
+    {
+      "place": "Pedrovo",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.85685,
+      "lon": 13.76323,
+      "region": "Goriška"
+    },
+    {
+      "place": "Perovo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.97101,
+      "lon": 14.65919,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Pesnica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.61821,
+      "lon": 15.70615,
+      "region": "Podravska"
+    },
+    {
+      "place": "Plave",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.04112,
+      "lon": 13.58958,
+      "region": "Goriška"
+    },
+    {
+      "place": "Golavabuka",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.4823,
+      "lon": 15.15875,
+      "region": "Koroška"
+    },
+    {
+      "place": "Golo Brdo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11066,
+      "lon": 14.41547,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gomila",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.93393,
+      "lon": 15.04671,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Gora pri Komendi",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.20618,
+      "lon": 14.55025,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gorenja vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.1069,
+      "lon": 14.1497,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Gorenja vas pri Šmarjeti",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.88684,
+      "lon": 15.24091,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Gorenja vas – Poljane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.10874,
+      "lon": 14.12685,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Gorenje Gradišče pri Dolenjskih Toplicah",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.74899,
+      "lon": 15.04647,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Grahovo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.77067,
+      "lon": 14.42511,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Grahovo ob Bači",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.15731,
+      "lon": 13.86562,
+      "region": "Goriška"
+    },
+    {
+      "place": "Grahovo pri Cerknici",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81558,
+      "lon": 14.37969,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Lenart pri Gornjem Gradu",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.30414,
+      "lon": 14.79248,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Lesce",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.3618,
+      "lon": 14.15444,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Leskovec",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25229,
+      "lon": 15.30339,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Lesno Brdo",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.00432,
+      "lon": 14.33392,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Preska",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.98414,
+      "lon": 15.29007,
+      "region": "Posavska"
+    },
+    {
+      "place": "Prečna",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81244,
+      "lon": 15.12286,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Goričica pri Ihanu",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.12202,
+      "lon": 14.6265,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Plač",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.66986,
+      "lon": 15.60992,
+      "region": "Podravska"
+    },
+    {
+      "place": "Pleterje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.96643,
+      "lon": 15.52454,
+      "region": "Posavska"
+    },
+    {
+      "place": "Pobrežje",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.54969,
+      "lon": 15.6695,
+      "region": "Podravska"
+    },
+    {
+      "place": "Podbočje",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.86414,
+      "lon": 15.46669,
+      "region": "Posavska"
+    },
+    {
+      "place": "Podgorje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52975,
+      "lon": 13.95149,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Podgorje pri Kamniku",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.22602,
+      "lon": 14.68352,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Podkum",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.06968,
+      "lon": 15.0344,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Podlipovica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.16002,
+      "lon": 14.91878,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Podljubelj",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.3965,
+      "lon": 14.28685,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Podova",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.43493,
+      "lon": 15.69883,
+      "region": "Podravska"
+    },
+    {
+      "place": "Podsreda",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.04018,
+      "lon": 15.59005,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Podvin pri Polzeli",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28929,
+      "lon": 15.06347,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Planina pri Črnomlju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.56274,
+      "lon": 15.15647,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Erzelj",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.83231,
+      "lon": 13.90789,
+      "region": "Goriška"
+    },
+    {
+      "place": "Fala",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.54636,
+      "lon": 15.44977,
+      "region": "Podravska"
+    },
+    {
+      "place": "Fara",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.76723,
+      "lon": 14.51019,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Filovci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.66157,
+      "lon": 16.2989,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Podzemelj",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.60847,
+      "lon": 15.27539,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Polhov Gradec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.06536,
+      "lon": 14.31286,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Polica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.26534,
+      "lon": 14.32826,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Poljane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.55008,
+      "lon": 15.62493,
+      "region": "Podravska"
+    },
+    {
+      "place": "Poljšica pri Gorjah",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.37787,
+      "lon": 14.07319,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Ponikva",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25418,
+      "lon": 15.4446,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Ponikva pri Grobelnem",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.19834,
+      "lon": 15.43904,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Ponikve pri Trebnjem",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.90765,
+      "lon": 14.97064,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Povžane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.57401,
+      "lon": 14.00486,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Predenca",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.22417,
+      "lon": 15.5236,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Predgrad",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.50512,
+      "lon": 15.05568,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Preserje",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.86996,
+      "lon": 13.78701,
+      "region": "Goriška"
+    },
+    {
+      "place": "Repče",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89173,
+      "lon": 15.0145,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Rimske Toplice",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.12341,
+      "lon": 15.19595,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Rodica",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.14768,
+      "lon": 14.59393,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Rodica pri Domžalah",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.11328,
+      "lon": 14.59886,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Rodine",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.59872,
+      "lon": 15.14444,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Primskovo pri Kranju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.2476,
+      "lon": 14.37272,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Pristava pri Mestinju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19647,
+      "lon": 15.59626,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Pristava pri Tržiču",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.35713,
+      "lon": 14.27573,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Ptujska Gora",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.35414,
+      "lon": 15.76059,
+      "region": "Podravska"
+    },
+    {
+      "place": "Puštal",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.16184,
+      "lon": 14.31071,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Radizel",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.46351,
+      "lon": 15.65162,
+      "region": "Podravska"
+    },
+    {
+      "place": "Drbetinci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.53823,
+      "lon": 15.93118,
+      "region": "Podravska"
+    },
+    {
+      "place": "Drenov Grič",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.99639,
+      "lon": 14.32842,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dule",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.92559,
+      "lon": 15.33687,
+      "region": "Posavska"
+    },
+    {
+      "place": "Dvor pri Polhovem Gradcu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.06345,
+      "lon": 14.34581,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dvorska vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81034,
+      "lon": 14.63955,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Idrija pri Bači",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.1389,
+      "lon": 13.7794,
+      "region": "Goriška"
+    },
+    {
+      "place": "Križe pri Tržiču",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.35713,
+      "lon": 14.27573,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Križevci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.56685,
+      "lon": 16.11762,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Kromberk",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.95829,
+      "lon": 13.66441,
+      "region": "Goriška"
+    },
+    {
+      "place": "Krupa",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.6357,
+      "lon": 15.21799,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Dolnja Prekopa",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.85388,
+      "lon": 15.38004,
+      "region": "Posavska"
+    },
+    {
+      "place": "Dorfarje",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19524,
+      "lon": 14.32377,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Doslovče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.3934,
+      "lon": 14.16235,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Fojana",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.99694,
+      "lon": 13.50602,
+      "region": "Goriška"
+    },
+    {
+      "place": "Gabrovka",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.00104,
+      "lon": 14.98721,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Gerlinci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.76121,
+      "lon": 16.00615,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Globoko",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.95552,
+      "lon": 15.62988,
+      "region": "Posavska"
+    },
+    {
+      "place": "Rakovci",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.49384,
+      "lon": 16.05383,
+      "region": "Podravska"
+    },
+    {
+      "place": "Rakovlje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28329,
+      "lon": 15.04084,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Ratanska vas",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.24869,
+      "lon": 15.63035,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Reber",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.85402,
+      "lon": 14.92992,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Slivno",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.17239,
+      "lon": 15.204,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Slovenska vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.66753,
+      "lon": 14.83028,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Slovenski Javornik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.42615,
+      "lon": 14.0848,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Rova",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.17992,
+      "lon": 14.63042,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sebeborci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.70788,
+      "lon": 16.19839,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Sela pri Dolenjskih Toplicah",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.74899,
+      "lon": 15.04647,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Senično",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.33348,
+      "lon": 14.31639,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Senožete",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.97175,
+      "lon": 15.43925,
+      "region": "Posavska"
+    },
+    {
+      "place": "Dolenci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.85019,
+      "lon": 16.28806,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Dolenja Dobrava",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.10167,
+      "lon": 14.15178,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Dolenje Ponikve",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.89171,
+      "lon": 15.04531,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Lokavec",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.90212,
+      "lon": 13.87978,
+      "region": "Goriška"
+    },
+    {
+      "place": "Lokve",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.01205,
+      "lon": 13.79271,
+      "region": "Goriška"
+    },
+    {
+      "place": "Lovrenc na Dravskem Polju",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.37395,
+      "lon": 15.78067,
+      "region": "Podravska"
+    },
+    {
+      "place": "Huda Jama",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.15893,
+      "lon": 15.18738,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Hum pri Ormožu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.41525,
+      "lon": 16.19845,
+      "region": "Podravska"
+    },
+    {
+      "place": "Hrastovica",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.96702,
+      "lon": 15.15058,
+      "region": "Posavska"
+    },
+    {
+      "place": "Srednja Dobrava",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.30573,
+      "lon": 14.22052,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Srednja Kanomlja",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.02271,
+      "lon": 13.97998,
+      "region": "Goriška"
+    },
+    {
+      "place": "Stanjevci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.80692,
+      "lon": 16.1851,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Stanovišče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25544,
+      "lon": 13.45723,
+      "region": "Goriška"
+    },
+    {
+      "place": "Dovje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.46833,
+      "lon": 13.9478,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Dragatuš",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52205,
+      "lon": 15.1789,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Dramlje pri Celju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.25378,
+      "lon": 15.29383,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Drašča vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.85503,
+      "lon": 14.85875,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Sečovlje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.47642,
+      "lon": 13.62895,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Skaručna",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.1506,
+      "lon": 14.48189,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sladki Vrh",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.69691,
+      "lon": 15.73528,
+      "region": "Podravska"
+    },
+    {
+      "place": "Slamna vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.67427,
+      "lon": 15.33534,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Slap ob Idrijci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.12319,
+      "lon": 13.80226,
+      "region": "Goriška"
+    },
+    {
+      "place": "Slape",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.34208,
+      "lon": 15.76767,
+      "region": "Podravska"
+    },
+    {
+      "place": "Slavina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.71207,
+      "lon": 14.17854,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Sobetinci",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.40475,
+      "lon": 15.97123,
+      "region": "Podravska"
+    },
+    {
+      "place": "Spodnja Branica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.84323,
+      "lon": 13.82881,
+      "region": "Goriška"
+    },
+    {
+      "place": "Spodnja Polskava",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.41202,
+      "lon": 15.6375,
+      "region": "Podravska"
+    },
+    {
+      "place": "Spodnje Gorje",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.38392,
+      "lon": 14.07884,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Spodnji Brnik",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.22836,
+      "lon": 14.48569,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Spodnji Log",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52361,
+      "lon": 15.01037,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Srednja Bistrica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.55158,
+      "lon": 16.27735,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Krvavec",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.04166,
+      "lon": 13.7152,
+      "region": "Goriška"
+    },
+    {
+      "place": "Kubed",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52154,
+      "lon": 13.86893,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Lahonci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.47866,
+      "lon": 16.12806,
+      "region": "Podravska"
+    },
+    {
+      "place": "Ledine",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.04218,
+      "lon": 14.05496,
+      "region": "Goriška"
+    },
+    {
+      "place": "Kremberk",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.64451,
+      "lon": 15.84364,
+      "region": "Podravska"
+    },
+    {
+      "place": "Kreplje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.74499,
+      "lon": 13.83726,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Hodoš",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.82599,
+      "lon": 16.32612,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Hotovlja",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11961,
+      "lon": 14.1918,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Hrastje–Mota",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.61643,
+      "lon": 16.07551,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Trate",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.69791,
+      "lon": 15.7873,
+      "region": "Podravska"
+    },
+    {
+      "place": "Stara Cerkev",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.67048,
+      "lon": 14.84009,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Stara Fužina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28793,
+      "lon": 13.89366,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Stara Vrhnika",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.97539,
+      "lon": 14.28299,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Stara vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.76212,
+      "lon": 14.21336,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Stari trg",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.95775,
+      "lon": 14.75642,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Stari trg pri Ložu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.7144,
+      "lon": 14.47194,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Strezetina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.45149,
+      "lon": 16.14404,
+      "region": "Podravska"
+    },
+    {
+      "place": "Strojna",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59592,
+      "lon": 14.91389,
+      "region": "Koroška"
+    },
+    {
+      "place": "Strunjan",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.52582,
+      "lon": 13.61143,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Struževo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.25026,
+      "lon": 14.33981,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Studenci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.55412,
+      "lon": 15.62185,
+      "region": "Podravska"
+    },
+    {
+      "place": "Studenčice pri Medvodah",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.09335,
+      "lon": 14.37001,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Suhadole",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.02559,
+      "lon": 15.03673,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Suhadole pri Komendi",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.19331,
+      "lon": 14.53626,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Smolenja vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81517,
+      "lon": 15.20151,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Dob pri Domžalah",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11328,
+      "lon": 14.59886,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dobliče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.55868,
+      "lon": 15.144,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Dobrna",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.35273,
+      "lon": 15.2279,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Dobrova-Polhov Gradec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.05969,
+      "lon": 14.32168,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Dobrova–Polhov Gradec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.05969,
+      "lon": 14.32168,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sušica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89264,
+      "lon": 14.82347,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Sv. Miklavž pri Ormožu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.41525,
+      "lon": 16.19845,
+      "region": "Podravska"
+    },
+    {
+      "place": "Sveti Anton",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52512,
+      "lon": 13.83044,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Svečina",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.66597,
+      "lon": 15.58809,
+      "region": "Podravska"
+    },
+    {
+      "place": "Tabor",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.23505,
+      "lon": 15.01531,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Tabor v Savinjski dolini",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.26492,
+      "lon": 15.13537,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Tenetiše",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.29654,
+      "lon": 14.34735,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Tišina",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.65448,
+      "lon": 16.08549,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Tlake pri Rogatcu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.22799,
+      "lon": 15.68239,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Topolc",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.58341,
+      "lon": 14.21588,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Topolovo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.10476,
+      "lon": 15.48851,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Tupaliče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.29043,
+      "lon": 14.42777,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Turiška vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.47353,
+      "lon": 15.1296,
+      "region": "Koroška"
+    },
+    {
+      "place": "Turjak",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.8778,
+      "lon": 14.61281,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Ukanc",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.27929,
+      "lon": 13.82998,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Vanganel",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.51744,
+      "lon": 13.77908,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vavta vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.78132,
+      "lon": 15.07779,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Vače",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11927,
+      "lon": 14.83737,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Travnik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.69068,
+      "lon": 14.59907,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Trboje",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.19673,
+      "lon": 14.4114,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Trebelno",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.91094,
+      "lon": 15.14976,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Trebče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.0476,
+      "lon": 15.63266,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Cirkovce",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.39485,
+      "lon": 15.7274,
+      "region": "Podravska"
+    },
+    {
+      "place": "Cirkulane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.34504,
+      "lon": 15.99619,
+      "region": "Podravska"
+    },
+    {
+      "place": "Dekani",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.54833,
+      "lon": 13.81034,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Depala vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.13215,
+      "lon": 14.57193,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Destrnik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.49165,
+      "lon": 15.87941,
+      "region": "Podravska"
+    },
+    {
+      "place": "Kamno",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.2137,
+      "lon": 13.63745,
+      "region": "Goriška"
+    },
+    {
+      "place": "Kilovče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.61953,
+      "lon": 14.18688,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Klanec pri Kranju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.24329,
+      "lon": 14.35494,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Komarna vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.67295,
+      "lon": 15.08137,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Komen",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81925,
+      "lon": 13.79008,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Komenda",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.20705,
+      "lon": 14.53778,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Kopriva na Krasu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.84451,
+      "lon": 13.64209,
+      "region": "Goriška"
+    },
+    {
+      "place": "Vodice",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.18922,
+      "lon": 14.49468,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Voglje pri Kranju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.24329,
+      "lon": 14.35494,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Dobrovnik",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.65177,
+      "lon": 16.34474,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Dol pri Hrastniku",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.14149,
+      "lon": 15.1164,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Trojane",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.18822,
+      "lon": 14.88612,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Trstenik",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.46116,
+      "lon": 16.16158,
+      "region": "Podravska"
+    },
+    {
+      "place": "Trška Gora",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.84261,
+      "lon": 15.18963,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Tuhinj",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.22717,
+      "lon": 14.76906,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Tunjice",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.23722,
+      "lon": 14.57878,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Velika Polana",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.5786,
+      "lon": 16.36293,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Velike Žablje",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.8676,
+      "lon": 13.8513,
+      "region": "Goriška"
+    },
+    {
+      "place": "Videm pri Ptuju",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.36964,
+      "lon": 15.90136,
+      "region": "Podravska"
+    },
+    {
+      "place": "Vinica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.46014,
+      "lon": 15.25395,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Vinski Vrh",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.45339,
+      "lon": 16.20509,
+      "region": "Podravska"
+    },
+    {
+      "place": "Vipavski Križ",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.88081,
+      "lon": 13.86128,
+      "region": "Goriška"
+    },
+    {
+      "place": "Vipolže",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.97517,
+      "lon": 13.53729,
+      "region": "Goriška"
+    },
+    {
+      "place": "Virmaše",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.17864,
+      "lon": 14.32259,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Visoko",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.27061,
+      "lon": 14.41807,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Vitomarci",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.52498,
+      "lon": 15.93386,
+      "region": "Podravska"
+    },
+    {
+      "place": "Hrovača",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.73671,
+      "lon": 14.73668,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Hruševo",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.07091,
+      "lon": 14.38578,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Hrušica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.78467,
+      "lon": 15.2457,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Hrvatini",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.58252,
+      "lon": 13.75639,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Jurka vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.7838,
+      "lon": 15.09175,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Juršinci",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.48593,
+      "lon": 15.96819,
+      "region": "Podravska"
+    },
+    {
+      "place": "Zgornja Polskava",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.42611,
+      "lon": 15.6087,
+      "region": "Podravska"
+    },
+    {
+      "place": "Zgornje Gorje",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.37982,
+      "lon": 14.06806,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Voklo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.21534,
+      "lon": 14.42157,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Volčji Grad",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.80052,
+      "lon": 13.7507,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vranji Vrh",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.68675,
+      "lon": 15.72618,
+      "region": "Podravska"
+    },
+    {
+      "place": "Vremski Britof",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.65754,
+      "lon": 14.03005,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vrh nad Krašnjo",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.18627,
+      "lon": 14.75444,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Vrhnika pri Ložu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.70488,
+      "lon": 14.50565,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Vrhovlje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.72761,
+      "lon": 13.82398,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vrhpolje",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.62766,
+      "lon": 13.92997,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Vrzdenec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.01962,
+      "lon": 14.27009,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Vuhred",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59427,
+      "lon": 15.23065,
+      "region": "Koroška"
+    },
+    {
+      "place": "Vuzenica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59788,
+      "lon": 15.16578,
+      "region": "Koroška"
+    },
+    {
+      "place": "Vučja Vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59759,
+      "lon": 16.10218,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Vučja vas",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59759,
+      "lon": 16.10218,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Zabreznica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.39756,
+      "lon": 14.1479,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Bruna vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.95729,
+      "lon": 15.15771,
+      "region": "Posavska"
+    },
+    {
+      "place": "Buje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.65471,
+      "lon": 14.08711,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Bukovec",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.43158,
+      "lon": 15.61994,
+      "region": "Podravska"
+    },
+    {
+      "place": "Bukovica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19862,
+      "lon": 14.24566,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Butoraj",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.54358,
+      "lon": 15.2054,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Bušinec",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.72918,
+      "lon": 15.07113,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Zagorica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.84331,
+      "lon": 14.71805,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zagradec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.8596,
+      "lon": 14.83446,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zaklanec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.02425,
+      "lon": 14.31487,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zakojca",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.16458,
+      "lon": 13.92681,
+      "region": "Goriška"
+    },
+    {
+      "place": "Zapuže",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.82056,
+      "lon": 15.29609,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Zavratec",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.99229,
+      "lon": 14.13055,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zavrh pri Trojanah",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.18113,
+      "lon": 14.87848,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zavrč",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.38602,
+      "lon": 16.04599,
+      "region": "Podravska"
+    },
+    {
+      "place": "Zemelj pri Metliki",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.69095,
+      "lon": 15.30293,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Zgornja Javoršica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11972,
+      "lon": 14.69913,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Braslovče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.28038,
+      "lon": 15.01762,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Brda pri Slovenj Gradcu",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.47042,
+      "lon": 15.14198,
+      "region": "Koroška"
+    },
+    {
+      "place": "Šentjernej",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.82502,
+      "lon": 15.31881,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šentjošt nad Horjulom",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.03247,
+      "lon": 14.22507,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šentjurij pri Mirni Peči",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89368,
+      "lon": 15.09026,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Šentlambert",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.11062,
+      "lon": 14.93481,
+      "region": "Zasavska"
+    },
+    {
+      "place": "Zgornji Porčič",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.59256,
+      "lon": 15.85884,
+      "region": "Podravska"
+    },
+    {
+      "place": "Zgornji Tuhinj",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.22717,
+      "lon": 14.76906,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Zidani Most",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.08555,
+      "lon": 15.17194,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Čatež ob Savi",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.89094,
+      "lon": 15.60234,
+      "region": "Posavska"
+    },
+    {
+      "place": "Čehovini",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81181,
+      "lon": 13.88425,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Čentiba",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.55237,
+      "lon": 16.48265,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Čiginj",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.16316,
+      "lon": 13.70986,
+      "region": "Goriška"
+    },
+    {
+      "place": "Brezovica pri Žirovnici",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.39948,
+      "lon": 14.14243,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Brezula",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.44122,
+      "lon": 15.69515,
+      "region": "Podravska"
+    },
+    {
+      "place": "Brje pri Ajdovščini",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.86854,
+      "lon": 13.81545,
+      "region": "Goriška"
+    },
+    {
+      "place": "Apače",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.69729,
+      "lon": 15.90962,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Šturje pri Ajdovščini",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.88769,
+      "lon": 13.91075,
+      "region": "Goriška"
+    },
+    {
+      "place": "Šujica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.06192,
+      "lon": 14.41179,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmohor",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.18199,
+      "lon": 15.17978,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Žabnica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19668,
+      "lon": 14.33203,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Želimlje",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.91886,
+      "lon": 14.57157,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Žibrše",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.93952,
+      "lon": 14.17606,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Žirovnica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.40461,
+      "lon": 14.13532,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Irča vas",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.80225,
+      "lon": 15.15236,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Jablan",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.83791,
+      "lon": 15.09552,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Jagnjenica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.0648,
+      "lon": 15.12426,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Jakovica",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.86255,
+      "lon": 14.25039,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmatevž",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.25937,
+      "lon": 15.0366,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Šmaver pri Trebnjem",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.90765,
+      "lon": 14.97064,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Štore",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.19792,
+      "lon": 15.32767,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Cegelnica",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.27828,
+      "lon": 14.3208,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Šmartno pri Litiji",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.01695,
+      "lon": 14.83376,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmartno pri Ljubljani",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.08834,
+      "lon": 14.64151,
+      "region": "Osrednjeslovenska"
+    },
+    {
+      "place": "Šmartno v Rožni dolini",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.29373,
+      "lon": 15.24613,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Brecljevo",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.21935,
+      "lon": 15.53258,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Brestovica pri Komnu",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.81488,
+      "lon": 13.62693,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Brestovica pri Povirju",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 45.71585,
+      "lon": 13.94665,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Štjak",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.79454,
+      "lon": 13.90478,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Bodislavci",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.50968,
+      "lon": 16.05858,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Bloke",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.7869,
+      "lon": 14.4986,
+      "region": "Primorsko-notranjska"
+    },
+    {
+      "place": "Bistrica ob Sotli",
+      "jury": 1,
+      "winners": 0,
+      "people": 1,
+      "lat": 46.05927,
+      "lon": 15.65301,
+      "region": "Savinjska"
+    },
+    {
+      "place": "Bistrica ob Dravi",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.55301,
+      "lon": 15.55018,
+      "region": "Podravska"
+    },
+    {
+      "place": "Biserjane",
+      "jury": 1,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.57167,
+      "lon": 16.02934,
+      "region": "Pomurska"
+    },
+    {
+      "place": "Benečija",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.905,
+      "lon": 14.99429,
+      "region": "Jugovzhodna Slovenija"
+    },
+    {
+      "place": "Beli Križ",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 45.52,
+      "lon": 13.58005,
+      "region": "Obalno-kraška"
+    },
+    {
+      "place": "Begunje na Gorenjskem",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.37461,
+      "lon": 14.19979,
+      "region": "Gorenjska"
+    },
+    {
+      "place": "Avče",
+      "jury": 0,
+      "winners": 1,
+      "people": 1,
+      "lat": 46.10111,
+      "lon": 13.68312,
+      "region": "Goriška"
+    }
+  ]
 }

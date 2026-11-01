@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   }));
 }
 const { entry, prev, next } = Astro.props;
-const { n, chart } = findingData[entry.id];
+const { n, chart, extra = [] } = findingData[entry.id];
 const d = entry.data;
 const body = fill(entry.rendered?.html ?? "", n).replace(/href="\//g, `href="${url("/")}`);
 const title = fill(d.title, n);
@@ -28,13 +28,21 @@ const linked = d.awards.filter((a) => awards[a]);
     <h1>{title}</h1>
     <p class="lede">{lede}</p>
 
-    <section class="chart-box">
+    <section class:list={["chart-box", { wide: chart.type === "placemap" }]}>
       <h2>{fill(d.chartTitle, n)}</h2>
       <Chart spec={chart} />
       {d.chartNote && <p class="small muted">{fill(d.chartNote, n)}</p>}
     </section>
 
     <div class="prose" set:html={body} />
+
+    {extra.map((x) => (
+      <section class="chart-box">
+        <h2>{x.title}</h2>
+        <Chart spec={x.chart} />
+        {x.note && <p class="small muted">{x.note}</p>}
+      </section>
+    ))}
 
     <details class="method">
       <summary>Kako smo merili</summary>
@@ -56,6 +64,7 @@ const linked = d.awards.filter((a) => awards[a]);
   .finding { max-width: 760px; }
   .finding h1 { font-size: clamp(32px, 5vw, 50px); }
   .chart-box { margin: 36px 0 28px; padding: 20px 20px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+  .chart-box.wide { width: min(1040px, calc(100vw - 32px)); max-width: none; }
   .chart-box h2 { margin: 0 0 4px; font-size: 21px; }
   .prose { font: 18px/1.65 var(--serif); max-width: 38em; }
   .prose :global(p) { margin: 0 0 16px; }

@@ -371,22 +371,170 @@ def ages() -> dict:
 
 
 def ljubljana() -> dict:
-    """§11: Ljubljana ties against population, by region (winners since 2000)."""
+    """§11: a map of the places people are tied to; Ljubljana ties against population,
+    by region (winners since 2000); the path from a win into juries."""
     g = _res("geography")
     rep = [r for r in g["representation"] if r["role"] == "winner"]
     rep.sort(key=lambda r: -r["share"])
     lj = next(r for r in rep if r["unit"] == "Ljubljana")
+    path = g["jury_path"]
+    km = path["km"]
+    places = g["places"]
+    top = next(p for p in places if p["place"] == "Ljubljana")
+    second = [p for p in places if p["place"] != "Ljubljana"][:3]
     return {
         "n": {"lj_win": _pct(g["shares_since_2000"]["winner"]["lj"]),
               "lj_jury": _pct(g["shares_since_2000"]["jury"]["lj"]),
-              "lj_index": _dec(lj["index"]), "lj_pop": _pct(lj["pop_share"])},
-        "chart": {"type": "bars", "props": {
-            "rows": [{"label": r["unit"], "value": r["share"], "compare": r["pop_share"],
-                      "color": JURY if r["unit"] == "Ljubljana" else GRAY} for r in rep],
-            "format": "pct", "valueLabel": "delež nagrajencev", "compareLabel": "delež prebivalcev",
-            "label": "Nagrajenci po regijah v primerjavi s prebivalstvom",
-            "legend": [{"label": "delež nagrajencev", "color": GRAY},
-                       {"label": "delež prebivalcev", "color": "", "tick": True}]}},
+              "lj_index": _dec(lj["index"]), "lj_pop": _pct(lj["pop_share"]),
+              "lj_people": _int(top["people"]), "n_places": _int(len(places)),
+              "next_places": ", ".join(f"{p['place']} ({_int(p['people'])})" for p in second),
+              "path_lj": _pct(km["z vezjo na Ljubljano"]["10y"]),
+              "path_out": _pct(km["brez vezi z Ljubljano"]["10y"]),
+              "path_hr": _dec(path["cox_by_field"]["hr"]),
+              "path_n_out": _int(path["n_outside"]),
+              "path_verdict": ("razlika je dovolj velika, da verjetno ni naključna, a skupina "
+                               "nagrajencev od drugod je majhna"
+                               if path["cox_by_award"]["p"] < SIG else MAYBE)},
+        "chart": {"type": "placemap", "props": placemap(places)},
+        "extra": [{
+            "title": "Nagrajenci po regijah v primerjavi s prebivalstvom",
+            "note": "Od leta 2000. Nagrajenec, povezan z več regijami, šteje v vsaki deloma. "
+                    "Ljubljana je prikazana ločeno od preostale osrednjeslovenske regije.",
+            "chart": {"type": "bars", "props": {
+                "rows": [{"label": r["unit"], "value": r["share"], "compare": r["pop_share"],
+                          "color": JURY if r["unit"] == "Ljubljana" else GRAY} for r in rep],
+                "format": "pct", "valueLabel": "delež nagrajencev",
+                "compareLabel": "delež prebivalcev",
+                "label": "Nagrajenci po regijah v primerjavi s prebivalstvom",
+                "legend": [{"label": "delež nagrajencev", "color": GRAY},
+                           {"label": "delež prebivalcev", "color": "", "tick": True}]}}}],
+    }
+
+
+# --- the place map ---------------------------------------------------------------------
+
+GEO = PROJECT_ROOT / ".cache" / "geo"
+# Openly licensed outlines (GADM, used for the analysis figures, may not be redistributed,
+# and the site ships the outline paths): statistical regions = NUTS 3 (Eurostat GISCO,
+# © EuroGeographics for the administrative boundaries); Ljubljana's city municipality
+# from geoBoundaries ADM2 (OpenStreetMap, ODbL).
+NUTS3_URL = ("https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/"
+             "NUTS_RG_01M_2021_4326_LEVL_3.geojson")
+ADM2_URL = ("https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SVN/"
+            "ADM2/geoBoundaries-SVN-ADM2.geojson")
+MAP_W = 1000                 # SVG width; height follows the country's shape
+LAT0 = 46.1                  # projection: equirectangular, x scaled by cos(LAT0)
+
+
+def _rings(geom) -> list:
+    parts = geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]
+    return [p[0] for p in parts]
+
+
+def _simplify(pts: list, tol: float) -> list:
+    """Douglas–Peucker on a list of (x, y)."""
+    import numpy as np
+    a = np.asarray(pts, float)
+    keep = np.zeros(len(a), bool)
+    keep[0] = keep[-1] = True
+    stack = [(0, len(a) - 1)]
+    while stack:
+        i, j = stack.pop()
+        if j <= i + 1:
+            continue
+        seg = a[j] - a[i]
+        n = np.hypot(*seg)
+        v = a[i + 1:j] - a[i]
+        # distance to the segment's line; to the point itself for a closed ring's ends
+        d = (np.abs(seg[0] * v[:, 1] - seg[1] * v[:, 0]) / n if n else np.hypot(v[:, 0], v[:, 1]))
+        k = int(d.argmax())
+        if d[k] > tol:
+            keep[i + 1 + k] = True
+            stack += [(i, i + 1 + k), (i + 1 + k, j)]
+    return a[keep].tolist()
+
+
+def _geo(name: str, url: str, keep=None) -> dict:
+    path = GEO / name
+    if not path.exists():
+        import urllib.request
+        GEO.mkdir(parents=True, exist_ok=True)
+        with urllib.request.urlopen(url, timeout=120) as r:
+            d = json.loads(r.read())
+        if keep:
+            d["features"] = [f for f in d["features"] if keep(f)]
+        path.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def placemap(places: list) -> dict:
+    """Region outlines (simplified) and one circle per Slovenian place, already projected
+    to SVG coordinates. Counts only: who is tied to a place is not published."""
+    import math
+    regions = _geo("nuts3_2021_si.geojson", NUTS3_URL,
+                   lambda f: f["properties"]["CNTR_CODE"] == "SI")
+    munis = _geo("geoboundaries_svn_adm2.geojson", ADM2_URL)
+    kx = math.cos(math.radians(LAT0))
+    rings = [r for f in regions["features"] for r in _rings(f["geometry"])]
+    xs = [x * kx for r in rings for x, _ in r]
+    ys = [y for r in rings for _, y in r]
+    x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+    pad = 12
+    scale = (MAP_W - 2 * pad) / (x1 - x0)
+    height = round((y1 - y0) * scale + 2 * pad)
+
+    def xy(lon, lat):
+        return (round((lon * kx - x0) * scale + pad, 1), round((y1 - lat) * scale + pad, 1))
+
+    def path(ring):
+        pts = _simplify([xy(lon, lat) for lon, lat in ring], 0.9)
+        if len(pts) < 4:
+            return ""
+        return "M" + "L".join(f"{x:g},{y:g}" for x, y in pts) + "Z"
+
+    outline = [{"name": f["properties"]["NAME_LATN"],
+                "d": "".join(path(r) for r in _rings(f["geometry"]))} for f in regions["features"]]
+    lj = next(f for f in munis["features"] if f["properties"]["shapeName"] == "Ljubljana")
+    pts = [{"name": p["place"], "region": p["region"], "x": xy(p["lon"], p["lat"])[0],
+            "y": xy(p["lon"], p["lat"])[1], "people": int(p["people"]),
+            "winners": int(p.get("winners", 0)), "jury": int(p.get("jury", 0))}
+           for p in places if p.get("lat") is not None]
+    pts = [p for p in pts if 0 <= p["x"] <= MAP_W and 0 <= p["y"] <= height]
+    return {"width": MAP_W, "height": height, "regions": outline,
+            "ljubljana": "".join(path(r) for r in _rings(lj["geometry"])),
+            "places": pts, "label": "Zemljevid krajev, s katerimi so povezani nagrajenci "
+                                    "in žiranti"}
+
+
+def _last_year() -> int:
+    from kulturne_nagrade import frames
+    return int(frames.editions()["year"].max())
+
+
+def abroad() -> dict:
+    """Ties abroad: ties to former Yugoslavia thin out steadily, with no break at 1991."""
+    f = _res("geography")["foreign_ties"]
+    by = f["by_decade"]
+    tr = f["trend"]
+    brk = f["breaks"]["1991"]
+    first, last = by[0], by[-1]
+    return {
+        "n": {"yu_first": _pct(first["ex_yu"]), "yu_last": _pct(last["ex_yu"]),
+              "west_first": _pct(first["west"]), "west_last": _pct(last["west"]),
+              "first_decade": f"{first['decade']}–{first['decade'] + 9}",
+              "last_decade": f"{last['decade']}–{min(last['decade'] + 9, _last_year())}",
+              "yu_trend": _points(-100 * tr["ex_yu"]["per_decade"]),
+              "west_verdict": _verdict(tr["west"]["p"]),
+              "break_verdict": ("ob osamosvojitvi ni dodatnega padca"
+                                if brk["p"] >= SIG else "ob osamosvojitvi je dodaten padec")},
+        "chart": {"type": "lines", "props": {
+            "x": [f"{r['decade']}" for r in by], "yMax": 0.6, "ticks": [0, 0.2, 0.4, 0.6],
+            "label": "Delež nagrajencev s krajem v tujini",
+            "series": [
+                {"label": "drugod v tujini", "color": P.SERIES[0],
+                 "values": [r["west"] for r in by]},
+                {"label": "nekdanja Jugoslavija", "color": WOMEN,
+                 "values": [r["ex_yu"] for r in by]}]}},
     }
 
 
@@ -459,6 +607,7 @@ FINDINGS = {
     "kariere-v-zirijah": jury_careers, "kraljevi-ustvarjalci": kingmakers,
     "ponovni-nagrajenci": repeat_winners, "presernov-sklad": presernov_two_step,
     "pozne-nagrade": late_in_life, "starost": ages, "ljubljana": ljubljana,
+    "vezi-s-tujino": abroad,
     "osamosvojitev": independence, "ignacija-j-fridl": dossier, "rekorderji": records,
 }
 

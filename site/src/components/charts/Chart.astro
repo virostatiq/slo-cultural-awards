@@ -1,9 +1,11 @@
 ---
 import Bars from "./Bars.astro";
 import Lines from "./Lines.astro";
+import PlaceMap from "./PlaceMap.astro";
 import type { ChartSpec } from "../../lib/findings";
 interface Props { spec: ChartSpec }
 const { spec } = Astro.props;
 ---
 {spec.type === "bars" && <Bars {...(spec.props as any)} />}
 {spec.type === "lines" && <Lines {...(spec.props as any)} />}
+{spec.type === "placemap" && <PlaceMap {...(spec.props as any)} />}

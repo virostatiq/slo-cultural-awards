@@ -2,8 +2,9 @@
 // numbers and chart specs come from src/data/findings.json (kulturne_nagrade.site_findings).
 import findingsJson from "../data/findings.json";
 
-export type ChartSpec = { type: "bars" | "lines"; props: Record<string, any> };
-export type FindingData = { n: Record<string, string | null>; chart: ChartSpec };
+export type ChartSpec = { type: "bars" | "lines" | "placemap"; props: Record<string, any> };
+export type ExtraChart = { title: string; note?: string; chart: ChartSpec };
+export type FindingData = { n: Record<string, string | null>; chart: ChartSpec; extra?: ExtraChart[] };
 export const findingData = findingsJson as unknown as Record<string, FindingData>;
 
 // Replace {{key}} with the exported number; an unknown key is left visible on purpose,
