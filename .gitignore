@@ -37,3 +37,4 @@ results/network/zemljevid.html
 docs/deployment/remote_ftp.txt
 docs/deployment/GA.txt
 CLAUDE.md
+site/.deploy-manifest.json

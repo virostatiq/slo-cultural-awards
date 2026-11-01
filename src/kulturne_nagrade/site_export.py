@@ -20,6 +20,7 @@ import json
 import math
 import shutil
 from collections import defaultdict
+from pathlib import Path
 
 import pandas as pd
 
@@ -215,9 +216,72 @@ def map_points(meta: dict) -> dict | None:
     return {"fields": fields, "points": pts}
 
 
+FACES = [("trubar", "Primož Trubar"), ("cankar", "Ivan Cankar"), ("jurcic", "Josip Jurčič"),
+         ("stritar", "Josip Stritar")]  # site/public/img/obrazi, as on the home page
+
+OG_HTML = """<!doctype html><html lang="sl"><head><meta charset="utf-8"><style>
+@font-face {{ font-family: N; font-weight: 200 800; src: url("{fonts}/newsreader/files/newsreader-latin-opsz-normal.woff2"); }}
+@font-face {{ font-family: N; font-weight: 200 800; src: url("{fonts}/newsreader/files/newsreader-latin-ext-opsz-normal.woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }}
+@font-face {{ font-family: H; font-weight: 100 900; src: url("{fonts}/hanken-grotesk/files/hanken-grotesk-latin-wght-normal.woff2"); }}
+@font-face {{ font-family: H; font-weight: 100 900; src: url("{fonts}/hanken-grotesk/files/hanken-grotesk-latin-ext-wght-normal.woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }}
+* {{ box-sizing: border-box; margin: 0; }}
+html, body {{ width: 1200px; height: 630px; overflow: hidden; background: #171022; color: #efe9f4; }}
+body {{ display: grid; grid-template-columns: 640px 1fr; padding: 0 56px 0 64px; gap: 40px; align-items: center; }}
+.brand {{ font: 500 26px N, serif; margin-bottom: 26px; }}
+h1 {{ font: 300 56px/1.06 N, serif; letter-spacing: -.02em; font-variation-settings: "opsz" 72; }}
+.nums {{ font: 400 21px H, sans-serif; color: #a89fb8; margin-top: 30px; }}
+.faces {{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }}
+.face {{ position: relative; border-radius: 10px; overflow: hidden; border: 1px solid #322845; }}
+.face:nth-child(2n) {{ transform: translateY(26px); }}
+.face img {{ display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }}
+.face span {{ position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 10px 8px; font: 400 17px N, serif;
+  background: linear-gradient(0deg, rgba(23,16,34,.92), rgba(23,16,34,0)); }}
+</style></head><body>
+<div><div class="brand">Kulturne nagrade</div>
+<h1>Kdo podeljuje slovenske kulturne nagrade in kdo jih prejema?</h1>
+<div class="nums">{nums}</div></div>
+<div class="faces">{faces}</div>
+</body></html>"""
+
+
 def og_default(meta: dict) -> Path:
-    """The site-wide Open Graph card (1200 x 630): title, a line of numbers and the
-    network map as the image. Per-page cards come later and use the same frame."""
+    """The site-wide Open Graph card (1200 x 630) in the site's design: the headline, a
+    line of numbers and the portraits of four award namesakes, rendered from HTML with
+    headless Chrome (so the site's own fonts are used). Falls back to a matplotlib card
+    with the network map when Chrome is not installed."""
+    import shutil as sh
+    import subprocess
+    import tempfile
+
+    chrome = next((c for c in ("google-chrome", "google-chrome-stable", "chromium",
+                               "chromium-browser") if sh.which(c)), None)
+    if chrome:
+        out = SITE / "public" / "og" / "privzeto.png"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        c = meta["counts"]
+        nums = (f"{c['awards']} nagrad · {c['people']:,} nagrajencev in žirantov · "
+                f"{c['years'][0]}–{c['years'][1]}").replace(",", ".")
+        img = SITE / "public" / "img" / "obrazi"
+        faces = "".join(f'<div class="face"><img src="{(img / f"{k}.webp").as_uri()}">'
+                        f"<span>{n}</span></div>" for k, n in FACES)
+        html = OG_HTML.format(fonts=(SITE / "node_modules" / "@fontsource-variable").as_uri(),
+                              nums=nums, faces=faces)
+        with tempfile.TemporaryDirectory() as tmp:
+            page = Path(tmp) / "og.html"
+            page.write_text(html, encoding="utf-8")
+            subprocess.run([chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars",
+                            "--allow-file-access-from-files", "--force-device-scale-factor=1",
+                            "--window-size=1200,630", "--virtual-time-budget=4000",
+                            f"--screenshot={out}", page.as_uri()],
+                           check=True, capture_output=True, timeout=120)
+        return out
+    return _og_default_map(meta)
+
+
+def _og_default_map(meta: dict) -> Path:
+    """Fallback card: title, numbers and the network map (matplotlib)."""
     import matplotlib.pyplot as plt
 
     nodes = RESULTS / "network" / "nodes.csv"
