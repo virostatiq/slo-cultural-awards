@@ -4,6 +4,8 @@
     uv run python scripts/deploy_site.py --no-build # upload site/dist as it is
     uv run python scripts/deploy_site.py --no-build --from 3500   # resume after file 3500
     uv run python scripts/deploy_site.py --full     # upload every file, not only changed ones
+    uv run python scripts/deploy_site.py --no-build --only 'favicon*' --only 'icon-*'
+                                                    # upload only paths matching the globs
 
 Only files that changed since the last upload are sent (site/.deploy-manifest.json keeps
 a hash of each uploaded file; git-ignored).
@@ -67,7 +69,8 @@ def build(c: dict) -> None:
     subprocess.run(["npx", "astro", "build"], cwd=ROOT / "site", env=env, check=True)
 
 
-def upload(c: dict, start: int = 0, pause: float = 10.0, full: bool = False) -> None:
+def upload(c: dict, start: int = 0, pause: float = 10.0, full: bool = False,
+           only: list[str] | None = None) -> None:
     def connect():
         f = ftplib.FTP_TLS(c["host"], timeout=60)
         f.login(c["user"], c["password"])
@@ -90,6 +93,9 @@ def upload(c: dict, start: int = 0, pause: float = 10.0, full: bool = False) -> 
     files = sorted(p for p in DIST.rglob("*") if p.is_file())
     done = json.loads(MANIFEST.read_text()) if MANIFEST.exists() and not full else {}
     files = [p for p in files if done.get(p.relative_to(DIST).as_posix()) != digest(p)]
+    if only:
+        from fnmatch import fnmatch
+        files = [p for p in files if any(fnmatch(p.relative_to(DIST).as_posix(), g) for g in only)]
     print(f"{len(files)} files to upload" + ("" if full else " (changed since the last upload)"),
           flush=True)
     t0, failed = time.time(), []
@@ -130,6 +136,8 @@ def main() -> None:
     ap.add_argument("--full", action="store_true", help="upload every file, not only changed ones")
     ap.add_argument("--seed-manifest", metavar="DIR",
                     help="record DIR (a copy of what is on the server) as uploaded, then exit")
+    ap.add_argument("--only", action="append", metavar="GLOB",
+                    help="upload only changed paths matching GLOB (repeatable)")
     ap.add_argument("--from", dest="start", type=int, default=0,
                     help="skip the first N files (resume a stopped upload)")
     a = ap.parse_args()
@@ -140,7 +148,7 @@ def main() -> None:
     c = config()
     if not a.no_build:
         build(c)
-    upload(c, a.start, full=a.full)
+    upload(c, a.start, full=a.full, only=a.only)
 
 
 if __name__ == "__main__":

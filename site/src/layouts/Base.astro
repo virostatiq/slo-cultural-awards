@@ -60,7 +60,10 @@ const [y0, y1] = metaJson.counts.years;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
   <meta name="theme-color" content="#171022" />
+  <link rel="icon" href={url("/favicon.ico")} sizes="32x32" />
   <link rel="icon" href={url("/favicon.svg")} type="image/svg+xml" />
+  <link rel="apple-touch-icon" href={url("/apple-touch-icon.png")} />
+  <link rel="manifest" href={url("/site.webmanifest")} />
   <slot name="head" />
 </head>
 <body>
