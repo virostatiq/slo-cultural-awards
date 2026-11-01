@@ -193,8 +193,16 @@ def women_to_juries() -> dict:
 def reciprocity() -> dict:
     """§4: pairs who each sat on a jury that awarded the other."""
     r = _res("juries")["reciprocity"]
+    more = r["p"] < SIG
     return {
-        "n": {"pairs": _int(r["pairs_observed"]), "expected": _int(r["pairs_expected"])},
+        "n": {"pairs": _int(r["pairs_observed"]), "expected": _int(r["pairs_expected"]),
+              "excess": _pct(r["ratio"] - 1),
+              "headline": ("se zgodi le malo pogosteje, kot bi pričakovali" if more
+                           else "se ne zgodi pogosteje, kot bi pričakovali"),
+              "answer": ("Nekaj ga je, a malo." if more else "Ni ga."),
+              "verdict": ("Razlika je majhna, vendar prevelika, da bi bila naključna. Večino "
+                          "vzajemnega nagrajevanja torej pojasni že majhnost prostora."
+                          if more else "Razlika je majhna in je lahko naključna.")},
         "chart": {"type": "bars", "props": {
             "rows": [{"label": "pari, ki sta drug drugemu podelila nagrado",
                       "value": r["pairs_observed"], "compare": r["pairs_expected"],

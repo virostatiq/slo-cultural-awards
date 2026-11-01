@@ -1,9 +1,60 @@
-# Handoff: state as of 2026-11-01 (end of session 5)
+# Handoff: state as of 2026-11-01 (end of session 6)
 
 Read this first in a new session, together with `CLAUDE.md`,
 `docs/data-model.md`, `docs/methods.md` and `docs/findings.md`.
 
-## Last session (2026-11-01, session 5)
+## Last session (2026-11-01, session 6)
+
+**Published.** The site is live at https://virostatiq.com/kulturne-nagrade/ and the repo
+is public at https://github.com/virostatiq/slo-cultural-awards (MIT code, CC BY 4.0 data,
+ODbL `places.csv`; `CITATION.cff`; CI runs pytest and dataset validation on push).
+- **Public `main` starts from a fresh single commit.** The local branch
+  `private-history` holds the old history (with party-affiliation rows): **never push it.**
+  Party traces were scrubbed before publishing (count-only rows in the decision logs,
+  `DELETE_OFFICES` emptied, `sds.si` sources removed, 2 more political memberships
+  deleted). `CLAUDE.md` is git-ignored by the user.
+- **Deploy:** `uv run python scripts/deploy_site.py` (builds with `SITE_URL`/`SITE_BASE`
+  from `docs/deployment/remote_ftp.txt`, git-ignored, never commit or print it). FTPS,
+  **one connection** (the host allows 2; its firewall, Imunify360, blocked the IP once
+  after a burst), a pause every 200 files, only files whose hash changed
+  (`site/.deploy-manifest.json`, saved every 250 files so a stopped run resumes).
+  `--only GLOB` uploads matching files only; `--no-build`, `--full`, `--from N`. A change to
+  `Base.astro` touches all ~4,260 pages (about 10 minutes).
+- **Analytics:** GA4 `G-NVJ5LQ6EMC` (stream shared with virostatiq.com) loads only after
+  consent (`Consent.astro`, `/zasebnost/`); never on localhost.
+
+**Analyses.**
+- Zlata ptica reclassified to "umetnost in kultura"; person display field = field of
+  wins first, juries only for people with no wins (`graph._main_field`).
+- New: **familiar faces** (`juries.familiar_faces`, findings §23): juries pick winners
+  they had already awarded elsewhere, 113 against 86; co-jury ties add nothing.
+- New in **geography** (from the legacy `plots/location`): **path into juries** (findings
+  §11: Ljubljana-tied winners reach a jury 1.8× as fast within field, but only 212 people
+  are in the outside group), **ties abroad** (§22: ties to former Yugoslavia fall about
+  2 pp per decade within award, no break at 1991; the legacy "shift to the west" does not
+  hold), and `places` (counts per Slovenian place, for the site map). The other legacy
+  location plots were already covered or measure biography detail; see findings §11.
+- **Reciprocity now uses 2,000 shuffles** (was 500): 117 pairs against 102, p = 0.04, so
+  §4 now reads "only slightly more than chance". Site text follows the verdict.
+- `docs/findings.md` re-checked against the re-run (§3, §4, §5, §16, §17, §20, §21).
+
+**Site.**
+- Findings `/ugotovitve/` (18 stories, text in `site/src/content/ugotovitve/*.md`, numbers
+  from `site_findings.py`); a finding can carry `extra` charts. Text with a verdict that can
+  flip (reciprocity) takes its wording from Python, not from the Markdown.
+- **Place map** (`charts/PlaceMap.astro`) on the Ljubljana finding: bubbles per place,
+  Vsi / Nagrajenci / Žiranti, tooltip, counts only. Outlines are openly licensed
+  (NUTS 3, © EuroGeographics; Ljubljana from geoBoundaries/OSM), cached in `.cache/geo/`;
+  GADM stays for the analysis PNGs only (no redistribution). Phone layout not yet
+  checked on a real phone.
+- Home page: four namesake portraits (Trubar, Cankar, Jurčič, Stritar; Wikimedia, public
+  domain) instead of the map. New default OG card rendered with headless Chrome.
+- Map page: tools in the header, collapsible legend. Footer modelled on bloki.si.
+- Favicon: network motif (SVG, ICO, apple-touch, manifest icons).
+- All internal links go through `site/src/lib/url.ts` (the site lives in a subfolder).
+
+## Session 5 (2026-11-01)
+
 
 **Site design makeover.** The phase-1 site looked generic, so three dark static proposals
 were built (bronze plaque, year strip, network sky); the user chose **"Mreža"** (the network
@@ -129,8 +180,8 @@ names review.
 |---|---|
 | Restructure the dataset | **Done.** Normalized CSVs in `data/`, schema in `src/kulturne_nagrade/dataset.py`, `datapackage.json` generated, integrity tests. |
 | Analyse trends | **Done.** 17 themes: coverage, gender, age, juries, power, careers, geography, network, transition, pipeline, dossier, crown, mobility, overview, influence, awards (+ honoured late, in age). Every legacy analysis is ported or deliberately dropped (`docs/methods.md`). |
-| Submit to GitHub | **Not started.** No remote. Branch is `main`. Decide on a licence first (data + code). |
-| Astro site with backend editor | **In progress.** Phase 1 built and reviewed; design "Mreža" applied (session 5, `docs/site.md`). Phase 2 and the local editor to come. |
+| Submit to GitHub | **Done.** Public at github.com/virostatiq/slo-cultural-awards (fresh history; never push `private-history`). |
+| Astro site with backend editor | **Live** at virostatiq.com/kulturne-nagrade. Phase 1, design "Mreža", findings and the place map done; statistics, fields, downloads, per-page OG images and the local editor to come. |
 | Social-media visuals (Slovenian) | **Not started.** The analysis plots in `plots/` already use Slovenian labels and number format, but they are analysis figures, not social cards. |
 
 ## Commands
@@ -251,25 +302,26 @@ analyses, and update `docs/findings.md`.
 
 ## Suggested next steps
 
-1. **Open review items 1–4 and 8 above.**
+1. **Open review items 1–4 and 8 above.** Also unanswered: whether the borderline
+   offices kept during the party scrub (SZDL posts, Liberalna akademija, ZZB NOB) stay.
 2. **Validate gender and places** on hand-checked samples (~100 and ~50).
-3. **GitHub.** Licence (e.g. CC BY 4.0 for data, MIT for code; OSM-derived
-   coordinates in `places.csv` are ODbL), README, CI running `pytest`.
+3. ~~GitHub~~: done (session 6).
 4. **Social cards** from the headline findings. Strong candidates: the
    Ljubljana map (§11), jury seats more concentrated than awards (§16), the
    41-year jury streak (§17), and Prešernova coming late in life (§18). Check
    the Slovenian with the kontekst tools.
-5. **Site, phase 2** (agreed plan, in this order): findings (§1–21 as short
-   Slovenian stories with one chart each and a share image), statistics
+5. **Site, phase 2** (agreed plan, in this order): findings (**done**; share images per
+   finding still to do), statistics
    (interactive versions of the analysis charts; Observable Plot), fields
    (`/podrocje/<field>/`), downloads (CSV, datapackage, licence, citation),
    per-page OG images (person, award, year, finding). Then the **local editor**:
    forms that edit `data/*.csv`, run the dataset validation and append to the
    decision logs in `data/meta/`; local only, no login.
-6. **Data check raised in review:** Drago Jančar is coloured as journalism
-   (11 jury seats there); check how the Jurčičeva nagrada is classified in
-   `awards.csv` (genre).
-7. **Domain:** OG and canonical URLs use a placeholder until `SITE_URL` is set.
+   Open question for the user: should the downloads page include gender and birth
+   years (they are public on GitHub anyway)?
+6. ~~Jančar as journalism~~: fixed by the display-field rule (session 6).
+7. ~~Domain~~: virostatiq.com/kulturne-nagrade (session 6). Consider a separate GA4
+   stream for this site.
 
 ## Legacy project
 

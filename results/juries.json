@@ -2306,9 +2306,9 @@
   ],
   "reciprocity": {
     "pairs_observed": 117,
-    "pairs_expected": 102.42,
-    "ratio": 1.1423550087873462,
-    "p": 0.04790419161676647
+    "pairs_expected": 102.437,
+    "ratio": 1.1421654285072778,
+    "p": 0.043478260869565216
   },
   "reciprocal_pairs": [
     {

@@ -35,7 +35,7 @@ from kulturne_nagrade.analysis.common import bh_fdr, permutation_p, rng
 
 THEME = "juries"
 N_PERM = 2000
-N_PERM_RECIPROCITY = 500
+N_PERM_RECIPROCITY = 2000
 
 
 def run() -> dict:

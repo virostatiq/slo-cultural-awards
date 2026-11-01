@@ -1,8 +1,9 @@
 # Findings
 
 Numbers come from `results/*.json` (run of 2026-11-01, after the duplicate-editions
-and resolved-names reviews, the Zlata ptica relabelling to ceremony years, the
-addition of Zlata strela and the removal of the commission data). The data covers
+and resolved-names reviews, the Zlata ptica relabelling to ceremony years and its
+reclassification from literature to "umetnost in kultura", the addition of Zlata
+strela and the removal of the commission data). The data covers
 96 awards, 2,067 editions and 1949–2026, with jury lists for 64% of editions. Coverage is
 dense from about 2000; before that, results rest on fewer awards. See
 `docs/methods.md` for how each number was computed and `plots/<theme>/` for the
@@ -28,14 +29,15 @@ fields. This overturns the legacy "homophily" result.
 
 ### 3. Former jurors win more often than their peers, but only a little, and mostly at three awards
 **187** winners had sat on the same award's jury before winning it. Comparable
-peers (winners of other awards in the same field and year) would give **152**:
-a premium of **1.23×** (p < 0.001), and 1.24× when peers are also age-matched.
+peers (winners of other awards in the same field and year) would give **150**:
+a premium of **1.25×** (p < 0.001), and 1.25× when peers are also age-matched
+(129 against 103).
 Per award, after correcting for testing about 70 awards:
 - **Desetnica**: 9 of its 25 winners had previously sat on its jury, against
   about 1–2 expected. This is the clearest case, and it survives age matching.
 - **Nagrada Franceta Štiglica**: 10 against 3.5 expected. Weaker with age
   matching.
-- **Prešernova nagrada**: 27 against 12 expected, but with age-matched peers
+- **Prešernova nagrada**: 27 against 11 expected, but with age-matched peers
   it is 23 against 17.6, which is not significant. Most of the apparent
   premium is seniority: the people who sit on the Prešeren jury are the same
   generation that receives the lifetime award.
@@ -44,17 +46,18 @@ The legacy list of "insider" awards (Stritarjeva, Mira, Jenkova…) does not
 survive a proper null.
 *Figure: `plots/juries/nekdanji_ziranti_med_nagrajenci.png`*
 
-### 4. "I award you, you award me" happens no more than chance
+### 4. "I award you, you award me" happens only slightly more than chance
 There are **117** pairs of people who each sat on a jury that awarded the
-other. Random reshuffling of winners within the same field and year produces
-**103** on average (p = 0.07). In a scene this small, mutual awarding is
-largely unavoidable.
+other. Random reshuffling of winners within the same field and year (2,000
+shuffles) produces **102** on average: **1.14×**, p = 0.04. Earlier runs with
+500 shuffles gave p = 0.05–0.07, so this is borderline. In a scene this small,
+most mutual awarding is unavoidable; the excess is about 15 pairs.
 *Figure: `plots/juries/vzajemno_nagrajevanje.png`*
 
 ### 5. Women laureates are recruited to juries faster than men
 Of people first awarded in 2000 or later, **19%** of women and **14%** of men
 sat on a jury within ten years. Within the same field, women's rate is
-**1.4×** that of men (Cox HR 1.38, 95% CI 1.09–1.75, p = 0.007). This is part
+**1.4×** that of men (Cox HR 1.39, 95% CI 1.10–1.76, p = 0.006). This is part
 of why juries became majority-female before winner lists did.
 
 The reverse path is rarer. Of 1,053 people first seated on a jury in 2000 or
@@ -244,8 +247,8 @@ does not show in the data. Of people whose first prestige-5 award came in 2005
 or later, only **20%** had any earlier award in the data and **10%** an earlier
 jury seat. That is no more than for a first tier-4 award (18%, 14%) or a first
 tier-3 award (31%, 21%). Within the same field and year, the crowned are
-**less** likely than tier-3 winners to have judged before (−12 points,
-p = 0.003). The crown does not change what follows either: about 22% sit on a
+**less** likely than tier-3 winners to have judged before (−11 points,
+p = 0.005). The crown does not change what follows either: about 22% sit on a
 jury and 34% win again within 10 years, the same as after a tier-4 award. A
 caveat is that lesser awards in some fields are missing from the data, so part
 of the "no record" group did have a record we cannot see.
@@ -256,8 +259,8 @@ Since 2000, only **13%** of winners have awards in more than one field. If wins
 were spread at random (keeping each field's wins and each person's number of
 wins), it would be 26%. Literature and poetry share winners at **2.2×**
 chance, and poetry and the umbrella awards (Prešeren, Župančič, Ježek) at
-1.7×. Every other pair of fields shares fewer than chance. Film and theatre,
-for example, share 52 winners against 100 expected.
+1.6×. Every other pair of fields shares fewer than chance. Film and theatre,
+for example, share 53 winners against 102 expected.
 
 The longest runs of consecutive years on juries come from standing juries:
 **Tone Peršak, 41 years** (1986–2026, mostly Vilenica), Andrej Blatnik 36,
@@ -268,12 +271,12 @@ two or more different awards. The maximum is four (Leo Černic, 2023, all film
 awards for the same work).
 **Juries mostly draw on their own field.** Since 2000, **65%** of seats on
 field juries are held by people with no earlier field award in the data. Of the
-rest, **19%** sit on a jury outside their home field (the field of most of
+rest, **17%** sit on a jury outside their home field (the field of most of
 their earlier wins; poetry counted as literature; umbrella juries excluded).
 Journalism juries are the exception: 58% of their awarded jurors come from
-elsewhere, mostly writers (45%). Literature juries draw 10% from outside and
+elsewhere, mostly writers (45%). Literature juries draw 8% from outside and
 architecture juries none. Within the same award, the outside share is
-*falling*, by 7 points per decade (95% CI −13 to −1, p = 0.015).
+*falling*, by 6 points per decade (95% CI −11 to −1, p = 0.03).
 *Figures: `plots/mobility/prehajanje_podrocij.png`, `nizi_v_zirijah.png`,
 `ziranti_iz_drugih_podrocij.png`*
 
@@ -332,11 +335,12 @@ Alenka Bole Vrabec (1 against 6.7, p = 0.01); neither survives correction
 how many winners they had picked.
 
 **From one award's jury to another award.** Extending §3 to pairs of awards:
-of 2,375 award pairs, **4** show more winners who earlier sat on the other
+of 2,367 award pairs, **3** show more winners who earlier sat on the other
 award's jury than peers of the same field and year would. All are small and
 within one field: Borštnikov prstan jury → Bert (5 against 0.4), Kritiško sito
-→ Stritarjeva nagrada (6 against 0.6), Grumova nagrada → Nagrada Vladimirja
-Kralja (4 against 0.3) and Zlata ptica → Rožančeva nagrada (3 against 0.1).
+→ Stritarjeva nagrada (6 against 0.6) and Grumova nagrada → Nagrada Vladimirja
+Kralja (4 against 0.3). (Zlata ptica → Rožančeva nagrada, 3 against 0.1, no
+longer passes the correction since Zlata ptica moved out of literature.)
 Jury seats are counted in sittings, and wins by someone who had also sat on the
 winning award's own jury are left to §3.
 *Figures: `plots/influence/kraljevi_ustvarjalci.png`, `iz_zirije_v_drugo_nagrado.png`*
@@ -344,18 +348,18 @@ winning award's own jury are left to §3.
 ### 21. Many awards come back to their own past winners; awards do not share juror pools
 **Repeat winners.** Among the winners of the same field and year, people who
 had already won an award win it again more often than chance: **565** repeat
-wins against **451** expected (1.25×, p < 0.001). This holds at **19 awards**
+wins against **448** expected (1.26×, p < 0.001). This holds at **19 awards**
 after correction. The strongest are the Grumova nagrada (24 against 3), Kresnik
 (10 against 1), Desetnica (7 against 1), Dnevnikova nagrada (10 against 2),
-Levstikova nagrada (59 against 25) and Borštnikovo srečanje (59 against 28).
+Levstikova nagrada (59 against 28) and Borštnikovo srečanje (59 against 28).
 The **Prešernov sklad** is the opposite: it almost never goes to a past
-laureate (12 against 110 expected). Its laureates go on to the Prešernova
+laureate (12 against 104 expected). Its laureates go on to the Prešernova
 nagrada instead (§8).
 
 **Shared juror pools.** 595 award pairs share at least one juror, but **none**
 shares more than random juries of the same field and period would (after
 correction). In total, 1,413 people sat on the juries of two awards, against
-8,165 under random juries: jurors stay with one award. The strongest
+8,089 under random juries: jurors stay with one award. The strongest
 candidates are small film-award pairs (butnskala and najsvetlejša zvezda
 Oriona; the film critics' award and Nagrada Nike Bohinc) and Bert and Kosobrin,
 whose juries are both the DSR board: one body, not a network.
@@ -382,6 +386,31 @@ The legacy plot read the before/after-1991 comparison as a shift "from the
 Yugoslav axis to the west". The decline is generational and predates 1991; the
 western share did not grow.
 *Figure: `plots/geography/vezi_s_tujino.png`*
+
+### 23. Juries meet familiar faces among the winners, mostly people they had already awarded
+§3 asks whether a juror wins the award they judged. This asks the wider question:
+does a jury pick winners it already knows? A winner has a **tie** to the jury if,
+before that edition, a juror and the winner had sat on a jury together
+(co-jury), a juror had already awarded the winner (judged winner), or the winner
+had sat on a jury that awarded a juror (judged juror). Compared with winners of
+other awards in the same field and year, against the same jury:
+- **Any tie, on any award:** 369 winners against 282 expected (1.31×, p < 0.001).
+- **Ties formed on other awards only** (the strict test, which leaves out a
+  jury's own past winners): **184 against 149** (1.24×, p < 0.001). Age-matched:
+  137 against 109 (1.26×).
+- The excess comes from **juries that had already awarded the winner** (113
+  against 86 on other awards, 1.31×). Having sat on a jury together adds nothing
+  beyond chance (50 against 45 on other awards, p = 0.22). A winner having
+  awarded a juror is borderline (40 against 32, p = 0.05) and vanishes with
+  age-matched peers (24 against 22).
+- Per award, after correction: **Stritarjeva nagrada** (7 of 22 winners
+  against 1.4 expected) and the **Prešernova nagrada** (38 against 16; with
+  age-matched peers 22 against 14, q = 0.08, so partly seniority again).
+
+Read with §3 and the insider direction: a winner later sitting on a jury is a
+custom; a jury rewarding people it has already rewarded elsewhere is a modest,
+real tendency that concentrates recognition on the already recognised.
+*Figure: `plots/juries/znani_obrazi_v_ziriji.png`*
 
 ## Smaller results
 - **Prestige and gender.** Since 2010, women won 37% of top-prestige awards,
