@@ -1,14 +1,35 @@
-# Handoff: state as of 2026-11-01 (end of session 6)
+# Handoff: state as of 2026-11-02 (end of session 7)
 
 Read this first in a new session, together with `CLAUDE.md`,
 `docs/data-model.md`, `docs/methods.md` and `docs/findings.md`.
 
-## Last session (2026-11-01, session 6)
+## Last session (2026-11-02, session 7)
+
+**Work email removed from GitHub.** The author's work address was in the author and
+committer fields of all 6 public commits (no file contained it).
+- History rewritten with `git filter-branch --env-filter`: every author and committer
+  email is now the GitHub noreply address `3925627+virostatiq@users.noreply.github.com`.
+  Files, dates and messages are unchanged; `main` now ends at `b3eb59a` (was `00d8206`).
+- This repo's local `user.email` is set to the noreply address. **Check it before every
+  commit;** the global git config still has the work address.
+- GitHub kept serving the old commits by ID after the force-push, so the repo was
+  **deleted and recreated** under the same name (it had no stars, forks, issues, PRs or
+  releases) and the clean `main` pushed. Description, homepage, topics and licence are
+  as before; no secrets, webhooks or branch protection existed. The old commit URL now
+  returns 404 and CI passes on the new repo.
+- The old CI runs were deleted with the repo. The local backup branch and
+  `.git/refs/original` were removed. `private-history` still carries the work address
+  (and party-affiliation rows): **never push it.**
+- Left for the user: drop the `delete_repo` scope from the gh token
+  (`gh auth refresh -h github.com -r delete_repo`) and turn on "Keep my email addresses
+  private" and "Block command line pushes that expose my email" in GitHub's email settings.
+
+## Session 6 (2026-11-01)
 
 **Published.** The site is live at https://virostatiq.com/kulturne-nagrade/ and the repo
 is public at https://github.com/virostatiq/slo-cultural-awards (MIT code, CC BY 4.0 data,
 ODbL `places.csv`; `CITATION.cff`; CI runs pytest and dataset validation on push).
-- **Public `main` starts from a fresh single commit.** The local branch
+- **Public `main` started from a fresh single commit** (rewritten again in session 7). The local branch
   `private-history` holds the old history (with party-affiliation rows): **never push it.**
   Party traces were scrubbed before publishing (count-only rows in the decision logs,
   `DELETE_OFFICES` emptied, `sds.si` sources removed, 2 more political memberships
@@ -180,7 +201,7 @@ names review.
 |---|---|
 | Restructure the dataset | **Done.** Normalized CSVs in `data/`, schema in `src/kulturne_nagrade/dataset.py`, `datapackage.json` generated, integrity tests. |
 | Analyse trends | **Done.** 17 themes: coverage, gender, age, juries, power, careers, geography, network, transition, pipeline, dossier, crown, mobility, overview, influence, awards (+ honoured late, in age). Every legacy analysis is ported or deliberately dropped (`docs/methods.md`). |
-| Submit to GitHub | **Done.** Public at github.com/virostatiq/slo-cultural-awards (fresh history; never push `private-history`). |
+| Submit to GitHub | **Done.** Public at github.com/virostatiq/slo-cultural-awards (fresh history, noreply email only; never push `private-history`). |
 | Astro site with backend editor | **Live** at virostatiq.com/kulturne-nagrade. Phase 1, design "Mreža", findings and the place map done; statistics, fields, downloads, per-page OG images and the local editor to come. |
 | Social-media visuals (Slovenian) | **Not started.** The analysis plots in `plots/` already use Slovenian labels and number format, but they are analysis figures, not social cards. |
 
